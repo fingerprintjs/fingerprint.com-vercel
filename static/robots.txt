@@ -1,0 +1,6 @@
+# Not all robots are good at writing high-quality javascript, but if you’re one of them, join us here -> https://careers.fingerprintjs.com
+
+User-agent: *
+Allow: /
+Sitemap: https://fingerprintjs.com/sitemap/sitemap-index.xml
+Host: https://fingerprintjs.com
