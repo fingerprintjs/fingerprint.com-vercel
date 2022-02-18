@@ -1,54 +1,38 @@
-                                                            
- d'b o                                  o       o   o oPYo  
- 8                                              8   88      
-o8P o8odYo  oPYo  oPYo oPYo  oPYo oPYo o8odYo  o8P  8`Yooo  
- 8   88' `88    88oooo88  `'8    88  `' 88' `8  8   8    `8 
- 8   88   88    88     8    8    88     88   8  8   8     8 
- 8   88   8`YooP8`Yooo'8    8YooP'8     88   8  8 oP'`YooP' 
-                8           8                               
-             ooP'           8                               
-                                                            
-                                                            
-               o       o      o    o       88               
-               8              8    8       88               
-               8 oPYo o8odYo  8    8 oPYo  88               
-               88    8 88' `8 8    8Yb     88               
-               88    8 88   8 8    8  'Yb  `'               
-             oP'`YooP' 88   8 `YooP'`YooP' 88               
-                                                            
-                                                            
-          ┌─────────────────────────────────────┐           
-          │  https://careers.fingerprintjs.com  │           
-          └─────────────────────────────────────┘           
-                                                            
-                                                            
-                &&BBGGP555YYYYYYYY55PPGGB#&&                
-          &#BGP5YYYY55PPGGBBBBBBBBGGPP55YYYY5PGB&           
-        #P5YY5PGB#&&                   &&##BP5YYYPG&        
-        &#BB#&       &&#BBBBGGGGBBB##&&       &#B##&        
-              &#BG555YYYY555555555YYYYY55PGB#               
-         &#BP5YY55PGBB#&&&&&&&&&&&&&##BBGP55Y5PG#&          
-      &#G555PGB#&&&        &&&&&&        &&&#GP555PG#&      
-    #G5Y5PG#&     &#BGPP55555555555PPGGB&&    &#BG5Y5PB&    
- &BP5Y5B#&   &#BP55555PPGGBBBBBBGGGGP55555PG#     #BP5YPB#  
-BG5YPB#    #GP5Y5PGB#&&&            &&##GP5Y5PGB&   &BG5YPB#
-5PPG#   &BP5Y5PB#&    &&#BBBGGGGBB##&    &&#GP55PB&   &BPPGB
-##&&  &BPYYPB#&   &#GPP5555PPPP555555PGB#&   &BP55PB&   &&&&
-     &G5YPG#   &#GP555PGB#########BBGP5Y5PB#   &BP55P#      
-    #P55P#&  &#G5Y5PB&&    &&&&&     &#BP555G&   &B5YPB&    
-   &GY5B#   &B555G#&   &BGGPPPPPPGB#&   &#PY5PB   &G5Y5G    
-  #G5YP&   &B5YP#&  &#GP55PGGGGGP555PB&   #B5YP#&  &B5YP#   
- &BP55G   &G55PB   &G555G#&     &#BPY5G#&   GY5GB&  &GY5G#  
- &G55PB   &PY5G#   B5YPB&  &&##&   #P55P&   BP55G&   G55G#  
- &G55G#   &PYPB&  &B5YG&  &#GY5#   &BPYP#   #BGPB&   G55PB  
- &G55PB   &PY5G#   B5YG#& &#GY5B&  &#GY5B&    &&&   #PY5B#  
- &BP55G   &G55P#   #PYPB&   B5YPB&   #P55PB&&&&&&&#GP55G&   
-  #G5YG&  &BP55B   &GP55B   &GP55B&   &BP5555PPPP5YY5G#&    
-  &#PY5B&  &B5YP&   #G5YP#&  &#PY5GB&    &#BGPPPGB##&       
-    G55G#&  &GY5GB&  &G5Y5G&   #BPY5PB#&&                   
-    &BBB#    #G5YP#&  &BPY5PB&   &BP5Y55PPGBBBBBBB#&        
-               B5Y5G#   &BPYYPB#     #BGP55YYYYYYYP#        
-               &#G5YPG#   &BG5YY5G#&          &&            
-                 &BG5YPB&    &#P5YY55PGB#&                  
-                   &BGBB&        &#GP5Y5G#&                 
-                                                            
+                                                  
+         o       o      o    o       88           
+         8              8    8       88           
+         8 oPYo o8odYo  8    8 oPYo  88           
+         88    8 88' `8 8    8Yb     88           
+         88    8 88   8 8    8  'Yb  `'           
+       oP'`YooP' 88   8 `YooP'`YooP' 88           
+                                                  
+      ┌─────────────────────────────────────┐     
+      │  https://careers.fingerprintjs.com  │     
+      └─────────────────────────────────────┘     
+                                                  
+                  &&&&&&&&&&&&&&                  
+          &&&#BGPPP555555555555PPGGB#&&           
+       &BGP5555PGGB###    ##BBGGP5555PG#&         
+       BPPGB#&        &&&&          &#BGPG#       
+            &#BGPP555555PP555555PPGB#             
+       &#BP5555PGB##&      &&&##BGP555PG#&        
+     #G5Y5PB&&      &&######&       &#GP5YPG#     
+  &B5Y5G#   &&#BGP55555555555555PGB&&   &BPY5G#   
+&B5YPB&  &#GP5Y5PGB#&&     &&##BGP555G#&   #G55P#&
+PPPB&  &B5Y5PB#&   &&###BB###&    &#G555G#   &G5GB
+##&  &G5YPB#   &BGP555PPPP55555PG#&   #P55G#  &&&&
+    #PY5G&   #G55PGB        &#BP5Y5G#   #P55B     
+   #55P#   #G55G#     &####&    &#G55G#   GY5P#   
+ &#PYP#   #5YG#   #GP55555555PB&   B5YP&  &B5YB   
+ &G55B   BP5P&  #G5YPB&    #G5YP#&  #5YG#  &GYP#& 
+ &P5PB   GYPB& &GY5B&  &##   #P55#  &G55G   G55G& 
+ #55G#   PYP#  &GYP#  #GY5&  &B5YB   #BGB   B55G& 
+ &P5PB   GYPB&  BY5B& &B55B&  &GYPB&      &BPYG&  
+ &B5YG   G55G&  #P5P#  &P5PB   &B5Y5PGBBGP5YPG&   
+ &#PYP#  #GY5#  &B5YG&  &B55G#    &BPPPPPGB#&     
+   B55G&  &PYPB   B5YP#   #G55GB#&&               
+   &###&   #GY5B&  #P55G#   #GP555PPGGGGPG#       
+            &G5YP#   #P55PB#   &#BBGGGPPGG#       
+              #P55G#   #BPYY5GB#&                 
+                #GGB&     &#GP555G#               
+                              &&&&                
