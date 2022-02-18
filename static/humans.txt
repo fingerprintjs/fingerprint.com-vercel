@@ -1,38 +1,36 @@
-                                                  
-         o       o      o    o       88           
-         8              8    8       88           
-         8 oPYo o8odYo  8    8 oPYo  88           
-         88    8 88' `8 8    8Yb     88           
-         88    8 88   8 8    8  'Yb  `'           
-       oP'`YooP' 88   8 `YooP'`YooP' 88           
-                                                  
-      ┌─────────────────────────────────────┐     
-      │  https://careers.fingerprintjs.com  │     
-      └─────────────────────────────────────┘     
-                                                  
-                  &&&&&&&&&&&&&&                  
-          &&&#BGPPP555555555555PPGGB#&&           
-       &BGP5555PGGB###    ##BBGGP5555PG#&         
-       BPPGB#&        &&&&          &#BGPG#       
-            &#BGPP555555PP555555PPGB#             
-       &#BP5555PGB##&      &&&##BGP555PG#&        
-     #G5Y5PB&&      &&######&       &#GP5YPG#     
-  &B5Y5G#   &&#BGP55555555555555PGB&&   &BPY5G#   
-&B5YPB&  &#GP5Y5PGB#&&     &&##BGP555G#&   #G55P#&
-PPPB&  &B5Y5PB#&   &&###BB###&    &#G555G#   &G5GB
-##&  &G5YPB#   &BGP555PPPP55555PG#&   #P55G#  &&&&
-    #PY5G&   #G55PGB        &#BP5Y5G#   #P55B     
-   #55P#   #G55G#     &####&    &#G55G#   GY5P#   
- &#PYP#   #5YG#   #GP55555555PB&   B5YP&  &B5YB   
- &G55B   BP5P&  #G5YPB&    #G5YP#&  #5YG#  &GYP#& 
- &P5PB   GYPB& &GY5B&  &##   #P55#  &G55G   G55G& 
- #55G#   PYP#  &GYP#  #GY5&  &B5YB   #BGB   B55G& 
- &P5PB   GYPB&  BY5B& &B55B&  &GYPB&      &BPYG&  
- &B5YG   G55G&  #P5P#  &P5PB   &B5Y5PGBBGP5YPG&   
- &#PYP#  #GY5#  &B5YG&  &B55G#    &BPPPPPGB#&     
-   B55G&  &PYPB   B5YP#   #G55GB#&&               
-   &###&   #GY5B&  #P55G#   #GP555PPGGGGPG#       
-            &G5YP#   #P55PB#   &#BBGGGPPGG#       
-              #P55G#   #BPYY5GB#&                 
-                #GGB&     &#GP555G#               
-                              &&&&                
+                                             
+         o       o      o    o       88      
+         8              8    8       88      
+         8 oPYo o8odYo  8    8 oPYo  88      
+         88    8 88' `8 8    8Yb     88      
+         88    8 88   8 8    8  'Yb  `'      
+       oP'`YooP' 88   8 `YooP'`YooP' 88      
+                                             
+   ┌─────────────────────────────────────┐   
+   │  https://careers.fingerprintjs.com  │   
+   └─────────────────────────────────────┘   
+                                             
+               &&&&&&###&&&&&&               
+         &#BGPPPP55555555555PPPGGB#&         
+      &GP55PPGB##&&&     &&###BGP555PB&      
+      &BB#&&    &#BBBBGBBBB#&&   &&#B#&      
+         &#BGP5555PPPGGGPP55555PGB#&         
+     &#GP5PPGB#&             &#BGP55PB#&     
+   #G55PB#    &BGGPPPPPPPPGGB#&   &#G555B&   
+ #PY5B&   #G5555PGGBB  #BBGGP555G#    #P55G& 
+PP5B&  &G555GB&   &&&&&&&&    #BP55PB   #GYPB
+BB&  #GY5G#&  &BGPPPPP55PPPGB#&  &BP5PB  &###
+   &B55P#  &BP55PGB##&&###BG555G#  &BP5P&    
+   G5PB   #PY5G&   &####&    &G5YG#  &PYPB   
+ &B5Y#   #55B&  #GP5555555PB&  #PY5#  #GYP&  
+ #P5P&  B55B  &G55G#    &BPYP#   GYP#  &55B& 
+ #55G&  GYP#  #Y5B  &BG&  #P5P&  BP5G  &P5G& 
+ #55G&  PYG#  #Y5#  #PYB  &B55&  &#B#  &55G& 
+ #P5P&  G5PB  &55B&  GYP#   G55G&&&&&&BPYG&  
+ &G55#  BP5G  &G55#  &G55#   #GP55PPP55P#&   
+  &PYG&  #Y5#  &GYPB   B55P#&   &####&&      
+   BGG#  &G55B  &G5YG#  &BP55PGB#&####&      
+           B55P&  &G55G#&  &#GPP55555P#      
+            &G55G&  &BP55PB#&&               
+              #PPG&    &BGP55PB&             
+                &&        &&&&&              
