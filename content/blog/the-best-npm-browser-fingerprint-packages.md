@@ -37,9 +37,9 @@ Browser fingerprints help you prevent these issues by relying on device and soft
 
 If you want to learn more about browser fingerprinting and how it works, here are some helpful links to previous articles we have written on the subject:
 
-* [The beginner's guide to browser fingerprinting](https://fingerprintjs.com/blog/what-is-browser-fingerprinting/) - a simple overview of how fingerprinting works.
-* [Browser fingerprinting techniques](https://fingerprintjs.com/blog/browser-fingerprinting-techniques/) - a browser fingerprint is made up of many hardware and software signals. Learn about these different types and how they are accessed via the browser.
-* [How to prevent multiple signups with browser fingerprinting](https://fingerprintjs.com/blog/prevent-multiple-signups-tutorial/) - fingerprinting can be used in a multitude of ways. Here is one simple example of browser fingerprinting in action.
+* [The beginner's guide to browser fingerprinting](/blog/what-is-browser-fingerprinting/) - a simple overview of how fingerprinting works.
+* [Browser fingerprinting techniques](/blog/browser-fingerprinting-techniques/) - a browser fingerprint is made up of many hardware and software signals. Learn about these different types and how they are accessed via the browser.
+* [How to prevent multiple signups with browser fingerprinting](/blog/prevent-multiple-signups-tutorial/) - fingerprinting can be used in a multitude of ways. Here is one simple example of browser fingerprinting in action.
 
 # Top NPM fingerprinting packages
 
@@ -123,7 +123,7 @@ You can test the open-source library on their [live demo](https://fingerprintjs.
 
 FingerprintJS Pro has an identification accuracy of 99.5% and provides documentation on [how this accuracy score is calculated](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy).  The Pro version also includes a confidence score, that it claims is [more accurate than for the open-source version](https://dev.fingerprintjs.com/docs/understanding-your-confidence-score#pro-vs-open-source) as it can take into account server-side signals as well as client-side.
 
-You can test out the Pro version in an [interactive demo](https://fingerprintjs.com/demo/) on FingerprintJS’ website.
+You can test out the Pro version in an [interactive demo](/demo/) on FingerprintJS’ website.
 
 ## get-browser-fingerprint
 

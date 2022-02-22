@@ -25,11 +25,11 @@ heroImage:
 customCTA:
   openCtaNewTab: false
 ---
-Account takeover occurs anytime someone gains access to a victim’s online account and uses it without the owner’s knowledge. Also known as an ATO, or ATO attack, it’s a common type of online fraud that is often used to steal either money or personal data, and it’s becoming more and more frequent. 
+Account takeover occurs anytime someone gains access to a victim’s online account and uses it without the owner’s knowledge. Also known as an ATO, or ATO attack, it’s a common type of online fraud that is often used to steal either money or personal data, and it’s becoming more and more frequent. 
 
-[Research](https://securitybrief.co.nz/story/financial-account-takeovers-on-the-rise-kaspersky) found that account takeover accounted for 54 percent of all fraudulent transactions in 2020. In a multi-billion dollar cybercrime industry, that’s a significant value being defrauded. It also means that having a good [account takeover prevention](https://fingerprintjs.com/account-takeover/) strategy can dramatically decrease the risk of doing business online.
+[Research](https://securitybrief.co.nz/story/financial-account-takeovers-on-the-rise-kaspersky) found that account takeover accounted for 54 percent of all fraudulent transactions in 2020. In a multi-billion dollar cybercrime industry, that’s a significant value being defrauded. It also means that having a good [account takeover prevention](/account-takeover/) strategy can dramatically decrease the risk of doing business online.
 
-Bank account takeover represents a huge reputational risk for businesses in the finance industry. Customers need to be able to trust that their money is safe. If they don’t, they’ll simply go to one of your competitors who they feel they can trust. 
+Bank account takeover represents a huge reputational risk for businesses in the finance industry. Customers need to be able to trust that their money is safe. If they don’t, they’ll simply go to one of your competitors who they feel they can trust. 
 
 ## How does account takeover in banks and fintechs take place?
 
@@ -47,13 +47,13 @@ There are a range of techniques that fraudsters can use to obtain the login cred
 
 This doesn’t take too much imagination - once criminals are inside a victim’s account, they often look to transfer all available funds elsewhere. They may also conduct multiple transfers to make the money harder to trace.
 
-Many banks and financial institutions now require authentication steps for large transfers, but sophisticated criminals can get around these security measures. 
+Many banks and financial institutions now require authentication steps for large transfers, but sophisticated criminals can get around these security measures. 
 
 For example, fraudsters in the [United Kingdom](https://www.theguardian.com/money/2021/may/08/fraudsters-account-stop-bank-money) utilized a loophole where there was no authentication required to pay previous payees to steal more than £8,000 from an account holder. Once they’d made the transfers, they contacted the payees asking for a refund to be paid to their own account.
 
 ### 2. Money laundering
 
-Criminals that earn cash from illegal exploits are forever searching for ways to launder their money. When they have access to a victim’s bank account, they can deposit dirty money as part of a series of transfers, or ATO payments, that disguise its criminal origins. 
+Criminals that earn cash from illegal exploits are forever searching for ways to launder their money. When they have access to a victim’s bank account, they can deposit dirty money as part of a series of transfers, or ATO payments, that disguise its criminal origins. 
 
 A victim may not be too worried if they notice an unexplained deposit in their account. However, they may not know that a fraudster has access to their account, and they’re using it to launder that money. They may also drain the victim’s account in the process.
 
@@ -71,7 +71,7 @@ Bank account takeover allows fraudsters access to more than just money. Online a
 
 Criminals can use this stolen data to make fraudulent credit applications, racking up debt in a victim’s name without them even knowing about it.
 
-They may even hold on to the information for a few months before using it, making the source of the breach harder to find. 
+They may even hold on to the information for a few months before using it, making the source of the breach harder to find. 
 
 ## What are the consequences to banks and fintechs?
 
@@ -79,7 +79,7 @@ They may even hold on to the information for a few months before using it, makin
 
 Banks and financial service companies are seen as lucrative targets by fraudsters, because of the potential for a big windfall. It’s not just customers at risk - finance companies are often required to reimburse fraud victims.
 
-[Aberdeen research](https://www.perimeterx.com/resources/blog/2021/the-cost-of-account-fraud-on-financial-services-industry/) found that companies in the finance sector can lose up to 8.3 percent of annual revenue to one single ATO attack. With many companies reporting tens of millions of dollars in revenue, that represents a significant loss of business. 
+[Aberdeen research](https://www.perimeterx.com/resources/blog/2021/the-cost-of-account-fraud-on-financial-services-industry/) found that companies in the finance sector can lose up to 8.3 percent of annual revenue to one single ATO attack. With many companies reporting tens of millions of dollars in revenue, that represents a significant loss of business. 
 
 Significantly, the report stated, “The financial consequences of successful account takeovers have grown to a level that goes beyond a mere ‘cost of doing business,’ to become a material business risk.”
 
@@ -87,7 +87,7 @@ Significantly, the report stated, “The financial consequences of successful ac
 
 As a business that is responsible for holding on to customers' money, not being able to do so is a fundamental problem. Customers who are victims of account takeover fraud naturally talk to people they know, which creates a huge reputational risk.
 
-This means that online security should be at the forefront of business priorities for banking and financial organizations. 
+This means that online security should be at the forefront of business priorities for banking and financial organizations. 
 
 [EY Global research](https://www.ey.com/en_gl/financial-services/cybercrime-what-does-the-most-damage-losing-data-or-trust) found that trust can be destroyed by a cyber attack. It also uncovered worrying revelations for the finance sector, which is that only six percent of financial services companies believed their data security was fit for their needs. 65 percent said they were planning improvements in the coming years.
 
@@ -95,9 +95,9 @@ This means that online security should be at the forefront of business prioritie
 
 Chargebacks are a form of fraud prevention afforded to debit and credit card holders. It often applies in ecommerce, where cardholders can seek a refund if items they purchase don’t arrive in working condition, never arrive at all, or if the purchase wasn’t authorized by the cardholder in the first place.
 
-[Chargeback fraud](https://fingerprintjs.com/blog/cnp-fraud-prevention-to-protect-chargebacks/) is increasingly common, where customers take advantage of the protection this system gives them to buy items, claim they never arrived, and enlist the help of their card issuer to force a refund from the merchant. 
+[Chargeback fraud](/blog/cnp-fraud-prevention-to-protect-chargebacks/) is increasingly common, where customers take advantage of the protection this system gives them to buy items, claim they never arrived, and enlist the help of their card issuer to force a refund from the merchant. 
 
-This impacts financial organizations because of the sheer time spent investigating chargebacks. It takes time to process disputes between customers and merchants, and implementing systems that prevent these transactions in the first place is a much more efficient approach. 
+This impacts financial organizations because of the sheer time spent investigating chargebacks. It takes time to process disputes between customers and merchants, and implementing systems that prevent these transactions in the first place is a much more efficient approach. 
 
 ## How can banks and fintech safeguard against account takeover frauds
 
@@ -115,7 +115,7 @@ Knowing where your online users are can really help to prevent fraud. Banks and 
 
 Banks are beginning to [use cellphone tracking technology](https://time.com/4247847/banks-tracking-cell-phone-fraud/) to monitor where transactions are originating and using that data to successfully reduce fraud. IP addresses in particular have been used by sites for years to estimate the geolocation of a visitor. The site can then cross-reference the IP address location with the billing address associated with a credit card or account.
 
-It doesn’t mean you have to automatically block logins or transactions from new locations, but it can warrant closer investigation, such as multi-factor authentication. 
+It doesn’t mean you have to automatically block logins or transactions from new locations, but it can warrant closer investigation, such as multi-factor authentication. 
 
 For example, you might detect a cell phone transaction originated in another country. You could send an SMS or email to the account holder to verify the transaction before processing it.
 

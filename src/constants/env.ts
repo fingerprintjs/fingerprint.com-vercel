@@ -13,6 +13,11 @@ export const FPJS_PUBLIC_TOKEN =
     [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_FPJS_PUBLIC_TOKEN,
   }) ?? 'test_public_token'
 
+export const FPJS_CDN_URL = getContextEnv<string | undefined>({
+  [NetlifyContext.Production]: process.env.GATSBY_FPJS_CDN_URL,
+  [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_FPJS_CDN_URL,
+})
+
 export const GTM_TOKEN =
   getContextEnv<string>({
     [NetlifyContext.Production]: process.env.GATSBY_GTM_TOKEN,
@@ -31,22 +36,11 @@ export const BOTD_TOKEN_ENDPOINT =
     [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_BOTD_TOKEN_ENDPOINT,
   }) ?? 'test_botd_token_endpoint'
 
-export const FPJS_ENDPOINT =
-  getContextEnv<string>({
-    [NetlifyContext.Production]: process.env.GATSBY_FPJS_ENDPOINT,
-    [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_FPJS_ENDPOINT,
-  }) ?? ''
-
 export const FPJS_VISITORS_ENDPOINT =
   getContextEnv<string>({
     [NetlifyContext.Production]: process.env.GATSBY_FPJS_VISITORS_ENDPOINT,
     [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_FPJS_VISITORS_ENDPOINT,
   }) ?? 'https://history.demo.fpaux.net/pamplemousse/'
-
-export const TLS_ENDPOINT = getContextEnv<string>({
-  [NetlifyContext.Production]: process.env.GATSBY_TLS_ENDPOINT,
-  [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_TLS_ENDPOINT,
-})
 
 export const FPJS_MGMT_API_HOST =
   getContextEnv<string>({
@@ -86,8 +80,6 @@ export const BOTD_VERIFY_ENDPOINT =
 
 export const FPJS_REGION = process.env.GATSBY_FPJS_REGION
 export const FPJS_DASHBOARD_ENDPOINT = process.env.GATSBY_FPJS_DASHBOARD_ENDPOINT
-export const FPJS_MONITORING_CLIENT_ID = process.env.GATSBY_FPJS_MONITORING_CLIENT_ID
-export const FPJS_MONITORING_TOKEN = process.env.GATSBY_FPJS_MONITORING_TOKEN
 export const GITHUB_API_TOKEN = process.env.GATSBY_GITHUB_API_TOKEN
 export const MAPBOX_ACCESS_TOKEN = process.env.GATSBY_MAPBOX_ACCESS_TOKEN
 export const ROLLBAR_ACCESS_TOKEN = process.env.GATSBY_ROLLBAR_ACCESS_TOKEN

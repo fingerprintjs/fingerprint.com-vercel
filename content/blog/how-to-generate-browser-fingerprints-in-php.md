@@ -24,7 +24,7 @@ heroImage:
 ---
 Almost every web developer has to combat fraud at some point. Attacks might include malicious users trying to brute force passwords, place fraudulent orders, initiate bot attacks, or bypass your site’s paywall.
 
-Traditional methods of tracking users in PHP often fall short when trying to prevent fraud. This is where [browser fingerprinting comes in](https://fingerprintjs.com/blog/what-is-browser-fingerprinting/). Fingerprinting is a technique that generates a highly accurate identifier that can uniquely identify someone based on their browser and device settings.
+Traditional methods of tracking users in PHP often fall short when trying to prevent fraud. This is where [browser fingerprinting comes in](/blog/what-is-browser-fingerprinting/). Fingerprinting is a technique that generates a highly accurate identifier that can uniquely identify someone based on their browser and device settings.
 
 ## Why Browser Fingerprinting?
 
@@ -40,7 +40,7 @@ Suppose you are running a streaming site that offers a 14-day free trial to new 
 
 Unfortunately, PHP is exclusively a server-side programming language, so you can’t implement browser fingerprinting in PHP alone. But, by implementing FingerprintJS on your frontend, you can easily add fingerprinting to prevent the same user from registering in your application with multiple email addresses.
 
-In this tutorial, I’ll show you how to use [FingerprintJS](https://fingerprintjs.com/) to generate browser fingerprints for your PHP application. I’ll contrast fingerprinting with several traditional PHP-only ways to track users (session tracking, HTTP cookies, and IP address tracking) so you understand why fingerprinting is a more reliable solution in most use cases.
+In this tutorial, I’ll show you how to use [FingerprintJS](/) to generate browser fingerprints for your PHP application. I’ll contrast fingerprinting with several traditional PHP-only ways to track users (session tracking, HTTP cookies, and IP address tracking) so you understand why fingerprinting is a more reliable solution in most use cases.
 
 ### Project Setup
 
@@ -187,7 +187,7 @@ In the next section, I’ll show you how to prevent re-registration using browse
 
 ### Using FingerprintJS
 
-[FingerprintJS](https://fingerprintjs.com) is a fingerprinting service that uses a combination of fingerprinting, cookies, server-side techniques, and machine learning to generate a browser fingerprint that is up to [99.5% accurate](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy). 
+[FingerprintJS]() is a fingerprinting service that uses a combination of fingerprinting, cookies, server-side techniques, and machine learning to generate a browser fingerprint that is up to [99.5% accurate](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy). 
 
 To get started with FingerprintJS, you will need a [FingerprintJS pro account](https://dashboard.fingerprintjs.com/signup). If you do not have an account, you can start a free account with no credit card required.
 
@@ -326,4 +326,4 @@ Unfortunately, an IP address can be easily spoofed. Users can set them manually 
 
 In this tutorial, you learned the utility of browser fingerprinting in PHP and how it can be used to prevent duplicate registrations. While you can increase the accuracy of your tracking in PHP by combining sessions, cookies, and IP tracking, it’s still relatively easy for users to bypass these fraud detection measures.
 
-Using [FingerprintJS](https://fingerprintjs.com/) to quickly and accurately generate a browser fingerprint in PHP will help you combat fraud and save time. With an accuracy of 99.5% and a team keeping up with the latest changes, FingerprintJS is a great solution for saving time and achieving greater accuracy. This allows you to focus on building a great web application and not learning every browser update that changes how you must implement fingerprinting.
+Using [FingerprintJS](/) to quickly and accurately generate a browser fingerprint in PHP will help you combat fraud and save time. With an accuracy of 99.5% and a team keeping up with the latest changes, FingerprintJS is a great solution for saving time and achieving greater accuracy. This allows you to focus on building a great web application and not learning every browser update that changes how you must implement fingerprinting.

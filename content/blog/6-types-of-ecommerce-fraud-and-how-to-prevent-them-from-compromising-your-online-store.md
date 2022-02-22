@@ -29,7 +29,7 @@ heroImage:
 customCTA:
   openCtaNewTab: false
 ---
-[Ecommerce fraud](https://fingerprintjs.com/ecommerce/) isn’t just some low-level scammer using a stolen credit card anymore. With online sales on the rise, cyber criminals are incentivized to develop increasingly novel ways to steal from consumers and businesses alike.
+[Ecommerce fraud](/ecommerce/) isn’t just some low-level scammer using a stolen credit card anymore. With online sales on the rise, cyber criminals are incentivized to develop increasingly novel ways to steal from consumers and businesses alike.
 
 The [Mercator Advisory Group](https://www.paymentsjournal.com/wp-content/uploads/2020/02/Mercator-White-Paper-for-BHMI-Chargebacks-and-Disputes-Feb24-2020-Final.pdf) estimates that by 2022, 66 million online transactions will produce “33 million disputes from fraud, authorization failures, processing errors, and consumer disputes.” This represents an enormous potential for stolen data, lost revenue, and brand damage.
 
@@ -73,7 +73,7 @@ Some basic ways to avoid chargeback fraud include:
 * Checking orders - some examples of fraud indications include things like many small purchases in a short amount of time or completely different billing and shipping addresses
 * Automatically sending email confirmation that an order has been made. This makes it harder for customers to claim that they never made a purchase and keeps a paper trail 
 * Making sure transaction details clearly state your business name and inform customers how it will show up on their account 
-* Securing website payments against fraudulent activity/transactions before they actually happen with [ecommerce fraud prevention software](https://fingerprintjs.com/ecommerce/).
+* Securing website payments against fraudulent activity/transactions before they actually happen with [ecommerce fraud prevention software](/ecommerce/).
 
 ### 3. Triangulation Fraud
 
@@ -97,9 +97,9 @@ Triangulation fraud can be difficult to identify, so it’s crucial to have syst
 
 ### 4. Account Takeover Fraud
 
-As its name implies, account takeover fraud occurs when a scammer takes over a legitimate customer's account. This could also involve the takeover of employee/business accounts to gain sensitive information about customers while posing as an official account. To make matters more complicated, [bots](https://fingerprintjs.com/blog/fingerprintjs-prevent-bot-attacks/) are typically used these days to automate the process of gaining brute force access to accounts. 
+As its name implies, account takeover fraud occurs when a scammer takes over a legitimate customer's account. This could also involve the takeover of employee/business accounts to gain sensitive information about customers while posing as an official account. To make matters more complicated, [bots](/blog/fingerprintjs-prevent-bot-attacks/) are typically used these days to automate the process of gaining brute force access to accounts. 
 
-Online merchants can implement these [account takeover prevention](https://fingerprintjs.com/account-takeover/) methods to protect their customers’ accounts: 
+Online merchants can implement these [account takeover prevention](/account-takeover/) methods to protect their customers’ accounts: 
 
 * Associate multiple login attempts from bot networks and block additional attempts from visitors deemed suspicious
 * Use accurate visitor identification methods and require additional authentication from new/untrusted visitors before granting access
@@ -129,6 +129,6 @@ Merchants transacting online should treat identity theft prevention as an integr
 
 ## Conclusion
 
-Online shoppers inherently trust the merchants they purchase from; in return, businesses need to ensure customers that their data won’t fall into the hands of cyber criminals. To this end, [FingerprintJS ](https://fingerprintjs.com/ecommerce/)helps online merchants stay a step ahead of fraudsters with browser fingerprinting that’s 95.5% accurate.
+Online shoppers inherently trust the merchants they purchase from; in return, businesses need to ensure customers that their data won’t fall into the hands of cyber criminals. To this end, [FingerprintJS ](/ecommerce/)helps online merchants stay a step ahead of fraudsters with browser fingerprinting that’s 95.5% accurate.
 
 By uniquely identify malicious visitors and related patterns of fraudulent activity, ecommerce store owners can take proactive measures to reduce the risk of compromise. Give FingerprintJS a [test drive today](https://dashboard.fingerprintjs.com/signup/), it’s free for 10 days with unlimited API calls.

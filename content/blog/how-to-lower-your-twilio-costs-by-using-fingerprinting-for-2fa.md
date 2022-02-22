@@ -43,9 +43,9 @@ Using an authenticator, which is based on the Time-based One-time Password (TOTP
 
 ## Using Browser Fingerprinting as a Supplement to SMS 2FA
 
-[Browser fingerprinting](https://fingerprintjs.com/blog/what-is-browser-fingerprinting/) is another technique that can help solve the high cost of 2FA via SMS. The user’s browser and device carry a lot of information that can be compiled to form a unique fingerprint for a user. Using this fingerprint, you can continue using SMS for two-factor authentication while cutting down on the number of paid verification attempts.
+[Browser fingerprinting](/blog/what-is-browser-fingerprinting/) is another technique that can help solve the high cost of 2FA via SMS. The user’s browser and device carry a lot of information that can be compiled to form a unique fingerprint for a user. Using this fingerprint, you can continue using SMS for two-factor authentication while cutting down on the number of paid verification attempts.
 
-In this post, I’ll demonstrate how you can use browser fingerprinting as a supplement to SMS-based two-factor authentication. I’ll show you how to build a small NodeJS application that uses Twilio Verify for 2FA, and then I’ll add [FingerprintJS](https://fingerprintjs.com/) for browser fingerprinting.
+In this post, I’ll demonstrate how you can use browser fingerprinting as a supplement to SMS-based two-factor authentication. I’ll show you how to build a small NodeJS application that uses Twilio Verify for 2FA, and then I’ll add [FingerprintJS](/) for browser fingerprinting.
 
 The finished application is [available on GitHub](https://github.com/karllhughes/fingerprintjs-twilio-verify), or you can follow along with this tutorial to build it on your own. Let’s get started!
 
@@ -225,7 +225,7 @@ While a browser fingerprint **alone** is not strong enough to act as a second fo
 
 *Note: security is a very application-specific topic, so don’t take my advice here as a blanket rule for every situation. You’ll need to weigh the risk for your use case.*
 
-Let’s look at how you can use [FingerprintJS](https://fingerprintjs.com/) to generate a browser fingerprint that’s 99.5% accurate and will allow you to bypass 2FA in some situations. To start, you need to sign up and get a public API key that you will use for identification:
+Let’s look at how you can use [FingerprintJS](/) to generate a browser fingerprint that’s 99.5% accurate and will allow you to bypass 2FA in some situations. To start, you need to sign up and get a public API key that you will use for identification:
 
 ![Fingerprint JS subscription dashboard](/img/uploads/twilio-sub-dah.png "Fingerprint JS subscription dashboard")
 
@@ -318,4 +318,4 @@ Now, when you log in, you’ll be able to bypass the Twilio Verification so long
 
 By using a browser fingerprint for extra verification, you can minimize the cost of using 2FA via Twilio SMS and improve your app’s user experience for frequent users. This workflow lets you have the best of both security and convenience, plus FingerprintJS makes it really easy to implement.
 
-Apart from this use case, [FingerprintJS](https://fingerprintjs.com/) can be used for strengthening fraud detection, reducing bot attacks, and offering a customized experience to repeat visitors to your site. Sign up for a free [FingerprintJS Pro account](https://dashboard.fingerprintjs.com/signup) to get started today.
+Apart from this use case, [FingerprintJS](/) can be used for strengthening fraud detection, reducing bot attacks, and offering a customized experience to repeat visitors to your site. Sign up for a free [FingerprintJS Pro account](https://dashboard.fingerprintjs.com/signup) to get started today.

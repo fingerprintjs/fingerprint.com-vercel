@@ -25,7 +25,7 @@ heroImage:
 ---
 Browsers attempt to ensure a user’s privacy by offering Incognito mode, which allows the user to surf the internet without worrying about their history, cookies, or the information they enter being saved permanently. However, in a lot of business use cases, this can end up being harmful. Visitors may use Incognito mode to gain unlimited access to content, bypassing paywalls undetected. 
 
-We’ll go over four methods of detecting visitors using Incognito mode and discuss which browsers support these methods. In the end, we’ll compare these methods to using [FingerprintJS](https://fingerprintjs.com/), which makes it all easier.
+We’ll go over four methods of detecting visitors using Incognito mode and discuss which browsers support these methods. In the end, we’ll compare these methods to using [FingerprintJS](/), which makes it all easier.
 
 ## Method 1: Access Timings
 
@@ -314,7 +314,7 @@ This method does not work on Safari anymore, and it was not reported to work on 
 
 ## Method 5: FingerprintJS
 
-After going through all the previous methods and experiencing their limitations, let’s look at [FingerprintJS](https://fingerprintjs.com/). FingerprintJS promises "99.5% accurate browser fingerprinting,” which will allow you to detect your visitors’ true identity and protect your content. 
+After going through all the previous methods and experiencing their limitations, let’s look at [FingerprintJS](/). FingerprintJS promises "99.5% accurate browser fingerprinting,” which will allow you to detect your visitors’ true identity and protect your content. 
 
 FingerprintJS is helpful in many use cases, including:
 
@@ -368,7 +368,7 @@ Finally, to see the “answer,” add the following in the HTML:
 
 Now, you’re ready to detect whether visitors are using Incognito mode or not.
 
-Let’s test this on different major browsers. Also, you can test using the live version deployed [here](https://fingerprintjs.com/demo/).
+Let’s test this on different major browsers. Also, you can test using the live version deployed [here](/demo/).
 
 ### Testing on Chrome
 
@@ -449,4 +449,4 @@ Not only is FingerprintJS easy to integrate, but you can use it in different way
 
 In recent years, browsers are making it harder to detect Incognito mode, making it a perpetual task to ensure your website’s detection methods are up to date and can still detect a visitor’s identity. It will only continue to become harder to find a method that accurately detects the visitor. 
 
-[FingerprintJS](https://fingerprintjs.com/) is the optimal solution to keep businesses safe from visitors that take advantage of Incognito mode to access limited content.
+[FingerprintJS](/) is the optimal solution to keep businesses safe from visitors that take advantage of Incognito mode to access limited content.

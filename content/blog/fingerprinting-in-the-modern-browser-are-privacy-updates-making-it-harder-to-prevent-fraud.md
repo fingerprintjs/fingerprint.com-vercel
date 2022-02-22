@@ -38,7 +38,7 @@ There is another way to identify users without intrusive cookies. In this articl
 
 ## How Browser Fingerprinting Works
 
-[Browser fingerprinting](https://fingerprintjs.com/blog/what-is-browser-fingerprinting/) can be used to uniquely identify users and their associate sessions regardless of anonymizing tactics like incognito browsing, VPNs, and cookie blockers. Unlike third-party cookies, which can be cleared or blocked by the browser, your browser fingerprint cannot be altered.
+[Browser fingerprinting](/blog/what-is-browser-fingerprinting/) can be used to uniquely identify users and their associate sessions regardless of anonymizing tactics like incognito browsing, VPNs, and cookie blockers. Unlike third-party cookies, which can be cleared or blocked by the browser, your browser fingerprint cannot be altered.
 
 Fingerprinting can be used to identify visitors with a pattern of fraudulent behavior and then target only these visitors for additional security checks. This means you won't slow down legitimate users who want to access your site, but you will be able to identify those who are trying to brute force access or circumvent your security measures.
 
@@ -58,7 +58,7 @@ Fingerprinting takes in data from the browser to help build a unique profile for
 * Screen size and resolution
 * Tech specs (CPU, GPU, hard disk, etc.)
 
-This method is surprisingly accurate when done well. **[FingerprintJS](https://fingerprintjs.com/) is 99.5% accurate** at identifying users and assigning them a unique visitorID. Using this ID, you can associate patterns of fraud with specific visitors and block them as needed.
+This method is surprisingly accurate when done well. **[FingerprintJS](/) is 99.5% accurate** at identifying users and assigning them a unique visitorID. Using this ID, you can associate patterns of fraud with specific visitors and block them as needed.
 
 ## Privacy in the Modern Browser
 
@@ -138,6 +138,6 @@ Despite the resistance to fingerprinting in some circles, it’s a legitimate an
 
 For example, Firefox [just released](https://www.makeuseof.com/latest-firefox-88-update-elevates-online-privacy/) an update that prevents sites from reading other open windows' names. If you were maintaining your own fingerprinting software that used open windows as part of your identifying data, you have to decide how to compensate for this change, or your fingerprint will get obsolete quickly.
 
-This is where tools like [FingerprintJS](https://fingerprintjs.com/) come in. As experts in the fingerprinting space, they provide developers with 99.5% accurate browser fingerprinting and offer a free, open-source library as well as paid services. [FingerprintJS](https://fingerprintjs.com/) doesn’t rely on outdated third-party tracking mechanisms, and it helps you prevent account takeovers, password sharing, and fake accounts.
+This is where tools like [FingerprintJS](/) come in. As experts in the fingerprinting space, they provide developers with 99.5% accurate browser fingerprinting and offer a free, open-source library as well as paid services. [FingerprintJS](/) doesn’t rely on outdated third-party tracking mechanisms, and it helps you prevent account takeovers, password sharing, and fake accounts.
 
 Modern browsers are doing a good job of improving privacy protections, but this trend comes with a cost to web application owners. Fortunately, fingerprinting is still an accurate and low-cost way to prevent fraud even now. Just don't roll out your own.

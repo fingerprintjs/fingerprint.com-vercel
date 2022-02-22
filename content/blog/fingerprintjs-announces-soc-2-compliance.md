@@ -63,7 +63,7 @@ SOC 2 compliance is only one of many steps we plan to take to ensure best-in-cla
 ## Get in touch
 
 * Current customer with questions? Reach out to our [support team.](mailto:support@fingerprintjs.com) 
-* Thinking about working with us? [Contact sales](https://fingerprintjs.com/contact-sales/) and let us know you’re interested in seeing our SOC 2 report.
+* Thinking about working with us? [Contact sales](/contact-sales/) and let us know you’re interested in seeing our SOC 2 report.
 * Want to read more about our privacy and security policies? See our full privacy policy in our documentation.
 
 <i>Please note that we can only provide our SOC 2 report for use in evaluating FingerprintJS Pro, our paid offering. Our open source library is not SOC 2 compliant and its users are not permitted to access our SOC 2 report.</i>

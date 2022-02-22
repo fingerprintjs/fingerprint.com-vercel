@@ -33,7 +33,7 @@ customCTA:
 ---
 While having user-generated content is a great way to add interactivity and community to your website, it unfortunately leaves you open to abuse from malicious users. Nudity, harassment, spam, advertising, or even malware and viruses are just some of the unwanted content you may have to deal with. Sometimes, measures like content moderation and warnings can help keep your users in line. But in many cases, these offenders are aggressive and cunning with their approach, and you’ll have to take the extreme step of permanently banning them.
 
-In order to permanently ban a user, you’ll need to make sure they have a unique identifier. In this article, we’ll compare six methods through which you can block specific users from accessing your website content via various unique identifiers — including [FingerprintJS](https://fingerprintjs.com/), an easy solution for comprehensive user identification. 
+In order to permanently ban a user, you’ll need to make sure they have a unique identifier. In this article, we’ll compare six methods through which you can block specific users from accessing your website content via various unique identifiers — including [FingerprintJS](/), an easy solution for comprehensive user identification. 
 
 ## 1. IP Address Ban
 
@@ -121,7 +121,7 @@ The stealth mode method is very effective and stalls problematic users for a lon
 
 ![FingerprintJS](/img/uploads/ciceyyz.png "FingerprintJS")
 
-[FingerprintJS](https://fingerprintjs.com/) is a browser fingerprinting API as a service platform that can be used to uniquely identify users.
+[FingerprintJS](/) is a browser fingerprinting API as a service platform that can be used to uniquely identify users.
 
 Browser fingerprinting is a tracking method that uses JavaScript scripts to collect information that can identify a user. These scripts run in the background, aggregating unique information about the user’s device and browser, such as:
 
@@ -171,10 +171,10 @@ import FingerprintJS from '@fingerprintjs/fingerprintjs';
 
 The script above should preferably be included in the root folder of all the JS files like `index.js`.
 
-When you add a user’s unique visitor ID to a ban list with FingerprintJS, it’s difficult for them to circumvent it unless they frequently switch devices. [FingerprintJS](https://fingerprintjs.com/) provides an open-source and paid solution for fingerprinting your users. Their service has 99.5% accuracy, and you can try it without usage limits for 10 days. 
+When you add a user’s unique visitor ID to a ban list with FingerprintJS, it’s difficult for them to circumvent it unless they frequently switch devices. [FingerprintJS](/) provides an open-source and paid solution for fingerprinting your users. Their service has 99.5% accuracy, and you can try it without usage limits for 10 days. 
 
 ## Conclusion
 
 There will always be problematic users. To be able to create civil and safer online communities for everyone, such users need to be banned. 
 
-There are many common methods for banning users, but ultimately they all have shortcomings and can be circumvented by persistent actors. To truly permanently ban a malicious actor, consider using a robust user identification solution like [FingerprintJS](https://fingerprintjs.com/).
+There are many common methods for banning users, but ultimately they all have shortcomings and can be circumvented by persistent actors. To truly permanently ban a malicious actor, consider using a robust user identification solution like [FingerprintJS](/).

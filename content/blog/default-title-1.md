@@ -27,11 +27,11 @@ customCTA:
 ---
 <i>Note: This is a guest post by Josip Miskovic, a full-stack <a href="https://josipmisko.com/" target="_blank" rel="noopener">software developer</a> who specializes in ecommerce. Throughout his career, he helped prevent fraud for ecommerce stores with more than 10,000 daily customers.</i>
 
-Every year, businesses lose billions of dollars to refund fraud. This type of fraud occurs when criminals use stolen credit card information to make fraudulent purchases and then request refunds for those items. 
+Every year, businesses lose billions of dollars to refund fraud. This type of fraud occurs when criminals use stolen credit card information to make fraudulent purchases and then request refunds for those items. 
 
 Fraudulent refund requests can be a major headache for businesses. Not only do they cost businesses money, but they also take up time and resources that could be better spent elsewhere.
 
-The good news is that there are steps businesses can take to identify and stop refund fraud. In this article, we will discuss some of the most common methods used by criminals to commit refund fraud and outline how you can [protect your business against chargebacks](https://fingerprintjs.com/blog/cnp-fraud-prevention-to-protect-chargebacks/).
+The good news is that there are steps businesses can take to identify and stop refund fraud. In this article, we will discuss some of the most common methods used by criminals to commit refund fraud and outline how you can [protect your business against chargebacks](/blog/cnp-fraud-prevention-to-protect-chargebacks/).
 
 ## What is refund fraud?
 
@@ -54,7 +54,7 @@ The cost of return fraud is $24 billion annually, according to Forter. They also
 
 Professional refunder is a term used to describe scammers who make a living by scamming merchants out of refund money.
 
-They often operate in groups and will request refunds on many orders -- knowing that only a few will be approved. 
+They often operate in groups and will request refunds on many orders -- knowing that only a few will be approved. 
 
 Once they find an ecommerce store that's prone to refund fraud, they will keep hitting that store with refund requests until the merchant catches on and stops issuing refunds.
 
@@ -64,15 +64,15 @@ They even create step-by-step documents on how to scam a refund from merchants. 
 
 The good thing about scammers working in groups is that it makes them easier to spot.
 
-Patterns make it easier for machine learning algorithms to detect refund requests that are likely fraudulent. So having a device [fingerprinting system](https://fingerprintjs.com/products/browser-fingerprinting/) in place will help you automatically detect malicious actors on your ecommerce website.
+Patterns make it easier for machine learning algorithms to detect refund requests that are likely fraudulent. So having a device [fingerprinting system](/products/browser-fingerprinting/) in place will help you automatically detect malicious actors on your ecommerce website.
 
 ![Screenshot of FingerprintJS](/img/uploads/screenshot-of-fpjs.png "Screenshot of FingerprintJS")
 
 ## Fake tracking ID (FTID)
 
-Fake tracking ID (FTID) is a term used to describe a refund scam where the scammers fakes the status of the return tracking number. 
+Fake tracking ID (FTID) is a term used to describe a refund scam where the scammers fakes the status of the return tracking number. 
 
-They usually stick the shipping label to an envelope which they ship back as a return. So the tracking number shows it was sent, but they actually keep the item and get a refund. 
+They usually stick the shipping label to an envelope which they ship back as a return. So the tracking number shows it was sent, but they actually keep the item and get a refund. 
 
 ## Wardrobing
 
@@ -176,7 +176,7 @@ Too many restrictions and policies on refunds can also lead to honest customers 
 
 There are many types of refund fraud that can occur in ecommerce. It's important for merchants to be aware of these scams and take steps to protect themselves and their customers' personal information. Losing money to refund fraud can be very costly for businesses and individuals, so it's important to take steps to protect yourself from becoming a victim. Follow these tips to help prevent refund fraud in your ecommerce business:
 
-* Use [browser fingerprinting](https://fingerprintjs.com/) to detect refund fraud
+* Use [browser fingerprinting](/) to detect refund fraud
 * Inspect returned items for any discrepancies
 * Use purchase data and order history to detect receipt fraud
 * Monitor social media for complaints or negative

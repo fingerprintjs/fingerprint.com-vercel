@@ -23,7 +23,7 @@ authors:
 ---
 Did you know that you can identify web browsers without using cookies or asking for permissions?\
 \
-This is known as [browser fingerprinting ](https://fingerprintjs.com/blog/browser-fingerprinting-techniques/)and it works by reading browser attributes and combining them together into a single identifier. This identifier is stateless and works well in normal and incognito modes.
+This is known as [browser fingerprinting ](/blog/browser-fingerprinting-techniques/)and it works by reading browser attributes and combining them together into a single identifier. This identifier is stateless and works well in normal and incognito modes.
 
 ![Graphic of browser fingerprinting](/img/uploads/audio-fp-browser-fingerprinting-image.png "Graphic of browser fingerprinting")
 

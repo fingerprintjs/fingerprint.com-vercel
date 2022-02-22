@@ -58,7 +58,7 @@ Revenue losses – Card testing fraud can lead to chargebacks. For every complet
 Blacklisted by payment providers – If your website falls prey to card testing, you might become blacklisted from payment providers. Your business will be associated with a large number of declines which could damage your reputation with card networks and issuers.
 Disrupt legitimate transactions – This deceptive practice may spike your website traffic which can affect legitimate activity. And even after the card testing fraud stops, card issuers might see all your transactions as risky, leading to a higher decline rate for legitimate payments.  
 
-When companies struggle with card testing, they have a tough decision between keeping their transaction process simpler and facing those adverse effects listed above. You could require additional information for purchases but could end up losing more paying customers due to increased friction in the payment process. [Payment fraud prevention](https://fingerprintjs.com/payment-fraud/) is a delicate balance between offering comfort and convenience and keeping customers safe.
+When companies struggle with card testing, they have a tough decision between keeping their transaction process simpler and facing those adverse effects listed above. You could require additional information for purchases but could end up losing more paying customers due to increased friction in the payment process. [Payment fraud prevention](/payment-fraud/) is a delicate balance between offering comfort and convenience and keeping customers safe.
 
 ## Methods to Reduce Card Testing
 

@@ -33,7 +33,7 @@ While respecting your users’ privacy is the right thing to do, you cannot turn
 
 ## What is Canvas Fingerprinting?
 
-Browsers have a lot of information that might seem trivial but can be used to create a fingerprint to identify people with a high degree of accuracy. This is called a [browser fingerprint](https://fingerprintjs.com/blog/browser-fingerprinting-techniques/), and statistics show that if you put this information together, your browser fingerprint will only match [1 in 286,777](https://pixelprivacy.com/resources/browser-fingerprinting/) others.
+Browsers have a lot of information that might seem trivial but can be used to create a fingerprint to identify people with a high degree of accuracy. This is called a [browser fingerprint](/blog/browser-fingerprinting-techniques/), and statistics show that if you put this information together, your browser fingerprint will only match [1 in 286,777](https://pixelprivacy.com/resources/browser-fingerprinting/) others.
 
 Canvas fingerprinting is a specific kind of browser fingerprinting. In HTML5, drawing operations can render differently depending on your computer’s software and hardware characteristics. So, you can run JavaScript code that can render an image and use it to make a unique fingerprint.
 
@@ -83,7 +83,7 @@ Drawing shapes in HTML with different fill styles can also produce differences, 
 
 For further variety, you can use other characters, like those from Asian fonts, or accented European vowels. That way, you’ll differentiate between systems that can and can’t show them and expose differences in font renderers.
 
-Making the code generate a unique hash [is a challenge](https://stackoverflow.com/questions/25508970/canvas-fingerprinting-on-chrome), and it’s not easy to confirm how well your code does this. That’s why using an established library like [FingerprintJS](https://fingerprintjs.com/) can make generating canvas fingerprints much easier.
+Making the code generate a unique hash [is a challenge](https://stackoverflow.com/questions/25508970/canvas-fingerprinting-on-chrome), and it’s not easy to confirm how well your code does this. That’s why using an established library like [FingerprintJS](/) can make generating canvas fingerprints much easier.
 
 ## Canvas Fingerprinting Examples
 
@@ -157,4 +157,4 @@ Canvas fingerprinting is a useful tool for understanding visitors and keeping yo
 
 With the right mix of ingenuity (and JavaScript), you can identify people and monitor their behavior across sessions, flagging suspicious activity to help your team react to threats faster. You can also maintain consistency for returning visitors, serving them content most relevant to them and increasing engagement along the way.
 
-Instead of doing the hard work yourself, [FingerprintJS](https://fingerprintjs.com/) provides an open-source and paid solution for fingerprinting your users. Their service has 99.5% accuracy, and you can try it without usage limits for 10 days.
+Instead of doing the hard work yourself, [FingerprintJS](/) provides an open-source and paid solution for fingerprinting your users. Their service has 99.5% accuracy, and you can try it without usage limits for 10 days.

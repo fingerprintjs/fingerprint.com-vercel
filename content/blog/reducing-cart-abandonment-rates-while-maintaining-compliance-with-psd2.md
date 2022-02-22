@@ -73,6 +73,6 @@ FingerprintJS may be able to provide the most value when used with the 3D Secure
 
 Moreover, integrating the FingerprintJS visitor identifier before the payment and 3D Secure flow adds deeper contextual security layers. For example, the visitor identifier can be used to determine if a history of valid or fraudulent transactions exists, which in turn can help decide whether to use 3D Secure’s Exemption flags or SCA.
 
-In today's cyber threat landscape, security and user privacy should be front and center. That said, PSD2’s more stringent requirements invariably lead to a high risk of cart abandonment and subsequent loss of revenue—unfortunate outcomes faced by all online merchants. [FingerprintJS Pro](https://fingerprintjs.com/) helps website operators mitigate this risk by providing unique visitor identifiers for frictionless, accurate customer verification. 
+In today's cyber threat landscape, security and user privacy should be front and center. That said, PSD2’s more stringent requirements invariably lead to a high risk of cart abandonment and subsequent loss of revenue—unfortunate outcomes faced by all online merchants. [FingerprintJS Pro](/) helps website operators mitigate this risk by providing unique visitor identifiers for frictionless, accurate customer verification. 
 
-Want to learn more? **[Contact our sales team](https://fingerprintjs.com/contact-sales/)** and let them know you’re interested in using FingerprintJS with PSD2 and/or 3D Secure.
+Want to learn more? **[Contact our sales team](/contact-sales/)** and let them know you’re interested in using FingerprintJS with PSD2 and/or 3D Secure.

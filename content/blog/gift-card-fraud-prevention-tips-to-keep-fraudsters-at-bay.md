@@ -29,7 +29,7 @@ The number of gift cards being sold is on the rise, with [U.S. online retailers 
 
 Gift card fraud prevention is hugely important for retailers wanting to keep the convenience and flexibility that gift cards allow, without having to suffer through the chargebacks that happen when fraudsters exploit your systems. 
 
-It may seem like a small part of [ecommerce fraud protection](https://fingerprintjs.com/ecommerce/), but implementing gift card fraud detection systems is a significant step towards guarding against fraud.
+It may seem like a small part of [ecommerce fraud protection](/ecommerce/), but implementing gift card fraud detection systems is a significant step towards guarding against fraud.
 
 ## What is a gift card fraud?
 
@@ -67,7 +67,7 @@ Fraudsters may actively look to exploit your enthusiasm for keeping their busine
 
 ### 3. Buying a gift card by taking over an account
 
-This is a form of [account takeover fraud](https://fingerprintjs.com/account-takeover/) where a fraudster gains access to the victim’s bank or online shopping account and uses it to purchase gift cards.
+This is a form of [account takeover fraud](/account-takeover/) where a fraudster gains access to the victim’s bank or online shopping account and uses it to purchase gift cards.
 
 It’s another example of fraudsters capitalizing on a limited window of time to purchase gift cards that can be used later, and yet another instance that’s made easier when retailers don’t keep track of gift card information.
 

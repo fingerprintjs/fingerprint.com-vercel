@@ -46,7 +46,7 @@ cardSection:
     - title: Friendly Fraud
       content: Sometimes a real user will dispute payments even though they received a
         product or service. Flag these users easily to [prevent future
-        chargebacks](https://fingerprintjs.com/blog/chargeback-prevention-tips-for-ecommerce-merchants/).
+        chargebacks](/blog/chargeback-prevention-tips-for-ecommerce-merchants/).
       icon: /img/uploads/account_fraud.png
       iconAlt: Friendly fraud prevention
       iconTitle: Friendly fraud prevention

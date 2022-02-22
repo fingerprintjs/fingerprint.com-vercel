@@ -42,7 +42,7 @@ As you probably know, there are various measures a reader can take to circumvent
 * Hiding the user’s IP address
 * Manually deleting the paywall source code
 
-A significant number of websites depend on third-party tools and libraries for their paywall implementations as opposed to developing in-house solutions. Vendors like [FingerprintJS](https://fingerprintjs.com/), for example, offer "paywall-as-a-service" products.
+A significant number of websites depend on third-party tools and libraries for their paywall implementations as opposed to developing in-house solutions. Vendors like [FingerprintJS](/), for example, offer "paywall-as-a-service" products.
 
 ## Creating a Sample Site with a Soft Paywall
 
@@ -324,4 +324,4 @@ When the server is running, you can access your news website at `http://localhos
 
 Apart from restriction configurations, the example in this tutorial demonstrates how the usage of third-party paywall libraries typically requires minimal effort from a site integration point of view. The hard part is for companies to strategize *how* to restrict access to their content. These third-party libraries have dedicated teams to ensure that their services cater to various enforcement mechanisms, user identification, policies, and insights.
 
-JavaScript-based websites are continuing to increase in popularity, and this scenario, simple as it may be, lays enough groundwork for other Node-based solutions to build from. If you’re looking to implement a paywall, fingerprinting services like [FingerprintJS](https://fingerprintjs.com/) are a great option to help publications restrict content access and generate revenue.
+JavaScript-based websites are continuing to increase in popularity, and this scenario, simple as it may be, lays enough groundwork for other Node-based solutions to build from. If you’re looking to implement a paywall, fingerprinting services like [FingerprintJS](/) are a great option to help publications restrict content access and generate revenue.

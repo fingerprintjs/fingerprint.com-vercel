@@ -196,7 +196,7 @@ But before we wrap up today, for folks who are listening who want to get access 
 
 #### DAN:
 
-Yeah, sure. So, we're a completely open company in terms of documentation and ability to use our service. So the best thing to do would be to go to [fingerprintjs.com](https://fingerprintjs.com). Start on the homepage, take a look at different use cases on there, read about how our technology can be used, and then read through our documentation. And you'll basically be able to see everything about how our technology works, how to use it, how to implement it. That's basically the approach that we follow.
+Yeah, sure. So, we're a completely open company in terms of documentation and ability to use our service. So the best thing to do would be to go to [fingerprintjs.com](). Start on the homepage, take a look at different use cases on there, read about how our technology can be used, and then read through our documentation. And you'll basically be able to see everything about how our technology works, how to use it, how to implement it. That's basically the approach that we follow.
 
 #### CAMERON:
 

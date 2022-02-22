@@ -4,7 +4,6 @@ $bigMargin: 6rem;
 
 .root {
   span,
-  ul,
   ol,
   blockquote,
   table,
@@ -18,9 +17,19 @@ $bigMargin: 6rem;
       margin-bottom: $bigMargin;
     }
   }
-
+  ul,
   p {
     margin-bottom: $smallMargin;
+  }
+
+  div + p,
+  ul + p,
+  p + ul {
+    margin-top: $bigMargin;
+  }
+
+  ul li:first-child {
+    margin-top: $smallMargin;
   }
 
   @for $index from 1 through 6 {
@@ -31,7 +40,7 @@ $bigMargin: 6rem;
       margin-bottom: $smallMargin;
       margin-top: $smallMargin;
     }
-    p + h#{$index} {
+    :is(p, ul, div) + h#{$index} {
       margin-top: $bigMargin;
     }
   }
@@ -258,5 +267,11 @@ $bigMargin: 6rem;
   :not(pre) > code[class*='language-'],
   pre[class*='language-'] {
     background: #282a36;
+  }
+
+  @for $index from 1 through 6 {
+    h#{$index} {
+      @include scrollSection;
+    }
   }
 }

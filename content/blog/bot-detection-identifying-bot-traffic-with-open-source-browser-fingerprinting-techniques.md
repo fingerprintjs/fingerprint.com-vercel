@@ -32,9 +32,9 @@ Unfortunately, **bad bot detection** is really hard because these malicious bots
 
 > "Sophisticated bots look and act like humans when they visit websites, click on ads, fill out forms, take over accounts, and commit payment fraud...causing billions of dollars in losses to companies and impacting the customer experience." - [Dan Lowden](https://www.techradar.com/news/sophisticated-bots-pose-a-massive-threat), CMO at White Ops
 
-On top of that, [browsers have added privacy measures](https://fingerprintjs.com/blog/browser-fingerprinting-privacy/) that make it harder for programmers to consistently identify real traffic from bot traffic. Fortunately, there are some proven methods to stand up to bots in your web application.
+On top of that, [browsers have added privacy measures](/blog/browser-fingerprinting-privacy/) that make it harder for programmers to consistently identify real traffic from bot traffic. Fortunately, there are some proven methods to stand up to bots in your web application.
 
-In this article, I'll introduce a few common bot detection techniques, and I'll show you how to implement bot detection and threat mitigation using [FingerprintJS](https://fingerprintjs.com/), one of the most robust open-source fingerprinting libraries available.
+In this article, I'll introduce a few common bot detection techniques, and I'll show you how to implement bot detection and threat mitigation using [FingerprintJS](/), one of the most robust open-source fingerprinting libraries available.
 
 ## Bot Detection Techniques
 
@@ -50,9 +50,9 @@ Bots are getting [much more sophisticated](https://datadome.co/bot-management-pr
 
 ## Detecting Bot Traffic with FingerprintJS
 
-While it's worth learning about all the above bot detection methods (and probably others), I will focus on fingerprinting for the remainder of this article. [Browser fingerprinting](https://fingerprintjs.com/blog/what-is-browser-fingerprinting/) uses hardware details, browser extensions, WebGL behavior, [and many other factors](https://fingerprintjs.com/blog/browser-fingerprinting-techniques/) to generate a unique visitor ID for each user on your site.
+While it's worth learning about all the above bot detection methods (and probably others), I will focus on fingerprinting for the remainder of this article. [Browser fingerprinting](/blog/what-is-browser-fingerprinting/) uses hardware details, browser extensions, WebGL behavior, [and many other factors](/blog/browser-fingerprinting-techniques/) to generate a unique visitor ID for each user on your site.
 
-When a user signs up or confirms their email address, you can use a library like  [FingerprintJS](https://fingerprintjs.com/) to create and associate this visitor ID with the user. When someone comes back to your site and attempts to log in, you can block the attempt or force them to perform a second authentication factor if their fingerprint doesn't match the one known for this user.
+When a user signs up or confirms their email address, you can use a library like  [FingerprintJS](/) to create and associate this visitor ID with the user. When someone comes back to your site and attempts to log in, you can block the attempt or force them to perform a second authentication factor if their fingerprint doesn't match the one known for this user.
 
 In this article, I'll show you how to use FingerprintJS in a [ReactJS](https://reactjs.org/) web application to fingerprint your users. Then, I'll show you how to create a script that detects likely bots using a [custom React hook](https://reactjs.org/docs/hooks-custom.html). Using this detection method, you can force bots to perform extra verification like captchas or two-factor authentication.
 
@@ -195,6 +195,6 @@ In this way, you can use a browser fingerprint to help you identify and mitigate
 
 ## Bot Detection is a Never-Ending Challenge
 
-As attackers improve the techniques they use to create more sophisticated bots, software engineers have to continue updating their software to keep up. While it's possible to build some of this in-house, leaning on proven, thoroughly-tested libraries like [FingerprintJS](https://fingerprintjs.com/)  will save you a lot of time.
+As attackers improve the techniques they use to create more sophisticated bots, software engineers have to continue updating their software to keep up. While it's possible to build some of this in-house, leaning on proven, thoroughly-tested libraries like [FingerprintJS](/)  will save you a lot of time.
 
-In addition to the free, open-source library, [FingerprintJS has a pro version](https://fingerprintjs.com/) that includes [bot detection](https://dev.fingerprintjs.com/v2.0.0/docs/bot-detection), advanced browser fingerprinting, and anonymous user identification. This makes your job as an application developer even easier because you can lean on FingerprintJS's expertise rather than keeping up with the changing bot detection landscape yourself.
+In addition to the free, open-source library, [FingerprintJS has a pro version](/) that includes [bot detection](https://dev.fingerprintjs.com/v2.0.0/docs/bot-detection), advanced browser fingerprinting, and anonymous user identification. This makes your job as an application developer even easier because you can lean on FingerprintJS's expertise rather than keeping up with the changing bot detection landscape yourself.

@@ -48,7 +48,7 @@ Bot attack prevention should be a shared concern amongst all website owners, whe
 
 ### FINGERPRINTJS PRO AND BOT DETECTION
 
-This tutorial uses [FingerprintJS Pro](https://fingerprintjs.com/) to prevent bad bots from defeating an account signup form’s email verification system. As the most advanced browser fingerprinting solution on the market, FingerprintJS Pro can identify unique website visitors with an accuracy of 99.5%.
+This tutorial uses [FingerprintJS Pro](/) to prevent bad bots from defeating an account signup form’s email verification system. As the most advanced browser fingerprinting solution on the market, FingerprintJS Pro can identify unique website visitors with an accuracy of 99.5%.
 
 It’s worth noting that while FingerprintJS Pro is highly effective at detecting fraudulent activity and abuse patterns typical of bots (e.g., repeat visits and multiple form submissions), it doesn’t explicitly differentiate between bot and human visitors. If you want to flag visitors based on their likelihood of being a bot, we have built an open source bot detection library to recognize bots through the detection of automation tools, browser spoofing, and virtual machines. This free library can be used in conjunction with FingerprintJS Pro to both detect bots and generate a persistent visitor identifier.
 

@@ -25,7 +25,7 @@ customCTA:
   openCtaNewTab: false
 isPublished: true
 ---
-Microsoft’s cloud services see over 300 million fraudulent sign-in attempts every day, so when it recommends two-factor authentication (2FA) to [prevent account takeovers,](https://fingerprintjs.com/account-takeover/) internet users are well advised to take heed. But don’t just take its word for it — Google claims that <a href="https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html" target="_blank" rel="noopener">100% of automated bots</a> can be blocked with 2FA, not to mention 99% of bulk phishing attacks and 66% of targeted attacks.
+Microsoft’s cloud services see over 300 million fraudulent sign-in attempts every day, so when it recommends two-factor authentication (2FA) to [prevent account takeovers,](/account-takeover/) internet users are well advised to take heed. But don’t just take its word for it — Google claims that <a href="https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html" target="_blank" rel="noopener">100% of automated bots</a> can be blocked with 2FA, not to mention 99% of bulk phishing attacks and 66% of targeted attacks.
 
 In this article, we’ll find out why the world’s largest software company and the internet's leading search engine both claim that 2FA is the best defense against account takeovers.
 
@@ -80,4 +80,4 @@ The following password manager apps also have 2FA capabilities for integrating w
 
 ## Conclusion
 
-As the efficacy of usernames and passwords continues to wane, 2FA is likely to become the de facto authentication standard for bolstering user accounts against fraudster or bot-initiated account takeover attacks. In terms of the latter, cyber criminals commonly rely on automated attack bots to carry out thousands of login attempts at a time. This makes it crucial to implement 2FA in conjunction with solutions like [FingerprintJS Pro](https://fingerprintjs.com/account-takeover/) to uniquely identify visitors and detect patterns of fraudulent behavior. Give it a [test drive](https://dashboard.fingerprintjs.com/signup) today, it’s free with unlimited API access for 10 days.
+As the efficacy of usernames and passwords continues to wane, 2FA is likely to become the de facto authentication standard for bolstering user accounts against fraudster or bot-initiated account takeover attacks. In terms of the latter, cyber criminals commonly rely on automated attack bots to carry out thousands of login attempts at a time. This makes it crucial to implement 2FA in conjunction with solutions like [FingerprintJS Pro](/account-takeover/) to uniquely identify visitors and detect patterns of fraudulent behavior. Give it a [test drive](https://dashboard.fingerprintjs.com/signup) today, it’s free with unlimited API access for 10 days.

@@ -27,7 +27,7 @@ isPublished: true
 ---
 The risk of fraud for online businesses is higher than it’s ever been in history. [Ecommerce fraud](https://www.chargebackgurus.com/blog/the-5-types-of-e-commerce-fraud) topped $12 million in 2020, with [89% of businesses](https://offers.worldpayglobal.com/global-payment-risk.html) losing money to payment fraud that year. And with cyber criminals using increasingly sophisticated and effective methods, website operators must maintain a vigilant stance in order to protect themselves and their customers.
 
-Given the soaring number of cases, [merchant fraud protection](https://fingerprintjs.com/ecommerce/) measures have become a standard part of doing business online. This includes the implementation of effective measures for ecommerce fraud detection and protection. 
+Given the soaring number of cases, [merchant fraud protection](/ecommerce/) measures have become a standard part of doing business online. This includes the implementation of effective measures for ecommerce fraud detection and protection. 
 
 ## Why should online merchants  implement ecommerce fraud protection measures?
 
@@ -101,7 +101,7 @@ Online merchants (and companies at-large) often make the mistake of taking a rea
 
 #### Enforce CVV checks for all transactions
 
-The card verification value (CVV) consists of a three or four digit security code on the back of physical credit/debit cards. Customers with their physical cards on-hand can easily type in the CVV numbers upon request. On the other hand, fraudsters are immediately tripped up as they usually only possess details from the card's front. However, requiring CVV for all transactions does increase friction for valid returning customers. In these cases, [browser fingerprinting](https://fingerprintjs.com/blog/browser-fingerprinting-techniques/) solutions like FingerprintJS can identify new or suspicious visitors — in the case of return customers, the CVV check can then be disabled for trusted users.
+The card verification value (CVV) consists of a three or four digit security code on the back of physical credit/debit cards. Customers with their physical cards on-hand can easily type in the CVV numbers upon request. On the other hand, fraudsters are immediately tripped up as they usually only possess details from the card's front. However, requiring CVV for all transactions does increase friction for valid returning customers. In these cases, [browser fingerprinting](/blog/browser-fingerprinting-techniques/) solutions like FingerprintJS can identify new or suspicious visitors — in the case of return customers, the CVV check can then be disabled for trusted users.
 
 #### Install/verify HTTPS
 
@@ -109,8 +109,8 @@ As its name implies, [Hypertext Transfer Protocol Secure](https://www.bigcommerc
 
 #### **Use fraud detection solutions to protect your online store**
 
-These days, online merchants have a wide range of solutions at their disposal for detecting suspicious activity and apprehending malicious actors. For example, [FingerprintJS](https://fingerprintjs.com/ecommerce/) helps identify suspicious online activity by flagging visitors with multiple accounts or a history of fraudulent transactions.
+These days, online merchants have a wide range of solutions at their disposal for detecting suspicious activity and apprehending malicious actors. For example, [FingerprintJS](/ecommerce/) helps identify suspicious online activity by flagging visitors with multiple accounts or a history of fraudulent transactions.
 
 ## Conclusion
 
-In short, without the proper merchant fraud protection measures in place, online businesses are highly vulnerable to the continuously evolving tactics of cyber criminals. To learn more about how FingerprintJS can help you mitigate the risk of [ecommerce fraud](https://fingerprintjs.com/ecommerce/) and [account takeovers](https://fingerprintjs.com/account-takeover/), contact [one of our experts](https://fingerprintjs.com/contact-sales/) or [test drive our solution](https://dashboard.fingerprintjs.com/signup) — it’s free for 10 days with unlimited API access.
+In short, without the proper merchant fraud protection measures in place, online businesses are highly vulnerable to the continuously evolving tactics of cyber criminals. To learn more about how FingerprintJS can help you mitigate the risk of [ecommerce fraud](/ecommerce/) and [account takeovers](/account-takeover/), contact [one of our experts](/contact-sales/) or [test drive our solution](https://dashboard.fingerprintjs.com/signup) — it’s free for 10 days with unlimited API access.

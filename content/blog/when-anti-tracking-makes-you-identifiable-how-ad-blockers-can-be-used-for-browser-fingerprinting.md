@@ -31,7 +31,7 @@ Ad blockers are an incredibly pervasive and useful piece of technology. Around 2
 
 Ad blockers leave a trace that can be harnessed by the websites you visit to identify you. By testing whether certain page elements are blocked, a site can find discrepancies in the filters used by your specific ad blocker(s). These discrepancies provide a source of entropy that when combined with other unique signals, can identify a specific user over multiple visits. This combining of browser signals to create a unique identifier is known as browser fingerprinting. 
 
-While browser fingerprinting is a proven-out method of visitor identification (you can read more about how it works in our [beginner’s guide](https://fingerprintjs.com/blog/what-is-browser-fingerprinting/)), how ad blockers can be used for fingerprinting is rarely discussed. As the developers of the largest open source browser fingerprinting library, we have only started including ad blocker signals as of April 2021, so this work is hot off the press from our team. We hope shining a light on this cutting edge technique will be useful to the open source community at large.
+While browser fingerprinting is a proven-out method of visitor identification (you can read more about how it works in our [beginner’s guide](/blog/what-is-browser-fingerprinting/)), how ad blockers can be used for fingerprinting is rarely discussed. As the developers of the largest open source browser fingerprinting library, we have only started including ad blocker signals as of April 2021, so this work is hot off the press from our team. We hope shining a light on this cutting edge technique will be useful to the open source community at large.
 
 ## What is an ad blocker
 
@@ -298,7 +298,7 @@ getActiveFilters(uniqueSelectorsOfFilters)
 
 Once you collect enough data, you can generate a visitor fingerprint.
 
-[Browser fingerprinting](https://fingerprintjs.com/blog/what-is-browser-fingerprinting/) is a technique that works by reading browser attributes and combining them together into a single identifier. This identifier is stateless and works well in normal and incognito modes.
+[Browser fingerprinting](/blog/what-is-browser-fingerprinting/) is a technique that works by reading browser attributes and combining them together into a single identifier. This identifier is stateless and works well in normal and incognito modes.
 
 There are dozens of ad blockers available. For example, AdBlock, uBlock Origin, AdGuard, 1Blocker X. These ad blockers use different sets of filters by default. Also users can customize ad blocking extensions by removing default filters and adding custom filters. This diversity gives entropy that can be used to generate fingerprints and identify visitors.
 
@@ -417,7 +417,7 @@ Ad blocker fingerprinting is one of the many signals our [open source library](h
 
 Ad blocker detection is a new signal and we’re still evaluating its properties.
 
-You can learn more about stability, uniqueness and accuracy in our [beginner’s guide to browser fingerprinting.](https://fingerprintjs.com/blog/what-is-browser-fingerprinting/)
+You can learn more about stability, uniqueness and accuracy in our [beginner’s guide to browser fingerprinting.](/blog/what-is-browser-fingerprinting/)
 
 ### Try Browser Fingerprinting for Yourself
 
@@ -425,7 +425,7 @@ Browser fingerprinting is a useful method of visitor identification for a variet
 
 You can try implementing browser fingerprinting yourself with our [open source library](https://github.com/fingerprintjs/fingerprintjs). FingerprintJS is the most popular browser fingerprinting library available, with over 14K GitHub stars.
 
-For higher identification accuracy, we also developed the [FingerprintJS Pro API](https://fingerprintjs.com/), which uses machine learning to combine browser fingerprinting with additional identification techniques. You can use FingerprintJS Pro for free with up to 20k API calls per month.
+For higher identification accuracy, we also developed the [FingerprintJS Pro API](/), which uses machine learning to combine browser fingerprinting with additional identification techniques. You can use FingerprintJS Pro for free with up to 20k API calls per month.
 
 ### Get in touch
 

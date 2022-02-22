@@ -6,10 +6,10 @@ metadata:
     identifier available. Learn why this matters when it comes to catching
     fraudsters and protecting your online business.
   url: https://fingerprintjs.com/blog/device-fingerprinting-accuracy
-  image: /img/uploads/why-accuracy-matters.png
+  image: /img/uploads/why-accuracy-matters-1-.png
   imageAlt: device fingerprinting accuracy
   imageTitle: device fingerprinting accuracy
-  socialImage: /img/uploads/why-accuracy-matters.png
+  socialImage: /img/uploads/why-accuracy-matters-1-.png
 featured: true
 publishDate: 2022-02-16T02:30:40.426Z
 title: Why is 99.5% accuracy important for preventing fraud?
@@ -21,21 +21,21 @@ tags:
 authors:
   - Savannah Copland
 heroImage:
-  image: /img/uploads/why-accuracy-matters.png
+  image: /img/uploads/why-accuracy-matters-1-.png
   imageAlt: device fingerprinting accuracy
   imageTitle: device fingerprinting accuracy
 customCTA:
   openCtaNewTab: false
 ---
-Device identification is an essential weapon in the fight against fraud. The majority of fraud is committed by a small percentage of users, often visiting a targeted website multiple times in order to commit fraud using different login credentials, credit cards and names. By accurately identifying devices even when the user is attempting to conceal their identity, you can better spot patterns of fraud and block fraudsters from taking advantage of your business.  
+Device identification is an essential weapon in the fight against fraud. The majority of fraud is committed by a small percentage of users, often visiting a targeted website multiple times in order to commit fraud using different login credentials, credit cards and names. By accurately identifying devices even when the user is attempting to conceal their identity, you can better spot patterns of fraud and block fraudsters from taking advantage of your business.  
 
 ## IP addresses and cookies no longer suffice
 
 Device identification has traditionally relied on IP addresses and cookies. For many years, these two mechanisms were sufficient, as IP addresses rarely changed, being statically assigned to individual devices or households. Cookies had no restrictions on cross-site tracking and identifier storage as there was no public awareness about privacy implications of doing so.
 
-Today the importance of IP addresses and cookies in preventing fraud have significantly diminished to the point of being useless. 
+Today the importance of IP addresses and cookies in preventing fraud have significantly diminished to the point of being useless. 
 
-* IP addresses change frequently and consumers routinely use VPNs to hide their IPs or use services like iCloud Private Relay, which replaces your public IP with one provided by Apple 
+* IP addresses change frequently and consumers routinely use VPNs to hide their IPs or use services like iCloud Private Relay, which replaces your public IP with one provided by Apple 
 * Most browsers today either disable 3rd party cookies or cap their lifetimes, making them impractical for storing identifying information
 
 ## A new age of identification
@@ -52,9 +52,9 @@ Why is such high accuracy important? See below how a sample size of 100K devices
 
 With a low accuracy alternative, your fraud system could misidentify nearly 90% of devices after 4 months. Repeat offenders appear as completely new visitors over time, allowing them to retarget your site for account takeover attempts, payment fraud schemes and more. It also makes it difficult to reduce friction for trusted customers, as they will need to be challenged more frequently to ensure fraudsters slipping through the cracks are caught.
 
-## Getting started 
+## Getting started 
 
-Find out how much fraud FingerprintJS Pro can prevent for your business by designing a trial with our expert team. [Contact us](https://fingerprintjs.com/contact-sales/) and get hands-on guidance for how to incorporate FingerprintJS Pro’s high accuracy identification into your fraud stack.
+Find out how much fraud FingerprintJS Pro can prevent for your business by designing a trial with our expert team. [Contact us](/contact-sales/) and get hands-on guidance for how to incorporate FingerprintJS Pro’s high accuracy identification into your fraud stack.
 
 <i><small>\[1] To learn more about the methodology used to define our 99.5% identification accuracy, read [our documentation](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy).</small></i>
 

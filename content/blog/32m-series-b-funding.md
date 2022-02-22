@@ -31,7 +31,7 @@ On behalf of the whole team at FingerprintJS, we are excited to announce that we
 
 ## Now more than ever is the time to try FingerprintJS Pro
 
-Over the past year we have made some [major updates to our product](https://fingerprintjs.com/blog/product-update-11-2021/), improving the onboarding experience, building out dashboard insights, and increasing identifier accuracy.
+Over the past year we have made some [major updates to our product](/blog/product-update-11-2021/), improving the onboarding experience, building out dashboard insights, and increasing identifier accuracy.
 
 We also have achieved some incredible milestones over the last year that have helped to make this recent round of funding possible, and cemented our ability to continue improving our offerings for years to come.
 
@@ -43,7 +43,7 @@ We crawled the Alexa top websites by traffic to see how many of them had our bro
 
 <br>
 
-Among these websites are some of the most recognizable names in banking, e-commerce, cryptocurrency, and media. We see FingerprintJS code on login pages, payment forms, registration pages, lead forms, and in some cases running on every page. 
+Among these websites are some of the most recognizable names in banking, e-commerce, cryptocurrency, and media. We see FingerprintJS code on login pages, payment forms, registration pages, lead forms, and in some cases running on every page. 
 
 ### 750% increase in trial signups over the last year since the launch of our ‘free forever’ plan
 
@@ -56,12 +56,12 @@ Our new trial process makes it especially easy for our open source users to try 
 
 ### SOC2 Compliance
 
-We achieved [SOC2 compliance](https://fingerprintjs.com/blog/soc-2-type-1/) this August, making it possible for us to provide enterprise customers with our Type 1 report. Even if your company does not require SOC2 from technology vendors, the report provides assurance of our commitment to best-in-class data security and privacy.
+We achieved [SOC2 compliance](/blog/soc-2-type-1/) this August, making it possible for us to provide enterprise customers with our Type 1 report. Even if your company does not require SOC2 from technology vendors, the report provides assurance of our commitment to best-in-class data security and privacy.
 
 ## Get In Touch
 
 If you have any questions about FingerprintJS, we would love to hear from you.
 
-* [Contact our team](https://fingerprintjs.com/contact-sales/)
+* [Contact our team](/contact-sales/)
 * [Sign up for a free Pro account](https://dashboard.fingerprintjs.com/signup)
 * [Join our Discord channel](https://discord.gg/ad6R2ttHVX) to discuss all things FingerprintJS, cybersecurity, and privacy

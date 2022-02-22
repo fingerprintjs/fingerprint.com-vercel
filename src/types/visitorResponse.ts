@@ -1,4 +1,4 @@
-import { ExtendedGetResult } from '@fingerprintjs/fingerprintjs-pro'
+import type { ExtendedGetResult } from '@fingerprintjs/fingerprintjs-pro'
 
 export interface VisitorResponse extends ExtendedGetResult {
   timestamp: number

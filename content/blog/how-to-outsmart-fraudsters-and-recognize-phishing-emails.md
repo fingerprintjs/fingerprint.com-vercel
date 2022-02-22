@@ -31,7 +31,7 @@ Phishing emails have become increasingly common and difficult to detect in recen
 
 By masquerading as a known authority figure, service provider, or other valid email source (e.g., the victim’s bank or employer), fraudsters can manipulate users to do their bidding: reveal username/passwords, share credit card information, or disclose other pieces of critical data. Some are easier to recognize than others, but in general phishing emails are continuing to evolve in sophistication as average internet users become savvier to common online threats.
 
-For this reason, implementing effective [account takeover prevention measures](https://fingerprintjs.com/account-takeover/) is crucial for mitigating the risk of phishing attacks and improving overall awareness around how to spot them.
+For this reason, implementing effective [account takeover prevention measures](/account-takeover/) is crucial for mitigating the risk of phishing attacks and improving overall awareness around how to spot them.
 
 ## What is the goal of phishing attacks against businesses?
 

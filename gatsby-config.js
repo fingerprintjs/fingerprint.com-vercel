@@ -114,6 +114,17 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: 'Table of Contents',
+              tight: true,
+              ordered: true,
+              fromHeading: 1,
+              toHeading: 2,
+              className: 'contentTable',
+            },
+          },
+          {
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
@@ -140,10 +151,26 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
+              classPrefix: 'language-',
               showLineNumbers: false,
               // If setting this to true, the parser won't handle and highlight inline
               // code used in markdown i.e. single backtick code like `this`.
               noInlineHighlight: true,
+            },
+          },
+
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false,
+              maintainCase: false,
+              removeAccents: true,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              rel: 'noopener noreferrer',
             },
           },
         ],

@@ -31,7 +31,7 @@ isPublished: true
 ---
 <i>Author’s Note: While coupon glittering typically refers to the exploitation of glitches associated with coupons used at brick-and-mortar stores, online retailers should take note of the techniques used by online glittering communities. Online fraudsters can similarly take advantage of loopholes in discount and promo codes offered, and share exploits within these online forums.
 
-FingerprintJS helps e-commerce sites prevent promo and coupon fraud by uniquely identifying each visitor to your website, making it easy to catch suspicious user behavior. [Learn more about how we protect e-commerce sites.](https://fingerprintjs.com/ecommerce/)</i>
+FingerprintJS helps e-commerce sites prevent promo and coupon fraud by uniquely identifying each visitor to your website, making it easy to catch suspicious user behavior. [Learn more about how we protect e-commerce sites.](/ecommerce/)</i>
 
 ## Introduction
 
@@ -39,7 +39,7 @@ Coupons are an effective revenue tool for retailers all over the world. By disco
 
 However, there is an uglier side to coupons, as they can be exploited. As customers have grown savvier in the way they use coupons, they have started to uncover illegitimate means of making money from them.
 
-Research has shown <a href="https://progressivegrocer.com/feds-uncover-31m-coupon-fraud-scheme" target="_blank" rel="noopener">coupon fraud costs retailers more than $100 million each year</a>. It’s a type of [payment fraud](https://fingerprintjs.com/payment-fraud/) that some business owners may not know much about, as it can be hard to catch. Coupon glittering is just one of many methods fraudsters can employ to exploit coupons offered by a business.
+Research has shown <a href="https://progressivegrocer.com/feds-uncover-31m-coupon-fraud-scheme" target="_blank" rel="noopener">coupon fraud costs retailers more than $100 million each year</a>. It’s a type of [payment fraud](/payment-fraud/) that some business owners may not know much about, as it can be hard to catch. Coupon glittering is just one of many methods fraudsters can employ to exploit coupons offered by a business.
 
 ## What is coupon glittering?
 

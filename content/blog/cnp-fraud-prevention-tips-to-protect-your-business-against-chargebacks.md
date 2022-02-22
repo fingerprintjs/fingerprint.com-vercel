@@ -27,7 +27,7 @@ The continuing rise of online shopping brings a whole new level of convenience t
 
 [Credit card fraud nearly doubled from 2018 - 2019 in the U.S., when there were nearly 750 reports of fraud per day](https://www.self.inc/info/credit-card-fraud-statistics/). CNP fraud makes up a large proportion of those scams, meaning CNP fraud prevention is one of the leading actions you can take to keep yourself and your customers safe.
 
-[Payment fraud prevention](https://fingerprintjs.com/payment-fraud/) comes in many different forms, allowing you to enjoy the benefits of online retail while minimizing the risks.
+[Payment fraud prevention](/payment-fraud/) comes in many different forms, allowing you to enjoy the benefits of online retail while minimizing the risks.
 
 FingerprintJS can help to implement protection against CNP fraud, including the tips to come. 
 
@@ -37,7 +37,7 @@ CNP, or card not present, is a type of credit card fraud that literally means th
 
 [It’s estimated that CNP fraud could be worth nearly US$35 billion globally in 2022.](https://www.businesswire.com/news/home/20150804007054/en/Global-Card-Fraud-Losses-Reach-16.31-Billion-%E2%80%94-Will-Exceed-35-Billion-in-2020-According-to-The-Nilson-Report)
 
-CNP fraud is particularly hard to detect online when there are no extra measures in place to verify a purchase is legitimate. In saying that, there are a range of [ecommerce fraud prevention techniques](https://fingerprintjs.com/ecommerce/) that can be implemented to identify and prevent CNP fraud from occurring. 
+CNP fraud is particularly hard to detect online when there are no extra measures in place to verify a purchase is legitimate. In saying that, there are a range of [ecommerce fraud prevention techniques](/ecommerce/) that can be implemented to identify and prevent CNP fraud from occurring. 
 
 ## How do fraudsters obtain credit card information with CNP fraud?
 
@@ -129,4 +129,4 @@ Businesses too are victims of fraud, and a customer whose credit card is used in
 Preventing these fraudulent purchases before they’re carried out is now much easier than ever, and it saves a whole lot of problems later on. As cybersecurity gains even more awareness, businesses who can differentiate themselves based on their ability to reduce scams and protect their customers’ information are increasingly likely to be seen in a positive light.
 
 **\
-If you want help implementing CNP fraud prevention measures, [talk to FingerprintJS](https://fingerprintjs.com/) to learn more.**
+If you want help implementing CNP fraud prevention measures, [talk to FingerprintJS](/) to learn more.**
