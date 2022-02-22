@@ -7,7 +7,7 @@ import classNames from 'classnames'
 import { VisitorResponse } from '../../types/visitorResponse'
 import { CurrentVisitProps } from '../../types/currentVisitProps'
 import MobileWidget, { MobileLoadingState } from './MobileWidget'
-import { useVisitorData } from '../../context/FpjsContext'
+import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
 import useRollbar from '../../hooks/useRollbar'
 import { getErrorMessage } from '../../helpers/error'
 import { FPJS_SECRET_TOKEN, FPJS_VISITORS_ENDPOINT, MAPBOX_ACCESS_TOKEN } from '../../constants/env'
@@ -25,14 +25,14 @@ export default memo(function FpjsWidget() {
   const [isLoading, setIsLoading] = useState(true)
   const [isLoaded, setIsLoaded] = useState(false)
   const [hasError, setHasError] = useState(false)
-  const { visitorData, hasFpjsError } = useVisitorData()
-  const visitorId = visitorData?.visitorId
+  const { data, error } = useVisitorData()
+  const visitorId = data?.visitorId
   const rollbar = useRollbar()
 
   useEffect(() => {
     let isCancelled = false
     setIsLoading(true)
-    if (hasFpjsError) {
+    if (error) {
       setHasError(true)
       return
     }
@@ -65,7 +65,7 @@ export default memo(function FpjsWidget() {
     return () => {
       isCancelled = true
     }
-  }, [visitorId, rollbar, hasFpjsError])
+  }, [visitorId, rollbar, error])
 
   return (
     <div className={styles.container}>

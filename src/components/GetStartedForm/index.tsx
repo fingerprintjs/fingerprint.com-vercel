@@ -6,7 +6,7 @@ import classNames from 'classnames'
 import Button from '../common/Button'
 import { FormState } from '../../types/FormState'
 import { FPJS_DASHBOARD_ENDPOINT } from '../../constants/env'
-import { useVisitorData } from '../../context/FpjsContext'
+import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
 import { trackEmbeddedFormSubmit } from '../../helpers/gtm'
 import { Forms, useForm } from '../../hooks/useForm'
 import Tippy from '@tippyjs/react'
@@ -21,8 +21,8 @@ interface GetStartedFormProps {
 }
 
 export default function GetStartedForm({ className }: GetStartedFormProps) {
-  const { visitorData } = useVisitorData()
-  const visitorId = visitorData?.visitorId
+  const { data } = useVisitorData()
+  const visitorId = data?.visitorId
   const dashboardEndpoint = FPJS_DASHBOARD_ENDPOINT
   const [email, setEmail] = useState('')
   const { formState, errorMessage, updateFormState, updateErrorMessage } = useForm(Forms.Signup)

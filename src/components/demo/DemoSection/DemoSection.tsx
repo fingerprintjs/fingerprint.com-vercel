@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import useRollbar from '../../../hooks/useRollbar'
 import { VisitorResponse } from '../../../types/visitorResponse'
-import { useVisitorData } from '../../../context/FpjsContext'
+import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
 import { loadFpjsHistory } from '../../../helpers/api'
 import { getErrorMessage } from '../../../helpers/error'
 
@@ -14,8 +14,8 @@ export default function DemoSection() {
   const [visits, setVisits] = useState<VisitorResponse[]>([])
   const [isLoading, setIsLoading] = useState(true)
 
-  const { visitorData } = useVisitorData()
-  const visitorId = visitorData?.visitorId
+  const { data } = useVisitorData()
+  const visitorId = data?.visitorId
   const rollbar = useRollbar()
 
   useEffect(() => {

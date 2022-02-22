@@ -8,7 +8,7 @@ import classNames from 'classnames'
 import CodeWindowWithSelector from '../../common/CodeWindowWithSelector'
 import { copyToClipboard } from '../../../helpers/clipboard'
 import useLocalStorage from '../../../hooks/useLocalStorage'
-import { useVisitorData } from '../../../context/FpjsContext'
+import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
 
 import { ReactComponent as CopySVG } from '../../../img/CopySVG.svg'
 
@@ -26,10 +26,10 @@ export default function GenerateKeySection({ requestId }: GenerateKeySectionProp
 
   const [botDToken, setBotDToken] = useState({ publicKey: '<your-public-key>', secretKey: '' })
 
-  const { visitorData } = useVisitorData()
-  const visitorId = visitorData?.visitorId
+  const { data } = useVisitorData()
+  const visitorId = data?.visitorId
 
-  const disableButton = !(requestId && visitorData && formState !== FormState.Loading)
+  const disableButton = !(requestId && data && formState !== FormState.Loading)
 
   interface MailKeys {
     usedEmail: string
