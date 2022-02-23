@@ -3132,18 +3132,10 @@
     "@fingerprintjs/fingerprintjs-pro" "^3.5.5"
     tslib "^2.2.0"
 
-"@fingerprintjs/fingerprintjs-pro@^3.5.5":
-  version "3.5.5"
-  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro/-/fingerprintjs-pro-3.5.5.tgz#010f8401dcff8c3bdcbe5732d2b1f97ca4996827"
-  integrity sha512-55LrMM9tDholII1zXNvuoem2htD/3OinXOaM2IX60s06kB73cKUIMwvs41GI5oiXuoTb8/jt2ZZ+H5fw7OfmvQ==
-  dependencies:
-    "@fingerprintjs/fingerprintjs" "3.3.1"
-    tslib "^2.0.1"
-
-"@fingerprintjs/fingerprintjs@3.3.1":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs/-/fingerprintjs-3.3.1.tgz#d080b0ea356b3ad14de4163afc3611beb5b5df20"
-  integrity sha512-rs9fCfINXeYO1XRTbZ/cXFSyRknyoZSwLNypO5Kf7C/o0g7mBpIDKVzJW3UsKEh+YybCS3wzaOK3z9PxtLiXaw==
+"@fingerprintjs/fingerprintjs-pro@^3.5.5", "@fingerprintjs/fingerprintjs-pro@^3.6.0-beta.0":
+  version "3.6.0-beta.0"
+  resolved "https://npm.fpregistry.io/@fingerprintjs/fingerprintjs-pro/-/fingerprintjs-pro-3.6.0-beta.0.tgz#81b4d21514ebb057e20de170a4a4f709986430c2"
+  integrity sha512-dBclhpKmFvlJztCkl07qgVOGkpLS9ZqGo7f75+SH9O3Gxnq2RJnVbBIUw5TOvHSX3IDf8V4vMlAFoBQ/gyIeNw==
   dependencies:
     tslib "^2.0.1"
 

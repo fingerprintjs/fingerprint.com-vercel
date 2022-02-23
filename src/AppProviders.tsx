@@ -4,7 +4,7 @@ import { FpjsProvider } from '@fingerprintjs/fingerprintjs-pro-react'
 import * as FingerprintJS from '@fingerprintjs/fingerprintjs-pro'
 import { GithubProvider } from './context/GithubContext'
 import { HistoryListener } from './context/HistoryListener'
-import { FPJS_PUBLIC_TOKEN, FPJS_REGION, FPJS_ENDPOINT } from './constants/env'
+import { FPJS_PUBLIC_TOKEN, FPJS_REGION, FPJS_CDN_URL } from './constants/env'
 
 export type Props = {
   children: React.ReactNode
@@ -13,13 +13,13 @@ export type Props = {
 export default function AppProviders({ children }: Props) {
   const publicToken = FPJS_PUBLIC_TOKEN
   const region = FPJS_REGION as FingerprintJS.Region
-  const endpoint = FPJS_ENDPOINT
+  const cdnUrl = FPJS_CDN_URL
   return (
     <FpjsProvider
       loadOptions={{
         token: publicToken,
         region,
-        endpoint,
+        cdnUrl,
       }}
     >
       <FormProvider>
