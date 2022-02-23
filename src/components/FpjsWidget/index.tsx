@@ -28,7 +28,7 @@ export default memo(function FpjsWidget() {
   const { data, error } = useVisitorData()
   const visitorId = data?.visitorId
   const rollbar = useRollbar()
-
+  console.log(error)
   useEffect(() => {
     let isCancelled = false
     setIsLoading(true)
