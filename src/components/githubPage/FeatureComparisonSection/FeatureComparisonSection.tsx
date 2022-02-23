@@ -13,91 +13,93 @@ export default function FeatureComparisonSection() {
       <Container className={styles.container}>
         <h1 className={styles.title}>Feature Comparison</h1>
         <table className={styles.table}>
-          <tr className={styles.optionColumns}>
-            <th />
-            <th>
-              <h3 className={styles.version}>Open Source</h3>
-            </th>
-            <th className={styles.proRow}>
-              <h3 className={styles.version}>Pro</h3>
-            </th>
-          </tr>
-          <FeatureTitle title='Core Features' />
-          <Feature
-            feature='100% Open-source'
-            oss='yes'
-            pro={
-              <span>
-                no<sup>1</sup>
-              </span>
-            }
-          />
-          <Feature feature='Standard fingerprint signals' oss='✓' pro='✓' isSymbol>
-            screen, os, device name
-          </Feature>
-          <Feature feature='Advanced fingerprint signals' oss='✓' pro='✓' isSymbol>
-            canvas, audio, fonts
-          </Feature>
-          <Feature
-            feature='ID type'
-            oss='fingerprint'
-            pro={
-              <span>
-                visitorID<sup>2</sup>
-              </span>
-            }
-          />
-          <Feature feature='ID lifetime' oss='several weeks' pro='months/years' />
-          <Feature feature='ID origin' oss='client' pro='server' />
-          <Feature feature='ID collisions' oss='common' pro='rare' />
-          <FeatureTitle title='Additional features' />
-          <Feature feature='Incognito mode detection' oss='-' pro='✓' isSymbol>
-            works in all modern browsers - see our full list of{' '}
-            <a href={DOC_URL.browserSupportUrl} target='_blank' rel='noreferrer' className={styles.link}>
-              browsers supported
-            </a>
-          </Feature>
-          <Feature feature='Server-side accuracy increase' oss='-' pro='✓' isSymbol>
-            based on additional server-side signals, such as TLS crypto support, ipv4/v6 data and others
-          </Feature>
-          <Feature feature='Query API & realtime Webhooks' oss='-' pro='✓' isSymbol>
-            build flexible workflows
-          </Feature>
-          <Feature feature='Geolocation' oss='-' pro='✓' isSymbol>
-            based on IP address
-          </Feature>
-          <FeatureTitle title='Operations' />
-          <Feature feature='Data security' oss='Your infrastructure' pro='Encrypted at rest' />
-          <Feature feature='Storage' oss='Your infrastructure' pro='Unlimited up to 1 yr' />
-          <Feature feature='Regions' oss='Your infrastructure' pro='Hosting in US and EU' />
-          <Feature
-            feature='Compliance'
-            oss='Your infrastructure'
-            pro={
-              <span>
-                GDPR, CCPA compliant<sup>3</sup>
-              </span>
-            }
-          />
-          <Feature feature='SLA' oss='No SLA' pro='99.9% Uptime' />
-          <Feature
-            feature='Support'
-            oss='GitHub community'
-            pro='Support team via email, chat, and call-back within 1 business day'
-          />
-          <tr className={styles.buttonsColumns}>
-            <th />
-            <th>
-              <Button href={URL.githubRepoUrl} variant='outline' className={styles.button}>
-                Access on GitHub
-              </Button>
-            </th>
-            <th className={styles.ButtonRow}>
-              <Button href={URL.signupUrl} variant='primary' className={styles.button}>
-                Create Account
-              </Button>
-            </th>
-          </tr>
+          <tbody>
+            <tr className={styles.optionColumns}>
+              <th />
+              <th>
+                <h3 className={styles.version}>Open Source</h3>
+              </th>
+              <th className={styles.proRow}>
+                <h3 className={styles.version}>Pro</h3>
+              </th>
+            </tr>
+            <FeatureTitle title='Core Features' />
+            <Feature
+              feature='100% Open-source'
+              oss='yes'
+              pro={
+                <span>
+                  no<sup>1</sup>
+                </span>
+              }
+            />
+            <Feature feature='Standard fingerprint signals' oss='✓' pro='✓' isSymbol>
+              screen, os, device name
+            </Feature>
+            <Feature feature='Advanced fingerprint signals' oss='✓' pro='✓' isSymbol>
+              canvas, audio, fonts
+            </Feature>
+            <Feature
+              feature='ID type'
+              oss='fingerprint'
+              pro={
+                <span>
+                  visitorID<sup>2</sup>
+                </span>
+              }
+            />
+            <Feature feature='ID lifetime' oss='several weeks' pro='months/years' />
+            <Feature feature='ID origin' oss='client' pro='server' />
+            <Feature feature='ID collisions' oss='common' pro='rare' />
+            <FeatureTitle title='Additional features' />
+            <Feature feature='Incognito mode detection' oss='-' pro='✓' isSymbol>
+              works in all modern browsers - see our full list of{' '}
+              <a href={DOC_URL.browserSupportUrl} target='_blank' rel='noreferrer' className={styles.link}>
+                browsers supported
+              </a>
+            </Feature>
+            <Feature feature='Server-side accuracy increase' oss='-' pro='✓' isSymbol>
+              based on additional server-side signals, such as TLS crypto support, ipv4/v6 data and others
+            </Feature>
+            <Feature feature='Query API & realtime Webhooks' oss='-' pro='✓' isSymbol>
+              build flexible workflows
+            </Feature>
+            <Feature feature='Geolocation' oss='-' pro='✓' isSymbol>
+              based on IP address
+            </Feature>
+            <FeatureTitle title='Operations' />
+            <Feature feature='Data security' oss='Your infrastructure' pro='Encrypted at rest' />
+            <Feature feature='Storage' oss='Your infrastructure' pro='Unlimited up to 1 yr' />
+            <Feature feature='Regions' oss='Your infrastructure' pro='Hosting in US and EU' />
+            <Feature
+              feature='Compliance'
+              oss='Your infrastructure'
+              pro={
+                <span>
+                  GDPR, CCPA compliant<sup>3</sup>
+                </span>
+              }
+            />
+            <Feature feature='SLA' oss='No SLA' pro='99.9% Uptime' />
+            <Feature
+              feature='Support'
+              oss='GitHub community'
+              pro='Support team via email, chat, and call-back within 1 business day'
+            />
+            <tr className={styles.buttonsColumns}>
+              <th />
+              <th>
+                <Button href={URL.githubRepoUrl} variant='outline' className={styles.button}>
+                  Access on GitHub
+                </Button>
+              </th>
+              <th className={styles.ButtonRow}>
+                <Button href={URL.signupUrl} variant='primary' className={styles.button}>
+                  Create Account
+                </Button>
+              </th>
+            </tr>
+          </tbody>
         </table>
         <footer className={styles.footer}>
           <p className={styles.note}>

@@ -19,14 +19,16 @@ export default function CustomerOverview({ logo: LogoSvg, description, bullets }
       <p className={styles.description}>{description}</p>
 
       <table className={styles.table}>
-        {bullets.map(({ value, description }) => (
-          <tr key={value}>
-            <td className={styles.key}>
-              <strong className={styles.strong}>{value}</strong>
-            </td>
-            <td className={styles.value}>{description}</td>
-          </tr>
-        ))}
+        <tbody>
+          {bullets.map(({ value, description }) => (
+            <tr key={value}>
+              <td className={styles.key}>
+                <strong className={styles.strong}>{value}</strong>
+              </td>
+              <td className={styles.value}>{description}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   )

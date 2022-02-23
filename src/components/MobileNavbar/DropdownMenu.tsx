@@ -19,7 +19,7 @@ export default function DropdownMenu({ name, list }: DropdownMenuProps) {
 
       <ul className={classNames(styles.list, { [styles.open]: isOpen })}>
         {list.map(({ title, url, isLocal = true }) => (
-          <li key={name}>
+          <li key={title}>
             {isLocal ? (
               <Link to={url} className={styles.link}>
                 {title}

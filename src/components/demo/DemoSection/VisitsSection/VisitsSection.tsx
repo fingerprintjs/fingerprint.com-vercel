@@ -28,23 +28,25 @@ export default function VisitsSection({ isLoading, currentVisit, visits }: Visit
     <>
       <div className={classNames(styles.visitsCard, { [styles.incognitoCard]: currentVisit?.incognito })}>
         <table className={styles.visitsTable}>
-          <tr className={styles.tableHeader}>
-            <th>Time of visit</th>
-            <th>incognito mode</th>
-          </tr>
-          {visits &&
-            visits.slice(0, 6).map(({ requestId, timestamp, incognito }, i) => {
-              return (
-                <tr
-                  className={classNames({ [styles.selected]: currentVisit?.requestId === requestId })}
-                  id={`visit_${requestId}`}
-                  key={requestId}
-                >
-                  <td>{i === 0 ? 'Current visit' : getVisitTitle(timestamp)}</td>
-                  <td className={classNames({ [styles.incognito]: incognito })}>{incognito ? 'Yes' : 'No'}</td>
-                </tr>
-              )
-            })}
+          <tbody>
+            <tr className={styles.tableHeader}>
+              <th>Time of visit</th>
+              <th>incognito mode</th>
+            </tr>
+            {visits &&
+              visits.slice(0, 6).map(({ requestId, timestamp, incognito }, i) => {
+                return (
+                  <tr
+                    className={classNames({ [styles.selected]: currentVisit?.requestId === requestId })}
+                    id={`visit_${requestId}`}
+                    key={requestId}
+                  >
+                    <td>{i === 0 ? 'Current visit' : getVisitTitle(timestamp)}</td>
+                    <td className={classNames({ [styles.incognito]: incognito })}>{incognito ? 'Yes' : 'No'}</td>
+                  </tr>
+                )
+              })}
+          </tbody>
         </table>
       </div>
       <div className={styles.incognito}>
@@ -67,26 +69,28 @@ export default function VisitsSection({ isLoading, currentVisit, visits }: Visit
     <>
       <div className={styles.visitsCard}>
         <table className={styles.visitsTable}>
-          <tr className={styles.tableHeader}>
-            <th>Time of visit</th>
-            <th>incognito mode</th>
-          </tr>
-          <tr className={styles.selected}>
-            <td>Current visit</td>
-            <td>
-              <Skeleton className={styles.visitSkeleton} width={24} />
-            </td>
-          </tr>
-          {repeatElement(5, (i) => (
-            <tr key={i}>
-              <td>
-                <Skeleton className={styles.visitSkeleton} width={104} />
-              </td>
+          <tbody>
+            <tr className={styles.tableHeader}>
+              <th>Time of visit</th>
+              <th>incognito mode</th>
+            </tr>
+            <tr className={styles.selected}>
+              <td>Current visit</td>
               <td>
                 <Skeleton className={styles.visitSkeleton} width={24} />
               </td>
             </tr>
-          ))}
+            {repeatElement(5, (i) => (
+              <tr key={i}>
+                <td>
+                  <Skeleton className={styles.visitSkeleton} width={104} />
+                </td>
+                <td>
+                  <Skeleton className={styles.visitSkeleton} width={24} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
       <div className={styles.incognito}>
