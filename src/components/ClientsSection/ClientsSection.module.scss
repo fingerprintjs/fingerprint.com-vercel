@@ -23,8 +23,8 @@
     overflow: hidden;
     position: relative;
     mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 15%, #000 85%, rgba(0, 0, 0, 0) 100%);
-
     grid-column: standard;
+
     .firstRow,
     .secondRow {
       display: flex;
@@ -70,7 +70,7 @@
 
 .logo {
   height: rem(48px);
-  max-width: rem(110px);
+  max-width: rem(144px);
   margin: 0 rem(24px);
 
   @include media('<=phone') {
