@@ -17,39 +17,65 @@
     flex: 1;
   }
 
-  .content {
-    display: grid;
-    gap: 5rem;
+  .rows {
+    padding: 2em 0;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 15%, #000 85%, rgba(0, 0, 0, 0) 100%);
 
-    grid-template-columns: repeat(7, 1fr);
+    grid-column: standard;
+    .firstRow,
+    .secondRow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    @include media('<=tabletWide') {
-      grid-template-columns: repeat(4, 1fr);
+      animation: sl 90s linear infinite;
+
+      @include media('<=tabletWide') {
+        display: grid;
+        gap: 5rem;
+
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include media('<=tablet') {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include media('<=phoneLandscape') {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include media('<=phone') {
+        gap: 3rem;
+      }
+    }
+    .secondRow {
+      animation-direction: reverse;
+    }
+  }
+
+  @keyframes sl {
+    0% {
+      transform: translate3d(0, 0, 0);
     }
 
-    @include media('<=tablet') {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    @include media('<=phoneLandscape') {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include media('<=phone') {
-      gap: 3rem;
+    100% {
+      transform: translate3d(-100%, 0, 0);
     }
   }
 }
 
 .logo {
-  height: 48px;
-  max-width: 110px;
-  width: 100%;
-  object-fit: contain;
+  height: rem(48px);
+  max-width: rem(110px);
+  margin: 0 rem(24px);
 
   @include media('<=phone') {
-    height: 38px;
-    max-width: 90px;
+    height: rem(38px);
+    max-width: rem(90px);
   }
 }
 
