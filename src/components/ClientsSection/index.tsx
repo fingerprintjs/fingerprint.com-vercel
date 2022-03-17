@@ -35,13 +35,6 @@ export default function ClientsSection() {
             <CompanyLogo icon={AmeritradeSVG} />
             <CompanyLogo icon={HsnSVG} />
             <CompanyLogo icon={AgodaSVG} />
-            <CompanyLogo icon={EbaySVG} />
-            <CompanyLogo icon={TargetSVG} />
-            <CompanyLogo icon={UsBankSVG} />
-            <CompanyLogo icon={BookingSVG} />
-            <CompanyLogo icon={AmeritradeSVG} />
-            <CompanyLogo icon={HsnSVG} />
-            <CompanyLogo icon={AgodaSVG} />
           </div>
           <div className={styles.firstRow}>
             <CompanyLogo icon={EbaySVG} />
@@ -51,6 +44,8 @@ export default function ClientsSection() {
             <CompanyLogo icon={AmeritradeSVG} />
             <CompanyLogo icon={HsnSVG} />
             <CompanyLogo icon={AgodaSVG} />
+          </div>
+          <div className={styles.firstRow}>
             <CompanyLogo icon={EbaySVG} />
             <CompanyLogo icon={TargetSVG} />
             <CompanyLogo icon={UsBankSVG} />
@@ -69,13 +64,6 @@ export default function ClientsSection() {
             <CompanyLogo icon={CheckoutSVG} />
             <CompanyLogo icon={WesterUnionSVG} />
             <CompanyLogo icon={YahooSVG} />
-            <CompanyLogo icon={CoinBaseSVG} />
-            <CompanyLogo icon={BAndHSVG} />
-            <CompanyLogo icon={HomeCreditSVG} />
-            <CompanyLogo icon={RockstarSVG} />
-            <CompanyLogo icon={CheckoutSVG} />
-            <CompanyLogo icon={WesterUnionSVG} />
-            <CompanyLogo icon={YahooSVG} />
           </div>
           <div className={styles.secondRow}>
             <CompanyLogo icon={CoinBaseSVG} />
@@ -85,6 +73,8 @@ export default function ClientsSection() {
             <CompanyLogo icon={CheckoutSVG} />
             <CompanyLogo icon={WesterUnionSVG} />
             <CompanyLogo icon={YahooSVG} />
+          </div>
+          <div className={styles.secondRow}>
             <CompanyLogo icon={CoinBaseSVG} />
             <CompanyLogo icon={BAndHSVG} />
             <CompanyLogo icon={HomeCreditSVG} />
