@@ -27,6 +27,10 @@ customCTA:
 ---
 On behalf of the whole team at FingerprintJS, we are excited to announce that we have raised a $32M series B, led by <a href="https://www.craftventures.com/" target="_blank" rel="noopener">Craft Ventures</a>, with participation from <a href="https://nexusvp.com/" target="_blank" rel="noopener">Nexus Venture Partners</a> and <a href="https://uncorrelated.com/" target="_blank" rel="noopener">Uncorrelated Ventures</a>.
 
+
+
+![gif](/img/uploads/s_-blog-illus_-8-common-indicators-of-phishing-email-attack-attempts-remix-.gif "gif")
+
 **To our customers - thank you for supporting us in our journey thus far.** This funding will allow us to accelerate our pace in building the best anti-fraud APIs on the internet and maintain our commitment to building open-source first. We have more exciting product news coming very soon - we will be in touch!
 
 ## Now more than ever is the time to try FingerprintJS Pro
