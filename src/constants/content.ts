@@ -18,6 +18,7 @@ export const PATH = {
   accountSharing: '/products/account-sharing-prevention/',
   botD: '/products/bot-detection/',
   bnpl: '/buy-now-pay-later/',
+  careers: '/careers/',
 } as const
 
 export const URL = {
@@ -69,6 +70,11 @@ export const products = [
   { title: 'Browser Fingerprinting', url: PATH.whyFpjs, isLocal: true },
   { title: 'Account Sharing Prevention', url: PATH.accountSharing, isLocal: true },
   { title: 'Bot Detection', url: PATH.botD, isLocal: true },
+]
+
+export const company = [
+  { title: 'Blog', url: PATH.blog, isLocal: true },
+  { title: 'Careers', url: PATH.careers, isLocal: true },
 ]
 
 export const defaultDataLayer = [{ branch: BRANCH }]
