@@ -1,0 +1,63 @@
+.root {
+  padding: rem(24px) 0;
+
+  @include media('<=phoneLandscape') {
+    padding: rem(20px) 0;
+  }
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include gap(rem(32px));
+
+  @include media('<=tabletWide') {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    padding: rem(20px) rem(20px) rem(64px);
+
+    background-color: v('off-white');
+    border-radius: rem(24px);
+    align-items: center;
+
+    .iconWrapper {
+      height: rem(320px);
+      width: rem(320px);
+      margin-bottom: rem(16px);
+
+      @include media('<=phone') {
+        height: rem(240px);
+        width: rem(240px);
+      }
+    }
+
+    .cardTitle {
+      @include sans($size: 14px, $weight: v('semi'), $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.7));
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      margin-bottom: rem(8px);
+
+      @include media('<=phone') {
+        font-size: rem(11px);
+      }
+    }
+
+    .cardDescription {
+      max-width: rem(360px);
+      @include sans($size: 32px, $weight: v('bold'), $lh: 130%);
+      letter-spacing: -0.02em;
+      text-align: center;
+
+      @include media('<=phone') {
+        font-size: rem(24px);
+      }
+    }
+  }
+}

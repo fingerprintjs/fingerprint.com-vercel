@@ -48,11 +48,6 @@
   to = "/products/account-sharing-prevention/"
   force = true
 
-[[redirects]]
-  from = "/careers/"
-  to = "https://boards.greenhouse.io/fingerprintjs/"
-  force = true
-
 [context.branch-deploy]
   command = "yarn noIndexBuild"
 

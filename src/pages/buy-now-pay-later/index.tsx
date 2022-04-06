@@ -35,10 +35,10 @@ export default function Bnpl({ pageContext }: BnplProps) {
       {breadcrumbs && <BreadcrumbsSEO breadcrumbs={breadcrumbs} />}
       <HeroSection
         className={styles.heroSection}
-        childrenClassName={styles.description}
         title='Buy now, pay later fraud prevention'
         ctaText='Contact us'
         ctaHref={PATH.contactSales}
+        variant='secondary'
       >
         Increase approval rates and minimize fraud losses with high accuracy device identification.
       </HeroSection>

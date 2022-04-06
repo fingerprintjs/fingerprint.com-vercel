@@ -1,22 +1,6 @@
 .heroSection {
   padding-bottom: rem(64px);
-
-  a {
-    @include media('<=phoneLandscape') {
-      width: 100%;
-    }
-  }
 }
-.description {
-  font-size: rem(18px);
-  font-weight: 500;
-  color: v('brand-water');
-
-  @include media('<=phoneLandscape') {
-    font-size: rem(16px);
-  }
-}
-
 .ctaSection {
   display: flex;
   flex-direction: column;

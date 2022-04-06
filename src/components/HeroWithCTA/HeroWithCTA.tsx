@@ -10,27 +10,37 @@ export interface HeroWithCTAProps {
   title: string
   children: React.ReactNode
   className?: string
-  childrenClassName?: string
   ctaText: string
   ctaHref: string
-  variant?: 'primary' | 'outline' | 'clear' | 'faded'
+  variant?: 'primary' | 'secondary'
+  buttonVariant?: 'primary' | 'outline' | 'clear' | 'faded'
+  openNewTab?: boolean
 }
 
 export default function HeroWithCTA({
   title,
   children,
-  childrenClassName,
   className,
   ctaText,
   ctaHref,
-  variant,
+  variant = 'primary',
+  buttonVariant,
+  openNewTab,
 }: HeroWithCTAProps) {
   return (
     <Section className={classNames(styles.root, className)}>
       <Container size='small' className={styles.heroContainer}>
-        <h1 className={styles.title}>{title}</h1>
-        <p className={classNames(styles.description, childrenClassName)}>{children}</p>
-        <Button size='big' href={ctaHref} variant={variant} className={styles.button}>
+        <h1 className={classNames(styles.title, { [styles.secondaryTitle]: variant === 'secondary' })}>{title}</h1>
+        <p className={classNames(styles.description, { [styles.secondaryDescription]: variant === 'secondary' })}>
+          {children}
+        </p>
+        <Button
+          size='big'
+          href={ctaHref}
+          variant={buttonVariant}
+          className={classNames(styles.button, { [styles.secondaryButton]: variant === 'secondary' })}
+          openNewTab={openNewTab}
+        >
           {ctaText}
         </Button>
       </Container>
