@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: feat/careers-page-we-are-sections
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -419,3 +419,22 @@ collections:
           - { label: Arrow text, name: arrowText, widget: string, required: false }
           - { label: URL, name: url, widget: string, required: false }
           - { label: Background color, name: backgroundColor, widget: 'color' }
+  - label: Team Members Map
+    name: teamMembers
+    files:
+      - label: Members
+        name: teamMembers
+        file: 'content/team-members/teamMembers.yml'
+        fields:
+          - { label: America Pacific, name: pacificAmerica, widget: number, value_type: int }
+          - { label: America Mountain, name: mountainAmerica, widget: number, value_type: int }
+          - { label: America Central, name: centralAmerica, widget: number, value_type: int }
+          - { label: America Eastern, name: easternAmerica, widget: number, value_type: int }
+          - { label: Europe Western, name: westernEurope, widget: number, value_type: int }
+          - { label: Europe Southeast, name: southeastEurope, widget: number, value_type: int }
+          - { label: Europe Central, name: centralEurope, widget: number, value_type: int }
+          - { label: Europe Northeast, name: northeastEurope, widget: number, value_type: int }
+          - { label: Europe East, name: eastAsia, widget: number, value_type: int }
+          - { label: Europe Eastern, name: easternEurope, widget: number, value_type: int }
+          - { label: North SouthAmerica, name: southAmericaNorth, widget: number, value_type: int }
+          - { label: South SouthAmerica, name: southAmericaSouth, widget: number, value_type: int }

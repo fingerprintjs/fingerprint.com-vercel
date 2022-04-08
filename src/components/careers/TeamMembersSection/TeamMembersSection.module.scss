@@ -1,0 +1,212 @@
+.root {
+  padding: 0 0 rem(64px) 0;
+
+  @include media('<=phoneLandscape') {
+    padding-bottom: rem(20px);
+  }
+}
+
+.box {
+  background-color: v('off-white');
+  border-radius: rem(24px);
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 rem(20px);
+    .label {
+      border: 4px solid v('off-white');
+
+      margin-top: rem(56px);
+      padding: rem(10px);
+      background: #f04405;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: rem(12px);
+      transform: rotate(-15deg);
+
+      .labelText {
+        font-family: v(ff-mono);
+
+        color: c('off-white');
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: rem(24px);
+        line-height: 110%;
+      }
+    }
+    .headerTitle {
+      padding-top: rem(36px);
+
+      @include sans($size: 32px, $weight: v('bold'), $lh: 130%);
+      letter-spacing: -0.02em;
+
+      @include media('<=phone') {
+        font-size: rem(24px);
+      }
+    }
+    .headerDescription {
+      padding-top: rem(8px);
+      max-width: rem(607px);
+      text-align: center;
+
+      @include sans($size: 16px, $weight: 500, $lh: 150%);
+
+      @include media('<=phone') {
+        font-size: rem(14px);
+      }
+    }
+  }
+
+  .worldSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    padding: rem(24px) rem(34px) rem(96px) rem(34px);
+    .member {
+      position: relative;
+
+      @include media('<=desktop') {
+        transform: scale(0.7);
+      }
+
+      @include media('<=tablet') {
+        transform: scale(0.6);
+      }
+
+      @include media('<=phoneLandscape') {
+        transform: scale(0.45);
+      }
+      .memberIcon {
+        height: rem(83px);
+      }
+      .memberNumber {
+        min-width: 3ch;
+        text-align: center;
+        font-family: v(ff-mono);
+        color: c('off-white');
+        line-height: 110%;
+        font-size: rem(20px);
+        font-weight: 500;
+        position: absolute;
+
+        bottom: 53%;
+        left: 24%;
+      }
+    }
+    .pacific {
+      position: absolute;
+      top: 24%;
+      left: 8%;
+
+      @include media('<=phoneLandscape') {
+        top: 10%;
+      }
+    }
+    .mountain {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+
+      @include media('<=phoneLandscape') {
+        top: 4%;
+      }
+    }
+    .central {
+      position: absolute;
+      top: 14%;
+      left: 13%;
+
+      @include media('<=phoneLandscape') {
+        top: 10%;
+      }
+    }
+    .eastern {
+      position: absolute;
+      top: 18%;
+      left: 18%;
+
+      @include media('<=phoneLandscape') {
+        top: 12%;
+      }
+    }
+    .westernEurope {
+      position: absolute;
+      top: 9%;
+      left: 41%;
+
+      @include media('<=phoneLandscape') {
+        top: 2%;
+        left: 35%;
+      }
+    }
+    .southeastEurope {
+      position: absolute;
+      top: 18%;
+      left: 50%;
+
+      @include media('<=phoneLandscape') {
+        top: 12%;
+        left: 43%;
+      }
+    }
+    .centralEurope {
+      position: absolute;
+      top: 10%;
+      left: 46%;
+
+      @include media('<=phoneLandscape') {
+        top: 4%;
+        left: 40%;
+      }
+    }
+    .easternEurope {
+      position: absolute;
+      top: 10%;
+      left: 52%;
+
+      @include media('<=phoneLandscape') {
+        top: 8%;
+        left: 48%;
+      }
+    }
+    .northeastEurope {
+      position: absolute;
+      top: 6%;
+      left: 50%;
+
+      @include media('<=phoneLandscape') {
+        top: 1%;
+        left: 46%;
+      }
+    }
+
+    .eastAsia {
+      position: absolute;
+      top: 12%;
+      right: 15%;
+    }
+    .southAmericaNorth {
+      position: absolute;
+      bottom: 40%;
+      left: 25%;
+
+      @include media('<=phoneLandscape') {
+        left: 22%;
+      }
+    }
+    .southAmericaSouth {
+      position: absolute;
+      bottom: 25%;
+      left: 22%;
+      @include media('<=phoneLandscape') {
+        bottom: 30%;
+        left: 18%;
+      }
+    }
+  }
+}

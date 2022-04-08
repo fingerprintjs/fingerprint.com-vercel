@@ -2,20 +2,27 @@ import React from 'react'
 import { LayoutTemplate } from '../../components/Layout'
 import BreadcrumbsSEO from '../../components/Breadcrumbs/BreadcrumbsSEO'
 import HeroSection from '../../components/HeroWithCTA/HeroWithCTA'
+
 import MissionAndVisionSection from '../../components/careers/MissionAndVisionSection/MissionAndVisionSection'
+import WhatWeOfferSection from '../../components/careers/WhatWeOfferSection/WhatWeOfferSection'
+import TeamMembersSection, {
+  TeamMembersSectionProps,
+} from '../../components/careers/TeamMembersSection/TeamMembersSection'
+
 import { URL } from '../../constants/content'
 
 import { GeneratedPageContext } from '../../helpers/types'
 
 import useSiteMetadata from '../../hooks/useSiteMetadata'
 import { useLocation } from '@reach/router'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import styles from './Careers.module.scss'
 
-interface GitHubProps {
+interface CareersPageProps {
   pageContext: GeneratedPageContext
 }
-export default function GitHubPage({ pageContext }: GitHubProps) {
+export default function CareersPage({ pageContext }: CareersPageProps) {
   const breadcrumbs = pageContext.breadcrumb.crumbs
   const { pathname } = useLocation()
   let siteMetadata = useSiteMetadata()
@@ -24,6 +31,26 @@ export default function GitHubPage({ pageContext }: GitHubProps) {
     title: '', //TODO
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
   }
+
+  const data = useStaticQuery<GatsbyTypes.TeamMembersQueryQuery>(graphql`
+    query TeamMembersQuery {
+      teamMembers: teamMembersYaml {
+        pacificAmerica
+        mountainAmerica
+        centralAmerica
+        easternAmerica
+        westernEurope
+        southeastEurope
+        centralEurope
+        northeastEurope
+        eastAsia
+        easternEurope
+        southAmericaNorth
+        southAmericaSouth
+      }
+    }
+  `)
+  const teamMembers = data?.teamMembers as TeamMembersSectionProps
 
   return (
     <LayoutTemplate siteMetadata={siteMetadata}>
@@ -39,6 +66,8 @@ export default function GitHubPage({ pageContext }: GitHubProps) {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </HeroSection>
       <MissionAndVisionSection />
+      <WhatWeOfferSection />
+      <TeamMembersSection {...teamMembers} />
     </LayoutTemplate>
   )
 }
