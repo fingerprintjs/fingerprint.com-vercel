@@ -11,6 +11,11 @@ import { ReactComponent as FunSVG } from './logos/FunSVG.svg'
 import { ReactComponent as GrowSVG } from './logos/GrowSVG.svg'
 import { ReactComponent as PersonalSVG } from './logos/PersonalSVG.svg'
 
+import { ReactComponent as NoBsSVG } from './logos/NoBsSVG.svg'
+import { ReactComponent as FailLearnGrowSVG } from './logos/FailLearnGrowSVG.svg'
+import { ReactComponent as SeriouslySVG } from './logos/SeriouslySVG.svg'
+import { ReactComponent as Level5SVG } from './logos/Level5SVG.svg'
+
 import styles from './WhatWeOfferSection.module.scss'
 
 export default function WhatWeOfferSection() {
@@ -42,7 +47,7 @@ export default function WhatWeOfferSection() {
           <Card
             icon={<CultureSVG />}
             title='Culture'
-            description='We’re a small team with a lean hierarchy and an aversion to politics. Make a real impact and grow with us!'
+            description="We're a small team with a lean hierarchy where you can make a real impact in shaping the company culture. Come grow with us!"
           />
           <Card
             icon={<FunSVG />}
@@ -58,6 +63,38 @@ export default function WhatWeOfferSection() {
             icon={<PersonalSVG />}
             title='Personal development'
             description='We give you the freedom to grow and experiment. Work on open-source projects and try new things and ideas!'
+          />
+        </div>
+      </Container>
+    </Section>
+  )
+}
+
+export function OurValuesSection() {
+  return (
+    <Section className={styles.root}>
+      <Container size='large' className={styles.cardsContainer}>
+        <h2 className={styles.title}>Our Values</h2>
+        <div className={styles.cardsSection}>
+          <Card
+            icon={<NoBsSVG />}
+            title='No BS.'
+            description='We are open and direct. We say what we mean and we mean what we say.'
+          />
+          <Card
+            icon={<FailLearnGrowSVG />}
+            title='Fail. Learn. Grow.'
+            description="We aren't afraid to take big bets and make mistakes along the way in order to build a truly successful business."
+          />
+          <Card
+            icon={<SeriouslySVG />}
+            title="Don't take yourself too seriously."
+            description='Whether playing online games or discussing company strategy, we try to have fun and bring our authentic selves to work.'
+          />
+          <Card
+            icon={<Level5SVG />}
+            title='Be level 5 helpful.'
+            description='We believe in going the extra mile in helping both our peers and our customers.'
           />
         </div>
       </Container>

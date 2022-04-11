@@ -4,10 +4,11 @@ import BreadcrumbsSEO from '../../components/Breadcrumbs/BreadcrumbsSEO'
 import HeroSection from '../../components/HeroWithCTA/HeroWithCTA'
 
 import MissionAndVisionSection from '../../components/careers/MissionAndVisionSection/MissionAndVisionSection'
-import WhatWeOfferSection from '../../components/careers/WhatWeOfferSection/WhatWeOfferSection'
+import WhatWeOfferSection, { OurValuesSection } from '../../components/careers/WhatWeOfferSection/WhatWeOfferSection'
 import TeamMembersSection, {
   TeamMembersSectionProps,
 } from '../../components/careers/TeamMembersSection/TeamMembersSection'
+import LifeAtFingerSection from '../../components/careers/LifeAtFingerSection/LifeAtFingerSection'
 
 import { URL } from '../../constants/content'
 
@@ -68,6 +69,8 @@ export default function CareersPage({ pageContext }: CareersPageProps) {
       <MissionAndVisionSection />
       <WhatWeOfferSection />
       <TeamMembersSection {...teamMembers} />
+      <OurValuesSection />
+      <LifeAtFingerSection />
     </LayoutTemplate>
   )
 }

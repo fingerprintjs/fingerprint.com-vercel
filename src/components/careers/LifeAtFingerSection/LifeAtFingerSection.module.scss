@@ -1,0 +1,73 @@
+.root {
+  padding: rem(96px) 0;
+
+  @include media('<=phoneLandscape') {
+    padding: rem(64px) 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  @include sans($size: 32px, $weight: v('bold'), $lh: 130%);
+  padding-bottom: rem(40px);
+  letter-spacing: -0.02em;
+
+  @include media('<=phone') {
+    font-size: rem(24px);
+    padding-bottom: rem(40px);
+  }
+}
+
+.swiperWrapper {
+  width: 100%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .photo {
+    border-radius: rem(16px);
+    border: 4px solid #f3f3f3;
+
+    @include media('<=desktop') {
+      transform: scale(0.7);
+    }
+
+    @include media('<=tablet') {
+      transform: scale(0.6);
+    }
+
+    @include media('<=phoneLandscape') {
+      transform: scale(0.55);
+    }
+  }
+  .photo1 {
+    width: rem(650px);
+    height: rem(492px);
+  }
+  .photo2 {
+    width: rem(689px);
+    height: rem(517px);
+  }
+  .photo3 {
+    width: rem(650px);
+    height: rem(492px);
+  }
+  .photo4 {
+    width: rem(448px);
+    height: rem(492px);
+  }
+  .photo5 {
+    width: rem(664px);
+    height: rem(519px);
+  }
+  .photo6 {
+    width: rem(664px);
+    height: rem(492px);
+  }
+}
