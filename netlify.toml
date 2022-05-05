@@ -797,3 +797,8 @@
 
 [[plugins]]
   package = "@netlify/plugin-gatsby"
+
+[[headers]]
+  for = "/blog/what-is-tls-fingerprinting-transport-layer-security/"
+  [headers.values]
+    X-Robots-Tag = "noindex"
