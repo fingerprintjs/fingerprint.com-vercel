@@ -31,7 +31,7 @@
     ]
   },
   "dependencies": {
-    "@fingerprintjs/fingerprintjs-pro-react": "^1.0.0",
+    "@fingerprintjs/fingerprintjs-pro-react": "^0.3.0",
     "@fpjs-incubator/botd-agent": "^0.1.24",
     "@fpjs-incubator/turing": "^0.0.7",
     "@loadable/component": "^5.15.2",

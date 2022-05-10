@@ -3218,22 +3218,22 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fingerprintjs/fingerprintjs-pro-react@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro-react/-/fingerprintjs-pro-react-1.0.0.tgz#fa6f4a7d808ae7dc83159f78d2d190a1ecb038db"
-  integrity sha512-RxNRdmoq7gtOYt7sH/rzHc9R3ZgDPDpWjl4AEcznkER0aQnlfFFWSveDmV2gquZ3Ewmh0/W8PhvOVVGM2CFPkA==
+"@fingerprintjs/fingerprintjs-pro-react@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro-react/-/fingerprintjs-pro-react-0.3.0.tgz#69882ed3c75f9289b553d1da8739071ab8ab1da9"
+  integrity sha512-KBn/Lb6b6zjWF481UFSsMOmsxUzNI+1mdey9fI2+P3fES/l6oK3neNN20oyE+Z+uZh3jUdfNpenW2KDqgs1YJw==
   dependencies:
-    "@fingerprintjs/fingerprintjs-pro-spa" "^0.3.1"
+    "@fingerprintjs/fingerprintjs-pro-spa" "^0.2.4"
 
-"@fingerprintjs/fingerprintjs-pro-spa@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro-spa/-/fingerprintjs-pro-spa-0.3.1.tgz#01d1c4827958233e502870616a4ca8719dd5e20c"
-  integrity sha512-RPZj9jHBuAOSkHif4X+dYmjA7DMwaiw4W80eUE2oH9KC70+q6I7wT9MLrRO3xf7LyGqxZk2N4Tgd7QJU6v5LvA==
+"@fingerprintjs/fingerprintjs-pro-spa@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro-spa/-/fingerprintjs-pro-spa-0.2.4.tgz#53fc70b26f51c07f34eeaf90bd7f0c21f5925c48"
+  integrity sha512-aDE8YJuwEIpQkZzrrDZq19E65eH0OVPf9yybCNkXtdsbwFitgZSgsOlfzF5TvnFe/EbWggornDvbxQopQaJu8g==
   dependencies:
-    "@fingerprintjs/fingerprintjs-pro" "^3.6.0"
+    "@fingerprintjs/fingerprintjs-pro" "^3.5.6"
     tslib "^2.2.0"
 
-"@fingerprintjs/fingerprintjs-pro@^3.6.0":
+"@fingerprintjs/fingerprintjs-pro@^3.5.6":
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro/-/fingerprintjs-pro-3.6.2.tgz#d3a8df9d66ebf3b72b5cbd0202981c539c58ee26"
   integrity sha512-wnBDWlihoWIlz4u2phgzYUtM4q6gLLIjxUgsp3DP4wFR6RFkwwbk8lp8ICUEqKhbTIqN2WDkLyaVYBfkax916A==

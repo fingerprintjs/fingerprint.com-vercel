@@ -83,6 +83,7 @@ const config: GatsbyConfig = {
         `,
         resolvePages: ({ allSitePage: { edges: allPages } }) => allPages.map((page) => ({ ...page.node })),
         excludes: [],
+        // eslint-disable-next-line consistent-return
         filterPages: (page) => {
           if (
             // Exclude pages marked with "noindex"
