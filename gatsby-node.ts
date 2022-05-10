@@ -1,17 +1,35 @@
-// eslint can't know something inside a query is a regex and complains about escaping.
-/* eslint no-useless-escape: 0 */
+// some variables it is not possible to set the type
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const webpack = require(`webpack`)
-const remark = require(`remark`)
-const remarkHTML = require(`remark-html`)
-const fetch = require(`node-fetch`)
-const { createSocialCardNode } = require('./src/node/social-card/create-social-card-node')
-const { createSocialCardId } = require('./src/node/create-node-field/create-social-card-id')
+import { GatsbyNode, CreatePagesArgs } from 'gatsby'
 
-async function getFolderEdges(folder, graphql, filter = '') {
-  const { data, errors } = await graphql(`
+import path from 'path'
+import { createFilePath } from 'gatsby-source-filesystem'
+import webpack from 'webpack'
+import fetch, { Headers } from 'node-fetch'
+import { createSocialCardNode } from './src/node/social-card/create-social-card-node'
+import { createSocialCardId } from './src/node/create-node-field/create-social-card-id'
+import remark from 'remark'
+import remarkHTML from 'remark-html'
+
+interface EdgesData {
+  errors?: any
+  data?: {
+    allMarkdownRemark: {
+      edges: {
+        node: {
+          fields: {
+            layout: string
+            slug: string
+          }
+        }
+      }[]
+      group: any
+    }
+  }
+}
+const getFolderEdges = async (folder: string, graphql: CreatePagesArgs['graphql'], filter = '') => {
+  const allMarkdown: EdgesData = await graphql(`
     {
       allMarkdownRemark(
         limit: 1000
@@ -39,17 +57,17 @@ async function getFolderEdges(folder, graphql, filter = '') {
     }
   `)
 
-  if (errors) {
+  if (allMarkdown.errors) {
     // eslint-disable-next-line no-console
-    errors.forEach((e) => console.error(e.toString()))
-    return Promise.reject(errors)
+    console.error(allMarkdown.errors)
+    throw new Error(allMarkdown.errors)
   }
 
-  return data.allMarkdownRemark.edges
+  return allMarkdown?.data?.allMarkdownRemark.edges
 }
 
-async function getArrayFieldValues(graphql, name) {
-  const { data, errors } = await graphql(`
+async function getArrayFieldValues(graphql: CreatePagesArgs['graphql'], name: string) {
+  const allMarkdown: EdgesData = await graphql(`
     {
       allMarkdownRemark(
         filter: { frontmatter: { isPublished: { ne: false }, isHidden: {ne: true}, templateKey: { eq: "long-form-content" } } }
@@ -62,17 +80,17 @@ async function getArrayFieldValues(graphql, name) {
     }
   `)
 
-  if (errors) {
+  if (allMarkdown.errors) {
     // eslint-disable-next-line no-console
-    errors.forEach((e) => console.error(e.toString()))
-    return Promise.reject(errors)
+    console.error(allMarkdown.errors)
+    throw new Error(allMarkdown.errors)
   }
 
-  return data.allMarkdownRemark.group
+  return allMarkdown?.data?.allMarkdownRemark.group
 }
 
-async function getArrayAuthorsTags(graphql, author) {
-  const { data, errors } = await graphql(`
+const getArrayAuthorsTags = async (graphql: CreatePagesArgs['graphql'], author: string) => {
+  const allMarkdown: EdgesData = await graphql(`
     {
       allMarkdownRemark(
         filter: { frontmatter: { authors: {in: ["${author}"]}, isPublished: { ne: false }, isHidden: {ne: true}, templateKey: { eq: "long-form-content" } } }
@@ -84,21 +102,20 @@ async function getArrayAuthorsTags(graphql, author) {
       }
     }
   `)
-
-  if (errors) {
+  if (allMarkdown.errors) {
     // eslint-disable-next-line no-console
-    errors.forEach((e) => console.error(e.toString()))
-    return Promise.reject(errors)
+    console.error(allMarkdown.errors)
+    throw new Error(allMarkdown.errors)
   }
 
-  return data.allMarkdownRemark.group
+  return allMarkdown?.data?.allMarkdownRemark.group
 }
 
-function withTrailingSlash(path) {
+function withTrailingSlash(path: string) {
   return path.endsWith('/') ? path : `${path}/`
 }
 
-function getRelativeUrl(url) {
+function getRelativeUrl(url: string) {
   const relativeUrl = url.match(/fingerprintjs.com(\/.*)$/)
   return relativeUrl ? withTrailingSlash(relativeUrl[1]) : '/'
 }
@@ -140,24 +157,24 @@ exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
   const pages = await getFolderEdges('index', graphql)
-  pages.forEach((edge) => createPageFromEdge(edge, createPage))
+  pages?.forEach((edge) => createPageFromEdge(edge, createPage))
 
   const blogPosts = await getFolderEdges(
     'blog',
     graphql,
     'frontmatter: { isPublished: { ne: false }, isHidden: {ne: true} }'
   )
-  blogPosts.forEach((edge) => createPageFromEdge(edge, createPage))
+  blogPosts?.forEach((edge) => createPageFromEdge(edge, createPage))
 
   const blogPostsHidden = await getFolderEdges(
     'blog',
     graphql,
     'frontmatter: { isPublished: { ne: false }, isHidden: {ne: false} }'
   )
-  blogPostsHidden.forEach((edge) => createPageFromEdge(edge, createPage, { noIndex: true }))
+  blogPostsHidden?.forEach((edge) => createPageFromEdge(edge, createPage, { noIndex: true }))
 
   const caseStudies = await getFolderEdges('case-study', graphql)
-  caseStudies.forEach((edge) => createPageFromEdge(edge, createPage))
+  caseStudies?.forEach((edge) => createPageFromEdge(edge, createPage))
 
   // TODO Temporarily hiding until it is released in production
   /*   const solutions = await getFolderEdges('solutions/solutions', graphql, 'frontmatter: { isPublished: { ne: false } }')
@@ -165,14 +182,14 @@ exports.createPages = async ({ actions, graphql }) => {
 
   const postsPerPage = 12
 
-  const numBlogPages = Math.ceil(blogPosts.length / postsPerPage)
+  const numBlogPages = blogPosts && Math.ceil(blogPosts.length / postsPerPage)
   createPaginatedPages(numBlogPages, postsPerPage, 'blog', 'src/templates/blog.tsx', createPage)
 
-  const numCaseStudyPages = Math.ceil(caseStudies.length / postsPerPage)
+  const numCaseStudyPages = caseStudies && Math.ceil(caseStudies.length / postsPerPage)
   createPaginatedPages(numCaseStudyPages, postsPerPage, 'case-studies', 'src/templates/case-studies.tsx', createPage)
 
   const tags = await getArrayFieldValues(graphql, 'tag')
-  tags.forEach(({ tag, totalCount }) => {
+  tags?.forEach(({ tag, totalCount }) => {
     const numTagPages = Math.ceil(totalCount / postsPerPage)
     const additionalContext = { tag }
 
@@ -187,7 +204,7 @@ exports.createPages = async ({ actions, graphql }) => {
   })
 
   const authors = await getArrayFieldValues(graphql, 'author')
-  authors.forEach(({ author, totalCount }) => {
+  authors?.forEach(({ author, totalCount }) => {
     const numAuthorPages = Math.ceil(totalCount / postsPerPage)
     const additionalContext = { author }
 
@@ -205,21 +222,19 @@ exports.createPages = async ({ actions, graphql }) => {
     const author = authorObj.author
     const authorTags = await getArrayAuthorsTags(graphql, author)
 
-    if (authorTags) {
-      authorTags.forEach(({ tag, totalCount }) => {
-        const numAuthorTagPages = Math.ceil(totalCount / postsPerPage)
-        const additionalContext = { author, tag }
+    authorTags?.forEach(({ tag, totalCount }) => {
+      const numAuthorTagPages = Math.ceil(totalCount / postsPerPage)
+      const additionalContext = { author, tag }
 
-        createPaginatedPages(
-          numAuthorTagPages,
-          postsPerPage,
-          `blog/author/${author.toLowerCase()}/${tag}`,
-          'src/templates/author-tag.tsx',
-          createPage,
-          additionalContext
-        )
-      })
-    }
+      createPaginatedPages(
+        numAuthorTagPages,
+        postsPerPage,
+        `blog/author/${author.toLowerCase()}/${tag}`,
+        'src/templates/author-tag.tsx',
+        createPage,
+        additionalContext
+      )
+    })
   })
   await Promise.all(createAuthorTagPages)
 }
@@ -287,19 +302,41 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
   })
 }
 
-exports.sourceNodes = async ({ actions, getNodes, createContentDigest }) => {
+type BlogNode = {
+  frontmatter: {
+    title: string
+    authors?: string[]
+  }
+}
+type AuthorNode = {
+  frontmatter: {
+    title: string
+    role: string
+    photo: string
+    bio?: string
+  }
+}
+
+export const sourceNodes: GatsbyNode['sourceNodes'] = async ({ actions, getNodes, createContentDigest }) => {
   const { createNodeField, createNode } = actions
 
   const blogPosts = getNodes().filter(
-    (node) => node.internal.type === 'MarkdownRemark' && /(blog)\/.*.md$/.test(node.fileAbsolutePath)
+    (node) =>
+      node.internal.type === 'MarkdownRemark' &&
+      typeof node.fileAbsolutePath === 'string' &&
+      /(blog)\/.*.md$/.test(node.fileAbsolutePath)
   )
   const authors = getNodes().filter(
-    (node) => node.internal.type === 'MarkdownRemark' && /(author)\/.*.md$/.test(node.fileAbsolutePath)
-  )
+    (node) =>
+      node.internal.type === 'MarkdownRemark' &&
+      typeof node.fileAbsolutePath === 'string' &&
+      /(author)\/.*.md$/.test(node.fileAbsolutePath)
+  ) as unknown as AuthorNode[]
 
   blogPosts.forEach((node) => {
-    if (node.frontmatter.authors) {
-      const authorNodes = authors.filter((otherNode) => node.frontmatter.authors.includes(otherNode.frontmatter.title))
+    const blogNode = node.frontmatter as BlogNode['frontmatter']
+    if (blogNode.authors) {
+      const authorNodes = authors.filter((otherNode) => blogNode.authors?.includes(otherNode.frontmatter.title))
 
       if (authorNodes.length > 0) {
         createNodeField({
@@ -346,10 +383,11 @@ exports.sourceNodes = async ({ actions, getNodes, createContentDigest }) => {
       : process.env.GATSBY_PREVIEW_FPJS_MGMT_API_HOST
 
   if (apiUrl) {
+    const requestHeaders = new Headers()
+    const customHeader = process.env.GATSBY_CUSTOM_HEADER_WAF ?? 'custom_header'
+    requestHeaders.set(customHeader, 'true')
     const result = await fetch(`${apiUrl}/prices?${new URLSearchParams({ 'product[]': 'api' })}`, {
-      headers: {
-        [process.env.GATSBY_CUSTOM_HEADER_WAF]: true,
-      },
+      headers: requestHeaders,
     })
     if (!result.ok) {
       // eslint-disable-next-line no-console
@@ -369,20 +407,21 @@ exports.sourceNodes = async ({ actions, getNodes, createContentDigest }) => {
     createPriceNode(defaultPriceData)
   }
 }
-exports.createSchemaCustomization = ({ actions }) => {
+export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({ actions }): void => {
   // Define the @md tag to mark a field which should be interpreted as markdown and converted to HTML
-  actions.createFieldExtension({
+  const { createTypes, createFieldExtension } = actions
+  createFieldExtension({
     name: 'md',
     extend() {
       return {
-        resolve(source, args, context, info) {
+        resolve(source: any, args: any, context: any, info: any) {
           const fieldValue = context.defaultFieldResolver(source, args, context, info)
           return remark().use(remarkHTML).processSync(fieldValue).toString()
         },
       }
     },
   })
-  actions.createTypes(`
+  createTypes(`
     type MarkdownRemarkFrontmatter {
       header: Header
       summary: Summary

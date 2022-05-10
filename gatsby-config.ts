@@ -1,8 +1,9 @@
-const path = require('path')
+import type { GatsbyConfig } from 'gatsby'
+import path from 'path'
 
 const baseUrl = process.env.CONTEXT === 'deploy-preview' ? process.env.DEPLOY_PRIME_URL : 'https://fingerprintjs.com'
 
-const resolvePath = (directoryName, pathName) => {
+const resolvePath = (directoryName: string, pathName: string) => {
   const result = path.join(directoryName, pathName)
   if (process.platform === 'win32') {
     return result.replace(/\\/g, '\\\\')
@@ -16,7 +17,7 @@ const gatsbyRequiredRules = path.join(process.cwd(), 'node_modules', 'gatsby', '
 const rssPostQuery = `
 {
   allMarkdownRemark(
-    filter: {fields: {slug: {regex: "/blog/"}}, frontmatter: {isPublished: {ne: false}, isHidden: {ne: true}}}
+    filter: {fields: {slug: {regex: "/blog/"}}, frontmatter: {isPublished: {ne: false}}}
     sort: {order: DESC, fields: frontmatter___publishDate}
     limit: 15
   ) {
@@ -47,7 +48,7 @@ const rssPostQuery = `
 }
 `
 
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata: {
     title: 'FingerprintJS Pro - Device fingerprinting and fraud detection API',
     description: 'Stop fraud, spam, and account takeovers with 99.5% accurate device fingerprinting as a service.',
@@ -104,7 +105,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         implementation: require('sass'),
-        additionalData: `@import "${resolvePath(__dirname, '/src/styles/common')}";`,
+        additionalData: `@import "${resolvePath(path.resolve(), '/src/styles/common')}";`,
         cssLoaderOptions: {
           esModule: false,
           modules: {
@@ -117,7 +118,7 @@ module.exports = {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/static`,
+        path: path.resolve(`static`),
         name: 'uploads',
         ignore: [`**/config.yml`],
       },
@@ -125,14 +126,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/`,
+        path: path.resolve(`content`),
         name: 'index',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/img`,
+        path: path.resolve(`src/img`),
         name: 'images',
       },
     },
@@ -240,7 +241,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
+        modulePath: path.resolve(`src/cms/cms.js`),
       },
     },
     {
@@ -309,3 +310,5 @@ module.exports = {
     'MarkdownRemark.fields.author': 'MarkdownRemark[]',
   },
 }
+
+export default config

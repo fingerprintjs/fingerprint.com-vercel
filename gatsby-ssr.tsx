@@ -1,4 +1,6 @@
-import React from 'react'
+import * as React from 'react'
+import type { GatsbySSR } from 'gatsby'
+
 import {
   FPJS_SCRIPT_URL_PATTERN,
   FPJS_VISITORS_ENDPOINT,
@@ -6,7 +8,7 @@ import {
   FPJS_INGRESS_ENDPOINT,
 } from './src/constants/env'
 
-export const onRenderBody = ({ setHeadComponents }) => {
+export const onRenderBody: GatsbySSR['onRenderBody'] = ({ setHeadComponents }) => {
   setHeadComponents([
     <link rel='preconnect' key='dns-prefetch-google-analytics' href='https://www.google-analytics.com' />,
     <link rel='preconnect' key='google-tag-manager' href='https://www.googletagmanager.com' />,
