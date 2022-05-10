@@ -17,8 +17,7 @@ const gatsbyRequiredRules = path.join(process.cwd(), 'node_modules', 'gatsby', '
 const rssPostQuery = `
 {
   allMarkdownRemark(
-    filter: {fields: {slug: {regex: "/blog/"}}, frontmatter: {isPublished: {ne: false}}}
-    sort: {order: DESC, fields: frontmatter___publishDate}
+    filter: {fields: {slug: {regex: "/blog/"}}, frontmatter: {isPublished: {ne: false}, isHidden: {ne: true}}}    sort: {order: DESC, fields: frontmatter___publishDate}
     limit: 15
   ) {
     edges {
