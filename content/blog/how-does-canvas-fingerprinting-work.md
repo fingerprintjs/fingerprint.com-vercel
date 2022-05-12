@@ -1,8 +1,8 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: How Does Canvas Fingerprinting Work - FingerprintJS
-  url: https://fingerprintjs.com/blog/canvas-fingerprinting
+  title: How Does Canvas Fingerprinting Work - Fingerprint
+  url: https://fingerprint.com/blog/canvas-fingerprinting
   image: /img/uploads/canvas-fingerprinting.png
   description: Canvas fingerprinting is one of the most popular techniques used in
     browser fingerprinting. We'll show you how it can be used to identify
@@ -84,7 +84,7 @@ Drawing shapes in HTML with different fill styles can also produce differences, 
 
 For further variety, you can use other characters, like those from Asian fonts, or accented European vowels. That way, you’ll differentiate between systems that can and can’t show them and expose differences in font renderers.
 
-Making the code generate a unique hash [is a challenge](https://stackoverflow.com/questions/25508970/canvas-fingerprinting-on-chrome), and it’s not easy to confirm how well your code does this. That’s why using an established library like [FingerprintJS](/) can make generating canvas fingerprints much easier.
+Making the code generate a unique hash [is a challenge](https://stackoverflow.com/questions/25508970/canvas-fingerprinting-on-chrome), and it’s not easy to confirm how well your code does this. That’s why using an established library like [Fingerprint](/) can make generating canvas fingerprints much easier.
 
 ## Canvas Fingerprinting Examples
 
@@ -158,4 +158,4 @@ Canvas fingerprinting is a useful tool for understanding visitors and keeping yo
 
 With the right mix of ingenuity (and JavaScript), you can identify people and monitor their behavior across sessions, flagging suspicious activity to help your team react to threats faster. You can also maintain consistency for returning visitors, serving them content most relevant to them and increasing engagement along the way.
 
-Instead of doing the hard work yourself, [FingerprintJS](/) provides an open-source and paid solution for fingerprinting your users. Their service has 99.5% accuracy, and you can try it without usage limits for 10 days.
+Instead of doing the hard work yourself, [Fingerprint](/) provides an open-source and paid solution for fingerprinting your users. Their service has 99.5% accuracy, and you can try it without usage limits for 10 days.

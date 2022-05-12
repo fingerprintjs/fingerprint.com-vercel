@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "http://www.fingerprintjs.com"
-  to = "https://fingerprintjs.com/"
+  from = "http://www.fingerprint.com"
+  to = "https://fingerprint.com/"
 
 [[redirects]]
   from = "/blog/wallpaper-id/"
@@ -10,22 +10,22 @@
 
 [[redirects]]
   from = "https://fpjs.io"
-  to = "https://fingerprintjs.com/"
+  to = "https://fingerprint.com/"
   force = true
 
 [[redirects]]
   from = "http://fpjs.io"
-  to = "https://fingerprintjs.com/"
+  to = "https://fingerprint.com/"
   force = true
 
 [[redirects]]
   from = "https://fingerprintjs.pro"
-  to = "https://fingerprintjs.com/"
+  to = "https://fingerprint.com/"
   force = true
 
 [[redirects]]
   from = "http://fingerprintjs.pro"
-  to = "https://fingerprintjs.com/"
+  to = "https://fingerprint.com/"
   force = true
 
 [[redirects]]

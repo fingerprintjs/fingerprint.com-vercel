@@ -10,8 +10,7 @@ export default function StayProtectedSection() {
       <Container>
         <header className={styles.header}>
           <h2 className={styles.title}>
-            Stay <strong>protected</strong> and <strong>one step ahead</strong> of malicious users with FingerprintJS
-            Pro
+            Stay <strong>protected</strong> and <strong>one step ahead</strong> of malicious users with Fingerprint Pro
           </h2>
           <p className={styles.subtitle}>Starting today is better than starting tomorrow</p>
           <GetStartedForm className={styles.form} />

@@ -3,7 +3,7 @@ templateKey: long-form-content
 metadata:
   title: What’s in Store for the Future of Buy Now, Pay Later? 7 BNPL Trends to
     Look For
-  url: https://fingerprintjs.com/blog/buy-now-pay-later-trends-2022-bnpl
+  url: https://fingerprint.com/blog/buy-now-pay-later-trends-2022-bnpl
   image: /img/uploads/what’s-in-store-for-the-future-of-buy-now-pay-later_-7-bnpl-trends-to-look-for-v5.png
   imageAlt: Illustration of a desktop computer and a credit card depicting buy
     now, pay later payment methods
@@ -25,11 +25,11 @@ heroImage:
     now, pay later payment methods
 customCTA:
   openCtaNewTab: true
-  ctaUrl: https://try.fingerprintjs.com/en-us/free-pdf-preventing-buy-now-pay-later-fraud-with-fingerprintjs
+  ctaUrl: https://try.fingerprint.com/en-us/free-pdf-preventing-buy-now-pay-later-fraud-with-fingerprintjs
   description: Solve costly fraud in Buy Now, Pay Later transactions with device
     identification. Learn more in our new guide.
   ctaText: Download Now
-  title: "Free PDF: Preventing BNPL fraud with FingerprintJS"
+  title: "Free PDF: Preventing BNPL fraud with Fingerprint"
 ---
 The way consumers shop and purchase goods online are rapidly shifting and evolving. With [online shopping sales in the US growing 14.5% in 2021 alone](https://www.digitalcommerce360.com/article/us-ecommerce-sales/), more people are shopping online than ever. Previously, with cash payments unavailable while shopping online, you only had the option to pay with a debit or credit card to make purchases.
 
@@ -37,7 +37,7 @@ In the past several years, the payment methods have expanded to streamline purch
 
 Buy now, pay later payments function similarly to short-term loans, but offer consumers benefits such as softer credit checks and low to 0% interest rates. They are also available directly within the eCommerce checkout flow, whereas loans are a different, more varied process. There are more pros and cons to BNPL for consumers, which [The Balance details here](https://www.thebalance.com/store-financing-with-point-of-sale-installment-loans-4869852).
 
-The BNPL market has quickly become a more than $100 billion industry, with companies worldwide now offering payments on credit for purchases small and large at online retailers. According [to a report by Afterpay](https://afterpay-corporate.yourcreative.com.au/wp-content/uploads/2021/10/Economic-Impact-of-BNPL-in-the-US-vF.pdf), 12% of online fashion retail purchases are through a BNPL provider. We cover the growing landscape of BNPL providers in our [Buy Now Pay Later Ultimate Research Guide](https://fingerprintjs.com/blog/buy-now-pay-later-bnpl/), but what’s next for the BNPL industry? Below we’re diving into what’s trending in the realm of BNPL. 
+The BNPL market has quickly become a more than $100 billion industry, with companies worldwide now offering payments on credit for purchases small and large at online retailers. According [to a report by Afterpay](https://afterpay-corporate.yourcreative.com.au/wp-content/uploads/2021/10/Economic-Impact-of-BNPL-in-the-US-vF.pdf), 12% of online fashion retail purchases are through a BNPL provider. We cover the growing landscape of BNPL providers in our [Buy Now Pay Later Ultimate Research Guide](https://fingerprint.com/blog/buy-now-pay-later-bnpl/), but what’s next for the BNPL industry? Below we’re diving into what’s trending in the realm of BNPL. 
 
 ## Pay for experiences and services over time
 
@@ -47,7 +47,7 @@ With the flexibility of payments over time, offering buy now, pay later for expe
 
 The risk for fraudulent purchasing with a BNPL would most likely increase when no tangible goods are exchanged. Therefore, accurate and reliable identity verification becomes ever more apparent when experiences are now available with BNPL. 
 
-> A little note about us: As an anti-fraud API provider, we work with both [BNPL businesses](https://fingerprintjs.com/buy-now-pay-later/) and eCommerce companies that leverage this technology. The industry also has its fair share of fraud challenges. So, we think it’s helpful to understand how companies are open to fraudulent techniques, how you can protect your company, and how a service like FingerprintJS can help you stop fraud before it starts.
+> A little note about us: As an anti-fraud API provider, we work with both [BNPL businesses](https://fingerprint.com/buy-now-pay-later/) and eCommerce companies that leverage this technology. The industry also has its fair share of fraud challenges. So, we think it’s helpful to understand how companies are open to fraudulent techniques, how you can protect your company, and how a service like Fingerprint can help you stop fraud before it starts.
 
 ## The BNPL shopping marketing community
 

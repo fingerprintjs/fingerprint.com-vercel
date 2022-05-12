@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: What is TLS fingerprinting?
-  url: https://fingerprintjs.com/blog/what-is-tls-fingerprinting-transport-layer-security
+  url: https://fingerprint.com/blog/what-is-tls-fingerprinting-transport-layer-security
   description: Transport Layer Security (TLS) is an algorithm that encrypts all
     your internet traffic and helps you stay secure online. Learn the inner
     workings of TLS fingerprinting and how it can put you in a better position
@@ -157,4 +157,4 @@ Applications evolve and are updated if the need arises. For example, the latest 
 
 ## Get in touch
 
-[Join our Discord](https://fingerprintjs.com/blog/discord-launch/) to chat with us about our fingerprinting research
+[Join our Discord](https://fingerprint.com/blog/discord-launch/) to chat with us about our fingerprinting research

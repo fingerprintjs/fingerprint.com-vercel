@@ -105,8 +105,8 @@ export default function SolutionContentTemplate({
           githubLink={URL.githubCommunityRepoUrl}
           {...starsLabel}
         >
-          FingerprintJS’ open source technology is supported by contributing developers across the globe. Stay up to
-          date on our latest technical solutions, integrations and updates.
+          Fingerprint’ open source technology is supported by contributing developers across the globe. Stay up to date
+          on our latest technical solutions, integrations and updates.
         </JoinCommunitySection>
         <Container size='large' className={styles.relatedSolutions}>
           {solution && <RelatedSolutions solution={solution} />}

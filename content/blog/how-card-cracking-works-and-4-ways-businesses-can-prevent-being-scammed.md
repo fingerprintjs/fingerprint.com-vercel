@@ -5,7 +5,7 @@ metadata:
   description: Credit card cracking is one of the fastest-growing types of fraud
     globally and accounts for around 16 percent of e-commerce fraud. Here are
     four ways to prevent it from happening within your business.
-  url: fingerprintjs.com/blog/what-is-card-cracking-and-prevention-tips
+  url: fingerprint.com/blog/what-is-card-cracking-and-prevention-tips
   image: /img/uploads/how-card-cracking-works-and-how-to-prevent.png
   imageAlt: illustrations of a credit card on a blue and grey background
   imageTitle: Card Cracking Definition and Prevention
@@ -28,7 +28,7 @@ customCTA:
 ---
 Credit card cracking is [one of the fastest-growing types of fraud](https://www.chargebackgurus.com/blog/effective-tools-strategies-to-prevent-card-testing-aka-card-cracking) globally and accounts for around 16 percent of e-commerce fraud.
 
-[Card cracking](https://fingerprintjs.com/payment-fraud/) (also known as carding) happens when fraudsters look to exploit the systems of e-commerce businesses to gather credit card information. Fraudsters may have obtained partial card information beforehand, or they can be starting from scratch.
+[Card cracking](https://fingerprint.com/payment-fraud/) (also known as carding) happens when fraudsters look to exploit the systems of e-commerce businesses to gather credit card information. Fraudsters may have obtained partial card information beforehand, or they can be starting from scratch.
 
 Confusingly, there is [another definition for card cracking](https://www.aba.com/advocacy/community-programs/consumer-resources/protect-your-money/how-avoid-card-cracking), which is where fraudsters lure in victims with the promise of money, get them to reveal their bank details, and steal from them. 
 
@@ -112,10 +112,10 @@ Rather than risk someone succeeding with another attempt at fraud, this is a saf
 ### **Use fraud prevention tools**
 
 * Fraud prevention at payment processing (e.g. [Stripe Radar](https://stripe.com/radar))
-* [Device identification](https://fingerprintjs.com/products/browser-fingerprinting/) (FingerprintJS Pro) - you can block returning fraudulent visitorIDs as well as monitor ID velocity to find bots (if someone attempts purchases multiple times in a short window)
-* [Bot Detection](https://fingerprintjs.com/products/bot-detection/) (BotD) - bots should never be able to make purchases! Use our open source library to identify them when they attempt to test CCs and block the purchase.
+* [Device identification](https://fingerprint.com/products/browser-fingerprinting/) (Fingerprint Pro) - you can block returning fraudulent visitorIDs as well as monitor ID velocity to find bots (if someone attempts purchases multiple times in a short window)
+* [Bot Detection](https://fingerprint.com/products/bot-detection/) (BotD) - bots should never be able to make purchases! Use our open source library to identify them when they attempt to test CCs and block the purchase.
 
-You can minimize card cracking and more types of payment fraud by utilizing FingerprintJS’ 99.5% accurate device fingerprinting. Learn more about how we can identify & help prevent costly payment fraud. 
+You can minimize card cracking and more types of payment fraud by utilizing Fingerprint’ 99.5% accurate device fingerprinting. Learn more about how we can identify & help prevent costly payment fraud. 
 
 \------
 

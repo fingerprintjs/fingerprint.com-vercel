@@ -25,7 +25,7 @@ export default function CaseStudies({ data, pageContext }: CaseStudyProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'FingerprintJS Case Studies | FingerprintJS',
+    title: 'Fingerprint Case Studies | Fingerprint',
     description: 'Success stories from our customers.',
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
   }

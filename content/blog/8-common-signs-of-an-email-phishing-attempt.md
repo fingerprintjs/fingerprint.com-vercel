@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: 8 Common Signs of an Email Phishing Attempt
-  url: https://fingerprintjs.com/blog/common-email-phishing-attack-signs
+  url: https://fingerprint.com/blog/common-email-phishing-attack-signs
   image: /img/uploads/s_-blog-illus_-8-common-indicators-of-phishing-email-attack-attempts-compressed.gif
   imageAlt: Illustration of a letter being opened by a fishing hook depicting a
     phishing email
@@ -25,11 +25,11 @@ heroImage:
     phishing email
 customCTA:
   openCtaNewTab: true
-  ctaUrl: https://fingerprintjs.com/account-takeover/
+  ctaUrl: https://fingerprint.com/account-takeover/
   description: "Keep your customers' accounts safe by accurately identifying
-    threats before they cause damage with FingerprintJS Pro's 99.5% accurate
+    threats before they cause damage with Fingerprint Pro's 99.5% accurate
     visitor identification. "
-  title: FingerprintJS helps to prevent account takeover identity theft, including
+  title: Fingerprint helps to prevent account takeover identity theft, including
     phishing
   ctaText: Learn more
 ---
@@ -37,7 +37,7 @@ Over the past five years, phishing has been the [number one strategy used by onl
 
 While phishing can carry risks for anyone online, companies have the unique increased risk of having their employees targeted through their business emails. When employees of a company are targeted by phishing attempts, the fraudsters are typically implementing more sophisticated strategies, such as spear phishing or whaling,  in hopes to gain access to business accounts. This type of targeting can result in security breaches that extend past email access and include access to sensitive internal data like financial information or customer data. 
 
-It's critical that all business employees know the signs of phishing attempts, whether [URL phishing](https://fingerprintjs.com/account-takeover/), spear phishing, whaling, or other phishing techniques. With [more than 240,000 phishing attacks carried out globally in 2020](https://www.tessian.com/blog/phishing-statistics-2020/) - nearly double from the previous year - it's a case of when, not if, scammers target your business. Thankfully, there are telltale signs.
+It's critical that all business employees know the signs of phishing attempts, whether [URL phishing](https://fingerprint.com/account-takeover/), spear phishing, whaling, or other phishing techniques. With [more than 240,000 phishing attacks carried out globally in 2020](https://www.tessian.com/blog/phishing-statistics-2020/) - nearly double from the previous year - it's a case of when, not if, scammers target your business. Thankfully, there are telltale signs.
 
 ## Quick email phishing facts 
 
@@ -124,4 +124,4 @@ You can tell your staff that any request to reveal such information over email i
 \------
 
 Knowing indicators of phishing emails is an excellent start to your defense against fraud, but it is only a start. One of the reasons these attacks are successful is they rely on people implementing what they know. Sadly, businesses often fall victim to phishing because this doesn't happen.\
-While protecting against email phishing is more often than not a judgment call on the receiver’s part, you can protect against those successful email phishing attacks from breaching your website with accurate user detection throughout your site. By identifying each and every unique visitor that visits your website,  you’ll be able to detect and flag suspicious activity, such as that of a successful social engineered phishing attempt from elsewhere. You can then require further authentication prior to a login or purchase. [Learn more about how FingerprintJS](https://fingerprintjs.com/account-takeover/) can help combat phishing and other types of attacks, including account takeovers.
+While protecting against email phishing is more often than not a judgment call on the receiver’s part, you can protect against those successful email phishing attacks from breaching your website with accurate user detection throughout your site. By identifying each and every unique visitor that visits your website,  you’ll be able to detect and flag suspicious activity, such as that of a successful social engineered phishing attempt from elsewhere. You can then require further authentication prior to a login or purchase. [Learn more about how Fingerprint](https://fingerprint.com/account-takeover/) can help combat phishing and other types of attacks, including account takeovers.

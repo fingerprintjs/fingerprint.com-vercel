@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: Test private blog
-  url: https://fingerprintjs.com/blog/test-private-blog
+  url: https://fingerprint.com/blog/test-private-blog
   description: Test description
   image: /img/uploads/3.png
 featured: false

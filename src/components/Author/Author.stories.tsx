@@ -13,7 +13,7 @@ export const Default = Template.bind({})
 Default.args = {
   author: {
     name: 'Vinicius Lambardozzi',
-    role: 'FingerprintJS Developer',
+    role: 'Fingerprint Developer',
     photo: 'https://picsum.photos/500',
   },
 }

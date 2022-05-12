@@ -15,14 +15,14 @@ export default function PricingSection() {
         <h1 className={styles.title}>Build Versus Buy</h1>
         <p className={styles.description}>
           Whether you are looking to integrate visitor identification with your existing system or want a complete
-          end-to-end solution, FingerprintJS has an option for your business.
+          end-to-end solution, Fingerprint has an option for your business.
         </p>
       </Container>
       <Container size='large' className={styles.cardsContainer}>
         <Card
           icon={<FingerprintSVG />}
           label='Plans start at $0/Month'
-          title='FingerprintJS Pro'
+          title='Fingerprint Pro'
           description='Build your own system with our visitor identification API'
           leftTitle='Visitor Identification'
           leftContent='Generates a 99.5% accurate visitorID for each unique device that visits your website. VisitorIDs will need to be mapped to your logins and stored so you can identify shared accounts'

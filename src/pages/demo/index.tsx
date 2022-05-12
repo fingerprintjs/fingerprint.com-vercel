@@ -22,14 +22,14 @@ export default function DemoPage({ pageContext }: DemoPageProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'Technical Demo - FingerprintJS Pro',
+    title: 'Technical Demo - Fingerprint Pro',
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
   }
 
   return (
     <LayoutTemplate siteMetadata={siteMetadata}>
       {breadcrumbs && <BreadcrumbsSEO breadcrumbs={breadcrumbs} />}
-      <HeroSection title='FingerprintJS Pro Demo' ctaText='Create Free Account' ctaHref={URL.signupUrl}>
+      <HeroSection title='Fingerprint Pro Demo' ctaText='Create Free Account' ctaHref={URL.signupUrl}>
         Identify anonymous site visitors with 99.5% accuracy to prevent online fraud
       </HeroSection>
       <DemoSection />

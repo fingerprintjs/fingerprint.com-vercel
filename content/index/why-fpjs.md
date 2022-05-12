@@ -2,11 +2,11 @@
 title: why-fpjs
 templateKey: static-page-content
 metadata:
-  title: Why FingerprintJS - empowering developers to solve fraud at the source
+  title: Why Fingerprint - empowering developers to solve fraud at the source
   description: Our browser fingerprinting API fights fraud by uniquely identifying
     99.5% of visits to a website, empowering developer teams to pinpoint
     fraudulent actors and build custom authentication workflows.
-  url: https://fingerprintjs.com/products/browser-fingerprinting
+  url: https://fingerprint.com/products/browser-fingerprinting
   image: /img/uploads/fpjs_cover3.png
 relatedTitle: Related Articles
 tags:
@@ -16,25 +16,25 @@ invertContent: false
 hero:
   title: Empowering developers to solve fraud at the source
   description: As opposed to top-down, enterprise-focused fraud prevention
-    platforms, FingerprintJS prevents digital fraud by uniquely and accurately
+    platforms, Fingerprint prevents digital fraud by uniquely and accurately
     identifying users, and empowering technical teams to use that data in a way
     that works for their applications.
   ctaText: Create Account
-  ctaHref: https://dashboard.fingerprintjs.com
+  ctaHref: https://dashboard.fingerprint.com
   openCtaNewTab: false
 cardSection:
-  title: Why FingerprintJS is different
+  title: Why Fingerprint is different
   subtitle: ""
   cards:
     - icon: /img/uploads/accuracy.svg
       title: Unparalleled accuracy
       content: >-
-        FingerprintJS uses an innovative combination of  browser fingerprinting,
+        Fingerprint uses an innovative combination of  browser fingerprinting,
         IP/URL analysis, device analysis, and machine learning to accurately
         identify up to 99.5% of unique visitors.
 
 
-        [How we calculate 99.5% accuracy >](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy)
+        [How we calculate 99.5% accuracy >](https://dev.fingerprint.com/docs/understanding-our-995-accuracy)
       iconAlt: 99.5% fingerprint accuracy
       iconTitle: 99.5% fingerprint accuracy
     - title: Committed to open source
@@ -56,7 +56,7 @@ cardSection:
       iconAlt: API and webhooks
       iconTitle: API and webhooks
     - title: GDPR and CCPA compliant
-      content: We take online privacy seriously. FingerprintJS is intended for fraud
+      content: We take online privacy seriously. Fingerprint is intended for fraud
         detection only - for this use case, no visitor consent is required for
         compliancy with GDPR and CCPA. We never automatically track traffic, and
         never do cross-domain tracking.
@@ -65,7 +65,7 @@ cardSection:
       iconTitle: GDPR shield
 blocks:
   - subheader: The power of fingerprinting
-    imageAlt: How FingerprintJS Pro works
+    imageAlt: How Fingerprint Pro works
     isImageAfterText: true
     isCtaButton: false
     content: "Fingerprinting technology is the backbone of most major fraud
@@ -76,11 +76,11 @@ blocks:
       browser, device, patterns of use, and more to generate a unique visitorID
       that can associate patterns of fraud with specific visitors. "
     image: /img/uploads/fpjs-diagram-2.png
-    imageTitle: How FingerprintJS Pro works
+    imageTitle: How Fingerprint Pro works
     ctaText: Read Our Beginner's Guide to Fingerprinting
     ctaUrl: /blog/what-is-browser-fingerprinting/
   - subheader: Future-proof your anti-fraud strategy
-    imageAlt: FingerprintJS Pro dashboard
+    imageAlt: Fingerprint Pro dashboard
     isImageAfterText: false
     isCtaButton: false
     content: As spoofing and cloaking technologies improve, so too must your
@@ -89,15 +89,15 @@ blocks:
       that work reliably even as browsers change their privacy settings and
       signals become restricted or added.
     image: /img/uploads/dash-usage-chart.png
-    imageTitle: FingerprintJS Pro dashboard
+    imageTitle: Fingerprint Pro dashboard
     ctaText: Create Free Account
-    ctaUrl: https://dashboard.fingerprintjs.com/signup
+    ctaUrl: https://dashboard.fingerprint.com/signup
 inlineCta:
-  title: Get FingerprintJS free and unlimited
-  subtitle: Teams can try FingerprintJS free for 10 days. Install our Javascript
+  title: Get Fingerprint free and unlimited
+  subtitle: Teams can try Fingerprint free for 10 days. Install our Javascript
     snippet on your website and begin collecting unique visitorIDs, geolocation
     data and more. This information can then be fused into your authentication
     workflows easily using our API and webhooks.
   buttonText: Get Started
-  buttonHref: https://dashboard.fingerprintjs.com/signup
+  buttonHref: https://dashboard.fingerprint.com/signup
 ---

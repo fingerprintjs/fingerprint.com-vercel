@@ -112,7 +112,7 @@ export default function FeatureComparisonSection() {
             across all browser attributes, making them less stable across &gt; 4 week time intervals.
           </p>
           <p className={styles.note}>
-            3. FingerprintJS Pro is GDPR and CCPA compliant as the data processor. You still need to be compliant as the
+            3. Fingerprint Pro is GDPR and CCPA compliant as the data processor. You still need to be compliant as the
             data controller and use the identification for fraud under legitimate interest or ask for consent.
           </p>
         </footer>

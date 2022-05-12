@@ -5,7 +5,7 @@ metadata:
   image: /img/uploads/steps-to-remove-account-takeover-in-banks-and-fintech.png
   imageAlt: Bank account takeover
   imageTitle: Bank account takeover
-  url: https://fingerprintjs.com/blog/prevent-account-takeover-in-banks-and-fintech
+  url: https://fingerprint.com/blog/prevent-account-takeover-in-banks-and-fintech
   socialImage: /img/uploads/steps-to-remove-account-takeover-in-banks-and-fintech.png
   description: Account takeover is a huge risk to online banks and fintechs. Learn
     how fraudsters gain access to customer accounts, and how to protect your
@@ -140,7 +140,7 @@ For banking and finance, sequestering areas for programs that run online help to
 
 The best way to limit the damage of account takeover fraud is to prevent it from happening in the first place. Most banks and fintechs will already have account takeover prevention systems in place that attempt to identify patterns of fraud and take action as needed. However, it is all too easy for fraudsters to slip between the cracks if they cannot be tracked over time.
 
-FingerprintJS Pro is an API that provides a unique visitorID for every visitor to a website or mobile application. As most fraudsters are repeat offenders, FingerprintJS Pro makes it easy to associate any future activity with past suspicious behavior, even when they attempt to conceal their identity or location. The VisitorID remains the same even if the user clears cookies, uses a VPN, or uses incognito mode in the browser.
+Fingerprint Pro is an API that provides a unique visitorID for every visitor to a website or mobile application. As most fraudsters are repeat offenders, Fingerprint Pro makes it easy to associate any future activity with past suspicious behavior, even when they attempt to conceal their identity or location. The VisitorID remains the same even if the user clears cookies, uses a VPN, or uses incognito mode in the browser.
 
 ## Conclusion
 

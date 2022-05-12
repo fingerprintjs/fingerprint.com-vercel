@@ -1,15 +1,15 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: How to Use FingerprintJS To Prevent Bot Attacks
+  title: How to Use Fingerprint To Prevent Bot Attacks
   description: Bad bots are smart enough these days to evade the security controls
-    of most signup forms. Learn how FingerprintJS can help prevent bot attacks
+    of most signup forms. Learn how Fingerprint can help prevent bot attacks
     when other measures fail.
-  url: https://fingerprintjs.com/blog/fingerprintjs-prevent-bot-attacks
+  url: https://fingerprint.com/blog/fingerprint-prevent-bot-attacks
   image: /img/uploads/prevent-bot-attacks-5-.png
 featured: true
 publishDate: 2021-09-09T20:44:44.264Z
-title: How to Use FingerprintJS to Prevent Bot Attacks
+title: How to Use Fingerprint to Prevent Bot Attacks
 isPublished: true
 isHidden: false
 tags:
@@ -28,9 +28,9 @@ heroImage:
 customCTA:
   openCtaNewTab: false
 ---
-The purpose of this tutorial is to demonstrate how easy it is to detect and mitigate bad bot account signups with FingerprintJS Pro. Users will first create a sample registration website with basic security controls to prevent multiple signups, then simulate a bot attack to defeat those controls using open source tools. Lastly, they will integrate FingerprintJS Pro into the website’s security workflow to detect/stop advanced bots, even when other security methods have failed.
+The purpose of this tutorial is to demonstrate how easy it is to detect and mitigate bad bot account signups with Fingerprint Pro. Users will first create a sample registration website with basic security controls to prevent multiple signups, then simulate a bot attack to defeat those controls using open source tools. Lastly, they will integrate Fingerprint Pro into the website’s security workflow to detect/stop advanced bots, even when other security methods have failed.
 
-As a starting point, readers may wish to (re)visit the tutorial on How to Prevent Multiple Signups With FingerprintJS Pro, which covers more basic attempts at multiple account creation (e.g., revisiting the registration form in incognito mode). 
+As a starting point, readers may wish to (re)visit the tutorial on How to Prevent Multiple Signups With Fingerprint Pro, which covers more basic attempts at multiple account creation (e.g., revisiting the registration form in incognito mode). 
 
 ### A WORLD OF BAD BOTS
 
@@ -47,15 +47,15 @@ According to [Imperva's 2021 Bad Bot Report](https://www.imperva.com/resources/r
 
 Bot attack prevention should be a shared concern amongst all website owners, whether it’s for preserving the accuracy of website traffic analytics or ensuring the safe operations of vaccine booking websites. Unfortunately, malicious actors continue refining their bots’ ability to mimic human behavior, making the goal of detection a constantly moving target.
 
-### FINGERPRINTJS PRO AND BOT DETECTION
+### Fingerprint Pro AND BOT DETECTION
 
-This tutorial uses [FingerprintJS Pro](/) to prevent bad bots from defeating an account signup form’s email verification system. As the most advanced browser fingerprinting solution on the market, FingerprintJS Pro can identify unique website visitors with an accuracy of 99.5%.
+This tutorial uses [Fingerprint Pro](/) to prevent bad bots from defeating an account signup form’s email verification system. As the most advanced browser fingerprinting solution on the market, Fingerprint Pro can identify unique website visitors with an accuracy of 99.5%.
 
-It’s worth noting that while FingerprintJS Pro is highly effective at detecting fraudulent activity and abuse patterns typical of bots (e.g., repeat visits and multiple form submissions), it doesn’t explicitly differentiate between bot and human visitors. If you want to flag visitors based on their likelihood of being a bot, we have built an open source bot detection library to recognize bots through the detection of automation tools, browser spoofing, and virtual machines. This free library can be used in conjunction with FingerprintJS Pro to both detect bots and generate a persistent visitor identifier.
+It’s worth noting that while Fingerprint Pro is highly effective at detecting fraudulent activity and abuse patterns typical of bots (e.g., repeat visits and multiple form submissions), it doesn’t explicitly differentiate between bot and human visitors. If you want to flag visitors based on their likelihood of being a bot, we have built an open source bot detection library to recognize bots through the detection of automation tools, browser spoofing, and virtual machines. This free library can be used in conjunction with Fingerprint Pro to both detect bots and generate a persistent visitor identifier.
 
 ### TUTORIAL REQUIREMENTS
 
-* **[FingerprintJS Pro](https://dashboard.fingerprintjs.com/signup)** is required; new users can sign up for a free account.
+* **[Fingerprint Pro](https://dashboard.fingerprint.com/signup)** is required; new users can sign up for a free account.
 * **[Splinter](https://github.com/cobrateam/splinter)** is used for simulating a user (or many users) completing the signup form. The popular Python-based testing framework enables the automation of browser actions like visiting URLs and interacting with web page elements, among others.
 * **[1secMAIL](https://1secmail.com)** is used to generate disposable mailboxes during the account creation process.
 
@@ -70,7 +70,7 @@ Lastly, the following items should be installed in the environment where the tut
 
 This tutorial involves a fictional online course platform that offers free 14-day trials. The website owner wants to prevent trial users from registering several accounts with multiple emails and extending their trials indefinitely.
 
-Start with the existing sample registration form provided by FingerprintJS called [multiple-signup-demo](https://github.com/fingerprintjs/multiple-signup-demo).
+Start with the existing sample registration form provided by Fingerprint called [multiple-signup-demo](https://github.com/fingerprintjs/multiple-signup-demo).
 
 Run `git checkout` against the `initial-project-setup` branch: 
 
@@ -158,7 +158,7 @@ After the user submits the form, the system will attempt to create a new record 
 
 ## Simulating an Attack with Splinter
 
-Now that the signup form is up-and-running, the next step is to use Splinter and some Python code to simulate an attacker’s actions. FingerprintJS Pro has yet to be installed, so using unique email addresses should be enough to automate multiple account signups. 
+Now that the signup form is up-and-running, the next step is to use Splinter and some Python code to simulate an attacker’s actions. Fingerprint Pro has yet to be installed, so using unique email addresses should be enough to automate multiple account signups. 
 
 Start by creating a new directory called `signup_bot`:
 
@@ -309,15 +309,15 @@ The console should look something like this:
 
 Future development might include additional code for reading the emails and opening the confirmation links; for the sake of brevity, it’s assumed that completing this part would successfully automate the signup process entirely. By integrating Splinter and 1secMAIL in an automated signup bot script, malicious actors can easily bypass the security controls of most website registration forms.
 
-### Adding Extra Security with FingerprintJS Pro
+### Adding Extra Security with Fingerprint Pro
 
-When traditional security measures fail to prevent unauthorized accounts from being created, FingerprintJS Pro can be an incredibly powerful tool for securing websites against bad bots. Its browser fingerprinting technology is the most advanced on the market, combining various cutting-edge methods for uniquely identifying browsers with machine learning algorithms and a probability engine; the result is an astonishing 99.5% accuracy rate.
+When traditional security measures fail to prevent unauthorized accounts from being created, Fingerprint Pro can be an incredibly powerful tool for securing websites against bad bots. Its browser fingerprinting technology is the most advanced on the market, combining various cutting-edge methods for uniquely identifying browsers with machine learning algorithms and a probability engine; the result is an astonishing 99.5% accuracy rate.
 
 > *A browser fingerprint* is a set of information related to a user’s device. This includes a device’s hardware, operating system, browser, and configuration. Browser fingerprinting is the process of collecting information through a web browser to build a fingerprint of a device. 
 
-[FingerprintJS](https://dev.fingerprintjs.com/docs/introduction) uses browser fingerprinting among other techniques to generate a `visitorID` value. This value is then returned to the application, providing a persistent record of a specific user.
+[Fingerprint](https://dev.fingerprint.com/docs/introduction) uses browser fingerprinting among other techniques to generate a `visitorID` value. This value is then returned to the application, providing a persistent record of a specific user.
 
-To start implementing FingerprintJS Pro, create a new [FingerprintJS account](https://dashboard.fingerprintjs.com/signup/)—it’s free for 10 days and includes unlimited API calls.
+To start implementing Fingerprint Pro, create a new [Fingerprint account](https://dashboard.fingerprint.com/signup/)—it’s free for 10 days and includes unlimited API calls.
 
 After successfully registering, a snippet of code is provided to add to the website:
 
@@ -511,11 +511,11 @@ Run the signup bot against the new form and observe what happens:
 
 [![asciicast](https://asciinema.org/a/yifLsZzbe9iABxAK8ovEBlukX.svg)](https://asciinema.org/a/yifLsZzbe9iABxAK8ovEBlukX?data-speed="10"&autoplay=1)
 
-Even if different email addresses are used, **FingerprintJS** correctly flags the signup attempt as coming from the same visitor. At this point, a website operator could choose to block further sign-up attempts.
+Even if different email addresses are used, **Fingerprint** correctly flags the signup attempt as coming from the same visitor. At this point, a website operator could choose to block further sign-up attempts.
 
 ### Conclusion
 
-While it’s not possible to completely prevent bot attacks given their current sophistication levels, website operators can drastically reduce the risk of compromise by combining techniques like email validation and CAPTCHAS with [**FingerprintJS Pro**. ](https://dashboard.fingerprintjs.com/signup)This layered approach merges traditional techniques for confirming accounts with a solution that’s 99.5% accurate for identifying unique visitors. And for recognizing bot activity and identifying malicious bots, **[Botd](https://github.com/fingerprintjs/botd)** offers powerful bot detection in an easy-to-use, open source library.
+While it’s not possible to completely prevent bot attacks given their current sophistication levels, website operators can drastically reduce the risk of compromise by combining techniques like email validation and CAPTCHAS with [**Fingerprint Pro**. ](https://dashboard.fingerprint.com/signup)This layered approach merges traditional techniques for confirming accounts with a solution that’s 99.5% accurate for identifying unique visitors. And for recognizing bot activity and identifying malicious bots, **[Botd](https://github.com/fingerprintjs/botd)** offers powerful bot detection in an easy-to-use, open source library.
 
 The full code for the examples used in this article can be found here:
 

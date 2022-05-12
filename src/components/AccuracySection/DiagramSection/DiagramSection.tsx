@@ -68,8 +68,7 @@ export default function DiagramSection() {
               {currentTab === tabOptions.AfterPro && (
                 <>
                   <span className={styles.fingerService}>
-                    FingerprintJS assigns a VisitorID, identifying returning visitors with{' '}
-                    <strong>99.5% accuracy</strong>
+                    Fingerprint assigns a VisitorID, identifying returning visitors with <strong>99.5% accuracy</strong>
                   </span>
                   <span className={styles.visitor}>Visitor</span>
                   <span className={styles.visitorId}>VisitorID </span>

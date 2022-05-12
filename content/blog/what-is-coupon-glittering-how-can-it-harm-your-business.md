@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: What is coupon glittering & how can it harm your business?
-  url: https://fingerprintjs.com/blog/what-is-coupon-glittering-and-how-can-it-harm-businesses/
+  url: https://fingerprint.com/blog/what-is-coupon-glittering-and-how-can-it-harm-businesses/
   description: Coupon glittering is a form of payment fraud that exploits glitches
     in coupon codes. Learn how this scam works, and how to prevent it from
     damaging your retail store or online business.
@@ -24,15 +24,15 @@ heroImage:
 customCTA:
   openCtaNewTab: false
   title: Protect your e-commerce site
-  description: Learn how FingerprintJS protects sites against coupon and promo fraud.
+  description: Learn how Fingerprint Protects sites against coupon and promo fraud.
   ctaText: Learn more
-  ctaUrl: https://fingerprintjs.com/ecommerce/
+  ctaUrl: https://fingerprint.com/ecommerce/
 isPublished: true
 isHidden: false
 ---
 <i>Author’s Note: While coupon glittering typically refers to the exploitation of glitches associated with coupons used at brick-and-mortar stores, online retailers should take note of the techniques used by online glittering communities. Online fraudsters can similarly take advantage of loopholes in discount and promo codes offered, and share exploits within these online forums.
 
-FingerprintJS helps e-commerce sites prevent promo and coupon fraud by uniquely identifying each visitor to your website, making it easy to catch suspicious user behavior. [Learn more about how we protect e-commerce sites.](/ecommerce/)</i>
+Fingerprint helps e-commerce sites prevent promo and coupon fraud by uniquely identifying each visitor to your website, making it easy to catch suspicious user behavior. [Learn more about how we protect e-commerce sites.](/ecommerce/)</i>
 
 ## Introduction
 

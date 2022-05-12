@@ -1,11 +1,11 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: Bot Detection Using Browser Fingerprinting - FingerprintJS
+  title: Bot Detection Using Browser Fingerprinting - Fingerprint
   description: Learn the most common bot detection techniques, and learn to
     implement bot detection and threat mitigation using browser fingerprinting
     techniques.
-  url: https://fingerprintjs.com/blog/bot-detection/
+  url: https://fingerprint.com/blog/bot-detection/
   image: /img/uploads/bot-detection.png
   imageAlt: Bot detection radar
   imageTitle: Bot detection radar
@@ -35,7 +35,7 @@ Unfortunately, **bad bot detection** is really hard because these malicious bots
 
 On top of that, [browsers have added privacy measures](/blog/browser-fingerprinting-privacy/) that make it harder for programmers to consistently identify real traffic from bot traffic. Fortunately, there are some proven methods to stand up to bots in your web application.
 
-In this article, I'll introduce a few common bot detection techniques, and I'll show you how to implement bot detection and threat mitigation using [FingerprintJS](/), one of the most robust open-source fingerprinting libraries available.
+In this article, I'll introduce a few common bot detection techniques, and I'll show you how to implement bot detection and threat mitigation using [Fingerprint](/), one of the most robust open-source fingerprinting libraries available.
 
 ## Bot Detection Techniques
 
@@ -49,13 +49,13 @@ Good bots will [declare themselves in the `User-Agent` HTTP header](https://webs
 
 Bots are getting [much more sophisticated](https://datadome.co/bot-management-protection/bot-detection-how-to-identify-bot-traffic-to-your-website/), so you’ll likely have to use more than one of these techniques, especially if your company is a high-value target like a financial institution, payment processor, or large enterprise.
 
-## Detecting Bot Traffic with FingerprintJS
+## Detecting Bot Traffic with Fingerprint
 
 While it's worth learning about all the above bot detection methods (and probably others), I will focus on fingerprinting for the remainder of this article. [Browser fingerprinting](/blog/what-is-browser-fingerprinting/) uses hardware details, browser extensions, WebGL behavior, [and many other factors](/blog/browser-fingerprinting-techniques/) to generate a unique visitor ID for each user on your site.
 
-When a user signs up or confirms their email address, you can use a library like  [FingerprintJS](/) to create and associate this visitor ID with the user. When someone comes back to your site and attempts to log in, you can block the attempt or force them to perform a second authentication factor if their fingerprint doesn't match the one known for this user.
+When a user signs up or confirms their email address, you can use a library like  [Fingerprint](/) to create and associate this visitor ID with the user. When someone comes back to your site and attempts to log in, you can block the attempt or force them to perform a second authentication factor if their fingerprint doesn't match the one known for this user.
 
-In this article, I'll show you how to use FingerprintJS in a [ReactJS](https://reactjs.org/) web application to fingerprint your users. Then, I'll show you how to create a script that detects likely bots using a [custom React hook](https://reactjs.org/docs/hooks-custom.html). Using this detection method, you can force bots to perform extra verification like captchas or two-factor authentication.
+In this article, I'll show you how to use Fingerprint in a [ReactJS](https://reactjs.org/) web application to fingerprint your users. Then, I'll show you how to create a script that detects likely bots using a [custom React hook](https://reactjs.org/docs/hooks-custom.html). Using this detection method, you can force bots to perform extra verification like captchas or two-factor authentication.
 
 You can follow along with each step along the way [or get the finished code on GitHub](https://github.com/karllhughes/fingerprintjs-bot-detection). While I won't go into detail on all the server-side code you might need to implement, I will give you a starting point for implementing bot detection using client-side fingerprinting.
 
@@ -67,7 +67,7 @@ Assuming you have [NodeJS](https://nodejs.org/en/) installed, create a new React
 npx create-react-app bot-detection  
 ```
 
-Inside your React application's root directory, run the following command to install [FingerprintJS from npm](https://www.npmjs.com/package/@fingerprintjs/fingerprintjs):
+Inside your React application's root directory, run the following command to install [Fingerprint from npm](https://www.npmjs.com/package/@fingerprintjs/fingerprintjs):
 
 ```shell
 npm i @fingerprintjs/fingerprintjs
@@ -75,19 +75,19 @@ npm i @fingerprintjs/fingerprintjs
 
 ### Getting a User's Fingerprint
 
-With your React application set up and FingerprintJS installed, you're ready to collect your first fingerprint.
+With your React application set up and Fingerprint installed, you're ready to collect your first fingerprint.
 
 First, import `FingerprintJS` and React's `useEffect` and `useState` in your `src/App.js` file:
 
 ```javascript
 import {useEffect, useState} from 'react';
-import FingerprintJS from '@fingerprintjs/fingerprintjs';
+import Fingerprint from '@fingerprintjs/fingerprintjs';
 ...
 ```
 
-Next, add a new [Effect Hook](https://reactjs.org/docs/hooks-effect.html) that calls the FingerprintJS library's `load()` method. This will retrieve an agent instance for the current user, so when you call `get()`, you'll be able to log the current user's fingerprint to your console.
+Next, add a new [Effect Hook](https://reactjs.org/docs/hooks-effect.html) that calls the Fingerprint library's `load()` method. This will retrieve an agent instance for the current user, so when you call `get()`, you'll be able to log the current user's fingerprint to your console.
 
-In order to display the `visitorId` that FingerprintJS generates, you can also add a [State Hook](https://reactjs.org/docs/hooks-state.html):
+In order to display the `visitorId` that Fingerprint generates, you can also add a [State Hook](https://reactjs.org/docs/hooks-state.html):
 
 ```javascript
 ...
@@ -147,7 +147,7 @@ const users = {
 ...
 ```
 
-Next, create a function to check a username against their last known visitor ID from FingerprintJS, and add a piece of state to indicate whether the username and visitor ID combination is valid or not:
+Next, create a function to check a username against their last known visitor ID from Fingerprint, and add a piece of state to indicate whether the username and visitor ID combination is valid or not:
 
 ```
 ...
@@ -196,6 +196,6 @@ In this way, you can use a browser fingerprint to help you identify and mitigate
 
 ## Bot Detection is a Never-Ending Challenge
 
-As attackers improve the techniques they use to create more sophisticated bots, software engineers have to continue updating their software to keep up. While it's possible to build some of this in-house, leaning on proven, thoroughly-tested libraries like [FingerprintJS](/)  will save you a lot of time.
+As attackers improve the techniques they use to create more sophisticated bots, software engineers have to continue updating their software to keep up. While it's possible to build some of this in-house, leaning on proven, thoroughly-tested libraries like [Fingerprint](/)  will save you a lot of time.
 
-In addition to the free, open-source library, [FingerprintJS has a pro version](/) that includes [bot detection](https://dev.fingerprintjs.com/v2.0.0/docs/bot-detection), advanced browser fingerprinting, and anonymous user identification. This makes your job as an application developer even easier because you can lean on FingerprintJS's expertise rather than keeping up with the changing bot detection landscape yourself.
+In addition to the free, open-source library, [Fingerprint has a pro version](/) that includes [bot detection](https://dev.fingerprint.com/v2.0.0/docs/bot-detection), advanced browser fingerprinting, and anonymous user identification. This makes your job as an application developer even easier because you can lean on Fingerprint's expertise rather than keeping up with the changing bot detection landscape yourself.

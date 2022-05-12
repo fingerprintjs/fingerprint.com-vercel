@@ -7,7 +7,7 @@ export function withoutTrailingSlash(url: string) {
 }
 
 export function getRelativeUrl(url: string) {
-  const relativeUrl = url.match(/fingerprintjs.com(\/.*)$/)
+  const relativeUrl = url.match(/fingerprint.com(\/.*)$/)
   return relativeUrl ? withTrailingSlash(relativeUrl[1]) : '/'
 }
 

@@ -10,20 +10,20 @@ export default function NextStepsSection() {
     <Section className={styles.root}>
       <Container className={styles.container} size='large'>
         <header className={styles.sectionHeader}>
-          <h1 className={styles.title}>Next Steps with FingerprintJS Pro</h1>
+          <h1 className={styles.title}>Next Steps with Fingerprint Pro</h1>
         </header>
         <div className={styles.stepsSection}>
-          <Step step='Try FingerprintJS free' url={URL.dashboardLoginUrl} linkText='Create account today >'>
+          <Step step='Try Fingerprint free' url={URL.dashboardLoginUrl} linkText='Create account today >'>
             At anytime, start your free {DEFAULT_TRIAL_DAYS}-day trial and get 100% of features with no usage limits.
           </Step>
           <Step step='Read our docs' url={DOC_URL.documentationUrl} linkText='View docs >'>
-            Learn how to implement FingerprintJS Pro on your website and start collecting VisitorIDs.
+            Learn how to implement Fingerprint Pro on your website and start collecting VisitorIDs.
           </Step>
           <Step step='Reach out with questions' url={MAILTO.mailToUrl} linkText='Contact support >'>
             We would love to help out! Reach out to support via email or chat anytime.
           </Step>
           <Step step='Join our Discord' url={URL.discordServerURL} linkText='Join for updates >'>
-            Connect with other FingerprintJS users, get notifications and updates, and send us your feedback.
+            Connect with other Fingerprint users, get notifications and updates, and send us your feedback.
           </Step>
         </div>
       </Container>

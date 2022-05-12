@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: 4 things to consider before choosing a buy now, pay later provider
-  url: fingerprintjs.com/blog/choosing-buy-now-pay-later-ecommerce-bnpl
+  url: fingerprint.com/blog/choosing-buy-now-pay-later-ecommerce-bnpl
   image: /img/uploads/considerations-for-ecommerce-companies-to-take-before-selecting-a-buy-now-pay-later-provider.png
   imageAlt: Illustrated shopping bag with arrows on a dark blue background
   imageTitle: eCommerce decision making
@@ -28,9 +28,9 @@ customCTA:
 ---
 Flexible payment options are booming. More and more customers are taking advantage of buy now, pay later options at the digital checkout, with the industry currently worth **[more than $100 billion](https://fintechmagazine.com/financial-services-finserv/why-buy-now-pay-later-bnpl-growing-popularity).** There are plenty of good reasons for online retailers to implement. So how should retailers consider and choose a buy now, pay later solution within an increasingly growing and competitive market? This post explains retailer benefits and the critical considerations retailers should take before selecting a BNPL provider. 
 
-> **A little note about us:** As an anti-fraud API provider we work with both [BNPL businesses](https://fingerprintjs.com/buy-now-pay-later/) as well as eCommerce companies that leverage this technology. The industry also has its own fair share of fraud challenges, so we think it's useful to understand in what ways companies are open to fraudulent techniques, how you can protect your company, and the ways a service like FingerprintJS can help you stop fraud before it starts.
+> **A little note about us:** As an anti-fraud API provider we work with both [BNPL businesses](/buy-now-pay-later/) as well as eCommerce companies that leverage this technology. The industry also has its own fair share of fraud challenges, so we think it's useful to understand in what ways companies are open to fraudulent techniques, how you can protect your company, and the ways a service like Fingerprint can help you stop fraud before it starts.
 
-Looking to learn more about who the key BNPL providers are? Read about the BNPL worldwide in our latest research report, [The ultimate guide to Buy Now, Pay Later](https://fingerprintjs.com/blog/buy-now-pay-later-bnpl/).
+Looking to learn more about who the key BNPL providers are? Read about the BNPL worldwide in our latest research report, [The ultimate guide to Buy Now, Pay Later](/blog/buy-now-pay-later-bnpl/).
 
 ## How does a buy now, pay later payment option fit in with today’s eCommerce landscape?
 
@@ -50,7 +50,7 @@ Instead, customers are digitally verified in a credit risk assessment when they 
 
 A growing number of buy now, pay later companies are emerging, offering new payment solutions to all sizes of online retailers. Affirm, Sezzle, Afterpay and Klarna are just some of the options. 
 
-**Read more: [The ultimate Buy Now, Pay Later research guide](https://fingerprintjs.com/blog/buy-now-pay-later-bnpl/).**
+**Read more: [The ultimate Buy Now, Pay Later research guide](/blog/buy-now-pay-later-bnpl/).**
 
 While assessing the options, merchants need to watch out for the risks of BNPL too. So which one should you use? Consider these key points:
 
@@ -82,7 +82,7 @@ Whenever you bring in a third party service provider to your business, ensuring 
 
 You should look at the overall customer experience your customers would encounter should they use a BNPL option during their checkout process. Are there any vague or unclear terms when it comes to pricing? Is there a 0% APR option available for every consumer? These are a couple of questions you could consider when reviewing your terms with a potential BNPL provider. 
 
-Secondly, a BNPL provider will have access to your customers’ most sensitive information including payment methods, and other identifying information required to process their approval check. Read through their trust and security pages to make sure you understand how your customer’s data will be used, stored, and protected post-purchase. [We help BNPL and eCommerce companies alike to identify fraudulent transactions and activity](https://fingerprintjs.com/buy-now-pay-later/) to prevent it from occurring at all. 
+Secondly, a BNPL provider will have access to your customers’ most sensitive information including payment methods, and other identifying information required to process their approval check. Read through their trust and security pages to make sure you understand how your customer’s data will be used, stored, and protected post-purchase. [We help BNPL and eCommerce companies alike to identify fraudulent transactions and activity](/buy-now-pay-later/) to prevent it from occurring at all. 
 
 \--------------------
 
@@ -90,4 +90,4 @@ Buy now, pay later is still in its early days, but the signs are clear - it will
 
 By taking the time to carefully select the best buy now, pay later solution for your business, you’ll unlock the maximum benefit they provide. 
 
-You can also [learn more about how FingerprintJS](https://fingerprintjs.com/buy-now-pay-later/) helps combat and prevent fraudulent BNPL transactions through our device fingerprinting technology. With a 99.5% accuracy rate for identifying unique visitors across devices and browsers, FingerprintJS Pro combats even the most sophisticated fraudsters.
+You can also [learn more about how Fingerprint](/buy-now-pay-later/) helps combat and prevent fraudulent BNPL transactions through our device fingerprinting technology. With a 99.5% accuracy rate for identifying unique visitors across devices and browsers, Fingerprint Pro combats even the most sophisticated fraudsters.

@@ -1,13 +1,13 @@
 ---
 templateKey: solution-content
 metadata:
-  title: Credential Stuffing Prevention - FingerprintJS Pro
+  title: Credential Stuffing Prevention - Fingerprint Pro
   image: /img/uploads/credential-stuffing.png
   imageAlt: test alt
   imageTitle: test title
   description: Explore our full code solution for credential stuffing prevention.
     Stop automated attacks on your login page with our user identification API.
-  url: https://fingerprintjs.com/solutions/credential-stuffing
+  url: https://fingerprint.com/solutions/credential-stuffing
 publishDate: 2021-11-12T15:48:01.198Z
 isPublished: true
 isHidden: false
@@ -30,9 +30,9 @@ industry:
   - Financial
 bottomLinks:
   - text: Full technical solution →
-    url: https://www.fingerprintjs.com/
+    url: https://www.fingerprint.com/
   - text: Full login protection documentation →
-    url: https://www.fingerprintjs.com/
+    url: https://www.fingerprint.com/
 ---
 ## How credential stuffing works
 
@@ -44,19 +44,19 @@ Credential stuffing is a method of account takeover where an attacker attempts t
 2. An attacker uses automated tools to test the username and password pairs on a web application, noting any successful attempts.
 3. As soon as a successful login happens, an attacker uses credentials for profit. Depending on the service accessed, they may make fraudulent purchases, use the account for phishing or other scams, access private information, or sell the login credentials.
 
-## How FingerprintJS protects your login page
+## How Fingerprint Protects your login page
 
-![How FingerprintJS protects the login page](/img/uploads/credential-stuffing-diagram2.png)
+![How Fingerprint Protects the login page](/img/uploads/credential-stuffing-diagram2.png)
 
-### What FingerprintJS does
+### What Fingerprint does
 
-FingerprintJS Pro provides a unique identifier for every visitor to your website (the visitorID) that is collected passively anytime a visitor visits a webpage with our JavaScript fingerprinting agent installed. FingerprintJS Pro provides tools for validating the visitor identifiers sent by your frontend. For server-side validation, developers can utilize FingerprintJS Pro's Server API or Webhooks.
+Fingerprint Pro provides a unique identifier for every visitor to your website (the visitorID) that is collected passively anytime a visitor visits a webpage with our JavaScript fingerprinting agent installed. Fingerprint Pro provides tools for validating the visitor identifiers sent by your frontend. For server-side validation, developers can utilize Fingerprint Pro's Server API or Webhooks.
 
 Since you know your product and business landscape best, It's up to you to decide how to configure anti-fraud workflows to utilize the visitorID to catch fraud on your website. Below, we have described some best practices you can use as a jumping-off point for your own custom solution.
 
-### Configuring FingerprintJS for credential stuffing prevention
+### Configuring Fingerprint for credential stuffing prevention
 
-To use FingerprintJS effectively to prevent all forms of account-related fraud, you should configure logic that utilizes the visitorID in conjunction with time-stamped login credentials to validate users. It is important to think through both the logic used to determine suspicious activity, as well as the challenge actions that should be taken when a visitor is flagged.
+To use Fingerprint effectively to prevent all forms of account-related fraud, you should configure logic that utilizes the visitorID in conjunction with time-stamped login credentials to validate users. It is important to think through both the logic used to determine suspicious activity, as well as the challenge actions that should be taken when a visitor is flagged.
 
 ### Suspicious Activity Logic
 
@@ -84,4 +84,4 @@ In all the cases above, we suggest ignoring login attempts, notifying account ow
 
 ## Explore our credential stuffing prevention demo
 
-To demonstrate the above concepts, we have build a credential stuffing prevention demo. Use this demo to see how you can use FingerprintJS in conjunction with simple logic rules to protect a login form.
+To demonstrate the above concepts, we have build a credential stuffing prevention demo. Use this demo to see how you can use Fingerprint in conjunction with simple logic rules to protect a login form.

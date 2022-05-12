@@ -1,9 +1,9 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: Reduce CAPTCHA use with user identification - FingerprintJS
+  title: Reduce CAPTCHA use with user identification - Fingerprint
   image: /img/uploads/crosswalks.png
-  url: https://fingerprintjs.com/blog/reduce-captcha
+  url: https://fingerprint.com/blog/reduce-captcha
   description: Looking for CAPTCHA alternatives? With user identification, you can
     reduce your need for CAPTCHA technology to catch bots and spam filling out
     forms on your website.
@@ -77,15 +77,15 @@ However, there are a few reasons you may want to avoid using Google’s reCAPTCH
 * Form honeypots: particularly useful for contact forms, you can set up a honeypot by creating a form field that is hidden to human visitors, but will be filled out by bots. Anytime you see a lead with a honeypot field filled out, you can disregard that lead or otherwise block that visitor from interacting with your site.
 * Use SMS, email or two-factor authentication: while two-factor authentication introduces considerable friction for login or sign-up forms, it is pretty effective against bot traffic. If you already use a method of 2FA authentication you may not need CAPTCHAs to protect your forms from bots.
 
-## How FingerprintJS can help reduce CAPTCHA use
+## How Fingerprint can help reduce CAPTCHA use
 
-FingerprintJS Pro is a 99.5% accurate user identification service that uses browser fingerprinting and other technologies to identify users, even when they take steps to obscure their identity.
+Fingerprint Pro is a 99.5% accurate user identification service that uses browser fingerprinting and other technologies to identify users, even when they take steps to obscure their identity.
 
-FingerprintJS Pro can be used in conjunction with CAPTCHA technologies to ensure a more seamless experience for trusted users, and require additional authentication from suspected bot traffic.
+Fingerprint Pro can be used in conjunction with CAPTCHA technologies to ensure a more seamless experience for trusted users, and require additional authentication from suspected bot traffic.
 
 * *For trusted returning traffic:* Allow visitors to bypass CAPTCHA verification if they have passed a CAPTCHA in the past, or their visitorID is otherwise associated with a trusted customer
 * *For bot or suspicious traffic:* Show a CAPTCHA on subsequent attempts to log in if a visitorID has attempted to submit a form multiple times or has otherwise been flagged as suspicious.
 
-![A flowchart showing how FingerprintJS helps to triage suspicious traffic](/img/uploads/copy-of-the_power_of_fingerprinting_infographic_2.png "A flowchart showing how FingerprintJS helps to triage suspicious traffic")
+![A flowchart showing how Fingerprint helps to triage suspicious traffic](/img/uploads/copy-of-the_power_of_fingerprinting_infographic_2.png "A flowchart showing how Fingerprint helps to triage suspicious traffic")
 
-FingerprintJS provides fraud protection that helps to reduce friction for legitimate users, improving conversions and facilitating more streamlined user interactions. Want to try for yourself? Create your [free account](https://dashboard.fingerprintjs.com/signup) today.
+Fingerprint Provides fraud protection that helps to reduce friction for legitimate users, improving conversions and facilitating more streamlined user interactions. Want to try for yourself? Create your [free account](https://dashboard.fingerprint.com/signup) today.

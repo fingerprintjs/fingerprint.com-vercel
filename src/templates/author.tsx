@@ -31,7 +31,7 @@ export default function Author({ data, pageContext }: AuthorProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: `${author}'s Articles - FingerprintJS Blog | FingerprintJS`,
+    title: `${author}'s Articles - Fingerprint Blog | Fingerprint`,
     description: `We are an open source powered company working to prevent online fraud for websites of all sizes. Read our articles written by ${author} on our blog.`,
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
   }

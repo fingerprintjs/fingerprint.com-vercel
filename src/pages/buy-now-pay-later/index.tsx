@@ -24,9 +24,9 @@ export default function Bnpl({ pageContext }: BnplProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'Buy Now, Pay Later Fraud Prevention - FingerprintJS',
+    title: 'Buy Now, Pay Later Fraud Prevention - Fingerprint',
     description:
-      "Increase approval rates and minimize fraud losses with FingerprintJS Pro's high accuracy device identification.",
+      "Increase approval rates and minimize fraud losses with Fingerprint Pro's high accuracy device identification.",
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
   }
 
@@ -53,7 +53,7 @@ export default function Bnpl({ pageContext }: BnplProps) {
           className={styles.ctaSection}
           openNewTab
         >
-          Get an in-depth look at how to prevent fraud in this $100 billion industry with Fingerprint JS in our free PDF
+          Get an in-depth look at how to prevent fraud in this $100 billion industry with Fingerprint in our free PDF
           download.
         </BannerWithCTA>
       </Container>

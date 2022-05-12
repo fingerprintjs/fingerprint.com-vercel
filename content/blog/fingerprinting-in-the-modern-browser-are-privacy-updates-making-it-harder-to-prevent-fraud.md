@@ -1,11 +1,11 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: Browser Fingerprinting and Privacy  - FingerprintJS
+  title: Browser Fingerprinting and Privacy  - Fingerprint
   description: Are privacy updates making it harder to use browser fingerprinting
     for anti-fraud? We go through the major modern browsers and determine what
     is still possible to keep your website safe.
-  url: https://fingerprintjs.com/blog/browser-fingerprinting-privacy
+  url: https://fingerprint.com/blog/browser-fingerprinting-privacy
   image: /img/uploads/modern-browser.png
   imageAlt: Browser fingerprinting privacy shield
   imageTitle: Browser fingerprinting privacy shield
@@ -59,7 +59,7 @@ Fingerprinting takes in data from the browser to help build a unique profile for
 * Screen size and resolution
 * Tech specs (CPU, GPU, hard disk, etc.)
 
-This method is surprisingly accurate when done well. **[FingerprintJS](/) is 99.5% accurate** at identifying users and assigning them a unique visitorID. Using this ID, you can associate patterns of fraud with specific visitors and block them as needed.
+This method is surprisingly accurate when done well. **[Fingerprint](/) is 99.5% accurate** at identifying users and assigning them a unique visitorID. Using this ID, you can associate patterns of fraud with specific visitors and block them as needed.
 
 ## Privacy in the Modern Browser
 
@@ -139,6 +139,6 @@ Despite the resistance to fingerprinting in some circles, it’s a legitimate an
 
 For example, Firefox [just released](https://www.makeuseof.com/latest-firefox-88-update-elevates-online-privacy/) an update that prevents sites from reading other open windows' names. If you were maintaining your own fingerprinting software that used open windows as part of your identifying data, you have to decide how to compensate for this change, or your fingerprint will get obsolete quickly.
 
-This is where tools like [FingerprintJS](/) come in. As experts in the fingerprinting space, they provide developers with 99.5% accurate browser fingerprinting and offer a free, open-source library as well as paid services. [FingerprintJS](/) doesn’t rely on outdated third-party tracking mechanisms, and it helps you prevent account takeovers, password sharing, and fake accounts.
+This is where tools like [Fingerprint](/) come in. As experts in the fingerprinting space, they provide developers with 99.5% accurate browser fingerprinting and offer a free, open-source library as well as paid services. [Fingerprint](/) doesn’t rely on outdated third-party tracking mechanisms, and it helps you prevent account takeovers, password sharing, and fake accounts.
 
 Modern browsers are doing a good job of improving privacy protections, but this trend comes with a cost to web application owners. Fortunately, fingerprinting is still an accurate and low-cost way to prevent fraud even now. Just don't roll out your own.

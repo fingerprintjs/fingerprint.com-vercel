@@ -8,7 +8,7 @@ const fpjsLoadMock = FPJS.load as jest.Mock
 beforeEach(() => {
   fetchMock.resetMocks()
 })
-describe('FingerprintJS Demo Widget', () => {
+describe('Fingerprint Demo Widget', () => {
   const visitorId = `somethingRandom${Math.random()}`
   const ip1 = '111.222'
   const ip2 = '222.333'
@@ -44,7 +44,7 @@ describe('FingerprintJS Demo Widget', () => {
         },
         timestamp: 1644277612593,
         time: '2022-02-07T23:46:52Z',
-        url: 'https://fingerprintjs.com/',
+        url: 'https://fingerprint.com/',
         tag: {},
         confidence: { score: 1 },
         visitorFound: true,
@@ -79,7 +79,7 @@ describe('FingerprintJS Demo Widget', () => {
         },
         timestamp: 1644277606071,
         time: '2022-02-07T23:46:46Z',
-        url: 'https://fingerprintjs.com/',
+        url: 'https://fingerprint.com/',
         tag: {},
         confidence: { score: 1 },
         visitorFound: true,

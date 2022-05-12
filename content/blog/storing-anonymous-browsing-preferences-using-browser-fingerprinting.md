@@ -2,10 +2,10 @@
 templateKey: long-form-content
 metadata:
   title: " Storing Anonymous Browsing Preferences Using Browser Fingerprinting "
-  description: Let's take a look at how FingerprintJS works and some of its use
+  description: Let's take a look at how Fingerprint works and some of its use
     cases, followed by a tutorial on implementing dark mode to demonstrate how
     to remember anonymous users’ cloaked preferences.
-  url: https://fingerprintjs.com/blog/storing-anonymous-browser-preferences
+  url: https://fingerprint.com/blog/storing-anonymous-browser-preferences
   image: /img/uploads/storing-anonymous-browsing-preferences-using-browser-fingerprintingv3.png
   imageAlt: illustration of incognito browser window
 featured: true
@@ -24,9 +24,9 @@ heroImage:
 customCTA:
   openCtaNewTab: false
 ---
-Website owners can provide users with an optimized, custom-tailored user experience by remembering their unique preferences and configurations. This traditionally involves using cookies and/or requiring users to log in to retrieve saved preferences, but FingerprintJS offers a more effective solution that’s 99.5 percent accurate — no user actions required.
+Website owners can provide users with an optimized, custom-tailored user experience by remembering their unique preferences and configurations. This traditionally involves using cookies and/or requiring users to log in to retrieve saved preferences, but Fingerprint offers a more effective solution that’s 99.5 percent accurate — no user actions required.
 
-In this article, we’ll take a look at how FingerprintJS works and some of its use cases, followed by a tutorial on implementing dark mode to demonstrate how to remember anonymous users’ cloaked preferences.
+In this article, we’ll take a look at how Fingerprint works and some of its use cases, followed by a tutorial on implementing dark mode to demonstrate how to remember anonymous users’ cloaked preferences.
 
 ## What is a browser fingerprint?
 
@@ -159,9 +159,9 @@ Open the website now and toggle the button. The entire website should switch to 
 
 The website now allows the user to toggle to dark mode. However, it does not remember what the user’s preference is, so refreshing the page will revert it back to light mode.
 
-In the last section of this tutorial, we’ll use FingerprintJS to retrieve the user’s fingerprint or `visitorID`. We will then send an API request to store that visitorID along with the user’s preferences.
+In the last section of this tutorial, we’ll use Fingerprint to retrieve the user’s fingerprint or `visitorID`. We will then send an API request to store that visitorID along with the user’s preferences.
 
-You’ll need to [sign up](https://dashboard.fingerprintjs.com/signup) for a FingerprintJS Pro account — it’s free for 10 days with unlimited API requests.
+You’ll need to [sign up](https://dashboard.fingerprint.com/signup) for a Fingerprint Pro account — it’s free for 10 days with unlimited API requests.
 
 We’ll first create the API. The endpoint will be in the format: `/api/user/:visitorId/:darkMode`. 
 
@@ -263,7 +263,7 @@ useEffect(() => {
   }, [isDarkMode, visitorId])
 ```
 
-If the `visitorID` state is not set, we’ll need to retrieve the browser fingerprint of the user. To do this, first install FingerprintJS as a dependency:
+If the `visitorID` state is not set, we’ll need to retrieve the browser fingerprint of the user. To do this, first install Fingerprint as a dependency:
 
 ```bash
 npm install @fingerprintjs/fingerprintjs-pro
@@ -272,7 +272,7 @@ npm install @fingerprintjs/fingerprintjs-pro
 Then, import the library at the beginning of `pages/index.js`:
 
 ```js
-import  FingerprintJS  from  '@fingerprintjs/fingerprintjs-pro'
+import  Fingerprint  from  '@fingerprintjs/fingerprintjs-pro'
 ```
 
 Replace the first `TODO` in the `useEffect` callback function with the following:
@@ -288,9 +288,9 @@ fpPromise
   })
 ```
 
-If you don’t know the value of your public API key, go to your [FingerprintJS Dashboard](https://dashboard.fingerprintjs.com/), choose *API Keys* from the sidebar, then copy the value for type *Public*.
+If you don’t know the value of your public API key, go to your [Fingerprint Dashboard](https://dashboard.fingerprint.com/), choose *API Keys* from the sidebar, then copy the value for type *Public*.
 
-Note: Requests to the FingerprintJS API may be blocked from a local origin such as `localhost`. Learn more about [Request Filtering](https://dev.fingerprintjs.com/docs/request-filtering) to allow requests from development environments.
+Note: Requests to the Fingerprint API may be blocked from a local origin such as `localhost`. Learn more about [Request Filtering](https://dev.fingerprint.com/docs/request-filtering) to allow requests from development environments.
 
 Next, you'll send the request to the endpoint created earlier. To do that, install `axios` as a dependency:
 
@@ -336,7 +336,7 @@ else {
 }
 ```
 
-You can test it out by opening the website and toggling dark mode. If you refresh the page, you’ll see that dark mode is enabled automatically. You can also try it in incognito or Guest mode on Chrome. FingerprintJS will still be able to identify the user, which will allow our server to change to dark mode on the basis of the user’s preference. However if you try to load the page in a different browser, you will likely find that your preferences are not stored.
+You can test it out by opening the website and toggling dark mode. If you refresh the page, you’ll see that dark mode is enabled automatically. You can also try it in incognito or Guest mode on Chrome. Fingerprint will still be able to identify the user, which will allow our server to change to dark mode on the basis of the user’s preference. However if you try to load the page in a different browser, you will likely find that your preferences are not stored.
 
 ## Conclusion
 

@@ -5,7 +5,7 @@ metadata:
   description: Twilio or other SMS 2FA methods have high costs that can add up.
     Learn how to use browser fingerprinting to reduce costs in our step-by-step
     demo.
-  url: https://fingerprintjs.com/blog/sms-2fa
+  url: https://fingerprint.com/blog/sms-2fa
   image: /img/uploads/how-to-cut-your-twilio-sms-cost-1-.png
   imageAlt: Twilio 2FA
   imageTitle: Twilio 2FA
@@ -46,13 +46,13 @@ Using an authenticator, which is based on the Time-based One-time Password (TOTP
 
 [Browser fingerprinting](/blog/what-is-browser-fingerprinting/) is another technique that can help solve the high cost of 2FA via SMS. The user’s browser and device carry a lot of information that can be compiled to form a unique fingerprint for a user. Using this fingerprint, you can continue using SMS for two-factor authentication while cutting down on the number of paid verification attempts.
 
-In this post, I’ll demonstrate how you can use browser fingerprinting as a supplement to SMS-based two-factor authentication. I’ll show you how to build a small NodeJS application that uses Twilio Verify for 2FA, and then I’ll add [FingerprintJS](/) for browser fingerprinting.
+In this post, I’ll demonstrate how you can use browser fingerprinting as a supplement to SMS-based two-factor authentication. I’ll show you how to build a small NodeJS application that uses Twilio Verify for 2FA, and then I’ll add [Fingerprint](/) for browser fingerprinting.
 
 The finished application is [available on GitHub](https://github.com/karllhughes/fingerprintjs-twilio-verify), or you can follow along with this tutorial to build it on your own. Let’s get started!
 
 ### Setting Up a Simple Login Application
 
-To get you started, I’ve created an [Express](https://expressjs.com/) NodeJS application with a login page and dashboard for authenticated users. You’ll use this application as a starting point for implementing Twilio Verify and FingerprintJS.
+To get you started, I’ve created an [Express](https://expressjs.com/) NodeJS application with a login page and dashboard for authenticated users. You’ll use this application as a starting point for implementing Twilio Verify and Fingerprint.
 
 To download the code, clone [this repository](https://github.com/karllhughes/fingerprintjs-twilio-verify/tree/base) and checkout the `base` branch:
 
@@ -220,17 +220,17 @@ Start your Node server with `npm start` and go back to `localhost:3000`. This ti
 
 Your application is now more secure, but this setup requires users to verify their account *every time* they log in. With thousands of users logging in multiple times per day, you can see how expensive this could get and how annoying this will be for your most frequent users.
 
-### Implementing FingerprintJS for Two-Factor Authentication
+### Implementing Fingerprint for Two-Factor Authentication
 
 While a browser fingerprint **alone** is not strong enough to act as a second form of authentication, using a browser fingerprint to bypass 2FA can be much more convenient for your users while maintaining security. For example, if a user recently logged in and they’re still using the same browser as their most recent login, you can reasonably skip two-factor authentication in most applications.
 
 *Note: security is a very application-specific topic, so don’t take my advice here as a blanket rule for every situation. You’ll need to weigh the risk for your use case.*
 
-Let’s look at how you can use [FingerprintJS](/) to generate a browser fingerprint that’s 99.5% accurate and will allow you to bypass 2FA in some situations. To start, you need to sign up and get a public API key that you will use for identification:
+Let’s look at how you can use [Fingerprint](/) to generate a browser fingerprint that’s 99.5% accurate and will allow you to bypass 2FA in some situations. To start, you need to sign up and get a public API key that you will use for identification:
 
-![Fingerprint JS subscription dashboard](/img/uploads/twilio-sub-dah.png "Fingerprint JS subscription dashboard")
+![Fingerprint subscription dashboard](/img/uploads/twilio-sub-dah.png "Fingerprint subscription dashboard")
 
-Next, add the FingerprintJS script to your `views/layout.hbs` file just above the line that adds your Express application’s custom JavaScript:
+Next, add the Fingerprint script to your `views/layout.hbs` file just above the line that adds your Express application’s custom JavaScript:
 
 ```html
 …
@@ -238,7 +238,7 @@ Next, add the FingerprintJS script to your `views/layout.hbs` file just above th
 …
 ```
 
-Once you have your FingerprintJS public API key, you can add the following to your `public/javascripts/index.js` file:
+Once you have your Fingerprint public API key, you can add the following to your `public/javascripts/index.js` file:
 
 ```javascript
 $(document).ready(() => {
@@ -261,7 +261,7 @@ You’ll need to add this new input element to your login form as a hidden field
 ...
 ```
 
-With the new hidden input field and FingerprintJS library loaded, update the `routes/auth.js` file again. 
+With the new hidden input field and Fingerprint library loaded, update the `routes/auth.js` file again. 
 
 First, add a new field to the `users` array object called `lastKnownVisitorId`:
 
@@ -317,6 +317,6 @@ Now, when you log in, you’ll be able to bypass the Twilio Verification so long
 
 ## Conclusion
 
-By using a browser fingerprint for extra verification, you can minimize the cost of using 2FA via Twilio SMS and improve your app’s user experience for frequent users. This workflow lets you have the best of both security and convenience, plus FingerprintJS makes it really easy to implement.
+By using a browser fingerprint for extra verification, you can minimize the cost of using 2FA via Twilio SMS and improve your app’s user experience for frequent users. This workflow lets you have the best of both security and convenience, plus Fingerprint makes it really easy to implement.
 
-Apart from this use case, [FingerprintJS](/) can be used for strengthening fraud detection, reducing bot attacks, and offering a customized experience to repeat visitors to your site. Sign up for a free [FingerprintJS Pro account](https://dashboard.fingerprintjs.com/signup) to get started today.
+Apart from this use case, [Fingerprint](/) can be used for strengthening fraud detection, reducing bot attacks, and offering a customized experience to repeat visitors to your site. Sign up for a free [Fingerprint Pro account](https://dashboard.fingerprint.com/signup) to get started today.

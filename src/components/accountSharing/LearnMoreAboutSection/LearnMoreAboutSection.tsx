@@ -23,8 +23,8 @@ export default function LearnMoreAboutSection() {
         <section className={styles.descriptionSection}>
           <h1 className={styles.title}>Learn More About Your Customers</h1>
           <p className={styles.description}>
-            FingerprintJS Pro collects additional information to better understand your visitors. Use our geolocation
-            and device data to build more targeted rules to catch account sharing.
+            Fingerprint Pro collects additional information to better understand your visitors. Use our geolocation and
+            device data to build more targeted rules to catch account sharing.
           </p>
           <ul className={styles.tagSection}>
             <li className={styles.tag}>Geolocation</li>

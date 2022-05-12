@@ -1,18 +1,18 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: FingerprintJS launches India data hosting
+  title: Fingerprint launches India data hosting
   description: We are excited to announce the launch in India (Mumbai) in order to
     comply with India's personal data protection requirements, and improve
     performance.
-  url: https://fingerprintjs.com/blog/india-data-hosting
+  url: https://fingerprint.com/blog/india-data-hosting
   image: /img/uploads/data-hosting.png
-  imageAlt: "FingerprintJS Pro India data hosting "
-  imageTitle: "FingerprintJS Pro India data hosting "
+  imageAlt: "Fingerprint Pro India data hosting "
+  imageTitle: "Fingerprint Pro India data hosting "
   socialImage: /img/uploads/data-hosting.png
 featured: true
 publishDate: 2022-01-19T20:56:25.125Z
-title: FingerprintJS launches India data hosting
+title: Fingerprint launches India data hosting
 isPublished: true
 isHidden: false
 tags:
@@ -21,8 +21,8 @@ authors:
   - Savannah Copland
 heroImage:
   image: /img/uploads/data-hosting.png
-  imageAlt: "FingerprintJS Pro India data hosting "
-  imageTitle: "FingerprintJS Pro India data hosting "
+  imageAlt: "Fingerprint Pro India data hosting "
+  imageTitle: "Fingerprint Pro India data hosting "
 customCTA:
   openCtaNewTab: false
 ---
@@ -40,8 +40,8 @@ You can select Asia API (Mumbai) when creating a new account. We recommend any p
 
 ### For current customers
 
-Current customers can switch their hosting to the new AP-South-1 data region on request. If you wish to switch, please [contact support](mailto:support@fingerprintjs.com) to transfer your account.
+Current customers can switch their hosting to the new AP-South-1 data region on request. If you wish to switch, please [contact support](mailto:support@fingerprint.com) to transfer your account.
 
-## About FingerprintJS
+## About Fingerprint
 
-FingerprintJS Pro is a 99.5% accurate device identification service that helps prevent fraud, spam, and account takeovers. Pro’s JavaScript technology combines hundreds of signals inside any browser to generate a unique identifier that can be used to detect unusual behavior patterns such as devices entering stolen credit cards or the same browser using multiple IP addresses. Developer teams can easily integrate FingerprintJS Pro into their existing fraud workflows using our well-documented API and webhooks. [Try Pro for free today](https://dashboard.fingerprintjs.com/signup) or [talk to our sales team](/contact-sales/) to learn more.
+Fingerprint Pro is a 99.5% accurate device identification service that helps prevent fraud, spam, and account takeovers. Pro’s JavaScript technology combines hundreds of signals inside any browser to generate a unique identifier that can be used to detect unusual behavior patterns such as devices entering stolen credit cards or the same browser using multiple IP addresses. Developer teams can easily integrate Fingerprint Pro into their existing fraud workflows using our well-documented API and webhooks. [Try Pro for free today](https://dashboard.fingerprint.com/signup) or [talk to our sales team](/contact-sales/) to learn more.

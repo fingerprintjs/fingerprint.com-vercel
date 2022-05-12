@@ -28,7 +28,7 @@ export default function AccountSharingPage({ pageContext }: AccountSharingProps)
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'Account Sharing Prevention For SaaS - FingerprintJS',
+    title: 'Account Sharing Prevention For SaaS - Fingerprint',
     description:
       'Accurately identify users sharing their account details with our browser fingerprinting API built for developer teams',
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,

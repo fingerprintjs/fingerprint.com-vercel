@@ -30,7 +30,7 @@ export default function UseCasesSection() {
         <Container>
           <header className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>
-              FingerprintJS
+              Fingerprint
               <br />
               <strong>Use Cases</strong>
             </h2>
@@ -49,7 +49,7 @@ export default function UseCasesSection() {
               and link it to specific users.
               <br />
               <br />
-              Significantly reduce chargebacks and fraudulent payments just one month after integrating FingerprintJS on
+              Significantly reduce chargebacks and fraudulent payments just one month after integrating Fingerprint on
               your website.
             </UseCase>
             <UseCase link={PATH.ecommerce} icon={ECommerceSvg} title='E-Commerce'>

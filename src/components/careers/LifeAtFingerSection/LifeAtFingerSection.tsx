@@ -16,7 +16,7 @@ export default function LifeAtFingerSection() {
   return (
     <Section className={styles.root}>
       <Container size='large' className={styles.container}>
-        <h2 className={styles.title}>Life at FingerprintJS</h2>
+        <h2 className={styles.title}>Life at Fingerprint</h2>
         <div className={styles.swiperSection}>
           <div className={classNames('btn-prev', styles.buttonLeft)}>
             <span className={styles.arrowWrapper}>
@@ -65,7 +65,7 @@ export default function LifeAtFingerSection() {
               <SwiperSlide className={classNames('swiper-slide', styles.item)}>
                 <img
                   key={i}
-                  alt={'FingerprintJS team'}
+                  alt={'Fingerprint team'}
                   className={styles.photo}
                   src={`/img/members-photos/Team${i + 1}.png`}
                 />

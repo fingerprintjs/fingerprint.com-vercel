@@ -33,7 +33,7 @@ export default function CareersPage({ pageContext }: CareersPageProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'FingerprintJS Careers - Join Our 100% Remote Team',
+    title: 'Fingerprint Careers - Join Our 100% Remote Team',
     description:
       "We're empowering developers to stop online fraud. Join us in building world-class APIs for identification and fraud detection.",
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
@@ -53,7 +53,7 @@ export default function CareersPage({ pageContext }: CareersPageProps) {
       {breadcrumbs && <BreadcrumbsSEO breadcrumbs={breadcrumbs} />}
       <HeroSection
         className={styles.heroSection}
-        title='Work at FingerprintJS'
+        title='Work at Fingerprint'
         ctaText='Explore our jobs'
         ctaHref={URL.careersUrl}
         openNewTab
@@ -70,7 +70,7 @@ export default function CareersPage({ pageContext }: CareersPageProps) {
       <Container size='large'>
         <BannerWithCTA
           className={styles.ctaSection}
-          title='Work at FingerprintJS'
+          title='Work at Fingerprint'
           ctaText='Explore our jobs'
           ctaHref={URL.careersUrl}
           variant='white'

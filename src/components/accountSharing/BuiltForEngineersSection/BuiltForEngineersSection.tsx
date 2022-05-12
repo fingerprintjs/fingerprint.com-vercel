@@ -16,7 +16,7 @@ export default function BuiltForEngineersSection() {
       <Container className={styles.titleContainer}>
         <h1 className={styles.title}>Built for engineers, by engineers</h1>
         <p className={styles.description}>
-          Developer teams can easily incorporate FingerprintJS into existing workflows or build from scratch with our
+          Developer teams can easily incorporate Fingerprint into existing workflows or build from scratch with our
           highly accessible documentation and support.
         </p>
       </Container>
@@ -38,7 +38,7 @@ export default function BuiltForEngineersSection() {
         <Card
           icon={<DocSVG />}
           title='Documentation'
-          description='Extensive guides make it easy for developer teams to get up to speed with FingerprintJS, fast.'
+          description='Extensive guides make it easy for developer teams to get up to speed with Fingerprint, fast.'
           linkText='Read Quick Start Guide →'
           linkHref={DOC_URL.getStartedUrl}
         />

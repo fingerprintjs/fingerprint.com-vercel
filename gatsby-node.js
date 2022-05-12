@@ -99,7 +99,7 @@ function withTrailingSlash(path) {
 }
 
 function getRelativeUrl(url) {
-  const relativeUrl = url.match(/fingerprintjs.com(\/.*)$/)
+  const relativeUrl = url.match(/fingerprint.com(\/.*)$/)
   return relativeUrl ? withTrailingSlash(relativeUrl[1]) : '/'
 }
 

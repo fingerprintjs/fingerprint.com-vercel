@@ -14,18 +14,18 @@ export default function ProLayersSection() {
         <header className={styles.header}>
           <h1 className={styles.title}>Pro is Powered By Open Source</h1>
           <h2 className={styles.subtitle}>
-            FingerprintJS Pro introduces server-side identification techniques, deduplication analysis, and machine
+            Fingerprint Pro introduces server-side identification techniques, deduplication analysis, and machine
             learning to generate stable and highly accurate visitorIDs for every web visitor.
           </h2>
         </header>
-        <h1 className={styles.proTitle}>FingerprintJS Pro</h1>
+        <h1 className={styles.proTitle}>Fingerprint Pro</h1>
         <article className={styles.wrapper}>
           <section className={styles.imageWrapper}>
             <aside className={styles.aside}>
               <div className={styles.server}>Runs on server</div>
               <div className={styles.browser}>Runs in browser</div>
             </aside>
-            <StaticImage placeholder='blurred' src='../../../img/proLayers.png' alt='FingerprintJS Pro layers' />
+            <StaticImage placeholder='blurred' src='../../../img/proLayers.png' alt='Fingerprint Pro layers' />
           </section>
           <section className={styles.textWrapper}>
             <Layer title='Server-side analysis and machine learning'>

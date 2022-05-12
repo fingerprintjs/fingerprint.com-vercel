@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: "CNP fraud prevention: Tips to protect your business against chargebacks"
-  url: https://fingerprintjs.com/blog/cnp-fraud-prevention-to-protect-chargebacks
+  url: https://fingerprint.com/blog/cnp-fraud-prevention-to-protect-chargebacks
   image: /img/uploads/cnp-fraud-prevention_.png
   description: Credit card fraud is a multi-billion dollar problem, and can be
     incredibly hard to stop. Learn about how to prevent CNP fraud and
@@ -30,7 +30,7 @@ The continuing rise of online shopping brings a whole new level of convenience t
 
 [Payment fraud prevention](/payment-fraud/) comes in many different forms, allowing you to enjoy the benefits of online retail while minimizing the risks.
 
-FingerprintJS can help to implement protection against CNP fraud, including the tips to come. 
+Fingerprint can help to implement protection against CNP fraud, including the tips to come. 
 
 ## What is Card Not Present (CNP)?
 
@@ -130,4 +130,4 @@ Businesses too are victims of fraud, and a customer whose credit card is used in
 Preventing these fraudulent purchases before they’re carried out is now much easier than ever, and it saves a whole lot of problems later on. As cybersecurity gains even more awareness, businesses who can differentiate themselves based on their ability to reduce scams and protect their customers’ information are increasingly likely to be seen in a positive light.
 
 **\
-If you want help implementing CNP fraud prevention measures, [talk to FingerprintJS](/) to learn more.**
+If you want help implementing CNP fraud prevention measures, [talk to Fingerprint](/) to learn more.**

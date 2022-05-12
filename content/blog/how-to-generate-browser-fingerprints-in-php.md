@@ -1,10 +1,10 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: Browser Fingerprinting in PHP - FingerprintJS
+  title: Browser Fingerprinting in PHP - Fingerprint
   description: Learn how to generate browser fingerprints for your PHP application
     using a free browser fingerprinting service.
-  url: https://fingerprintjs.com/blog/browser-fingerprint-php
+  url: https://fingerprint.com/blog/browser-fingerprint-php
   image: /img/uploads/browser-fingerprints-in-php-1-.png
   imageAlt: browser fingerprinting using PHP
   imageTitle: browser fingerprinting using PHP
@@ -39,9 +39,9 @@ Browser fingerprinting has a number of useful applications — from helping bloc
 
 Suppose you are running a streaming site that offers a 14-day free trial to new users. This might be a nice way to let people try your service before they buy, but a malicious user can repeatedly register with different email addresses to take advantage of your trial offer.
 
-Unfortunately, PHP is exclusively a server-side programming language, so you can’t implement browser fingerprinting in PHP alone. But, by implementing FingerprintJS on your frontend, you can easily add fingerprinting to prevent the same user from registering in your application with multiple email addresses.
+Unfortunately, PHP is exclusively a server-side programming language, so you can’t implement browser fingerprinting in PHP alone. But, by implementing Fingerprint on your frontend, you can easily add fingerprinting to prevent the same user from registering in your application with multiple email addresses.
 
-In this tutorial, I’ll show you how to use [FingerprintJS](/) to generate browser fingerprints for your PHP application. I’ll contrast fingerprinting with several traditional PHP-only ways to track users (session tracking, HTTP cookies, and IP address tracking) so you understand why fingerprinting is a more reliable solution in most use cases.
+In this tutorial, I’ll show you how to use [Fingerprint](/) to generate browser fingerprints for your PHP application. I’ll contrast fingerprinting with several traditional PHP-only ways to track users (session tracking, HTTP cookies, and IP address tracking) so you understand why fingerprinting is a more reliable solution in most use cases.
 
 ### Project Setup
 
@@ -186,13 +186,13 @@ Come back to the `register.php` page again and try registering again *with a dif
 
 In the next section, I’ll show you how to prevent re-registration using browser fingerprinting integrated with your PHP application. Before you continue, be sure to wipe your database clean to prevent any conflicts.
 
-### Using FingerprintJS
+### Using Fingerprint
 
-[FingerprintJS]() is a fingerprinting service that uses a combination of fingerprinting, cookies, server-side techniques, and machine learning to generate a browser fingerprint that is up to [99.5% accurate](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy). 
+[Fingerprint]() is a fingerprinting service that uses a combination of fingerprinting, cookies, server-side techniques, and machine learning to generate a browser fingerprint that is up to [99.5% accurate](https://dev.fingerprint.com/docs/understanding-our-995-accuracy). 
 
-To get started with FingerprintJS, you will need a [FingerprintJS pro account](https://dashboard.fingerprintjs.com/signup). If you do not have an account, you can start a free account with no credit card required.
+To get started with Fingerprint, you will need a [Fingerprint Pro account](https://dashboard.fingerprint.com/signup). If you do not have an account, you can start a free account with no credit card required.
 
-Once you have an account, visit your [dashboard](https://dashboard.fingerprintjs.com/) and select the subscription that you created while registering. Head to the `API Keys` section from the left sidebar and copy the active **public** API key.
+Once you have an account, visit your [dashboard](https://dashboard.fingerprint.com/) and select the subscription that you created while registering. Head to the `API Keys` section from the left sidebar and copy the active **public** API key.
 
 ![List of active API keys in the dashboard](/img/uploads/public-api-key-location.png "List of active API keys in the dashboard")
 
@@ -222,7 +222,7 @@ This snippet downloads the required JavaScript file and runs the `initFingerprin
 
 **Note that you need to replace `your-public-api-key` with the actual Public API key you copied from your dashboard.**
 
-This function calls the FingerprintJS service to create a `visitorID` and prints it to the console. You can reload the registration page to see an alphanumeric hash in your JavaScript console.
+This function calls the Fingerprint service to create a `visitorID` and prints it to the console. You can reload the registration page to see an alphanumeric hash in your JavaScript console.
 
 ![Screenshot showing the visitorID printed to the console](/img/uploads/php-print.png "Screenshot showing the visitorID printed to the console")
 
@@ -281,17 +281,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ```
 
-You can test FingerprintJS by registering a user and trying to register another user. Using your FingerprintJS fingerprint, you will see the error message even if you use incognito mode, restart your browser, or disable cookies.
+You can test Fingerprint by registering a user and trying to register another user. Using your Fingerprint fingerprint, you will see the error message even if you use incognito mode, restart your browser, or disable cookies.
 
-*You can find all the above code for using FingerprintJS inside the `fingerprintjs` directory in [this GitHub repository](https://github.com/heraldofsolace/FingerprintJS-PHP).*
+*You can find all the above code for using Fingerprint inside the `fingerprintjs` directory in [this GitHub repository](https://github.com/heraldofsolace/FingerprintJS-PHP).*
 
-## Advantages of FingerprintJS
+## Advantages of Fingerprint
 
-There are quite a few advantages of using FingerprintJS over rolling out your own fingerprinting solution. First, FingerprintJS is easy to use - you just need to include a JavaScript snippet, and the rest is handled by FingerprintJS. This is much faster than writing your own fingerprinting function in PHP.
+There are quite a few advantages of using Fingerprint over rolling out your own fingerprinting solution. First, Fingerprint is easy to use - you just need to include a JavaScript snippet, and the rest is handled by Fingerprint. This is much faster than writing your own fingerprinting function in PHP.
 
-FingerprintJS is also kept up-to-date with browser updates and modern fingerprinting best practices. This means you do not need to worry about your fingerprinting technique breaking when browsers are updated.
+Fingerprint is also kept up-to-date with browser updates and modern fingerprinting best practices. This means you do not need to worry about your fingerprinting technique breaking when browsers are updated.
 
-FingerprintJS is also much more accurate than any of the traditional methods of user tracking in PHP.
+Fingerprint is also much more accurate than any of the traditional methods of user tracking in PHP.
 
 ### Fingerprinting vs. Session Tracking
 
@@ -327,4 +327,4 @@ Unfortunately, an IP address can be easily spoofed. Users can set them manually 
 
 In this tutorial, you learned the utility of browser fingerprinting in PHP and how it can be used to prevent duplicate registrations. While you can increase the accuracy of your tracking in PHP by combining sessions, cookies, and IP tracking, it’s still relatively easy for users to bypass these fraud detection measures.
 
-Using [FingerprintJS](/) to quickly and accurately generate a browser fingerprint in PHP will help you combat fraud and save time. With an accuracy of 99.5% and a team keeping up with the latest changes, FingerprintJS is a great solution for saving time and achieving greater accuracy. This allows you to focus on building a great web application and not learning every browser update that changes how you must implement fingerprinting.
+Using [Fingerprint](/) to quickly and accurately generate a browser fingerprint in PHP will help you combat fraud and save time. With an accuracy of 99.5% and a team keeping up with the latest changes, Fingerprint is a great solution for saving time and achieving greater accuracy. This allows you to focus on building a great web application and not learning every browser update that changes how you must implement fingerprinting.

@@ -1,29 +1,29 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: FingerprintJS Raises $8M Series A to Solve Online Fraud
+  title: Fingerprint Raises $8M Series A to Solve Online Fraud
   description: Our visitor identification API just raised $8M from Nexus Venture
     Partners, Uncorrelated Ventures, Hack VC, Entrepreneurs Roundtable
     Accelerator and angels including Rony Kahan.
-  url: https://fingerprintjs.com/blog/series-a
+  url: https://fingerprint.com/blog/series-a
   image: /img/uploads/fpjs_cover2.png
-  imageAlt: FingerprintJS Series A
-  imageTitle: FingerprintJS Series A
+  imageAlt: Fingerprint Series A
+  imageTitle: Fingerprint Series A
 featured: false
 publishDate: 2021-02-11T14:30:32.339Z
-title: FingerprintJS Raises $8M Series A to Solve Online Fraud
+title: Fingerprint Raises $8M Series A to Solve Online Fraud
 tags:
   - announcements
 authors:
   - Savannah Copland
 heroImage:
   image: /img/uploads/fpjs_cover2.png
-  imageAlt: FingerprintJS cover
-  imageTitle: FingerprintJS cover
+  imageAlt: Fingerprint cover
+  imageTitle: Fingerprint cover
 isPublished: true
 isHidden: false
 ---
-Only 4 months ago we announced our $4M seed raise. Since then we have been busy investing in our [open source](https://github.com/fingerprintjs/fingerprintjs) community (with 10M+ downloads and 12.7K Github stars) as well as continuing development of FingerprintJS Pro, our 99.5% accurate user identification API.
+Only 4 months ago we announced our $4M seed raise. Since then we have been busy investing in our [open source](https://github.com/fingerprintjs/fingerprintjs) community (with 10M+ downloads and 12.7K Github stars) as well as continuing development of Fingerprint Pro, our 99.5% accurate user identification API.
 
 Today we are excited to announce our $8M series A from Nexus Venture Partners, Uncorrelated Ventures, Hack VC, Entrepreneurs Roundtable Accelerator and angels including Rony Kahan.
 

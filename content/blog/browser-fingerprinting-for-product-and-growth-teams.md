@@ -5,7 +5,7 @@ metadata:
   description: Browser fingerprinting is a useful tool for developers to uniquely
     identify visitors on their website. Learn how this identification technique
     works with a real-life example.
-  url: https://fingerprintjs.com/blog/browser-fingerprinting-for-growth
+  url: https://fingerprint.com/blog/browser-fingerprinting-for-growth
   image: /img/uploads/3.png
   imageAlt: Browser fingerprinting for growth teams
   imageTitle: Browser fingerprinting for growth teams
@@ -28,7 +28,7 @@ customCTA:
   title: Comparing OSS vs. Pro?
   description: Download our PDF guide with a full comparison.
   ctaText: Get the PDF
-  ctaUrl: https://try.fingerprintjs.com/en-us/oss-vs-pro-comparison-pdf
+  ctaUrl: https://try.fingerprint.com/en-us/oss-vs-pro-comparison-pdf
 ---
 **Behind the scenes of all analytics, attribution and anti-fraud tools is an identifier that can track returning visits from a logged-out visitor.** Cookies, IP addresses and local storage have been traditionally used for this purpose, but they have drawbacks, particularly if the traffic has a high rate of incognito browsing. With a highly accurate identifier it becomes much easier for developers to analyze visitor behavior, personalize web experiences, and collect reliable attribution data.
 
@@ -80,7 +80,7 @@ When a visitor lands on a webpage, the fingerprinting function collects signals 
 
 ## Accuracy
 
-For a fingerprint to be useful as a method of identifying visitors, it needs to have a high accuracy. Our FingerprintJS Pro tool has a 99.5% accuracy rate, which means for every 1,000 visits, 995 are correctly associated with a unique identifier.
+For a fingerprint to be useful as a method of identifying visitors, it needs to have a high accuracy. Our Fingerprint Pro tool has a 99.5% accuracy rate, which means for every 1,000 visits, 995 are correctly associated with a unique identifier.
 
 For the 5 out of 1,000 that are not correctly identified, they can be described as either false positives or false negatives:
 
@@ -110,7 +110,7 @@ In these cases, instead of including a cookie as an identifier in your fingerpri
 
 One of the main advantages of fingerprinting is that it is stateless. A well-implemented fingerprint can remain stable through multiple sessions, incognito browsing, uninstalling or reinstalling apps, or clearing cookies. For that reason, using the two methods in conjunction with one another can give a higher % accuracy than either identification method alone.
 
-*FingerprintJS Pro achieves its high rate of accuracy by using fingerprinting, cookies and additional machine learning techniques that incorporate IP address and geolocation.* One challenge is keeping up with changes in available signals as new browser versions are released. Anytime Chrome or Safari is updated, for example, identification techniques need to be re-evaluated to determine if further tweaks need to be made to keep accuracy high. Our team is constantly looking to improve our accuracy by iterating on the signals, algorithms, and techniques used.
+*Fingerprint Pro achieves its high rate of accuracy by using fingerprinting, cookies and additional machine learning techniques that incorporate IP address and geolocation.* One challenge is keeping up with changes in available signals as new browser versions are released. Anytime Chrome or Safari is updated, for example, identification techniques need to be re-evaluated to determine if further tweaks need to be made to keep accuracy high. Our team is constantly looking to improve our accuracy by iterating on the signals, algorithms, and techniques used.
 
 ## Applications For Fingerprinting
 
@@ -126,10 +126,10 @@ Fingerprinting is an incredibly flexible tool that can be used for a variety of 
 
 ## Browser vs. Device Fingerprinting
 
-Our "core" [FingerprintJS](https://github.com/fingerprintjs/fingerprintjs) library is intended for browser fingerprinting - it identifies visitors to a website using all modern mobile and desktop browsers. The signals available for mobile app developers are different from signals that can be retrieved in the browser however, and vary between iOS, Android, and other mobile operating systems.
+Our "core" [Fingerprint](https://github.com/fingerprintjs/fingerprintjs) library is intended for browser fingerprinting - it identifies visitors to a website using all modern mobile and desktop browsers. The signals available for mobile app developers are different from signals that can be retrieved in the browser however, and vary between iOS, Android, and other mobile operating systems.
 
 If you want to identify users of a native mobile app, we have a few options in our product suite:
-* FingerprintJS Pro, in addition to browser fingerprinting, includes high-accuracy native [Android](https://dev.fingerprintjs.com/docs/native-android-integration) and [iOS](https://dev.fingerprintjs.com/docs/native-ios-integration) integrations that allow developers to integrate device identification into native Android and iOS apps.
+* Fingerprint Pro, in addition to browser fingerprinting, includes high-accuracy native [Android](https://dev.fingerprint.com/docs/native-android-integration) and [iOS](https://dev.fingerprint.com/docs/native-ios-integration) integrations that allow developers to integrate device identification into native Android and iOS apps.
 * Our [iOS open source library](https://github.com/fingerprintjs/fingerprintjs-ios)
 * Our [Android open source library](https://github.com/fingerprintjs/fingerprintjs-android)
 
@@ -139,6 +139,6 @@ We would love to hear your questions and get feedback on our fingerprinting tech
 
 *Here are a few ways you can get involved:*
 
-* Star, follow or fork our Github projects: [FingerprintJS](https://github.com/fingerprintjs/fingerprintjs) (browser fingerprinting) and [Fingerprint-Android](https://github.com/fingerprintjs/fingerprint-android)
-* Need more accurate browser fingerprinting for your business? Create a free FingerprintJS Pro account for [99.5% fingerprinting accuracy](/).
-* Think FingerprintJS could help your business? [Contact our sales team](https://fingerprintjs.com/contact-sales/) with your questions
+* Star, follow or fork our Github projects: [Fingerprint](https://github.com/fingerprintjs/fingerprintjs) (browser fingerprinting) and [Fingerprint-Android](https://github.com/fingerprintjs/fingerprint-android)
+* Need more accurate browser fingerprinting for your business? Create a free Fingerprint Pro account for [99.5% fingerprinting accuracy](/).
+* Think Fingerprint could help your business? [Contact our sales team](https://fingerprint.com/contact-sales/) with your questions

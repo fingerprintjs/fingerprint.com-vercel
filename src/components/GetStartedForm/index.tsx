@@ -134,8 +134,8 @@ export default function GetStartedForm({ className }: GetStartedFormProps) {
             }}
             content={
               <div>
-                FingerprintJS is GDPR/CCPA compliant. Our technology is intended to be used for fraud detection only -
-                for this use case, no user consent is required.
+                Fingerprint is GDPR/CCPA compliant. Our technology is intended to be used for fraud detection only - for
+                this use case, no user consent is required.
                 <br />
                 <br />
                 Any use outside of fraud detection would need to comply with GDPR/CCPA user consent rules. We never

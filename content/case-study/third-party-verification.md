@@ -3,15 +3,15 @@ templateKey: case-study-content
 publishDate: 2021-06-14T12:42:14.559Z
 title: Third Party Verification
 metadata:
-  title: Third Party Verification - Case Study | FingerprintJS
+  title: Third Party Verification - Case Study | Fingerprint
   description: A door-to-door sales software company was able to greatly increase
     their identity verification accuracy, prevent fraud committed by sales
-    representatives, and exceed compliance standards with FingerprintJS Pro.
-  url: https://fingerprintjs.com/case-studies/third-party-verification/
+    representatives, and exceed compliance standards with Fingerprint Pro.
+  url: https://fingerprint.com/case-studies/third-party-verification/
 header:
   subLabel: Case Study
   subTitle: How one face-to-face sales software company exceeded third-party
-    verification standards with FingerprintJS
+    verification standards with Fingerprint
   content: The company was able to greatly increase their identity
     verification accuracy, prevent fraud committed by sales representatives, and
     exceed compliance standards.
@@ -23,12 +23,12 @@ summary:
       iconTitle: Business
       title: Reduced Fraud by 94%
       content: One major customer of the company reduced fraudulent sales by
-        94% with FingerprintJS’ high accuracy mobile device identification.
+        94% with Fingerprint’ high accuracy mobile device identification.
     - icon: /img/uploads/support.svg
       iconAlt: Support
       iconTitle: Support
       title: Seamless integration
-      content: Using FingerprintJS Pro’s secure API, the company replaced
+      content: Using Fingerprint Pro’s secure API, the company replaced
         their previous browser fingerprinting solution easily without disrupting
         existing security processes.
     - icon: /img/uploads/like.svg
@@ -39,7 +39,7 @@ summary:
         increasing ‘false positives,’ protecting customers without causing
         unnecessary hurdles in the purchasing process.
   overviewSection:
-    description: FingerprintJS works with a US-based door-to-door sales platform
+    description: Fingerprint works with a US-based door-to-door sales platform
       designed for retail energy sales. The company provides both software and
       hardware (tablets) for face-to-face sales representatives to manage their
       lead list and enroll new customers. The software also performs important
@@ -52,7 +52,7 @@ summary:
         description: Third Party Verification
 footer:
   ctaTitle: Get in Touch
-  ctaSubtitle: Learn how FingerprintJS Pro can help your business build a custom
+  ctaSubtitle: Learn how Fingerprint Pro can help your business build a custom
     solution to prevent online fraud.
 ---
 ## The problem
@@ -63,27 +63,27 @@ A key feature of the company’s software solution is third-party verification (
 *   **Signature Verification / Biometric Analysis:** Look for anomalies in submitted signatures and behavior on-page.
 *   **Customer Positive ID:** When the AI engine detects suspicious activity, ask the customer information that only they should know and verify against major credit bureaus.
 
-When the company approached FingerprintJS, the company was using another open source browser fingerprinting library for their device verification layer. The company was looking to increase the accuracy of their fingerprinting, particularly on mobile devices, as they believed most instances of fraud could be prevented at the device and phone number verification stage.
+When the company approached Fingerprint, the company was using another open source browser fingerprinting library for their device verification layer. The company was looking to increase the accuracy of their fingerprinting, particularly on mobile devices, as they believed most instances of fraud could be prevented at the device and phone number verification stage.
 
-## Why FingerprintJS
+## Why Fingerprint
 
-After investigation, the company found that the FingerprintJS Pro API offered significant advantages to their previous fingerprinting solution, resulting in a more secure third-party verification process.
+After investigation, the company found that the Fingerprint Pro API offered significant advantages to their previous fingerprinting solution, resulting in a more secure third-party verification process.
 
 ### Higher identification accuracy for mobile devices
 
 Many browser fingerprinting solutions struggle to accurately identify mobile visitors, as there are not enough unique signals to differentiate between users. For the company, reducing false positives was crucial to ensuring that legitimate customers could verify their enrollment quickly and easily.
 
-For mobile devices, FingerprintJS Pro uses a combination of specialized signals to ensure the highest possible accuracy, including:
+For mobile devices, Fingerprint Pro uses a combination of specialized signals to ensure the highest possible accuracy, including:
 
 *   Mobile network IP addresses analysis
 *   Mobile specific APIs (e.g. accelerometer)
 *   Mobile payment vendor information
 *   Mobile specific GPU signals (e.g. WebGL)
 
-In addition to mobile browser fingerprinting, FingerprintJS Pro utilizes several server-side techniques like TLS analysis and SSL fingerprinting to increase the accuracy of visitorIDs, further reducing false positives.
+In addition to mobile browser fingerprinting, Fingerprint Pro utilizes several server-side techniques like TLS analysis and SSL fingerprinting to increase the accuracy of visitorIDs, further reducing false positives.
 
 ### Technical and Flexible Team
 
-The company’s engineering team worked closely with FingerprintJS to validate performance and optimize their installation. As the company had built a sophisticated verification system, it was important that their developers had easy access to technical support.
+The company’s engineering team worked closely with Fingerprint to validate performance and optimize their installation. As the company had built a sophisticated verification system, it was important that their developers had easy access to technical support.
 
-FingerprintJS Pro offers chat, email, and by-appointment phone support for all paid plans. As a developer-first company, our in-house support team consists of engineers with deep knowledge of our product.
+Fingerprint Pro offers chat, email, and by-appointment phone support for all paid plans. As a developer-first company, our in-house support team consists of engineers with deep knowledge of our product.

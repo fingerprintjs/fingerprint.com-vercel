@@ -5,7 +5,7 @@ metadata:
   image: /img/uploads/credential-stuffing-prevention-v1.png
   imageAlt: Credential stuffing prevention
   imageTitle: Credential stuffing prevention
-  url: https://fingerprintjs.com/blog/credential-stuffing-prevention-checklist
+  url: https://fingerprint.com/blog/credential-stuffing-prevention-checklist
   description: " Learn how to secure and protect your users’ data with account
     takeover prevention methods to stop costly breaches and maintain your
     customers' trust."

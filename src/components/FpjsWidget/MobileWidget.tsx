@@ -91,7 +91,7 @@ export default function MobileWidget({ className, isLoaded, visits, visitorId }:
                   <div className={styles.label}>Incognito</div>
                   <div className={styles.value}>
                     {visit.incognito ? 'Yes' : 'No'}{' '}
-                    <Tippy content='FingerprintJS Pro analyzes every page view and detects if it was made in incognito mode. Open this page in private mode to see it in action.'>
+                    <Tippy content='Fingerprint Pro analyzes every page view and detects if it was made in incognito mode. Open this page in private mode to see it in action.'>
                       <InfoSvg tabIndex={0} />
                     </Tippy>
                   </div>

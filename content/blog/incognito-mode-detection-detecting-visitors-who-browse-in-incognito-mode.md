@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: "Incognito Mode Detection: Detecting Visitors Who Browse in Private Mode"
-  url: https://fingerprintjs.com/blog/incognito-mode-detection/
+  url: https://fingerprint.com/blog/incognito-mode-detection/
   description: Find out how to use Javascript techniques to determine if a website
     visitor is using incognito mode to access a page.
   image: /img/uploads/incognito-mode.png
@@ -26,7 +26,7 @@ heroImage:
 ---
 Browsers attempt to ensure a user’s privacy by offering Incognito mode, which allows the user to surf the internet without worrying about their history, cookies, or the information they enter being saved permanently. However, in a lot of business use cases, this can end up being harmful. Visitors may use Incognito mode to gain unlimited access to content, bypassing paywalls undetected. 
 
-We’ll go over four methods of detecting visitors using Incognito mode and discuss which browsers support these methods. In the end, we’ll compare these methods to using [FingerprintJS](/), which makes it all easier.
+We’ll go over four methods of detecting visitors using Incognito mode and discuss which browsers support these methods. In the end, we’ll compare these methods to using [Fingerprint](/), which makes it all easier.
 
 ## Method 1: Access Timings
 
@@ -313,11 +313,11 @@ And the same result for Incognito mode:
 
 This method does not work on Safari anymore, and it was not reported to work on any other major browser.
 
-## Method 5: FingerprintJS
+## Method 5: Fingerprint
 
-After going through all the previous methods and experiencing their limitations, let’s look at [FingerprintJS](/). FingerprintJS promises "99.5% accurate browser fingerprinting,” which will allow you to detect your visitors’ true identity and protect your content. 
+After going through all the previous methods and experiencing their limitations, let’s look at [Fingerprint](/). Fingerprint Promises "99.5% accurate browser fingerprinting,” which will allow you to detect your visitors’ true identity and protect your content. 
 
-FingerprintJS is helpful in many use cases, including:
+Fingerprint is helpful in many use cases, including:
 
 * Preventing account fraud or fake accounts by making sure all your visitors are real. 
 * Making sure all payments are made securely, preventing fraudulent payments.
@@ -325,21 +325,21 @@ FingerprintJS is helpful in many use cases, including:
 
 ### How It Works
 
-[Create a free account](https://dashboard.fingerprintjs.com/signup). Enter your email to begin the onboarding process, entering some information like your website name. Accept the terms and conditions, and finally you will be given a code snippet to add to your website.
+[Create a free account](https://dashboard.fingerprint.com/signup). Enter your email to begin the onboarding process, entering some information like your website name. Accept the terms and conditions, and finally you will be given a code snippet to add to your website.
 
-![Code Snippet from FingerprintJS](https://i.imgur.com/mZhJ6x1.png)
+![Code Snippet from Fingerprint](https://i.imgur.com/mZhJ6x1.png)
 
-This snippet loads the FingerprintJS script to your webpage from the CDN. Once it’s loaded, you can start using FingerprintJS with the API key given to your account (it’s part of the code in the snippet). 
+This snippet loads the Fingerprint script to your webpage from the CDN. Once it’s loaded, you can start using Fingerprint with the API key given to your account (it’s part of the code in the snippet). 
 
-Before adding this code to your website, make sure to check your email and verify your email address with FingerprintJS first. This is necessary for the subscription to take effect.
+Before adding this code to your website, make sure to check your email and verify your email address with Fingerprint first. This is necessary for the subscription to take effect.
 
 Once you’ve verified your email, go ahead and add this script to any of your webpages. If everything is correct, the same page that showed you the code snippet should take you to the dashboard:
 
-![FingerprintJS dashboard](https://i.imgur.com/F3PtEHW.png)
+![Fingerprint dashboard](https://i.imgur.com/F3PtEHW.png)
 
 You can see that one user is already detected, and that user is you!
 
-We can pass the ["extendedResult"](https://dev.fingerprintjs.com/docs/js-agent#extendedresult) option in the "get" method to return details about the visitor, including whether they are using Incognito or not.
+We can pass the ["extendedResult"](https://dev.fingerprint.com/docs/js-agent#extendedresult) option in the "get" method to return details about the visitor, including whether they are using Incognito or not.
 
 This will be the code snippet now:
 
@@ -373,7 +373,7 @@ Let’s test this on different major browsers. Also, you can test using the live
 
 ### Testing on Chrome
 
-Using Chrome 89, FingerprintJS was able to detect when not using Incognito:
+Using Chrome 89, Fingerprint was able to detect when not using Incognito:
 
 ![Testing on Chrome without Incognito - Method 5](https://i.imgur.com/9AvXNoM.png)
 
@@ -383,7 +383,7 @@ And when using it:
 
 ### Testing on Firefox
 
-Using Firefox 88, FingerprintJS was able to detect when not using Incognito:
+Using Firefox 88, Fingerprint was able to detect when not using Incognito:
 
 ![Testing on Firefox without Incognito - Method 5](https://i.imgur.com/LUJ0D7l.png)
 
@@ -393,7 +393,7 @@ And when using it:
 
 ### Testing on Edge
 
-Using Edge 90, FingerprintJS was able to detect when not using Incognito:
+Using Edge 90, Fingerprint was able to detect when not using Incognito:
 
 ![Testing on Edge without Incognito - Method 5](https://i.imgur.com/HXmdAqU.png)
 
@@ -403,7 +403,7 @@ And when using it:
 
 ### Testing on Opera
 
-Using Opera 76, FingerprintJS was able to detect when not using Incognito:
+Using Opera 76, Fingerprint was able to detect when not using Incognito:
 
 ![Testing on Opera without Incognito - Method 5](https://i.imgur.com/2MHrcPs.png)
 
@@ -413,7 +413,7 @@ And when using it:
 
 ### Testing on Safari
 
-Using Safari 14 on iOS, FingerprintJS was able to detect when not using Incognito:
+Using Safari 14 on iOS, Fingerprint was able to detect when not using Incognito:
 
 ![Testing on Safari without Incognito - Method 5](https://i.imgur.com/V9EpIhT.png)
 
@@ -423,7 +423,7 @@ and when using it:
 
 ### Browser Support
 
-[FingerprintJS](https://dev.fingerprintjs.com/docs/browser-support) supports the following browsers and their versions are supported:
+[Fingerprint](https://dev.fingerprint.com/docs/browser-support) supports the following browsers and their versions are supported:
 
 * Internet Explorer 11
 * Edge 18 and 85+
@@ -434,20 +434,20 @@ and when using it:
 * Samsung Internet 11.1+
 * Android Browser 4.1+
 
-For an up-to-date list of currently supported versions, visit [this link](https://dev.fingerprintjs.com/docs/browser-support).
+For an up-to-date list of currently supported versions, visit [this link](https://dev.fingerprint.com/docs/browser-support).
 
-Some old browsers like IE11 and Android Browser 4.1 will need a [Promise polyfill](https://dev.fingerprintjs.com/docs/browser-support#old-browsers-requirements) before using it.
+Some old browsers like IE11 and Android Browser 4.1 will need a [Promise polyfill](https://dev.fingerprint.com/docs/browser-support#old-browsers-requirements) before using it.
 
 ### Comparing This Method to Previous Ones
 
-Using FingerprintJS is definitely a better solution than previous methods. First, setting up FingerprintJS and adding the code to your website is a five-minute process. It’s very easy and does not rely on “quirks” or different methods based on which browser the user might be using.
+Using Fingerprint is definitely a better solution than previous methods. First, setting up Fingerprint and adding the code to your website is a five-minute process. It’s very easy and does not rely on “quirks” or different methods based on which browser the user might be using.
 
-Second, FingerprintJS is the only method that’s capable of detecting Incognito mode on *all* major browsers. All the other methods detect Incognito mode only on some browsers, and most are outdated and don’t work anymore.
+Second, Fingerprint is the only method that’s capable of detecting Incognito mode on *all* major browsers. All the other methods detect Incognito mode only on some browsers, and most are outdated and don’t work anymore.
 
-Not only is FingerprintJS easy to integrate, but you can use it in different ways. There’s the CDN way that you used above, but you can also install it with [NPM](https://dev.fingerprintjs.com/docs/js-agent#ecmascript-module) or use it with [RequireJS](https://dev.fingerprintjs.com/docs/js-agent#umd). This makes it a flexible solution for whatever kind of architecture you have for your project.
+Not only is Fingerprint easy to integrate, but you can use it in different ways. There’s the CDN way that you used above, but you can also install it with [NPM](https://dev.fingerprint.com/docs/js-agent#ecmascript-module) or use it with [RequireJS](https://dev.fingerprint.com/docs/js-agent#umd). This makes it a flexible solution for whatever kind of architecture you have for your project.
 
 ## Conclusion
 
 In recent years, browsers are making it harder to detect Incognito mode, making it a perpetual task to ensure your website’s detection methods are up to date and can still detect a visitor’s identity. It will only continue to become harder to find a method that accurately detects the visitor. 
 
-[FingerprintJS](/) is the optimal solution to keep businesses safe from visitors that take advantage of Incognito mode to access limited content.
+[Fingerprint](/) is the optimal solution to keep businesses safe from visitors that take advantage of Incognito mode to access limited content.

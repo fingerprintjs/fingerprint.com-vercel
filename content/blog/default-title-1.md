@@ -5,7 +5,7 @@ metadata:
   description: Refund fraud is one of the most common fraud types for ecommerce
     business. Learn how to identify and stop chargebacks caused by professional
     refunders.
-  url: https://fingerprintjs.com/blog/refund-fraud-prevention-chargebacks
+  url: https://fingerprint.com/blog/refund-fraud-prevention-chargebacks
   socialImage: /img/uploads/refund-fraud_-how-to-identify-chargeback-fraud.png
   imageAlt: Review fraud prevention
   imageTitle: Review fraud prevention
@@ -67,7 +67,7 @@ The good thing about scammers working in groups is that it makes them easier to 
 
 Patterns make it easier for machine learning algorithms to detect refund requests that are likely fraudulent. So having a device [fingerprinting system](/products/browser-fingerprinting/) in place will help you automatically detect malicious actors on your ecommerce website.
 
-![Screenshot of FingerprintJS](/img/uploads/screenshot-of-fpjs.png "Screenshot of FingerprintJS")
+![Screenshot of Fingerprint](/img/uploads/screenshot-of-fpjs.png "Screenshot of Fingerprint")
 
 ## Fake tracking ID (FTID)
 

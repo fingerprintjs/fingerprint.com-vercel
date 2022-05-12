@@ -14,7 +14,7 @@ export default function InTheMediaSection() {
   return (
     <Section className={styles.root}>
       <Container size='large' className={styles.container}>
-        <h2 className={styles.title}>FingerprintJS In the Media</h2>
+        <h2 className={styles.title}>Fingerprint In the Media</h2>
         <div className={styles.logos}>
           <a
             className={styles.link}

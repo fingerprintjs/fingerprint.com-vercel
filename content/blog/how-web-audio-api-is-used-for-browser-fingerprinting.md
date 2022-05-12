@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: How the Web Audio API is used for audio fingerprinting
-  url: https://fingerprintjs.com/blog/audio-fingerprinting
+  url: https://fingerprint.com/blog/audio-fingerprinting
   image: /img/uploads/audio-fp-hero.png
   description: Audio Fingerprinting is used to uniquely identify visitors without
     cookies. A deep dive into this highly stable browser fingerprinting
@@ -360,18 +360,18 @@ Audio fingerprinting is one of the many signals our <a href="https://github.com/
 \
 For audio fingerprinting, we found that the signal contributes only slightly to uniqueness but is highly stable, resulting in a small net increase to fingerprint accuracy.\
 \
-You can learn more about stability, uniqueness and accuracy in our <a href="https://fingerprintjs.com/blog/what-is-browser-fingerprinting/" target="_blank" rel="noopener"><span>beginner’s guide to browser fingerprinting</span></a>.
+You can learn more about stability, uniqueness and accuracy in our <a href="https://fingerprint.com/blog/what-is-browser-fingerprinting/" target="_blank" rel="noopener"><span>beginner’s guide to browser fingerprinting</span></a>.
 
 ### Try Browser Fingerprinting for Yourself
 
 Browser fingerprinting is a useful method of visitor identification for a variety of anti-fraud applications. It is particularly useful to identify malicious visitors attempting to circumvent tracking by clearing cookies, browsing in incognito mode or using a VPN. \
 \
-You can try implementing browser fingerprinting yourself with our <a href="https://github.com/fingerprintjs/fingerprintjs" target="_blank" rel="noopener"><span>open source library</span></a>. FingerprintJS is the most popular browser fingerprinting library available, with over <tt>12K</tt> GitHub stars.\
+You can try implementing browser fingerprinting yourself with our <a href="https://github.com/fingerprintjs/fingerprintjs" target="_blank" rel="noopener"><span>open source library</span></a>. Fingerprint is the most popular browser fingerprinting library available, with over <tt>12K</tt> GitHub stars.\
 \
-For higher identification accuracy, we also developed the <a href="https://fingerprintjs.com/" target="_blank" rel="noopener"><span>FingerprintJS Pro API</span></a>, which uses machine learning to combine browser fingerprinting with additional identification techniques. You can <a href="https://dashboard.fingerprintjs.com/signup">try FingerprintJS Pro</a> with unlimited API requests for the first 10 days.
+For higher identification accuracy, we also developed the <a href="https://fingerprint.com/" target="_blank" rel="noopener"><span>Fingerprint Pro API</span></a>, which uses machine learning to combine browser fingerprinting with additional identification techniques. You can <a href="https://dashboard.fingerprint.com/signup">try Fingerprint Pro</a> with unlimited API requests for the first 10 days.
 
 ### Get in touch
 
 * Star, follow or fork our <a href="https://github.com/fingerprintjs/fingerprintjs" target="_blank" rel="noopener"><span>GitHub project</span></a>
-* Email us your questions at oss@fingerprintJS.com
-* Join our team to work on exciting research in online security: <a href="mailto:work@fingerprintjs.com" target="_blank" rel="noopener"><span>work@fingerprintjs.com</span></a>
+* Email us your questions at oss@fingerprint.com
+* Join our team to work on exciting research in online security: <a href="mailto:work@fingerprint.com" target="_blank" rel="noopener"><span>work@fingerprint.com</span></a>

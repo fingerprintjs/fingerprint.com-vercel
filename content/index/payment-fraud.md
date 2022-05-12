@@ -2,11 +2,11 @@
 title: payment-fraud
 templateKey: static-page-content
 metadata:
-  title: "Payment Fraud Prevention: User Identification | FingerprintJS"
-  description: Prevent Payment Fraud With FingerprintJS' Accurate User
+  title: "Payment Fraud Prevention: User Identification | Fingerprint"
+  description: Prevent Payment Fraud With Fingerprint' Accurate User
     Identification. Prevent Coupon & Promo Abuse, Card Testing, Card Cracking &
     More.
-  url: https://fingerprintjs.com/payment-fraud
+  url: https://fingerprint.com/payment-fraud
   image: /img/uploads/fpjs_cover3.png
 relatedTitle: Related Articles
 tags:
@@ -15,13 +15,13 @@ invertContent: false
 hero:
   title: Payment Fraud Prevention and Detection
   description: Stop payment fraud in all its forms with accurate user
-    identification. Use FingerprintJS to keep chargebacks to a minimum,
+    identification. Use Fingerprint to keep chargebacks to a minimum,
     protecting your bottom-line and seller reputation.
   ctaText: Create Account
-  ctaHref: https://dashboard.fingerprintjs.com/signup
+  ctaHref: https://dashboard.fingerprint.com/signup
   openCtaNewTab: false
 cardSection:
-  title: Add FingerprintJS to your tech stack to protect your payments
+  title: Add Fingerprint to your tech stack to protect your payments
   subtitle: ""
   cards:
     - icon: /img/uploads/anonymous_user_identification.png
@@ -51,7 +51,7 @@ cardSection:
       iconAlt: Friendly fraud prevention
       iconTitle: Friendly fraud prevention
     - title: Mobile Payment Fraud
-      content: FingerprintJS Pro works for all web applications including hybrid
+      content: Fingerprint Pro works for all web applications including hybrid
         mobile apps. Flag suspicious customers making mobile purchases and
         prevent more chargebacks.
       icon: /img/uploads/smartphone-1-.svg
@@ -59,7 +59,7 @@ cardSection:
       iconTitle: Mobile payment fraud
 blocks:
   - subheader: Stop chargebacks in their tracks
-    imageAlt: FingerprintJS Pro dashboard
+    imageAlt: Fingerprint Pro dashboard
     isImageAfterText: true
     isCtaButton: false
     content: Any form of payment fraud can result in a chargeback for your website,
@@ -69,25 +69,25 @@ blocks:
       fraudulent activity by authenticating or stopping at-risk purchases before
       they occur.
     image: /img/uploads/dash-usage-chart.png
-    imageTitle: FingerprintJS Pro dashboard
+    imageTitle: Fingerprint Pro dashboard
     ctaText: Read our documentation
-    ctaUrl: https://dev.fingerprintjs.com/docs/introduction
+    ctaUrl: https://dev.fingerprint.com/docs/introduction
   - subheader: Developer-friendly integrations
-    imageAlt: FingerprintJS Pro Javascript snippet
+    imageAlt: Fingerprint Pro Javascript snippet
     isImageAfterText: false
     isCtaButton: false
-    content: "FingerprintJS' API and webhooks are designed to easily integrate with
+    content: "Fingerprint' API and webhooks are designed to easily integrate with
       your existing website architecture and payment processing platform.
       Whether you have a Shopify store or a custom build, incorporate our highly
       accurate fingerprinting service wherever it is needed.   "
     image: /img/uploads/fpjs-snippet-code.png
-    imageTitle: FingerprintJS Pro Javascript snippet
+    imageTitle: Fingerprint Pro Javascript snippet
     ctaText: Try it out
-    ctaUrl: https://dashboard.fingerprintjs.com/signup
+    ctaUrl: https://dashboard.fingerprint.com/signup
 inlineCta:
   title: Create your free account
   subtitle: "Install our Javascript snippet on your website and start collecting
     visitorIDs for free. "
   buttonText: Get Started
-  buttonHref: https://dashboard.fingerprintjs.com/signup
+  buttonHref: https://dashboard.fingerprint.com/signup
 ---

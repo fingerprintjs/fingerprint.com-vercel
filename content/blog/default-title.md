@@ -4,7 +4,7 @@ metadata:
   title: "Online gambling fraud: effective preventative measures"
   description: Learn how to prevent the most common scams from career fraudsters
     as well as punters looking to get a leg up on the competition.
-  url: https://fingerprintjs.com/blog/online-gambling-fraud-preventive-measures
+  url: https://fingerprint.com/blog/online-gambling-fraud-preventive-measures
   image: /img/uploads/online-gambling-fraud_-effective-preventive-measures.png
   socialImage: /img/uploads/online-gambling-fraud_-effective-preventive-measures.png
   imageAlt: Online gambling fraud prevention
@@ -142,8 +142,8 @@ One very useful application for browser fingerprinting for gambling sites is to 
 
 Taking steps to prevent online gambling fraud is a must. It’s virtually inevitable that fraudsters will attempt to defraud your online gambling business at some point, and it can be hugely damaging if those attempts are successful.
 
-Online gambling sites need industry-leading fraud prevention, and FingerprintJS can help.
+Online gambling sites need industry-leading fraud prevention, and Fingerprint can help.
 
-FingerprintJS uses the very latest in fingerprinting technology to identify suspicious users that pose a security threat with 99.5 percent accuracy. The technology is easy to implement and requires no maintenance, giving you peace of mind for minimal effort. 
+Fingerprint uses the very latest in fingerprinting technology to identify suspicious users that pose a security threat with 99.5 percent accuracy. The technology is easy to implement and requires no maintenance, giving you peace of mind for minimal effort. 
 
-FingerprintJS software has been used since 2012 to identify billions of internet users, creating a world-leading database that protects businesses of all shapes and sizes from the ever-growing threat of cybercrime.
+Fingerprint software has been used since 2012 to identify billions of internet users, creating a world-leading database that protects businesses of all shapes and sizes from the ever-growing threat of cybercrime.

@@ -1,10 +1,10 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: 6 Ways to Permanently Ban Users from Your Website - FingerprintJS
+  title: 6 Ways to Permanently Ban Users from Your Website - Fingerprint
   description: Block specific users from accessing your website content by their
     IP, email address, browser fingerprint and more.
-  url: https://fingerprintjs.com/blog/permanently-ban-users/
+  url: https://fingerprint.com/blog/permanently-ban-users/
   image: /img/uploads/ban-from-website.png
   imageAlt: How to ban users from your website
   imageTitle: How to ban users from your website
@@ -22,19 +22,19 @@ authors:
   - Linda Ikechukwu
 heroImage:
   image: /img/uploads/ban-from-website.png
-  imageAlt: Permanently ban users from your website with FingerprintJS
-  imageTitle: Permanently ban users from your website with FingerprintJS
+  imageAlt: Permanently ban users from your website with Fingerprint
+  imageTitle: Permanently ban users from your website with Fingerprint
 customCTA:
   title: Ready your ban hammer
   description: Create a free account and start protecting your site.
   ctaText: Start Now
-  ctaUrl: https://dashboard.fingerprintjs.com/signup
+  ctaUrl: https://dashboard.fingerprint.com/signup
   openCtaNewTab: false
   isPublished: true
 ---
 While having user-generated content is a great way to add interactivity and community to your website, it unfortunately leaves you open to abuse from malicious users. Nudity, harassment, spam, advertising, or even malware and viruses are just some of the unwanted content you may have to deal with. Sometimes, measures like content moderation and warnings can help keep your users in line. But in many cases, these offenders are aggressive and cunning with their approach, and you’ll have to take the extreme step of permanently banning them.
 
-In order to permanently ban a user, you’ll need to make sure they have a unique identifier. In this article, we’ll compare six methods through which you can block specific users from accessing your website content via various unique identifiers — including [FingerprintJS](/), an easy solution for comprehensive user identification. 
+In order to permanently ban a user, you’ll need to make sure they have a unique identifier. In this article, we’ll compare six methods through which you can block specific users from accessing your website content via various unique identifiers — including [Fingerprint](/), an easy solution for comprehensive user identification. 
 
 ## 1. IP Address Ban
 
@@ -118,11 +118,11 @@ Again, if you use WordPress, you can use plugins like [MarkTroll](https://wordpr
 
 The stealth mode method is very effective and stalls problematic users for a long time, even though they may eventually catch on and discover that something is wrong. Also, a problematic user who does eventually discover they are shadowbanned can simply create a new account and continue their activities.
 
-## 6. FingerprintJS
+## 6. Fingerprint
 
-![FingerprintJS](/img/uploads/ciceyyz.png "FingerprintJS")
+![Fingerprint](/img/uploads/ciceyyz.png "Fingerprint")
 
-[FingerprintJS](/) is a browser fingerprinting API as a service platform that can be used to uniquely identify users.
+[Fingerprint](/) is a browser fingerprinting API as a service platform that can be used to uniquely identify users.
 
 Browser fingerprinting is a tracking method that uses JavaScript scripts to collect information that can identify a user. These scripts run in the background, aggregating unique information about the user’s device and browser, such as:
 
@@ -141,9 +141,9 @@ Browser fingerprinting is a tracking method that uses JavaScript scripts to coll
 
 When you stitch all of these pieces together, you create a unique online “fingerprint” for a user that can trace them across different websites and browsing sessions.
 
-Fingerprinting is by far the most accurate user identification method (FinerprintJS Pro has a [success rate of up to 99.5 percent](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy)). While a user can delete cookies, there’s no way to delete a browser fingerprint, and it works in incognito mode, behind a VPN or proxy server, and across multiple browsers.
+Fingerprinting is by far the most accurate user identification method (Fingerprint Pro has a [success rate of up to 99.5 percent](https://dev.fingerprint.com/docs/understanding-our-995-accuracy)). While a user can delete cookies, there’s no way to delete a browser fingerprint, and it works in incognito mode, behind a VPN or proxy server, and across multiple browsers.
 
-Like a number of JavaScript libraries, FingerprintJS is easy to use and has extensive [documentation](https://dev.fingerprintjs.com/docs). To get started, either install via NPM, yarn, or use a CDN:
+Like a number of JavaScript libraries, Fingerprint is easy to use and has extensive [documentation](https://dev.fingerprint.com/docs). To get started, either install via NPM, yarn, or use a CDN:
 
 ```
 npm i @fingerprintjs/fingerprintjs
@@ -154,13 +154,13 @@ yarn add @fingerprintjs/fingerprintjs
 Then import it and invoke it on page load:
 
 ```
-import FingerprintJS from '@fingerprintjs/fingerprintjs';
+import Fingerprint from '@fingerprintjs/fingerprintjs';
 
 (async () => {
   // We recommend to call `load` at application startup.
   const fp = await FingerprintJS.load();
 
-  // The FingerprintJS agent is ready.
+  // The Fingerprint agent is ready.
   // Get a visitor identifier when you'd like to.
   const result = await fp.get();
 
@@ -172,10 +172,10 @@ import FingerprintJS from '@fingerprintjs/fingerprintjs';
 
 The script above should preferably be included in the root folder of all the JS files like `index.js`.
 
-When you add a user’s unique visitor ID to a ban list with FingerprintJS, it’s difficult for them to circumvent it unless they frequently switch devices. [FingerprintJS](/) provides an open-source and paid solution for fingerprinting your users. Their service has 99.5% accuracy, and you can try it without usage limits for 10 days. 
+When you add a user’s unique visitor ID to a ban list with Fingerprint, it’s difficult for them to circumvent it unless they frequently switch devices. [Fingerprint](/) provides an open-source and paid solution for fingerprinting your users. Their service has 99.5% accuracy, and you can try it without usage limits for 10 days. 
 
 ## Conclusion
 
 There will always be problematic users. To be able to create civil and safer online communities for everyone, such users need to be banned. 
 
-There are many common methods for banning users, but ultimately they all have shortcomings and can be circumvented by persistent actors. To truly permanently ban a malicious actor, consider using a robust user identification solution like [FingerprintJS](/).
+There are many common methods for banning users, but ultimately they all have shortcomings and can be circumvented by persistent actors. To truly permanently ban a malicious actor, consider using a robust user identification solution like [Fingerprint](/).

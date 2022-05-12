@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: "Gift card fraud prevention: Tips to keep fraudsters at bay"
-  url: https://fingerprintjs.com/blog/gift-card-fraud-prevention
+  url: https://fingerprint.com/blog/gift-card-fraud-prevention
   image: /img/uploads/gift-card-fraud-prevention_.png
   description: Ecommerce sites are often plagued with gift card fraud. Learn how
     to identify this common form of payment fraud and prevent scammers from
@@ -126,6 +126,6 @@ For more security tips on preventing gift card fraud, [check out this link](http
 
 The whole idea behind gift cards is convenience and flexibility, and this is why fraudsters love them so much. It can be costly to your website when your gift cards fall into the wrong hands, so it’s worth taking the time to protect yourself from being exploited.
 
-FingerprintJS can help. FingerprintJS Pro is a visitor identification service that can help websites prevent fraudulent behavior including gift card fraud. FingerprintJS Pro can flag visitors with suspicious browsing patterns to be authenticated before they make potentially fraudulent purchases.
+Fingerprint can help. Fingerprint Pro is a visitor identification service that can help websites prevent fraudulent behavior including gift card fraud. Fingerprint Pro can flag visitors with suspicious browsing patterns to be authenticated before they make potentially fraudulent purchases.
 
 Not only that, but we monitor the latest trends and update systems to protect you against any new scams or methods of fraud that can otherwise place you at risk.

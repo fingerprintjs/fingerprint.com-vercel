@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: Prevent 100% of Account Takeover Attacks from Bots with 2FA
-  url: https://fingerprintjs.com/blog/prevent-account-takeover-with-two-factor-authentication/
+  url: https://fingerprint.com/blog/prevent-account-takeover-with-two-factor-authentication/
   description: Find out why Microsoft and Apple recommend 2FA for stopping
     automated bots and malicious humans from stealing your online accounts.
   image: /img/uploads/prevent-100-of-account-takeover-attacks-from-bots-with-2fa.png
@@ -81,4 +81,4 @@ The following password manager apps also have 2FA capabilities for integrating w
 
 ## Conclusion
 
-As the efficacy of usernames and passwords continues to wane, 2FA is likely to become the de facto authentication standard for bolstering user accounts against fraudster or bot-initiated account takeover attacks. In terms of the latter, cyber criminals commonly rely on automated attack bots to carry out thousands of login attempts at a time. This makes it crucial to implement 2FA in conjunction with solutions like [FingerprintJS Pro](/account-takeover/) to uniquely identify visitors and detect patterns of fraudulent behavior. Give it a [test drive](https://dashboard.fingerprintjs.com/signup) today, it’s free with unlimited API access for 10 days.
+As the efficacy of usernames and passwords continues to wane, 2FA is likely to become the de facto authentication standard for bolstering user accounts against fraudster or bot-initiated account takeover attacks. In terms of the latter, cyber criminals commonly rely on automated attack bots to carry out thousands of login attempts at a time. This makes it crucial to implement 2FA in conjunction with solutions like [Fingerprint Pro](/account-takeover/) to uniquely identify visitors and detect patterns of fraudulent behavior. Give it a [test drive](https://dashboard.fingerprint.com/signup) today, it’s free with unlimited API access for 10 days.

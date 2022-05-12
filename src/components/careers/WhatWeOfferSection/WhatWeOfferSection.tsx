@@ -27,7 +27,7 @@ export default function WhatWeOfferSection() {
           <Card
             icon={<SalarySVG />}
             title='Competitive salary'
-            description='We offer competitive salaries and  equity because we believe all employees should own a part of FingerprintJS.'
+            description='We offer competitive salaries and  equity because we believe all employees should own a part of Fingerprint.'
           />
           <Card
             icon={<VacationSVG />}

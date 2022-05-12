@@ -57,7 +57,7 @@ export default function Summary({ results, description, bullets }: SummaryProps)
 
           <div>
             <CustomerOverview description={description} bullets={bullets} />
-            <FeatureList title='FingerprintJS Features' features={features} />
+            <FeatureList title='Fingerprint Features' features={features} />
           </div>
         </div>
       </Container>

@@ -2,10 +2,10 @@
 title: ecommerce
 templateKey: static-page-content
 metadata:
-  title: Ecommerce Fraud Prevention | FingerprintJS
-  description: Prevent Ecommerce Fraud With FingerprintJS Browser Fingerprinting.
+  title: Ecommerce Fraud Prevention | Fingerprint
+  description: Prevent Ecommerce Fraud With Fingerprint Browser Fingerprinting.
     Prevent Gift Card & Coupon Abuse, Avoid Merchant Penalties & More.
-  url: https://fingerprintjs.com/ecommerce
+  url: https://fingerprint.com/ecommerce
   image: /img/uploads/fpjs_cover3.png
 relatedTitle: Related Articles
 tags:
@@ -13,7 +13,7 @@ tags:
 invertContent: false
 hero:
   title: E-commerce Fraud Prevention
-  description: "FingerprintJS is a 99.5% accurate browser fingerprinting service
+  description: "Fingerprint is a 99.5% accurate browser fingerprinting service
     used to uniquely identify fraudsters on your ecommerce website and assign
     them a stable visitorID. Use our accurate visitor identification to stop
     fraudulent purchases, reduce coupon and promo abuse, and keep your
@@ -21,10 +21,10 @@ hero:
     your existing website and payment workflows with our flexible,
     developer-friendly API. "
   ctaText: Create Free Account
-  ctaHref: https://dashboard.fingerprintjs.com/signup
+  ctaHref: https://dashboard.fingerprint.com/signup
   openCtaNewTab: false
 cardSection:
-  title: "Add FingerprintJS to your tech stack to:"
+  title: "Add Fingerprint to your tech stack to:"
   subtitle: ""
   cards:
     - icon: /img/uploads/account_fraud.png
@@ -56,7 +56,7 @@ cardSection:
       iconTitle: Ecommerce fraud
 blocks:
   - subheader: Flexible developer tools for ecommerce credit card fraud prevention
-    imageAlt: FingerprintJS Pro dashboard
+    imageAlt: Fingerprint Pro dashboard
     isImageAfterText: true
     isCtaButton: false
     content: Incorporate browser fingerprinting and bot detection into your
@@ -65,30 +65,30 @@ blocks:
       different - minimize disruption to your customers by building an
       anti-fraud solution that works for yours.
     image: /img/uploads/dash-usage-chart.png
-    imageTitle: FingerprintJS Pro dashboard
+    imageTitle: Fingerprint Pro dashboard
     ctaText: Read our documentation
-    ctaUrl: https://dev.fingerprintjs.com/docs/introduction
+    ctaUrl: https://dev.fingerprint.com/docs/introduction
   - subheader: Stay protected throughout the purchase process, from customer login
       to payment
-    imageAlt: How FingerprintJS Pro reduces account takeover
+    imageAlt: How Fingerprint Pro reduces account takeover
     isImageAfterText: false
     isCtaButton: false
-    content: FingerprintJS helps developer teams identify their ecommerce site's
+    content: Fingerprint helps developer teams identify their ecommerce site's
       most vulnerable interactions and build authentication flows that won't
       overburden visitors. Uniquely identifying users at the login stage will
       reduce account takeovers that can result in fraudulent purchases and
       disputed payments.
     image: /img/uploads/fpjs-flowchart-smaller.png
-    imageTitle: How FingerprintJS Pro reduces account takeover
+    imageTitle: How Fingerprint Pro reduces account takeover
     ctaText: See our technical demo
     ctaUrl: /demo/
 inlineCta:
-  title: Reduce chargebacks one month after integrating FingerprintJS on your website.
+  title: Reduce chargebacks one month after integrating Fingerprint on your website.
   subtitle: Every dollar of ecommerce fraud can cost retailers between 3 to 4
     times as much - a loss mitigated with our 99.5% accurate browser
-    fingerprinting and ecommerce fraud detection solution. With FingerprintJS,
+    fingerprinting and ecommerce fraud detection solution. With Fingerprint,
     you can protect your income against fraudulent orders that waste resources
     on labor, shipping, products, chargebacks, fines and more.
   buttonText: Get Started
-  buttonHref: https://dashboard.fingerprintjs.com/signup
+  buttonHref: https://dashboard.fingerprint.com/signup
 ---

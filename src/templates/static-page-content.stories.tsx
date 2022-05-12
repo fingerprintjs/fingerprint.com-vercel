@@ -29,7 +29,7 @@ Default.args = {
     description:
       'Donec condimentum arcu sed arcu porttitor congue. Nunc at augue eget leo pellentesque convallis vitae et est. Mauris vitae euismod velit, eu tristique tellus. Proin blandit rutrum molestie.',
     image: 'https://picsum.photos/500',
-    siteUrl: 'https://fingerprintjs.com/',
+    siteUrl: 'https://fingerprint.com/',
   },
   invertContent: false,
   inlineCta: ctaDefault.args as InlineCtaProps,

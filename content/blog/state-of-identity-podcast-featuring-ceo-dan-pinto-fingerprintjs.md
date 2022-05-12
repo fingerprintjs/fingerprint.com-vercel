@@ -2,16 +2,16 @@
 templateKey: long-form-content
 metadata:
   title: State of Identity Podcast with CEO Dan Pinto
-  url: https://fingerprintjs.com/blog/state-of-identity-podcast
+  url: https://fingerprint.com/blog/state-of-identity-podcast
   image: /img/uploads/fingerprintjs.png
-  imageAlt: State of Identity Podcast - FingerprintJS
-  imageTitle: State of Identity Podcast - FingerprintJS
+  imageAlt: State of Identity Podcast - Fingerprint
+  imageTitle: State of Identity Podcast - Fingerprint
   description: Listen to our podcast episode with CEO Dan Pinto and State of
     Identity host Cameron D'Ambrosi talk about browser identification and the
     future of identity management!
 featured: true
 publishDate: 2021-08-19T14:02:00.000Z
-title: "State of Identity Podcast: Featuring CEO Dan Pinto, FingerprintJS"
+title: "State of Identity Podcast: Featuring CEO Dan Pinto, Fingerprint"
 isPublished: true
 isHidden: false
 tags:
@@ -20,12 +20,12 @@ authors:
   - Savannah Copland
 heroImage:
   image: /img/uploads/fingerprintjs.png
-  imageAlt: State of Identity Podcast - FingerprintJS
-  imageTitle: State of Identity Podcast - FingerprintJS
+  imageAlt: State of Identity Podcast - Fingerprint
+  imageTitle: State of Identity Podcast - Fingerprint
 ---
 We are excited to announce our featured episode on OWI's State of Identity podcast.
 
-Host Cameron D'Ambrosi interviewed CEO Dan Pinto on the origin story of FingerprintJS, the power of anonymous identification to reduce friction while preventing online fraud, and the future of identity management in a post-pandemic world.
+Host Cameron D'Ambrosi interviewed CEO Dan Pinto on the origin story of Fingerprint, the power of anonymous identification to reduce friction while preventing online fraud, and the future of identity management in a post-pandemic world.
 
 ## [Listen to the podcast](https://liminal.co/podcast/fingerprintjs-fraud-at-the-source/)
 
@@ -43,7 +43,7 @@ Host Cameron D'Ambrosi interviewed CEO Dan Pinto on the origin story of Fingerpr
 
 Welcome to State of Identity! I'm your host, Cameron D’Ambrosi. 
 
-Joining me this week is Dan Pinto, CEO at FingerprintJS. Dan, welcome to the podcast. 
+Joining me this week is Dan Pinto, CEO at Fingerprint. Dan, welcome to the podcast. 
 
 #### DAN:
 
@@ -51,25 +51,25 @@ Thanks for having me.
 
 #### CAMERON:
 
-So you are what the kids call these days a serial entrepreneur, with a few different startups under your belt. Obviously, you're building some really cool and interesting stuff at FingerprintJS, which is why you're on the podcast. I’m really excited to dive into that platform and its applicability in the digital identity space. 
+So you are what the kids call these days a serial entrepreneur, with a few different startups under your belt. Obviously, you're building some really cool and interesting stuff at Fingerprint, which is why you're on the podcast. I’m really excited to dive into that platform and its applicability in the digital identity space. 
 
-But before we do that, I would love to get a bit of an overview of your career journey, how you came to be the CEO at FingerprintJS and what your touchpoints with digital identity might have been prior to joining.
+But before we do that, I would love to get a bit of an overview of your career journey, how you came to be the CEO at Fingerprint and what your touchpoints with digital identity might have been prior to joining.
 
 #### DAN:
 
 Yeah, thanks. I have always wanted to be a serial entrepreneur since I was a kid. I learned programming as a hobby growing up, dabbled a little bit in different tech startups, learned a lot, and knew that someday I wanted to do entrepreneurship myself. So I'm happy to be on my second startup now. 
 
-Before FingerprintJS, I started a company called Machinio which was a search engine for used machinery. I was CTO there and built the first version of all the technology. We had crawlers, we had search engine technology, we did a lot of search engine optimization in order to rank well. The idea for that was to try and find as much inventory online as we could and create a single resource for used machinery and the idea worked out. 
+Before Fingerprint, I started a company called Machinio which was a search engine for used machinery. I was CTO there and built the first version of all the technology. We had crawlers, we had search engine technology, we did a lot of search engine optimization in order to rank well. The idea for that was to try and find as much inventory online as we could and create a single resource for used machinery and the idea worked out. 
 
-While at Machinio, I hired a person named Valentin as one of our first software engineers. He's actually the original creator of the FingerprintJS library. So that's when I first found out about it, we used it for a little while at Machinio to help us catch different kinds of fraud, and Valentin and I worked together for about six years. 
+While at Machinio, I hired a person named Valentin as one of our first software engineers. He's actually the original creator of the Fingerprint library. So that's when I first found out about it, we used it for a little while at Machinio to help us catch different kinds of fraud, and Valentin and I worked together for about six years. 
 
-After selling Machinio, Valentin decided that he wanted to try and create a professional version of the FingerprintJS library. So he started working on the product way before I even considered joining. The interesting thing about the background for FingerprintJS is that we really didn't know what it was going to be when we started. It was more just two technical guys tinkering on things, trying to see what we could build. He started with it at first and built a nice service from it. Then when it was time for me to leave Machinio, I decided to start working on FingerprintJS, at least part time in the beginning. But then once I started seeing what he was actually building and the feedback from customers, I decided to join full time. And it turned out to be a really interesting opportunity for me and for him. 
+After selling Machinio, Valentin decided that he wanted to try and create a professional version of the Fingerprint library. So he started working on the product way before I even considered joining. The interesting thing about the background for Fingerprint is that we really didn't know what it was going to be when we started. It was more just two technical guys tinkering on things, trying to see what we could build. He started with it at first and built a nice service from it. Then when it was time for me to leave Machinio, I decided to start working on Fingerprint, at least part time in the beginning. But then once I started seeing what he was actually building and the feedback from customers, I decided to join full time. And it turned out to be a really interesting opportunity for me and for him. 
 
 Since then things have gone really smoothly. We've raised two rounds of funding. We're at 23 people at the company right now, mostly engineers, and yeah, things are going well for us right now. We're focused on solving any and all anti-fraud problems that are on the internet. So happy to talk more about that later on the podcast.
 
 #### CAMERON:
 
-Let's get right into it. Before we talk about use cases, an overview of the technology itself that underpins FingerprintJS would be super helpful. I understand there's a little bit of a teaser there in the name that it involves fingerprinting. My advanced layman's understanding of your core product offering is essentially the ability to provide a fairly unique device level fingerprint for each session that you see coming across a website or application and then be able to use that to understand who's visiting your platform and hopefully determine if they're a user that should be trusted or not trusted? Is that a fair assessment?
+Let's get right into it. Before we talk about use cases, an overview of the technology itself that underpins Fingerprint would be super helpful. I understand there's a little bit of a teaser there in the name that it involves fingerprinting. My advanced layman's understanding of your core product offering is essentially the ability to provide a fairly unique device level fingerprint for each session that you see coming across a website or application and then be able to use that to understand who's visiting your platform and hopefully determine if they're a user that should be trusted or not trusted? Is that a fair assessment?
 
 #### DAN:
 
@@ -193,11 +193,11 @@ So that tip of the iceberg that we're seeing so far, in terms of businesses comi
 
 I couldn't agree more with you, I think you've really hit the nail on the head when it comes to the evolving needs around digital identity, and specifically, the demand to do so again, without layering on a bunch of incremental friction. When you think about it hard enough, it's possible to get, if not perfect security, close to perfect security. And part of the reason why you'd be able to get that perfect security would be layering so much friction on the users of your platform that you know, only one or two of them show up. And this offers a way forward. That really mitigates a lot of that downside while preserving your upside tremendously. And a consumer-centric focus on how we can engage with good customers in the best possible way without burdening them and enabling growth just as much as we are stopping fraud and mitigating risk. I think this is the narrative that's really top of mind for us as an organization in 2021 and beyond. And so, really excited to watch what you do next. And please don't stay a stranger - we would love to have you back on the podcast and circle back on some of these predictions sometime in the next year. 
 
-But before we wrap up today, for folks who are listening who want to get access to you and your team and implement FingerprintJS, what's the best place for them to go to learn more to get in touch?
+But before we wrap up today, for folks who are listening who want to get access to you and your team and implement Fingerprint, what's the best place for them to go to learn more to get in touch?
 
 #### DAN:
 
-Yeah, sure. So, we're a completely open company in terms of documentation and ability to use our service. So the best thing to do would be to go to [fingerprintjs.com](). Start on the homepage, take a look at different use cases on there, read about how our technology can be used, and then read through our documentation. And you'll basically be able to see everything about how our technology works, how to use it, how to implement it. That's basically the approach that we follow.
+Yeah, sure. So, we're a completely open company in terms of documentation and ability to use our service. So the best thing to do would be to go to [fingerprint.com](). Start on the homepage, take a look at different use cases on there, read about how our technology can be used, and then read through our documentation. And you'll basically be able to see everything about how our technology works, how to use it, how to implement it. That's basically the approach that we follow.
 
 #### CAMERON:
 

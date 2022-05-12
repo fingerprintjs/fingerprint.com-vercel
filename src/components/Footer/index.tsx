@@ -118,7 +118,7 @@ export default function Footer() {
             <address className={styles.address}>
               1440 W. Taylor St #735, Chicago, IL 60607, USA
               <a className={styles.mailto} href={MAILTO.mailToUrl}>
-                support@fingerprintjs.com
+                support@fingerprint.com
               </a>
             </address>
             <div className={styles.social}>

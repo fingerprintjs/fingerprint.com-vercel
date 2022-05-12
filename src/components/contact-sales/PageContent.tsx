@@ -48,7 +48,7 @@ function ClientsSection() {
   return (
     <Section className={styles.clients}>
       <header className={styles.header}>
-        <h2 className={styles.title}>Join over 8,000 websites using FingerprintJS to prevent fraud</h2>
+        <h2 className={styles.title}>Join over 8,000 websites using Fingerprint to prevent fraud</h2>
       </header>
       <div className={styles.content}>
         {clients.map((client) => {

@@ -23,7 +23,7 @@ export default function ClientsSection() {
       <Container size='large'>
         <header className={styles.header}>
           <h2 className={styles.title}>
-            <strong>FingerprintJS</strong> is trusted by public companies and innovative startups.
+            <strong>Fingerprint</strong> is trusted by public companies and innovative startups.
           </h2>
         </header>
         <div className={styles.content}>

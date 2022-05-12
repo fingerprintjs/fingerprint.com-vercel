@@ -8,7 +8,7 @@ metadata:
   description: There are a few NPM packages to choose from for browser
     fingerprinting. In this article, we compare options by looking at their
     popularity, updated date, package size and more.
-  url: https://fingerprintjs.com/blog/best-npm-packages-browser-fingerprinting
+  url: https://fingerprint.com/blog/best-npm-packages-browser-fingerprinting
   socialImage: /img/uploads/the-best-npm-browser-fingerprint-packages.png
 featured: true
 publishDate: 2021-11-19T04:45:06.742Z
@@ -46,13 +46,13 @@ If you want to learn more about browser fingerprinting and how it works, here ar
 
 When it comes to browser fingerprinting, there are many NPM fingerprinting packages to choose from. Here is a comparison of some of the best-known packages and what they offer. 
 
-## FingerprintJS
+## Fingerprint
 
-![FingerprintJS](/img/uploads/3amov4s.png)
+![Fingerprint](/img/uploads/3amov4s.png)
 
-[FingerprintJS](https://www.npmjs.com/package/@fingerprintjs/fingerprintjs) is the leading open-source browser fingerprinting library with the most npm downloads and Github stars. It claims to u combat account fraud, content abuse, and fraudulent payments by accurately identifying website visitors even when they try to conceal their identity
+[Fingerprint](https://www.npmjs.com/package/@fingerprintjs/fingerprintjs) is the leading open-source browser fingerprinting library with the most npm downloads and Github stars. It claims to u combat account fraud, content abuse, and fraudulent payments by accurately identifying website visitors even when they try to conceal their identity
 
-Users who want higher identification accuracy can sign up for [FingerprintJS Pro](https://www.npmjs.com/package/@fingerprintjs/fingerprintjs-pro), which is free for up to 20,000 identifications per month.
+Users who want higher identification accuracy can sign up for [Fingerprint Pro](https://www.npmjs.com/package/@fingerprintjs/fingerprintjs-pro), which is free for up to 20,000 identifications per month.
 
 Pro processes all fingerprinting information server-side and transmits it securely to your servers using server-to-server APIs. The server combines the open-source browser fingerprinting library’s functionality with additional data (IP addresses, time of visit patterns, URL change) so that it can deduplicate users that have identical devices, resulting in 99.5% identification accuracy.
 
@@ -60,11 +60,11 @@ Pro processes all fingerprinting information server-side and transmits it secure
 
 #### Open-source
 
-You can use FingerprintJS’ open-source library by installing via the NPM package or [installing from CDN](https://github.com/fingerprintjs/fingerprintjs#install-from-cdn). Full open-source documentation is available on their Github page.
+You can use Fingerprint’ open-source library by installing via the NPM package or [installing from CDN](https://github.com/fingerprintjs/fingerprintjs#install-from-cdn). Full open-source documentation is available on their Github page.
 
 #### Pro version
 
-After you [create an account](https://dashboard.fingerprintjs.com/signup) and obtain a public API key, you can obtain a user’s unique fingerprint with a few lines of code:
+After you [create an account](https://dashboard.fingerprint.com/signup) and obtain a public API key, you can obtain a user’s unique fingerprint with a few lines of code:
 
 ```js
 const fpPromise = FingerprintJS.load({ apiKey: 'your-public-api-key' })
@@ -76,15 +76,15 @@ fpPromise
   })
 ```
 
-FingerprintJS Pro includes a lot of additional features to improve ease of use as well, including a dashboard that tracks usage, onboarding and integration statuses, and other statistics. It also supports webhooks so you can receive instant notifications, delivered securely to your backend systems.
+Fingerprint Pro includes a lot of additional features to improve ease of use as well, including a dashboard that tracks usage, onboarding and integration statuses, and other statistics. It also supports webhooks so you can receive instant notifications, delivered securely to your backend systems.
 
-![FingerprintJS dashboard](/img/uploads/6t6ukrz.png)
+![Fingerprint dashboard](/img/uploads/6t6ukrz.png)
 
 ### Last updated
 
 #### Open-source
 
-FingerprintJS is regularly updated and maintained to fix bugs or provide enhancements. At the time of writing this article (November 2021), its npm package was last updated in August 2021.
+Fingerprint is regularly updated and maintained to fix bugs or provide enhancements. At the time of writing this article (November 2021), its npm package was last updated in August 2021.
 
 #### Pro version
 
@@ -94,17 +94,17 @@ The Pro version is updated at the highest rate of any npm packages analyzed for 
 
 #### Open-source
 
-FingerprintJS has the highest number of downloads among packages on this list, with more than 133,000 weekly downloads at the time of writing. FingerprintJS is trusted by many software developers and companies wanting accurate user identification.
+Fingerprint has the highest number of downloads among packages on this list, with more than 133,000 weekly downloads at the time of writing. Fingerprint is trusted by many software developers and companies wanting accurate user identification.
 
 #### Pro version
 
-FingerprintJS Pro had 12,407 weekly downloads at the time of writing.
+Fingerprint Pro had 12,407 weekly downloads at the time of writing.
 
 ### Size
 
 #### Open-source
 
-FingerprintJS has an unpacked size of 524 KB.
+Fingerprint has an unpacked size of 524 KB.
 
 #### Pro version
 
@@ -114,17 +114,17 @@ Pro has an unpacked size of 335 KB.
 
 #### Open-source
 
-FingerprintJS does not provide an exact estimate of fingerprint accuracy, though it does include a confidence score in its output. The confidence score is a floating-point number between 0 and 1 that represents the probability of accurate identification, based on historical data of how often the library was correct in the past. The higher the number, the higher the chance of the visitor identifier to be true.
+Fingerprint does not provide an exact estimate of fingerprint accuracy, though it does include a confidence score in its output. The confidence score is a floating-point number between 0 and 1 that represents the probability of accurate identification, based on historical data of how often the library was correct in the past. The higher the number, the higher the chance of the visitor identifier to be true.
 
-The FingerprintJS library is also capable of detecting a user even when he’s browsing incognito or in private mode. This is essential, as users can hide their identity from cookies and other tracking methods using incognito mode.
+The Fingerprint library is also capable of detecting a user even when he’s browsing incognito or in private mode. This is essential, as users can hide their identity from cookies and other tracking methods using incognito mode.
 
 You can test the open-source library on their [live demo](https://fingerprintjs.github.io/fingerprintjs/).
 
 #### Pro version
 
-FingerprintJS Pro has an identification accuracy of 99.5% and provides documentation on [how this accuracy score is calculated](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy).  The Pro version also includes a confidence score, that it claims is [more accurate than for the open-source version](https://dev.fingerprintjs.com/docs/understanding-your-confidence-score#pro-vs-open-source) as it can take into account server-side signals as well as client-side.
+Fingerprint Pro has an identification accuracy of 99.5% and provides documentation on [how this accuracy score is calculated](https://dev.fingerprint.com/docs/understanding-our-995-accuracy).  The Pro version also includes a confidence score, that it claims is [more accurate than for the open-source version](https://dev.fingerprint.com/docs/understanding-your-confidence-score#pro-vs-open-source) as it can take into account server-side signals as well as client-side.
 
-You can test out the Pro version in an [interactive demo](/demo/) on FingerprintJS’ website.
+You can test out the Pro version in an [interactive demo](/demo/) on Fingerprint’ website.
 
 ## get-browser-fingerprint
 
@@ -164,7 +164,7 @@ The get-browser-fingerprint package can uniquely detect a user, but not if that 
 
 ![ClientJS](/img/uploads/fy17ayw.png)
 
-[ClientJS](https://www.npmjs.com/package/clientjs) is the second most used package in this list behind FingerprintJS.
+[ClientJS](https://www.npmjs.com/package/clientjs) is the second most used package in this list behind Fingerprint.
 
 ### Ease of use
 

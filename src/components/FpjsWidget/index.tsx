@@ -219,7 +219,7 @@ function VisitHistory({ isLoading, visits, currentVisit, setCurrentVisit }: Visi
     <div className={styles.history}>
       <div className={styles.header}>
         Visit History
-        <Tippy content='FingerprintJS Pro allows you to get a history of visits with all available information'>
+        <Tippy content='Fingerprint Pro allows you to get a history of visits with all available information'>
           <InfoSvg tabIndex={0} />
         </Tippy>
       </div>
@@ -321,7 +321,7 @@ function VisitDetails({ isLoading, visits, visitorId, currentVisit }: VisitDetai
         <div className={classNames(styles.info, styles.incognito)}>
           <span className={styles.label}>Incognito</span>
           <span className={styles.value}>{currentVisit?.incognito ? 'Yes' : 'No'}</span>
-          <Tippy content='FingerprintJS Pro analyzes every page view and detects if it was made in incognito mode. Open this page in private mode to see it in action.'>
+          <Tippy content='Fingerprint Pro analyzes every page view and detects if it was made in incognito mode. Open this page in private mode to see it in action.'>
             <InfoSvg tabIndex={0} />
           </Tippy>
         </div>

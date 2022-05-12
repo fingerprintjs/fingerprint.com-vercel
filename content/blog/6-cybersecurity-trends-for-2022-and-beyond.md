@@ -5,7 +5,7 @@ metadata:
   imageAlt: Cybersecurity Trends 2022
   imageTitle: Cybersecurity Trends 2022
   image: /img/uploads/image2.png
-  url: https://fingerprintjs.com/blog/cybersecurity-trends-2022
+  url: https://fingerprint.com/blog/cybersecurity-trends-2022
   description: Cybercrime shot up by 600% during the COVID-19 pandemic, but what
     can we expect going forward? We look into 6 of the top cybersecurity trends
     expected in the coming years.

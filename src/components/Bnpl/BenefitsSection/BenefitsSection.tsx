@@ -26,7 +26,7 @@ const blocks = [
     content: (
       <p>
         Successful BNPL companies rely on sophisticated fraud and credit risk models to make approval decisions while
-        introducing as little friction as possible for the purchaser. FingerprintJS Pro&apos;s best-in-class accuracy,
+        introducing as little friction as possible for the purchaser. Fingerprint Pro&apos;s best-in-class accuracy,
         cross-merchant device identification makes it possible to identify significantly more returning visitors and
         shut down fraud with zero added friction.
       </p>
@@ -39,7 +39,7 @@ const blocks = [
     content: (
       <p>
         Identify 99.5% of returning visitors with passive authentication, reducing friction for trusted customers.
-        FingerprintJS Pro&apos;s visitorIDs remain stable for months, not days, making it possible to authenticate
+        Fingerprint Pro&apos;s visitorIDs remain stable for months, not days, making it possible to authenticate
         occasional purchasers with pinpoint accuracy.
       </p>
     ),
@@ -49,7 +49,7 @@ const blocks = [
     image: StreamlineSVG,
     content: (
       <p>
-        FingerprintJS Pro can be used to save customer preferences across separate merchant applications, allowing for
+        Fingerprint Pro can be used to save customer preferences across separate merchant applications, allowing for
         enhanced “remember me” functionality. Link onboarding and transaction flows with high accuracy, reducing the
         likelihood of user impersonation.
       </p>
@@ -60,8 +60,8 @@ const blocks = [
     image: IdentificationSVG,
     content: (
       <p>
-        FingerprintJS Pro works for web, iOS and Android applications, as well as in third-party installations as part
-        of a merchant&apos;s checkout flow. On every platform, FingerprintJS Pro outshines the competition with high
+        Fingerprint Pro works for web, iOS and Android applications, as well as in third-party installations as part of
+        a merchant&apos;s checkout flow. On every platform, Fingerprint Pro outshines the competition with high
         accuracy, easy integration, and minimal impact on application performance.
       </p>
     ),

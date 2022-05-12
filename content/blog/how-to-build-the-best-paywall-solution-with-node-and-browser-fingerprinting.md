@@ -2,8 +2,8 @@
 templateKey: long-form-content
 metadata:
   title: How to Build the Best Paywall Solution with Node and Browser
-    Fingerprinting - FingerprintJS
-  url: https://fingerprintjs.com/blog/paywall-solution
+    Fingerprinting - Fingerprint
+  url: https://fingerprint.com/blog/paywall-solution
   description: Tired of leaky paywalls? Build a custom paywall solution for your
     website with our step-by-step guide.
   image: /img/uploads/paywall-banner.png
@@ -43,11 +43,11 @@ As you probably know, there are various measures a reader can take to circumvent
 * Hiding the user’s IP address
 * Manually deleting the paywall source code
 
-A significant number of websites depend on third-party tools and libraries for their paywall implementations as opposed to developing in-house solutions. Vendors like [FingerprintJS](/), for example, offer "paywall-as-a-service" products.
+A significant number of websites depend on third-party tools and libraries for their paywall implementations as opposed to developing in-house solutions. Vendors like [Fingerprint](/), for example, offer "paywall-as-a-service" products.
 
 ## Creating a Sample Site with a Soft Paywall
 
-In this post, you will create a news website using Node.js and implement a soft paywall using FingerprintJS to track users and limit the number of articles they can read on your site. Each site visitor will have their unique ID from FingerprintJS stored inside a database to track the number of unique articles they have read.
+In this post, you will create a news website using Node.js and implement a soft paywall using Fingerprint to track users and limit the number of articles they can read on your site. Each site visitor will have their unique ID from Fingerprint stored inside a database to track the number of unique articles they have read.
 
 The complete source code along with access to the [Pug templates](https://pugjs.org/api/getting-started.html) and the public static assets can be found in [this GitHub repository](https://github.com/LukeMwila/fingerprintjs-paywall). 
 
@@ -58,9 +58,9 @@ Prerequisites:
 * PostgreSQL server installed.
 * Created database and user with access granted.
 
-### Sign Up for FingerprintJS
+### Sign Up for Fingerprint
 
-First, create an account with FingerprintJS. The sign-up process is quick, intuitive, and conventional, and you can try it without usage limits for 10 days.
+First, create an account with Fingerprint. The sign-up process is quick, intuitive, and conventional, and you can try it without usage limits for 10 days.
 
 Once you’ve signed up, you’ll be presented with a quick start guide for both a CDN and an NPM implementation. The code snippet for each approach will include your generated public API key which you’ll use later in this tutorial, so keep this value close at hand. If need be, you can access the API Keys page from the left-side menu at any point to fetch and generate public and secret API keys.
 
@@ -228,7 +228,7 @@ let insertArticleReadRow = async (visitorId, articleId) => {
 
 ### Implement the Paywall
 
-Finally, implement the paywall for your news website. To ensure that the FingerprintJS library is loaded and initialized across all pages of the website, you’ll add the scripts to the main layout template. 
+Finally, implement the paywall for your news website. To ensure that the Fingerprint library is loaded and initialized across all pages of the website, you’ll add the scripts to the main layout template. 
 
 ```
 doctype html
@@ -261,9 +261,9 @@ body
          p
            b Disclaimer:&nbsp;
            | Not a real newspaper. Created to demonstrate the
-           a(href="https://fingerprintjs.com" target="_blank") FingerprintJS Pro Paywall technology
+           a(href="https://fingerprint.com" target="_blank") Fingerprint Pro Paywall technology
            | , provided by
-           a(href="https://fingerprintjs.com" target="_blank") fingerprintjs.com
+           a(href="https://fingerprint.com" target="_blank") fingerprint.com
      .row.mb-2
        .col.text-center
          a(href="https://github.com/fingerprintjs/paywall-demo" target="_blank")
@@ -280,7 +280,7 @@ body
  )
 ```
 
-As shown in the previous code snippet, additional JavaScript functions are loaded to the site using the `main.js` file from the `public/js` directory. This file has two functions: one is responsible for initializing FingerprintJS with your public API key once the library has finished downloading. The other makes use of the loaded and API key configured FingerprintJS object to fetch the unique visitor ID. The visitor ID is then used to query the paywall API route to track the articles read. 
+As shown in the previous code snippet, additional JavaScript functions are loaded to the site using the `main.js` file from the `public/js` directory. This file has two functions: one is responsible for initializing Fingerprint with your public API key once the library has finished downloading. The other makes use of the loaded and API key configured Fingerprint object to fetch the unique visitor ID. The visitor ID is then used to query the paywall API route to track the articles read. 
 
 ```
 var fpLoaded = function (fp) {
@@ -319,10 +319,10 @@ When the server is running, you can access your news website at `http://localhos
 
 ![An article on a home page](/img/uploads/paywall-article-on.png "An article on a home page")
 
-![FingerprintJS’s test paywall modal](/img/uploads/paywall-test-modal.png "FingerprintJS’s test paywall modal")
+![Fingerprint’s test paywall modal](/img/uploads/paywall-test-modal.png "Fingerprint’s test paywall modal")
 
 ## Conclusion
 
 Apart from restriction configurations, the example in this tutorial demonstrates how the usage of third-party paywall libraries typically requires minimal effort from a site integration point of view. The hard part is for companies to strategize *how* to restrict access to their content. These third-party libraries have dedicated teams to ensure that their services cater to various enforcement mechanisms, user identification, policies, and insights.
 
-JavaScript-based websites are continuing to increase in popularity, and this scenario, simple as it may be, lays enough groundwork for other Node-based solutions to build from. If you’re looking to implement a paywall, fingerprinting services like [FingerprintJS](/) are a great option to help publications restrict content access and generate revenue.
+JavaScript-based websites are continuing to increase in popularity, and this scenario, simple as it may be, lays enough groundwork for other Node-based solutions to build from. If you’re looking to implement a paywall, fingerprinting services like [Fingerprint](/) are a great option to help publications restrict content access and generate revenue.

@@ -20,7 +20,7 @@ export default function Solutions({ data }: SolutionsProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'Solutions - FingerprintJS Pro',
+    title: 'Solutions - Fingerprint Pro',
     description:
       'Solve any fraud problem with our user identification API. Explore our full code solutions for payment fraud, account takeover and more.',
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,

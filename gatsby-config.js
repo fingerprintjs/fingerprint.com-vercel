@@ -1,6 +1,6 @@
 const path = require('path')
 
-const baseUrl = process.env.CONTEXT === 'deploy-preview' ? process.env.DEPLOY_PRIME_URL : 'https://fingerprintjs.com'
+const baseUrl = process.env.CONTEXT === 'deploy-preview' ? process.env.DEPLOY_PRIME_URL : 'https://fingerprint.com'
 
 const resolvePath = (directoryName, pathName) => {
   const result = path.join(directoryName, pathName)
@@ -49,10 +49,10 @@ const rssPostQuery = `
 
 module.exports = {
   siteMetadata: {
-    title: 'FingerprintJS Pro - Device fingerprinting and fraud detection API',
+    title: 'Fingerprint Pro - Device fingerprinting and fraud detection API',
     description: 'Stop fraud, spam, and account takeovers with 99.5% accurate device fingerprinting as a service.',
     siteUrl: baseUrl,
-    image: 'https://fingerprintjs.com/img/fpjs-preview.png',
+    image: 'https://fingerprint.com/img/fpjs-preview.png',
   },
   plugins: [
     {
@@ -299,7 +299,7 @@ module.exports = {
             },
             query: rssPostQuery,
             output: '/rss.xml',
-            title: 'FingerprintJS Blog RSS Feed',
+            title: 'Fingerprint Blog RSS Feed',
           },
         ],
       },

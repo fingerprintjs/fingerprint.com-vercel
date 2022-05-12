@@ -26,7 +26,7 @@ export default function BlogTag({ data, pageContext }: BlogTagProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: `${kebabToTitle(tag)} Articles - FingerprintJS Blog | FingerprintJS`,
+    title: `${kebabToTitle(tag)} Articles - Fingerprint Blog | Fingerprint`,
     description: `We are an open source powered company working to prevent online fraud for websites of all sizes. Read our articles on ${kebabToTitle(
       tag
     )} on our blog.`,

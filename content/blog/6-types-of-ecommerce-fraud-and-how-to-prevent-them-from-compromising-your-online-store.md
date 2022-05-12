@@ -3,7 +3,7 @@ templateKey: long-form-content
 metadata:
   title: 6 Types of Ecommerce Fraud and How to Prevent Them From Harming Your
     Customers
-  url: https://fingerprintjs.com/blog/ecommerce-fraud-types
+  url: https://fingerprint.com/blog/ecommerce-fraud-types
   image: /img/uploads/6-types-of-ecommerce-fraud_-learn-how-to-tackle-them-and-secure-your-ecommerce-store.png
   description: Today's ecommerce fraud is sophisticated, automated, and hard to
     detect. Learn about these 6 leading types and how to recognize them before
@@ -98,7 +98,7 @@ Triangulation fraud can be difficult to identify, so it’s crucial to have syst
 
 ### 4. Account Takeover Fraud
 
-As its name implies, account takeover fraud occurs when a scammer takes over a legitimate customer's account. This could also involve the takeover of employee/business accounts to gain sensitive information about customers while posing as an official account. To make matters more complicated, [bots](/blog/fingerprintjs-prevent-bot-attacks/) are typically used these days to automate the process of gaining brute force access to accounts. 
+As its name implies, account takeover fraud occurs when a scammer takes over a legitimate customer's account. This could also involve the takeover of employee/business accounts to gain sensitive information about customers while posing as an official account. To make matters more complicated, [bots](/blog/fingerprint-prevent-bot-attacks/) are typically used these days to automate the process of gaining brute force access to accounts. 
 
 Online merchants can implement these [account takeover prevention](/account-takeover/) methods to protect their customers’ accounts: 
 
@@ -130,6 +130,6 @@ Merchants transacting online should treat identity theft prevention as an integr
 
 ## Conclusion
 
-Online shoppers inherently trust the merchants they purchase from; in return, businesses need to ensure customers that their data won’t fall into the hands of cyber criminals. To this end, [FingerprintJS ](/ecommerce/)helps online merchants stay a step ahead of fraudsters with browser fingerprinting that’s 95.5% accurate.
+Online shoppers inherently trust the merchants they purchase from; in return, businesses need to ensure customers that their data won’t fall into the hands of cyber criminals. To this end, [Fingerprint ](/ecommerce/)helps online merchants stay a step ahead of fraudsters with browser fingerprinting that’s 95.5% accurate.
 
-By uniquely identify malicious visitors and related patterns of fraudulent activity, ecommerce store owners can take proactive measures to reduce the risk of compromise. Give FingerprintJS a [test drive today](https://dashboard.fingerprintjs.com/signup/), it’s free for 10 days with unlimited API calls.
+By uniquely identify malicious visitors and related patterns of fraudulent activity, ecommerce store owners can take proactive measures to reduce the risk of compromise. Give Fingerprint a [test drive today](https://dashboard.fingerprint.com/signup/), it’s free for 10 days with unlimited API calls.

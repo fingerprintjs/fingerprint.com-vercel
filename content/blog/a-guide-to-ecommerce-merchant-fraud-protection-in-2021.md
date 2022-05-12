@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: A Guide to Ecommerce Merchant Fraud Protection in 2021
-  url: https://fingerprintjs.com/blog/guide-to-ecommerce-merchant-fraud-protection/
+  url: https://fingerprint.com/blog/guide-to-ecommerce-merchant-fraud-protection/
   image: /img/uploads/a-guide-to-ecommerce-merchant-fraud-protection-in-2024-1-.png
   description: Business is booming for online merchants and cyber criminals alike.
     Learn about the common signs of online fraud and how to protect your web
@@ -102,7 +102,7 @@ Online merchants (and companies at-large) often make the mistake of taking a rea
 
 #### Enforce CVV checks for all transactions
 
-The card verification value (CVV) consists of a three or four digit security code on the back of physical credit/debit cards. Customers with their physical cards on-hand can easily type in the CVV numbers upon request. On the other hand, fraudsters are immediately tripped up as they usually only possess details from the card's front. However, requiring CVV for all transactions does increase friction for valid returning customers. In these cases, [browser fingerprinting](/blog/browser-fingerprinting-techniques/) solutions like FingerprintJS can identify new or suspicious visitors — in the case of return customers, the CVV check can then be disabled for trusted users.
+The card verification value (CVV) consists of a three or four digit security code on the back of physical credit/debit cards. Customers with their physical cards on-hand can easily type in the CVV numbers upon request. On the other hand, fraudsters are immediately tripped up as they usually only possess details from the card's front. However, requiring CVV for all transactions does increase friction for valid returning customers. In these cases, [browser fingerprinting](/blog/browser-fingerprinting-techniques/) solutions like Fingerprint can identify new or suspicious visitors — in the case of return customers, the CVV check can then be disabled for trusted users.
 
 #### Install/verify HTTPS
 
@@ -110,8 +110,8 @@ As its name implies, [Hypertext Transfer Protocol Secure](https://www.bigcommerc
 
 #### **Use fraud detection solutions to protect your online store**
 
-These days, online merchants have a wide range of solutions at their disposal for detecting suspicious activity and apprehending malicious actors. For example, [FingerprintJS](/ecommerce/) helps identify suspicious online activity by flagging visitors with multiple accounts or a history of fraudulent transactions.
+These days, online merchants have a wide range of solutions at their disposal for detecting suspicious activity and apprehending malicious actors. For example, [Fingerprint](/ecommerce/) helps identify suspicious online activity by flagging visitors with multiple accounts or a history of fraudulent transactions.
 
 ## Conclusion
 
-In short, without the proper merchant fraud protection measures in place, online businesses are highly vulnerable to the continuously evolving tactics of cyber criminals. To learn more about how FingerprintJS can help you mitigate the risk of [ecommerce fraud](/ecommerce/) and [account takeovers](/account-takeover/), contact [one of our experts](/contact-sales/) or [test drive our solution](https://dashboard.fingerprintjs.com/signup) — it’s free for 10 days with unlimited API access.
+In short, without the proper merchant fraud protection measures in place, online businesses are highly vulnerable to the continuously evolving tactics of cyber criminals. To learn more about how Fingerprint can help you mitigate the risk of [ecommerce fraud](/ecommerce/) and [account takeovers](/account-takeover/), contact [one of our experts](/contact-sales/) or [test drive our solution](https://dashboard.fingerprint.com/signup) — it’s free for 10 days with unlimited API access.

@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: Why It’s Not Just Netflix Losing Money From Subscription Sharing
-  url: https://fingerprintjs.com/blog/prevent-subscription-sharing-netflix
+  url: https://fingerprint.com/blog/prevent-subscription-sharing-netflix
   description: Many websites are losing significant revenue from account sharing
     and may not even know the extent of the problem. In this article, we go over
     why subscription sharing might be costing your business more than you
@@ -146,12 +146,12 @@ IP addresses can be used to identify a visitor, but there are some instances whe
 
 
 
-## Why Choose FingerprintJS?
+## Why Choose Fingerprint?
 
 
 The first step in limiting the effects of shared passwords and subscription sharing is to create an accurate visitor identification system. By doing so, you can be sure that the one using the service is, in fact, the person who subscribed to it.
 
-[FingerprintJS Pro](/) is the most accurate user identification service on the market. It has a 99.5% visitor identification accuracy that relies on a combination of browser fingerprinting, IP address, cookies, and other server-side identification techniques to identify users correctly. Generated VisitorIDs are accurate even for visitors using incognito browsing, Virtual Private Networks (VPNs), and other spoofing techniques. 
+[Fingerprint Pro](/) is the most accurate user identification service on the market. It has a 99.5% visitor identification accuracy that relies on a combination of browser fingerprinting, IP address, cookies, and other server-side identification techniques to identify users correctly. Generated VisitorIDs are accurate even for visitors using incognito browsing, Virtual Private Networks (VPNs), and other spoofing techniques. 
 
 
 Whatever your identification solution may be, we hope the techniques outlined in this article can help your business prevent subscription sharing.

@@ -25,7 +25,7 @@ export default function PricingPage({ pageContext }: PricingPageProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'Pricing - FingerprintJS Pro',
+    title: 'Pricing - Fingerprint Pro',
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
   }
 
@@ -65,7 +65,7 @@ function FAQSection() {
 
   const faq = [
     {
-      question: 'How does billing for FingerprintJS Pro work?',
+      question: 'How does billing for Fingerprint Pro work?',
       answer: (
         <p className={styles.faqContent}>
           Customers are billed on a monthly basis based on API requests made over the billing period. The minimum paid
@@ -73,7 +73,7 @@ function FAQSection() {
           additional requests will be charged at a rate of ${(overagePrice * 1000) / 100} per 1,000 requests.
           <br />
           <br />
-          Developers and small sites can access FingerprintJS Pro for free forever for a maximum of{' '}
+          Developers and small sites can access Fingerprint Pro for free forever for a maximum of{' '}
           {flatAmount.toLocaleString()} API requests per month.
         </p>
       ),
@@ -91,10 +91,10 @@ function FAQSection() {
       ),
     },
     {
-      question: 'I am a developer. Can I use FingerprintJS Pro for free?',
+      question: 'I am a developer. Can I use Fingerprint Pro for free?',
       answer: (
         <p className={styles.faqContent}>
-          Yes - developers and small sites can use FingerprintJS Pro for free forever, with up to{' '}
+          Yes - developers and small sites can use Fingerprint Pro for free forever, with up to{' '}
           {flatAmount.toLocaleString()} API requests per month.
         </p>
       ),
@@ -122,18 +122,18 @@ function FAQSection() {
       question: 'How many identifications do I need?',
       answer: (
         <p className={styles.faqContent}>
-          FingerprintJS Pro works best if the JavaScript agent is installed and runs an identification for every visitor
+          Fingerprint Pro works best if the JavaScript agent is installed and runs an identification for every visitor
           on every page of your website. To estimate the number of identifications this installation would use, you can
           look at your website’s total number of monthly pageviews using a client- or server-side website analytics
           service (e.g. Google Analytics, Segment, Netlify Analytics).
           <br />
           <br />
-          If you decide to install FingerprintJS Pro only on several key pages (e.g. signup, login, or prepayment), then
+          If you decide to install Fingerprint Pro only on several key pages (e.g. signup, login, or prepayment), then
           you use pageviews for those specific pages as an estimate for identifications.
           <br />
           <br />
-          Finally, if you plan to configure FingerprintJS Pro to only identify visitors when they first land on your
-          site, you can use monthly user sessions to estimate identifications needed.
+          Finally, if you plan to configure Fingerprint Pro to only identify visitors when they first land on your site,
+          you can use monthly user sessions to estimate identifications needed.
           <br />
           <br />
           For assistance in estimating the number of identifications needed for your use-case, please{' '}
@@ -144,11 +144,11 @@ function FAQSection() {
       ),
     },
     {
-      question: 'What is FingerprintJS Pro’s uptime?',
+      question: 'What is Fingerprint Pro’s uptime?',
       answer: (
         <p className={styles.faqContent}>
-          FingerprintJS guarantees at least a 99.9% uptime. You can check our current status, view previous incidents
-          and subscribe to updates on our{' '}
+          Fingerprint guarantees at least a 99.9% uptime. You can check our current status, view previous incidents and
+          subscribe to updates on our{' '}
           <a href={URL.statusUrl} className={styles.link}>
             status page.
           </a>
@@ -156,10 +156,10 @@ function FAQSection() {
       ),
     },
     {
-      question: 'Is FingerprintJS Pro GDPR compliant?',
+      question: 'Is Fingerprint Pro GDPR compliant?',
       answer: (
         <p className={styles.faqContent}>
-          Yes - FingerprintJS is GDPR compliant.
+          Yes - Fingerprint is GDPR compliant.
           <br />
           <br />
           Our technology is intended to be used for fraud detection only - for this use case, no user consent is
@@ -172,7 +172,7 @@ function FAQSection() {
       ),
     },
     {
-      question: 'Where is FingerprintJS Pro’s data stored?',
+      question: 'Where is Fingerprint Pro’s data stored?',
       answer: (
         <p className={styles.faqContent}>
           When you create your account you can choose between Global/US data storage (Richmond, VA) and data EU storage
@@ -187,10 +187,10 @@ function FAQSection() {
       ),
     },
     {
-      question: 'Is FingerprintJS SOC 2 compliant?',
+      question: 'Is Fingerprint SOC 2 compliant?',
       answer: (
         <p className={styles.faqContent}>
-          Yes - FingerprintJS is{' '}
+          Yes - Fingerprint is{' '}
           <Link to='/blog/soc-2-type-1/' className={styles.link}>
             SOC 2 compliant.
           </Link>

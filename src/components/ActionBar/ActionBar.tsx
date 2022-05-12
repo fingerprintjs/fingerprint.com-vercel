@@ -64,7 +64,7 @@ function ActionButton({ socialMedia, link, description, tags }: ActionButtonProp
           aria-label='Share on Twitter'
           onClick={() =>
             windowsOpen(
-              `https://twitter.com/intent/tweet?url=${link}&text=${description}&hashtags=${tags}&via=FingerprintJS`
+              `https://twitter.com/intent/tweet?url=${link}&text=${description}&hashtags=${tags}&via=Fingerprint`
             )
           }
         >

@@ -5,7 +5,7 @@ metadata:
   image: /img/uploads/8-best-github-projects.png
   imageAlt: Best Github Projects For Fraud Detection
   imageTitle: Best Github Projects For Fraud Detection
-  url: https://fingerprintjs.com/blog/github-projects-fraud-prevention
+  url: https://fingerprint.com/blog/github-projects-fraud-prevention
   description: Protecting your application from fraudulent users is a critical
     part of a developer's job. Learn about the best open source projects on
     Github to keep your site safe.
@@ -49,15 +49,15 @@ So if you’re a developer in charge of protecting your application from fraud, 
 
 A solution from one of these libraries on GitHub can be a great starting point. They’re free, plus you have access to an active community of developers who maintain the project and may be available to answer support questions. Many are well-documented and proven to be effective, plus they’re free to get started with.
 
-### 1. [FingerprintJS](https://github.com/fingerprintjs/fingerprintjs)
+### 1. [Fingerprint](https://github.com/fingerprintjs/fingerprintjs)
 
 Only a tiny percentage of your website visitors will be responsible for any kind of fraud, so your role is to find and isolate these users. Online fraudsters are experts at hiding their identities when performing attacks, so you can count on them disguising their device, using a VPN, and clearing their browser’s cookies.
 
-This is where a solution like FingerprintJS shines. It uses a technology called [fingerprinting](/blog/what-is-browser-fingerprinting/) to identify users on your website accurately. It does this without the need for any additional information or permissions from the user, so you won’t affect usability by implementing it.
+This is where a solution like Fingerprint shines. It uses a technology called [fingerprinting](/blog/what-is-browser-fingerprinting/) to identify users on your website accurately. It does this without the need for any additional information or permissions from the user, so you won’t affect usability by implementing it.
 
 Fingerprinting with this open-source tool has proven to be over [90% accurate](https://arstechnica.com/information-technology/2017/02/now-sites-can-fingerprint-you-online-even-when-you-use-multiple-browsers/), allowing you to identify users on your website uniquely even if they’re trying to hide their identity to perform a malicious attack. These results are possible using a combination of browser attributes, hardware specifications, IP address identification, and geolocation.
 
-![An example of info you get when using FingerprintJS](https://i.imgur.com/KeHtUa0.png)
+![An example of info you get when using Fingerprint](https://i.imgur.com/KeHtUa0.png)
 
 ### 2. [DGFraud](https://github.com/safe-graph/DGFraud)
 
@@ -77,11 +77,11 @@ Its strength is in its implementation of state-of-the-art GNN fraud detection mo
 | GraphConsis | Opinion Fraud   | Heterogeneous | GraphSAGE           |
 | HACUD       | Financial Fraud | Heterogeneous | GAT                 |
 
-### 3. [FingerprintJS-Android](https://github.com/fingerprintjs/fingerprint-android)
+### 3. [Fingerprint-Android](https://github.com/fingerprintjs/fingerprint-android)
 
-While FingerprintJS can be used in the browser, things are different in the mobile world. The signals available for mobile app developers are different from the ones you could retrieve from a browser, and these signals vary between IOS and Android. To accurately identify users on your native mobile app, you will need a device-specific fingerprinting solution like FingerprintJS-Android.
+While Fingerprint can be used in the browser, things are different in the mobile world. The signals available for mobile app developers are different from the ones you could retrieve from a browser, and these signals vary between IOS and Android. To accurately identify users on your native mobile app, you will need a device-specific fingerprinting solution like Fingerprint-Android.
 
-As system-generated signals like *Android ID* are slowly being [removed from the hands of developers](https://developer.android.com/training/articles/user-data-ids), third-party libraries like this one are the only way to identify users so you can minimize fraud. If you want to secure and future-proof your Android application, FingerprintJS-Android is an ideal fit.
+As system-generated signals like *Android ID* are slowly being [removed from the hands of developers](https://developer.android.com/training/articles/user-data-ids), third-party libraries like this one are the only way to identify users so you can minimize fraud. If you want to secure and future-proof your Android application, Fingerprint-Android is an ideal fit.
 
 This library works similar to its browser counterpart, using various signals to help you identify fraudsters. These signals can include:
 
@@ -92,7 +92,7 @@ This library works similar to its browser counterpart, using various signals to 
 
 A combination of these signals can help you accurately identify users, providing your app with a hard-to-spoof safety system.
 
-![Usage of FingerprintJS-Android example](https://i.imgur.com/gjL1OUv.png)
+![Usage of Fingerprint-Android example](https://i.imgur.com/gjL1OUv.png)
 
 ### 4. [Maltrail](https://github.com/stamparm/maltrail#introduction)
 
@@ -153,4 +153,4 @@ Using information from PhishingKitHunter, you can find out where the phishing at
 
 Fraud detection and prevention are essential functions in any business, and open-source projects like the ones above provide a great place to start. Whether one of the solutions above works immediately or gives you a starting point to build from, these open-source tools should give you some idea of what’s possible in the fraud prevention space.
 
-If you’re looking for something more, check out [FingerprintJS Pro](/), which can help you identify users with 99.5% accurate browser fingerprints. Identifying users can help you detect fraud and prevent account takeovers *before* they become a real problem for your customers.
+If you’re looking for something more, check out [Fingerprint Pro](/), which can help you identify users with 99.5% accurate browser fingerprints. Identifying users can help you detect fraud and prevent account takeovers *before* they become a real problem for your customers.

@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: A look at the anti-fraud technology landscape post-pandemic
-  url: https://fingerprintjs.com/blog/anti-fraud-technology-post-pandemic
+  url: https://fingerprint.com/blog/anti-fraud-technology-post-pandemic
   image: /img/uploads/a-look-at-anti-fraud-technology-post-pandemic.png
   socialImage: /img/uploads/a-look-at-anti-fraud-technology-post-pandemic.png
   imageAlt: Coronavirus items and a shield for anti-fraud
@@ -148,7 +148,7 @@ There are many fraud prevention software choices on the market, depending on you
 
 However, your fraud prevention software needs to be accurate, otherwise a lot of fraud will slip through the cracks. Companies can ensure their fraud prevention solution is working well by keeping track of fraud instances over time to see if their efforts are resulting in improvement.
 
-Introducing highly accurate identifiers can also help to improve fraud system performance. FingerprintJS Pro (that’s us) is a browser fingerprinting API that provides a <a href="https://fingerprintjs.com/demo/">99.5% accurate visitor identifier</a> that can be used as a powerful signal for anti-fraud. 
+Introducing highly accurate identifiers can also help to improve fraud system performance. Fingerprint Pro (that’s us) is a browser fingerprinting API that provides a <a href="https://fingerprint.com/demo/">99.5% accurate visitor identifier</a> that can be used as a powerful signal for anti-fraud. 
 
 ## Conclusion
 

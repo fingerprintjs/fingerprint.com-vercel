@@ -17,7 +17,7 @@ export default function ContactSalesPage({ pageContext }: ContactSalesPageProps)
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'Contact Sales - FingerprintJS Pro',
+    title: 'Contact Sales - Fingerprint Pro',
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
   }
 

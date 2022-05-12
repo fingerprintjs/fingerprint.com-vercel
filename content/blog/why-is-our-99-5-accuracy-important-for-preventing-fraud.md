@@ -2,10 +2,10 @@
 templateKey: long-form-content
 metadata:
   title: Why is 99.5% accuracy important for preventing fraud?
-  description: FingerprintJS Pro's visitorID is the most accurate device
+  description: Fingerprint Pro's visitorID is the most accurate device
     identifier available. Learn why this matters when it comes to catching
     fraudsters and protecting your online business.
-  url: https://fingerprintjs.com/blog/device-fingerprinting-accuracy
+  url: https://fingerprint.com/blog/device-fingerprinting-accuracy
   image: /img/uploads/why-accuracy-matters-1-.png
   imageAlt: device fingerprinting accuracy
   imageTitle: device fingerprinting accuracy
@@ -41,22 +41,22 @@ Today the importance of IP addresses and cookies in preventing fraud have signif
 
 ## A new age of identification
 
-FingerprintJS Pro and other device fingerprinting services provide an alternative method of identification. However, best-in-class accuracy makes FingerprintJS Pro the most viable solution for long-term device identification suitable for real-life fraud detection scenarios.\
+Fingerprint Pro and other device fingerprinting services provide an alternative method of identification. However, best-in-class accuracy makes Fingerprint Pro the most viable solution for long-term device identification suitable for real-life fraud detection scenarios.\
 \
-FingerprintJS Pro incorporates over 100 unique signals to achieve 99.5% accuracy, with identifiers that remain stable for months, not days. Even better, FingerprintJS works across all major web and mobile platforms (including iOS and Android).
+Fingerprint Pro incorporates over 100 unique signals to achieve 99.5% accuracy, with identifiers that remain stable for months, not days. Even better, Fingerprint works across all major web and mobile platforms (including iOS and Android).
 
 ## Why high accuracy matters
 
-Why is such high accuracy important? See below how a sample size of 100K devices is accurately measured over time with FingerprintJS Pro’s accuracy (99.5%)<sup>\[1]</sup> versus a lower accuracy solution (60%).<sup>\[2]</sup>
+Why is such high accuracy important? See below how a sample size of 100K devices is accurately measured over time with Fingerprint Pro’s accuracy (99.5%)<sup>\[1]</sup> versus a lower accuracy solution (60%).<sup>\[2]</sup>
 
-![FingerprintJS Pro accuracy over time](/img/uploads/why-accuracy-matters_-graph.png "FingerprintJS Pro accuracy over time")
+![Fingerprint Pro accuracy over time](/img/uploads/why-accuracy-matters_-graph.png "Fingerprint Pro accuracy over time")
 
 With a low accuracy alternative, your fraud system could misidentify nearly 90% of devices after 4 months. Repeat offenders appear as completely new visitors over time, allowing them to retarget your site for account takeover attempts, payment fraud schemes and more. It also makes it difficult to reduce friction for trusted customers, as they will need to be challenged more frequently to ensure fraudsters slipping through the cracks are caught.
 
 ## Getting started 
 
-Find out how much fraud FingerprintJS Pro can prevent for your business by designing a trial with our expert team. [Contact us](/contact-sales/) and get hands-on guidance for how to incorporate FingerprintJS Pro’s high accuracy identification into your fraud stack.
+Find out how much fraud Fingerprint Pro can prevent for your business by designing a trial with our expert team. [Contact us](/contact-sales/) and get hands-on guidance for how to incorporate Fingerprint Pro’s high accuracy identification into your fraud stack.
 
-<i><small>\[1] To learn more about the methodology used to define our 99.5% identification accuracy, read [our documentation](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy).</small></i>
+<i><small>\[1] To learn more about the methodology used to define our 99.5% identification accuracy, read [our documentation](https://dev.fingerprint.com/docs/understanding-our-995-accuracy).</small></i>
 
 <i><small>\[2] In a [fingerprinting study](https://hal.inria.fr/hal-01718234v2) from KTH Royal Institute of Technology, 33.6% of users were correctly identified. [Other studies](https://www.researchgate.net/publication/332873650_Browser_Fingerprinting_A_survey) from EFF and Inria found accuracy between 80-90%, but those studies predate current web privacy policies. For the purposes of this comparison, we assumed a 60% accuracy rate.</small></i>

@@ -15,7 +15,7 @@ export default function MadeForDevelopersSection() {
             <ToolsTextBlock
               title={'Built on proven open-source library'}
               text={
-                'Since 2012, FingerprintJS has been used to identify billions of users. Our Pro solution was developed based on feedback to provide unparalleled accuracy, ease of use, and security.'
+                'Since 2012, Fingerprint has been used to identify billions of users. Our Pro solution was developed based on feedback to provide unparalleled accuracy, ease of use, and security.'
               }
             />
             <ToolsTextBlock

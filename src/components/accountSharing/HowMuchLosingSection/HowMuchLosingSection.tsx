@@ -22,7 +22,7 @@ export default function HowMuchLosingSection() {
           </p>
           <p className={styles.description}>
             Let us scope out the extent of your account sharing problem by booking a call with us. We will work with
-            your team to set up a trial of FingerprintJS Account Sharing Prevention and determine the revenue impact to
+            your team to set up a trial of Fingerprint Account Sharing Prevention and determine the revenue impact to
             your business.
           </p>
         </section>

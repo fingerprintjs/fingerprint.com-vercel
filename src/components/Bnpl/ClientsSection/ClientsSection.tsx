@@ -12,7 +12,7 @@ export default function ClientsSection() {
     <Section className={styles.clients}>
       <Container size='large'>
         <header className={styles.header}>
-          <h2 className={styles.title}>FingerprintJS is trusted by:</h2>
+          <h2 className={styles.title}>Fingerprint is trusted by:</h2>
         </header>
         <div className={styles.content}>
           <HomeCreditSVG className={styles.homeCredit} />

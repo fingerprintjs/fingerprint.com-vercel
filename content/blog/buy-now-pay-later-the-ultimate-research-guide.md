@@ -5,7 +5,7 @@ metadata:
   description: Buy now, pay later (BNPL) is growing exponentially. Here's a
     comprehensive review of growth metrics, a ranking of BNPL firms, BNPL fraud,
     and more.
-  url: https://fingerprintjs.com/blog/buy-now-pay-later-bnpl
+  url: https://fingerprint.com/blog/buy-now-pay-later-bnpl
   image: /img/uploads/bnpls-in-2022-the-ultimate-research-guide.png
   imageAlt: BNPLs in 2022
   imageTitle: BNPLs in 2022
@@ -26,11 +26,11 @@ heroImage:
   imageTitle: BNPLs in 2022
 customCTA:
   openCtaNewTab: true
-  title: "Free PDF: Preventing BNPL fraud with FingerprintJS"
+  title: "Free PDF: Preventing BNPL fraud with Fingerprint"
   description: Solve costly fraud in Buy Now, Pay Later transactions with device
     identification. Learn more in our new guide.
   ctaText: Download Now
-  ctaUrl: https://try.fingerprintjs.com/en-us/free-pdf-preventing-buy-now-pay-later-fraud-with-fingerprintjs
+  ctaUrl: https://try.fingerprint.com/en-us/free-pdf-preventing-buy-now-pay-later-fraud-with-fingerprintjs
 ---
 ## Table of Contents
 
@@ -395,4 +395,4 @@ Strategic partnerships and consolidation are becoming key to success in the BNPL
 
 Regulations are also an increasingly important consideration for companies operating in the BNPL space. In the United Kingdom, for example, regulators are <a href="https://www.lexology.com/library/detail.aspx?g=2f09844a-5a0b-43f7-af2b-7cc11ca27dab" target="_blank" rel="noopener noreferrer">closely watching</a> the growth of BNPL services, and there are some concerns that they could be used for fraud or other illegal activities.
 
-**At the same time, growing transaction volume means an increased risk of fraud. In order to protect themselves, BNPLs can use tools like [FingerprintJS](/). This device fingerprinting allows websites to effortlessly stop fraud, spam, and account takeover.**
+**At the same time, growing transaction volume means an increased risk of fraud. In order to protect themselves, BNPLs can use tools like [Fingerprint](/). This device fingerprinting allows websites to effortlessly stop fraud, spam, and account takeover.**

@@ -28,7 +28,7 @@ export default function ProToolsSection() {
       <Container className={styles.container}>
         <header className={styles.header}>
           <h2 className={styles.sectionTitle}>
-            FingerprintJS
+            Fingerprint
             <br />
             <strong>Pro Tools</strong>
           </h2>
@@ -99,7 +99,7 @@ export default function ProToolsSection() {
                 <IncognitoDetectionSvg className={styles.icon} />
                 <h3 className={styles.title}>Incognito Mode Detection</h3>
                 <p className={styles.description}>
-                  FingerprintJS Pro tracks whether visitors are using incognito mode, and can accurately identify users
+                  Fingerprint Pro tracks whether visitors are using incognito mode, and can accurately identify users
                   across incognito browsing sessions.
                 </p>
               </SwiperSlide>
@@ -115,7 +115,7 @@ export default function ProToolsSection() {
                 <IntegrationsSvg className={styles.icon} />
                 <h3 className={styles.title}>Machine Learning</h3>
                 <p className={styles.description}>
-                  In addition to browser fingerprinting, FingerprintJS Pro&#39;s server-side API processes and analyzes
+                  In addition to browser fingerprinting, Fingerprint Pro&#39;s server-side API processes and analyzes
                   vast amounts of data, searching for patterns and re-occurrences of fraudulent activity.
                 </p>
               </SwiperSlide>

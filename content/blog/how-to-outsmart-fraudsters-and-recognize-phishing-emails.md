@@ -3,7 +3,7 @@ templateKey: long-form-content
 metadata:
   title: How to Outsmart Fraudsters and Recognize Phishing Emails
   image: /img/uploads/how-to-outsmart-fraudsters-recognise-phishing-emails-1-.png
-  url: https://fingerprintjs.com/blog/how-to-recognize-phishing-emails/
+  url: https://fingerprint.com/blog/how-to-recognize-phishing-emails/
   imageAlt: Phishing Email
   imageTitle: Phishing Email
   description: Phishing emails targeting businesses are increasingly difficult to

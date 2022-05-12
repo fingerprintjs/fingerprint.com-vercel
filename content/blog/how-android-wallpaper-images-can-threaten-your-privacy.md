@@ -5,7 +5,7 @@ metadata:
   description: "Android 12 features Material You, a new UI theming system based on
     color extraction. Find out how this feature jeopardizes user privacy and
     what you can do to protect yourself. "
-  url: https://fingerprintjs.com/blog/how-android-wallpaper-images-threaten-privacy/
+  url: https://fingerprint.com/blog/how-android-wallpaper-images-threaten-privacy/
   image: /img/uploads/wallpaper-id.png
   imageAlt: Android Wallpaper Identifcation
   imageTitle: Android Wallpaper Identifcation
@@ -150,5 +150,5 @@ For some examples of more stable and reliable methods, please view our  [fingerp
 ## Get in touch
 
 * Star, follow, or fork our [production-grade library](https://github.com/fingerprintjs/fingerprint-android) for Android device fingerprinting
-* Email any questions you have to [oss@fingerprintJS.com](mailto:oss@fingerprintJS.com)
-* Join our team and work on exciting research in device security: [work@fingerprintjs.com](mailto:work@fingerprintjs.com)
+* Email any questions you have to [oss@fingerprint.com](mailto:oss@fingerprint.com)
+* Join our team and work on exciting research in device security: [work@fingerprint.com](mailto:work@fingerprint.com)

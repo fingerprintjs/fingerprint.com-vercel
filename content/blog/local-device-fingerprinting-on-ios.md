@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: Local Device Fingerprinting on iOS
-  url: https://fingerprintjs.com/blog/local-device-fingerprint-ios
+  url: https://fingerprint.com/blog/local-device-fingerprint-ios
   image: /img/uploads/local-device-fingerprinting-on-ios.png
   description: "An overview of the existing techniques and APIs native to iOS that
     allow developers to harden application security. It weighs all the main pros
@@ -100,7 +100,7 @@ Fortunately, there is a way which reduces the impact of this disadvantage and ke
 
 This behavior allows saving the identifier the first time it’s been generated. Subsequent identifier retrieval calls then return the same value saved in the Keychain, significantly increasing the stability of the identifier even between application re-installations. It’s important to note that the current Keychain behavior that allows the identifier to outlive the application removal is not documented. Despite the fact that there have been [official answers](https://developer.apple.com/forums/thread/36442?answerId=281900022#281900022) indicating possible changes in the future, the functionality remained untouched for several years. Nevertheless, the recommended approach to undocumented behavior is to have a failsafe in place, making the \`identifierForVendor\` API an integral part of the entire solution.
 
-## Introducing FingerprintJS for iOS
+## Introducing Fingerprint for iOS
 
 Taking all the above into account, we created a new open-source library that leverages the Keychain method and also gives the ability to generate device fingerprints from signals collected locally on devices.
 
@@ -114,15 +114,15 @@ Utilizes the vendor identifier and saves it into the Keychain which improves the
 
 Computes and returns the fingerprint from the available information on the device, currently a combination of hardware and software signals. This part is highly experimental and might not yield very accurate results.
 
-## Using FingerprintJS for iOS
+## Using Fingerprint for iOS
 
 Our library is as unobtrusive as possible so it never requires or asks for any permissions or capabilities other than what the application already needed for its normal operation. Future versions will also try to take previously granted permissions into account and utilize them to further increase the fingerprint’s stability. It is also worth mentioning that there aren’t any network calls involved and no data is shared with any third parties. 
 
-FingerprintJS for iOS doesn’t use any private or restricted APIs and is meant to be used in applications on the official iOS App Store. However, always keep in mind that the usage has to conform to the [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/).
+Fingerprint for iOS doesn’t use any private or restricted APIs and is meant to be used in applications on the official iOS App Store. However, always keep in mind that the usage has to conform to the [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/).
 
 ### There’s several ways to get involved with us:
 
 * Test out our demo application
 * [Visit the README](https://github.com/fingerprintjs/fingerprintjs/blob/master/readme.md) and integrate the library in your projects
 * [Tell your friends about us and recommend us on GitHub](https://github.com/fingerprintjs/fingerprintjs)
-* [PS: We’re hiring for several developer roles!](https://fingerprintjs.com/careers/)
+* [PS: We’re hiring for several developer roles!](https://fingerprint.com/careers/)

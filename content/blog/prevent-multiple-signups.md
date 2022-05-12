@@ -1,17 +1,17 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: How to prevent multiple signups with FingerprintJS [Video]
+  title: How to prevent multiple signups with Fingerprint [Video]
   description: Protect your free trial offer forms from signup abuse. In this
     step-by-step tutorial, catch visitors who have filled out a form previously
-    using FingerprintJS Pro.
-  url: https://fingerprintjs.com/blog/prevent-multiple-signups-tutorial
+    using Fingerprint Pro.
+  url: https://fingerprint.com/blog/prevent-multiple-signups-tutorial
   image: /img/uploads/signup-abuse-tutorial.png
   imageAlt: Prevent signup abuse video tutorial
   imageTitle: Prevent signup abuse video tutorial
 featured: false
 publishDate: 2021-03-16T18:09:51.690Z
-title: "How to Prevent Multiple Signups With FingerprintJS Pro "
+title: "How to Prevent Multiple Signups With Fingerprint Pro "
 isPublished: true
 isHidden: false
 tags:
@@ -22,13 +22,13 @@ tags:
 authors:
   - Savannah Copland
 ---
-<i>This article is a tutorial where we will build a workflow that prevents signup abuse on a free trial form using the FingerprintJS Pro API. 
+<i>This article is a tutorial where we will build a workflow that prevents signup abuse on a free trial form using the Fingerprint Pro API. 
 
-For the uninitiated, FingerprintJS Pro is a visitor identification service that uses browser fingerprinting, cookies, server-side techniques and machine learning to generate the most accurate and stable visitorIDs possible. Think of FingerprintJS Pro as a swiss-army knife for developers solving fraud - it makes it easy to identify malicious users so you can build common-sense workflows to manage them.</i>
+For the uninitiated, Fingerprint Pro is a visitor identification service that uses browser fingerprinting, cookies, server-side techniques and machine learning to generate the most accurate and stable visitorIDs possible. Think of Fingerprint Pro as a swiss-army knife for developers solving fraud - it makes it easy to identify malicious users so you can build common-sense workflows to manage them.</i>
 
 Imagine that you run an online course platform that offers free 14-day trials. You want to prevent trial users from registering several accounts with multiple emails and extending their trial indefinitely. 
 
-This guide will show you how to do that in a few easy steps with FingerprintJS Pro. 
+This guide will show you how to do that in a few easy steps with Fingerprint Pro. 
 
 You can watch the full tutorial on Youtube or read the instructions below. 
 
@@ -42,19 +42,19 @@ For this demo we built a small Express.js app with Handlebars templates, but the
 
 Check out the `initial-project-setup` branch and keep adding to the code as we go. All the instructions for the local environment setup are in the repository’s `README.md` file.
 
-**If you get lost at any point**, you can look at the comparison of two branches [before and after the FingerprintJS Pro integration.](https://github.com/fingerprintjs/multiple-signup-demo/compare/initial-project-setup...fpjs-integration)
+**If you get lost at any point**, you can look at the comparison of two branches [before and after the Fingerprint Pro integration.](https://github.com/fingerprintjs/multiple-signup-demo/compare/initial-project-setup...fpjs-integration)
 
 ## Getting an API Key
 
-To begin, you’ll need a FingerprintJS Pro subscription. If you don’t have one, you can [create a free account](https://dashboard.fingerprintjs.com/signup).
+To begin, you’ll need a Fingerprint Pro subscription. If you don’t have one, you can [create a free account](https://dashboard.fingerprint.com/signup).
 
 Once you have an account, open the dashboard and take a look at the Subscription menu on the left side of the window. Click the API Keys label and copy any active public key. 
 
-![How to get a Public Key in FingerprintJS](/img/uploads/public-api-key-location.png "How to get a Public API Key in FingerprintJS")
+![How to get a Public Key in Fingerprint](/img/uploads/public-api-key-location.png "How to get a Public API Key in Fingerprint")
 
 ## Frontend
 
-You’ll need to install the Javascript agent code to your website in order to identify visitors. You can find the code for the snippet in your dashboard or in our [Quickstart guide](https://dev.fingerprintjs.com/docs/quick-start-guide). 
+You’ll need to install the Javascript agent code to your website in order to identify visitors. You can find the code for the snippet in your dashboard or in our [Quickstart guide](https://dev.fingerprint.com/docs/quick-start-guide). 
 
 You can either download the snippet from the CDN or install the NPM package. This tutorial uses the CDN version.
 

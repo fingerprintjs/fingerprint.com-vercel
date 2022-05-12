@@ -2,11 +2,11 @@
 title: cryptocurrency
 templateKey: static-page-content
 metadata:
-  title: Cryptocurrency Fraud Prevention For Websites - FingerprintJS
+  title: Cryptocurrency Fraud Prevention For Websites - Fingerprint
   description: Our 99.5% accurate browser fingerprinting API helps cryptocurrency
     websites identify fraudsters aiming to steal account credentials and make
     fraudulent purchases.
-  url: https://fingerprintjs.com/cryptocurrency
+  url: https://fingerprint.com/cryptocurrency
   image: /img/uploads/fpjs_cover3.png
 relatedTitle: Related Articles
 tags:
@@ -19,7 +19,7 @@ hero:
     accurate browser fingerprinting API, it's easy to identify fraudsters aiming
     to steal account credentials and transfer coins into their own wallets.
   ctaText: Create Account
-  ctaHref: https://dashboard.fingerprintjs.com/signup
+  ctaHref: https://dashboard.fingerprint.com/signup
   openCtaNewTab: false
 cardSection:
   title: Prevent online fraud from putting your exchange at risk
@@ -39,20 +39,20 @@ cardSection:
       iconTitle: Fraudulent purchase protection
 blocks:
   - subheader: Secure your user's accounts without sacrificing anonymity
-    imageAlt: FingerprintJS Pro dashboard
+    imageAlt: Fingerprint Pro dashboard
     isImageAfterText: true
     isCtaButton: false
     content: Crypto customers value their privacy and will abandon your exchange if
-      you introduce too much friction in the pursuit of security. FingerprintJS'
+      you introduce too much friction in the pursuit of security. Fingerprint'
       highly accurate VisitorID allows developer teams to implement additional
       authentication for only the most suspicious logins, purchases, and
       transfers - and requires no additional information from your users.
     image: /img/uploads/dash-usage-chart.png
-    imageTitle: FingerprintJS Pro dashboard
+    imageTitle: Fingerprint Pro dashboard
     ctaText: Read our documentation
-    ctaUrl: https://dev.fingerprintjs.com/docs/introduction
+    ctaUrl: https://dev.fingerprint.com/docs/introduction
   - subheader: Reduce chargebacks with payment authentication
-    imageAlt: FingerprintJS Pro subscription screen
+    imageAlt: Fingerprint Pro subscription screen
     isImageAfterText: false
     isCtaButton: false
     content: "The best way to protect your merchant reputation is to identify
@@ -60,13 +60,13 @@ blocks:
       Build additional checks and balances into your payment flows with our easy
       to use API. "
     image: /img/uploads/dash-subscriptions.png
-    imageTitle: FingerprintJS Pro subscription screen
+    imageTitle: Fingerprint Pro subscription screen
     ctaText: Create free account
-    ctaUrl: https://dashboard.fingerprintjs.com/signup
+    ctaUrl: https://dashboard.fingerprint.com/signup
 inlineCta:
-  title: Try FingerprintJS Free
-  subtitle: Installation of FingerprintJS' Javascript agent is easy. Start
+  title: Try Fingerprint Free
+  subtitle: Installation of Fingerprint' Javascript agent is easy. Start
     collecting unique VisitorIDs in minutes with a free account.
   buttonText: Get Started
-  buttonHref: https://dashboard.fingerprintjs.com/signup
+  buttonHref: https://dashboard.fingerprint.com/signup
 ---

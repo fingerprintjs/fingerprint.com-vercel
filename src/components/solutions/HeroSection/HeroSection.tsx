@@ -12,7 +12,7 @@ export default function HeroSection() {
           <p className={styles.caption}>Solutions</p>
           <h1 className={styles.title}>Build your own anti-fraud stack</h1>
           <p className={styles.description}>
-            Virtually all online fraud can be prevented with accurate visitor identification. FingerprintJS makes
+            Virtually all online fraud can be prevented with accurate visitor identification. Fingerprint makes
             designing effective anti-fraud workflows easy for any developer team.
           </p>
         </div>
