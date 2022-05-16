@@ -69,7 +69,7 @@ We’ve seen the different ways a browser can be fingerprinted, as well as the v
 
 Fingerprint Pro offers a superior method of anonymous visitor identification that uses browser fingerprinting in conjunction with cookies, visit history, and geolocation data to create a unique and highly stable visitorID. Built by a dedicated browser fingerprinting research team, the library is easy-to-install, [highly accurate](https://dev.fingerprint.com/docs/understanding-our-995-accuracy) and effective in stopping fraud and spam.
 
-The following tutorial uses the CDN option for installation, but the library can also be installed by running `npm install @fingerprintjs/fingerprintjs-pro` and running `import Fingerprint from '@fingerprintjs/fingerprintjs-pro'`. 
+The following tutorial uses the CDN option for installation, but the library can also be installed by running `npm install @fingerprintjs/fingerprintjs-pro` and running `import FingerprintJS from '@fingerprintjs/fingerprintjs-pro'`. 
 
 To get started, create an `index.html` file with the following code between the head tags:
 

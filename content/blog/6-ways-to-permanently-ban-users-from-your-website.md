@@ -154,13 +154,13 @@ yarn add @fingerprintjs/fingerprintjs
 Then import it and invoke it on page load:
 
 ```
-import Fingerprint from '@fingerprintjs/fingerprintjs';
+import FingerprintJS from '@fingerprintjs/fingerprintjs';
 
 (async () => {
   // We recommend to call `load` at application startup.
   const fp = await FingerprintJS.load();
 
-  // The Fingerprint agent is ready.
+  // The FingerprintJS agent is ready.
   // Get a visitor identifier when you'd like to.
   const result = await fp.get();
 

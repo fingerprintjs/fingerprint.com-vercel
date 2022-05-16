@@ -81,7 +81,7 @@ First, import `FingerprintJS` and React's `useEffect` and `useState` in your `sr
 
 ```javascript
 import {useEffect, useState} from 'react';
-import Fingerprint from '@fingerprintjs/fingerprintjs';
+import FingerprintJS from '@fingerprintjs/fingerprintjs';
 ...
 ```
 
