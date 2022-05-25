@@ -60,7 +60,7 @@ export default function ContactSalesForm() {
         updateFormState(FormState.Success)
         trackLeadSubmit()
         setTimeout(() => {
-          window.location.replace(URL.aliyaCalendar)
+          window.location.replace(URL.contactSalesCalendar)
         }, 500)
       }
     } catch (error) {

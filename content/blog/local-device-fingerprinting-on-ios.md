@@ -1,19 +1,19 @@
 ---
 templateKey: long-form-content
 metadata:
-  title: Local Device Fingerprinting on iOS
+  title: An Overview of iOS Fraud Detection APIs and Device Fingerprinting Techniques
   url: https://fingerprint.com/blog/local-device-fingerprint-ios
   image: /img/uploads/local-device-fingerprinting-on-ios.png
-  description: "An overview of the existing techniques and APIs native to iOS that
-    allow developers to harden application security. It weighs all the main pros
-    and cons of methods that are provided by Apple and covers an alternative
+  description: "Discussing existing techniques and APIs native to iOS that allow
+    developers to harden application security. It weighs all the main pros and
+    cons of methods that are provided by Apple and covers an alternative
     approach that is successfully deployed in our fraud detection solutions on
     other platforms. "
   socialImage: /img/uploads/local-device-fingerprinting-on-ios.png
   imageAlt: illustration of a phone on an orange background
 featured: true
 publishDate: 2022-05-09T18:00:36.807Z
-title: Local Device Fingerprinting on iOS
+title: An Overview of iOS Fraud Detection APIs and Device Fingerprinting Techniques
 isPublished: true
 isHidden: false
 tags:

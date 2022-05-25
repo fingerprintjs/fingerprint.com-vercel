@@ -39,6 +39,12 @@
   force = true
 
 [[redirects]]
+  from = "/products/browser-fingerprinting/"
+  to = "/products/device-identification/"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/botd/"
   to = "/products/bot-detection/"
   force = true

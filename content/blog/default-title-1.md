@@ -65,7 +65,7 @@ They even create step-by-step documents on how to scam a refund from merchants. 
 
 The good thing about scammers working in groups is that it makes them easier to spot.
 
-Patterns make it easier for machine learning algorithms to detect refund requests that are likely fraudulent. So having a device [fingerprinting system](/products/browser-fingerprinting/) in place will help you automatically detect malicious actors on your ecommerce website.
+Patterns make it easier for machine learning algorithms to detect refund requests that are likely fraudulent. So having a device [fingerprinting system](/products/device-identification/) in place will help you automatically detect malicious actors on your ecommerce website.
 
 ![Screenshot of Fingerprint](/img/uploads/screenshot-of-fpjs.png "Screenshot of Fingerprint")
 

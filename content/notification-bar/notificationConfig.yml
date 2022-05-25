@@ -1,7 +1,7 @@
-showNotBar: false
-barBody: "**Prices are increasing January 1st.** Lock in current pricing by
-  becoming a paid customer before 2022."
-arrowText: Learn more
-url: /blog/price-change-2021/
+showNotBar: true
+barBody: Join us for our June 14th webinar “Why Accuracy is Everything in Device
+  Identification”
+arrowText: Register now
+url: https://us02web.zoom.us/webinar/register/7216523846855/WN_U6YpojzqR7Kugf5e-m5NiA
 openUrlNewTab: false
 backgroundColor: "#20265a"

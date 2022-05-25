@@ -112,8 +112,8 @@ Rather than risk someone succeeding with another attempt at fraud, this is a saf
 ### **Use fraud prevention tools**
 
 * Fraud prevention at payment processing (e.g. [Stripe Radar](https://stripe.com/radar))
-* [Device identification](https://fingerprint.com/products/browser-fingerprinting/) (Fingerprint Pro) - you can block returning fraudulent visitorIDs as well as monitor ID velocity to find bots (if someone attempts purchases multiple times in a short window)
-* [Bot Detection](https://fingerprint.com/products/bot-detection/) (BotD) - bots should never be able to make purchases! Use our open source library to identify them when they attempt to test CCs and block the purchase.
+* [Device identification](/products/device-identification/) (Fingerprint Pro) - you can block returning fraudulent visitorIDs as well as monitor ID velocity to find bots (if someone attempts purchases multiple times in a short window)
+* [Bot Detection](/products/bot-detection/) (BotD) - bots should never be able to make purchases! Use our open source library to identify them when they attempt to test CCs and block the purchase.
 
 You can minimize card cracking and more types of payment fraud by utilizing Fingerprint’ 99.5% accurate device fingerprinting. Learn more about how we can identify & help prevent costly payment fraud. 
 

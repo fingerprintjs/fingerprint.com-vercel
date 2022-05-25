@@ -6,7 +6,7 @@ metadata:
   description: Our browser fingerprinting API fights fraud by uniquely identifying
     99.5% of visits to a website, empowering developer teams to pinpoint
     fraudulent actors and build custom authentication workflows.
-  url: https://fingerprint.com/products/browser-fingerprinting
+  url: https://fingerprint.com/products/device-identification
   image: /img/uploads/fpjs_cover3.png
 relatedTitle: Related Articles
 tags:
