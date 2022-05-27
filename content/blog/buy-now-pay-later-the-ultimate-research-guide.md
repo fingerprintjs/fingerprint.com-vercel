@@ -30,7 +30,7 @@ customCTA:
   description: Solve costly fraud in Buy Now, Pay Later transactions with device
     identification. Learn more in our new guide.
   ctaText: Download Now
-  ctaUrl: https://try.fingerprint.com/en-us/free-pdf-preventing-buy-now-pay-later-fraud-with-fingerprintjs
+  ctaUrl: https://try.fingerprintjs.com/en-us/free-pdf-preventing-buy-now-pay-later-fraud-with-fingerprintjs
 ---
 ## Table of Contents
 

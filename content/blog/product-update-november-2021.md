@@ -32,7 +32,7 @@ customCTA:
 ---
 First and foremost, I’d like to share some amazing news: Fingerprint has raised [$32M Series B from Craft Ventures!](https://venturebeat.com/2021/11/03/fraud-prevention-platform-fingerprintjs-lands-32m-to-launch-premium-services/)
 
-From a product perspective, the past few months have been very busy and we have some exciting updates for you. You can find our general documentation [here](https://dev.fingerprint.com/docs) and if you have any questions, please feel free to reach out to [support@fingerprint.com](mailto:support@fingerprint.com).
+From a product perspective, the past few months have been very busy and we have some exciting updates for you. You can find our general documentation [here](https://dev.fingerprintjs.com/docs) and if you have any questions, please feel free to reach out to [support@fingerprint.com](mailto:support@fingerprint.com).
 
 - - -
 
@@ -44,7 +44,7 @@ Fingerprint performs browser identification, which is by nature, probability-bas
 
 The confidence score is a floating-point number between 0 and 1 that represents the probability of accurate identification. The closer the score is to 1, the more sure we are that the visitorID is correct. The closer it is to 0, the more uncertainty we have about the identification results.
 
-The confidence Score requires no additional integration work and should show up in your API response if you are on our JS Agent [v3.5.3](https://dev.fingerprint.com/changelog/3-5-3) or later.
+The confidence Score requires no additional integration work and should show up in your API response if you are on our JS Agent [v3.5.3](https://dev.fingerprintjs.com/changelog/3-5-3) or later.
 
 ### Common Use Case
 
@@ -76,16 +76,16 @@ If you are on an older version, we will highlight this - showing you your curren
 
 We have added an Integration Status check-list that highlights the key steps to get the most from Fingerprint. We break this down to 4 main steps:
 
-1. [API Calls](https://dev.fingerprint.com/docs/quick-start-guide): First and foremost, we want to ensure you are successfully making requests with our JS Agent. When you make your first identification, this step will mark itself as complete, and you’ll start seeing usage data on the overview page.
-2. [Subdomain Integration](https://dev.fingerprint.com/docs/subdomain-integration): We highly recommend utilizing our subdomain integration which has a few benefits:
+1. [API Calls](https://dev.fingerprintjs.com/docs/quick-start-guide): First and foremost, we want to ensure you are successfully making requests with our JS Agent. When you make your first identification, this step will mark itself as complete, and you’ll start seeing usage data on the overview page.
+2. [Subdomain Integration](https://dev.fingerprintjs.com/docs/subdomain-integration): We highly recommend utilizing our subdomain integration which has a few benefits:
 
 * Significant increase to accuracy on Safari
 * Cookies are now recognized as “first-party” which means they can live longer in the browser and extend the lifetime of visitorIds
 * Ad blockers will not block our JS Agent from loading
 * Fingerprint becomes harder to detect by automated blockers and fraudsters
 
-3. [Request Filtering](https://dev.fingerprint.com/docs/request-filtering): You can filter out unwanted visitor identifications using the request filtering rules by either whitelisting or blacklisting websites that use your application API key.
-4. [Webhooks](https://dev.fingerprint.com/docs/webhooks): Utilize server-to-server network communication to request your application’s API when an event occurs. This allows you to be notified immediately when an event occurs on your application.
+3. [Request Filtering](https://dev.fingerprintjs.com/docs/request-filtering): You can filter out unwanted visitor identifications using the request filtering rules by either whitelisting or blacklisting websites that use your application API key.
+4. [Webhooks](https://dev.fingerprintjs.com/docs/webhooks): Utilize server-to-server network communication to request your application’s API when an event occurs. This allows you to be notified immediately when an event occurs on your application.
 
 ![Integration Status](/img/uploads/integration-status.png "Integration Status")
 
@@ -105,7 +105,7 @@ You now have the ability to invite users to your Fingerprint subscription direct
 
 ## Wildcard Support for Request Filtering
 
-The request filtering section of the customer dashboard now allows you to use a wildcard symbol ("*") instead of listing out each individual subdomain. See below for the appropriate syntax. For more information about request filtering, please reference our [documentation](https://dev.fingerprint.com/docs/request-filtering).
+The request filtering section of the customer dashboard now allows you to use a wildcard symbol ("*") instead of listing out each individual subdomain. See below for the appropriate syntax. For more information about request filtering, please reference our [documentation](https://dev.fingerprintjs.com/docs/request-filtering).
 
 ![Request filtering](/img/uploads/request-filtering.png "Request filtering")
 

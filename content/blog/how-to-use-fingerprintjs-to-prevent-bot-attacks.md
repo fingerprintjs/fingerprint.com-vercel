@@ -55,7 +55,7 @@ It’s worth noting that while Fingerprint Pro is highly effective at detecting 
 
 ### TUTORIAL REQUIREMENTS
 
-* **[Fingerprint Pro](https://dashboard.fingerprint.com/signup)** is required; new users can sign up for a free account.
+* **[Fingerprint Pro](https://dashboard.fingerprintjs.com/signup)** is required; new users can sign up for a free account.
 * **[Splinter](https://github.com/cobrateam/splinter)** is used for simulating a user (or many users) completing the signup form. The popular Python-based testing framework enables the automation of browser actions like visiting URLs and interacting with web page elements, among others.
 * **[1secMAIL](https://1secmail.com)** is used to generate disposable mailboxes during the account creation process.
 
@@ -315,9 +315,9 @@ When traditional security measures fail to prevent unauthorized accounts from be
 
 > *A browser fingerprint* is a set of information related to a user’s device. This includes a device’s hardware, operating system, browser, and configuration. Browser fingerprinting is the process of collecting information through a web browser to build a fingerprint of a device. 
 
-[Fingerprint](https://dev.fingerprint.com/docs/introduction) uses browser fingerprinting among other techniques to generate a `visitorID` value. This value is then returned to the application, providing a persistent record of a specific user.
+[Fingerprint](https://dev.fingerprintjs.com/docs/introduction) uses browser fingerprinting among other techniques to generate a `visitorID` value. This value is then returned to the application, providing a persistent record of a specific user.
 
-To start implementing Fingerprint Pro, create a new [Fingerprint account](https://dashboard.fingerprint.com/signup/)—it’s free for 10 days and includes unlimited API calls.
+To start implementing Fingerprint Pro, create a new [Fingerprint account](https://dashboard.fingerprintjs.com/signup/)—it’s free for 10 days and includes unlimited API calls.
 
 After successfully registering, a snippet of code is provided to add to the website:
 
@@ -515,7 +515,7 @@ Even if different email addresses are used, **Fingerprint** correctly flags the 
 
 ### Conclusion
 
-While it’s not possible to completely prevent bot attacks given their current sophistication levels, website operators can drastically reduce the risk of compromise by combining techniques like email validation and CAPTCHAS with [**Fingerprint Pro**. ](https://dashboard.fingerprint.com/signup)This layered approach merges traditional techniques for confirming accounts with a solution that’s 99.5% accurate for identifying unique visitors. And for recognizing bot activity and identifying malicious bots, **[Botd](https://github.com/fingerprintjs/botd)** offers powerful bot detection in an easy-to-use, open source library.
+While it’s not possible to completely prevent bot attacks given their current sophistication levels, website operators can drastically reduce the risk of compromise by combining techniques like email validation and CAPTCHAS with [**Fingerprint Pro**. ](https://dashboard.fingerprintjs.com/signup)This layered approach merges traditional techniques for confirming accounts with a solution that’s 99.5% accurate for identifying unique visitors. And for recognizing bot activity and identifying malicious bots, **[Botd](https://github.com/fingerprintjs/botd)** offers powerful bot detection in an easy-to-use, open source library.
 
 The full code for the examples used in this article can be found here:
 

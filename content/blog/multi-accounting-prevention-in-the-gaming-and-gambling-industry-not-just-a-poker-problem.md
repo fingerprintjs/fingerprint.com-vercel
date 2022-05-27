@@ -66,4 +66,4 @@ The best way to prevent multi-accounting is increase the difficulty for players 
 
 Fingerprint Pro is a visitor identification service that provides 99.5% accurate visitorIDs using browser fingerprinting, cookies, server-side identification techniques and more. Using our API, gaming and gambling websites can cross-check users creating new accounts to see if they are already associated with multiple logins, and require additional authentication or block account creation as necessary.
 
-We work with many gambling and gaming companies around the world to stop multi-accounting, making their communities a more fun and equitable place to play. Create a [free account](https://dashboard.fingerprint.com/signup) of Fingerprint Pro with unlimited API requests for the first 10 days.
+We work with many gambling and gaming companies around the world to stop multi-accounting, making their communities a more fun and equitable place to play. Create a [free account](https://dashboard.fingerprintjs.com/signup) of Fingerprint Pro with unlimited API requests for the first 10 days.

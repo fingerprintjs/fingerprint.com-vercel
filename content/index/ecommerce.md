@@ -21,7 +21,7 @@ hero:
     your existing website and payment workflows with our flexible,
     developer-friendly API. "
   ctaText: Create Free Account
-  ctaHref: https://dashboard.fingerprint.com/signup
+  ctaHref: https://dashboard.fingerprintjs.com/signup
   openCtaNewTab: false
 cardSection:
   title: "Add Fingerprint to your tech stack to:"
@@ -67,7 +67,7 @@ blocks:
     image: /img/uploads/dash-usage-chart.png
     imageTitle: Fingerprint Pro dashboard
     ctaText: Read our documentation
-    ctaUrl: https://dev.fingerprint.com/docs/introduction
+    ctaUrl: https://dev.fingerprintjs.com/docs/introduction
   - subheader: Stay protected throughout the purchase process, from customer login
       to payment
     imageAlt: How Fingerprint Pro reduces account takeover
@@ -90,5 +90,5 @@ inlineCta:
     you can protect your income against fraudulent orders that waste resources
     on labor, shipping, products, chargebacks, fines and more.
   buttonText: Get Started
-  buttonHref: https://dashboard.fingerprint.com/signup
+  buttonHref: https://dashboard.fingerprintjs.com/signup
 ---

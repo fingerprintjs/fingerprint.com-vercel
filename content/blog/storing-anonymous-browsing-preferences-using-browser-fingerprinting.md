@@ -161,7 +161,7 @@ The website now allows the user to toggle to dark mode. However, it does not rem
 
 In the last section of this tutorial, we’ll use Fingerprint to retrieve the user’s fingerprint or `visitorID`. We will then send an API request to store that visitorID along with the user’s preferences.
 
-You’ll need to [sign up](https://dashboard.fingerprint.com/signup) for a Fingerprint Pro account — it’s free for 10 days with unlimited API requests.
+You’ll need to [sign up](https://dashboard.fingerprintjs.com/signup) for a Fingerprint Pro account — it’s free for 10 days with unlimited API requests.
 
 We’ll first create the API. The endpoint will be in the format: `/api/user/:visitorId/:darkMode`. 
 
@@ -288,9 +288,9 @@ fpPromise
   })
 ```
 
-If you don’t know the value of your public API key, go to your [Fingerprint Dashboard](https://dashboard.fingerprint.com/), choose *API Keys* from the sidebar, then copy the value for type *Public*.
+If you don’t know the value of your public API key, go to your [Fingerprint Dashboard](https://dashboard.fingerprintjs.com/), choose *API Keys* from the sidebar, then copy the value for type *Public*.
 
-Note: Requests to the Fingerprint API may be blocked from a local origin such as `localhost`. Learn more about [Request Filtering](https://dev.fingerprint.com/docs/request-filtering) to allow requests from development environments.
+Note: Requests to the Fingerprint API may be blocked from a local origin such as `localhost`. Learn more about [Request Filtering](https://dev.fingerprintjs.com/docs/request-filtering) to allow requests from development environments.
 
 Next, you'll send the request to the endpoint created earlier. To do that, install `axios` as a dependency:
 

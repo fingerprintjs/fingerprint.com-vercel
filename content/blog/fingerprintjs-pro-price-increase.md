@@ -45,7 +45,7 @@ All subscriptions that upgrade to a paid plan before January 1st will lock in ou
 
 For those who are ramping up Fingerprint Pro usage but are on a free plan today, we recommend upgrading to the minimum On-Demand plan to lock in the discounted rate. Free plan customers can upgrade to a paid On-Demand plan in the Pro dashboard after logging in. If you expect your account will make 1+ million API requests per month, please [contact sales](/contact-sales/) for custom enterprise plans.
 
-Those new to Fingerprint Pro can [sign up for free](https://dashboard.fingerprint.com/signup) and get unlimited API calls for 10 days.
+Those new to Fingerprint Pro can [sign up for free](https://dashboard.fingerprintjs.com/signup) and get unlimited API calls for 10 days.
 
 ### Get in touch
 

@@ -64,5 +64,5 @@ We achieved [SOC2 compliance](/blog/soc-2-type-1/) this August, making it possib
 If you have any questions about Fingerprint, we would love to hear from you.
 
 * [Contact our team](/contact-sales/)
-* [Sign up for a free Pro account](https://dashboard.fingerprint.com/signup)
+* [Sign up for a free Pro account](https://dashboard.fingerprintjs.com/signup)
 * [Join our Discord channel](https://discord.gg/ad6R2ttHVX) to discuss all things Fingerprint, cybersecurity, and privacy

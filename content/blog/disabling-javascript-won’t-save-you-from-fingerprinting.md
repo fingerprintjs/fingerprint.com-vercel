@@ -285,6 +285,6 @@ Disabling JavaScript doesn’t prevent your device from being fingerprinted, as 
 Special browsers like Tor guarantee anonymity and the exact same fingerprint across all users; for those that take privacy to the extremes, this may be the only option.
 
 * Star, follow, or fork our <a href="https://github.com/fingerprintjs/blog-nojs-fingerprint-demo" target="_blank" rel="noopener">no JavaScript fingerprinting demo</a>
-* Email any questions you have to <a href="mailto:oss@fingerprint.com">oss@fingerprint.com</a>
+* Email any questions you have to <a href="mailto:oss@fingerprintjs.com">oss@fingerprintjs.com</a>
 * Join our <a href="https://discord.gg/ad6R2ttHVX" target="_blank" rel="noopener">Discord channel</a> to discuss all things Fingerprint, cybersecurity, and privacy related
-* Join our team and work on exciting research in device security: <a href="mailto:work@fingerprint.com">work@fingerprint.com</a>
+* Join our team and work on exciting research in device security: <a href="mailto:work@fingerprintjs.com">work@fingerprintjs.com</a>

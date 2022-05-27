@@ -325,7 +325,7 @@ Fingerprint is helpful in many use cases, including:
 
 ### How It Works
 
-[Create a free account](https://dashboard.fingerprint.com/signup). Enter your email to begin the onboarding process, entering some information like your website name. Accept the terms and conditions, and finally you will be given a code snippet to add to your website.
+[Create a free account](https://dashboard.fingerprintjs.com/signup). Enter your email to begin the onboarding process, entering some information like your website name. Accept the terms and conditions, and finally you will be given a code snippet to add to your website.
 
 ![Code Snippet from Fingerprint](https://i.imgur.com/mZhJ6x1.png)
 
@@ -339,7 +339,7 @@ Once you’ve verified your email, go ahead and add this script to any of your w
 
 You can see that one user is already detected, and that user is you!
 
-We can pass the ["extendedResult"](https://dev.fingerprint.com/docs/js-agent#extendedresult) option in the "get" method to return details about the visitor, including whether they are using Incognito or not.
+We can pass the ["extendedResult"](https://dev.fingerprintjs.com/docs/js-agent#extendedresult) option in the "get" method to return details about the visitor, including whether they are using Incognito or not.
 
 This will be the code snippet now:
 
@@ -423,7 +423,7 @@ and when using it:
 
 ### Browser Support
 
-[Fingerprint](https://dev.fingerprint.com/docs/browser-support) supports the following browsers and their versions are supported:
+[Fingerprint](https://dev.fingerprintjs.com/docs/browser-support) supports the following browsers and their versions are supported:
 
 * Internet Explorer 11
 * Edge 18 and 85+
@@ -434,9 +434,9 @@ and when using it:
 * Samsung Internet 11.1+
 * Android Browser 4.1+
 
-For an up-to-date list of currently supported versions, visit [this link](https://dev.fingerprint.com/docs/browser-support).
+For an up-to-date list of currently supported versions, visit [this link](https://dev.fingerprintjs.com/docs/browser-support).
 
-Some old browsers like IE11 and Android Browser 4.1 will need a [Promise polyfill](https://dev.fingerprint.com/docs/browser-support#old-browsers-requirements) before using it.
+Some old browsers like IE11 and Android Browser 4.1 will need a [Promise polyfill](https://dev.fingerprintjs.com/docs/browser-support#old-browsers-requirements) before using it.
 
 ### Comparing This Method to Previous Ones
 
@@ -444,7 +444,7 @@ Using Fingerprint is definitely a better solution than previous methods. First, 
 
 Second, Fingerprint is the only method that’s capable of detecting Incognito mode on *all* major browsers. All the other methods detect Incognito mode only on some browsers, and most are outdated and don’t work anymore.
 
-Not only is Fingerprint easy to integrate, but you can use it in different ways. There’s the CDN way that you used above, but you can also install it with [NPM](https://dev.fingerprint.com/docs/js-agent#ecmascript-module) or use it with [RequireJS](https://dev.fingerprint.com/docs/js-agent#umd). This makes it a flexible solution for whatever kind of architecture you have for your project.
+Not only is Fingerprint easy to integrate, but you can use it in different ways. There’s the CDN way that you used above, but you can also install it with [NPM](https://dev.fingerprintjs.com/docs/js-agent#ecmascript-module) or use it with [RequireJS](https://dev.fingerprintjs.com/docs/js-agent#umd). This makes it a flexible solution for whatever kind of architecture you have for your project.
 
 ## Conclusion
 

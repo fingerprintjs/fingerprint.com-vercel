@@ -93,7 +93,7 @@ There’s no way to stop malicious actors from attempting  account takeovers, bu
 
 Being able to recognize these tell-tale signs of account takeover is the first step towards minimizing the damage of digital identity fraud. Using these insights, alerts can be set up to notify an administrator if potential account takeover incidents are detected.
 
-Better yet, sophisticated solutions like Fingerprint Pro can help protect customers by generating a 99.5% accurate browser identifier. When malicious actors with a history of suspicious behavior attempt to log in to compromised accounts, Fingerprint Pro can accurately associate their previous visit history, making it easy to take action to secure all impacted accounts. The platform seamlessly integrates into existing workflows and is available for a [free 10 day test drive](https://dashboard.fingerprint.com/signup) with unlimited API access.
+Better yet, sophisticated solutions like Fingerprint Pro can help protect customers by generating a 99.5% accurate browser identifier. When malicious actors with a history of suspicious behavior attempt to log in to compromised accounts, Fingerprint Pro can accurately associate their previous visit history, making it easy to take action to secure all impacted accounts. The platform seamlessly integrates into existing workflows and is available for a [free 10 day test drive](https://dashboard.fingerprintjs.com/signup) with unlimited API access.
 
 ## Conclusion
 

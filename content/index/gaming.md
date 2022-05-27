@@ -18,7 +18,7 @@ hero:
     forms of gaming and gambling fraud, including credential stuffing, cheating
     schemes, arbitrage, and more.
   ctaText: Create Free Account
-  ctaHref: https://dashboard.fingerprint.com/signup
+  ctaHref: https://dashboard.fingerprintjs.com/signup
   openCtaNewTab: false
 cardSection:
   title: Stop gaming fraud by adding fingerprinting to your tech stack
@@ -67,7 +67,7 @@ cardSection:
         fingerprinting technology available.
 
 
-        [How we calculate 99.5% accuracy >](https://dev.fingerprint.com/docs/understanding-our-995-accuracy)
+        [How we calculate 99.5% accuracy >](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy)
       icon: /img/uploads/anonymous_user_identification.png
       iconAlt: Manual fraud screening
       iconTitle: Manual fraud screening
@@ -85,7 +85,7 @@ blocks:
     image: /img/uploads/fpjs-flowchart-smaller.png
     imageTitle: How Fingerprint Protects gaming fraud
     ctaText: Read our documentation
-    ctaUrl: https://dev.fingerprint.com/docs/introduction
+    ctaUrl: https://dev.fingerprintjs.com/docs/introduction
   - subheader: Protect your players' accounts and your bottom-line with anti-fraud
       protection from login to payment.
     imageAlt: Fingerprint Pro usage dashboard
@@ -98,11 +98,11 @@ blocks:
     image: /img/uploads/dash-usage-chart.png
     imageTitle: Fingerprint Pro usage dashboard
     ctaText: Sign up now
-    ctaUrl: https://dashboard.fingerprint.com/signup
+    ctaUrl: https://dashboard.fingerprintjs.com/signup
 inlineCta:
   title: Try Fingerprint for gaming fraud prevention
   subtitle: Install our Javascript snippet on your site to start collecting unique
     VisitorIDs, geolocation data, visit history, and more immediately.
   buttonText: Get Started
-  buttonHref: https://dashboard.fingerprint.com/signup
+  buttonHref: https://dashboard.fingerprintjs.com/signup
 ---

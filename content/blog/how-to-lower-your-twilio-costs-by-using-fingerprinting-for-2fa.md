@@ -319,4 +319,4 @@ Now, when you log in, you’ll be able to bypass the Twilio Verification so long
 
 By using a browser fingerprint for extra verification, you can minimize the cost of using 2FA via Twilio SMS and improve your app’s user experience for frequent users. This workflow lets you have the best of both security and convenience, plus Fingerprint makes it really easy to implement.
 
-Apart from this use case, [Fingerprint](/) can be used for strengthening fraud detection, reducing bot attacks, and offering a customized experience to repeat visitors to your site. Sign up for a free [Fingerprint Pro account](https://dashboard.fingerprint.com/signup) to get started today.
+Apart from this use case, [Fingerprint](/) can be used for strengthening fraud detection, reducing bot attacks, and offering a customized experience to repeat visitors to your site. Sign up for a free [Fingerprint Pro account](https://dashboard.fingerprintjs.com/signup) to get started today.

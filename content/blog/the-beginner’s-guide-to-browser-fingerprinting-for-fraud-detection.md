@@ -29,7 +29,7 @@ customCTA:
   title: Comparing OSS vs. Pro?
   description: Download our PDF guide with a full comparison.
   ctaText: Get the PDF
-  ctaUrl: https://try.fingerprint.com/en-us/oss-vs-pro-comparison-pdf
+  ctaUrl: https://try.fingerprintjs.com/en-us/oss-vs-pro-comparison-pdf
   openCtaNewTab: true
 ---
 **Fraud looms on the minds of development teams for any website, but fraud prevention doesn’t have to be all-consuming, or even expensive.** With a highly accurate identifier it becomes much easier for developers to triage suspicious traffic and restrict access to users attempting to hack into accounts, make fraudulent purchases or simply spam your website. The key to identifying those most likely to commit fraud is either by past activity, or by associating specific patterns of use with a higher likelihood of fraudulence.
@@ -138,7 +138,7 @@ It is also important to note that users intending to commit fraud are much more 
 Our "core" [Fingerprint](https://github.com/fingerprintjs/fingerprintjs) library is intended for browser fingerprinting - it identifies visitors to a website using all modern mobile and desktop browsers. The signals available for mobile app developers are different from signals that can be retrieved in the browser however, and vary between iOS, Android, and other mobile operating systems.
 
 If you want to identify users of a native mobile app, we have a few options in our product suite:
-* Fingerprint Pro, in addition to browser fingerprinting, includes high-accuracy native [Android](https://dev.fingerprint.com/docs/native-android-integration) and [iOS](https://dev.fingerprint.com/docs/native-ios-integration) integrations that allow developers to integrate device identification into native Android and iOS apps.
+* Fingerprint Pro, in addition to browser fingerprinting, includes high-accuracy native [Android](https://dev.fingerprintjs.com/docs/native-android-integration) and [iOS](https://dev.fingerprintjs.com/docs/native-ios-integration) integrations that allow developers to integrate device identification into native Android and iOS apps.
 * Our [iOS open source library](https://github.com/fingerprintjs/fingerprintjs-ios)
 * Our [Android open source library](https://github.com/fingerprintjs/fingerprintjs-android)
 

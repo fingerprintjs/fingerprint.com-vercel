@@ -40,7 +40,7 @@ export const FPJS_VISITORS_ENDPOINT =
   getContextEnv<string>({
     [NetlifyContext.Production]: process.env.GATSBY_FPJS_VISITORS_ENDPOINT,
     [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_FPJS_VISITORS_ENDPOINT,
-  }) ?? 'https://h1.fingerprint.com/pamplemousse/'
+  }) ?? 'https://h1.fingerprintjs.com/pamplemousse/'
 
 export const FPJS_MGMT_API_HOST =
   getContextEnv<string>({
@@ -82,7 +82,7 @@ export const FPJS_INGRESS_ENDPOINT =
   getContextEnv<string>({
     [NetlifyContext.Production]: process.env.GATSBY_FPJS_ENDPOINT,
     [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_FPJS_ENDPOINT,
-  }) ?? 'https://g.fingerprint.com/'
+  }) ?? 'https://g.fingerprintjs.com/'
 
 export const FPJS_REGION = process.env.GATSBY_FPJS_REGION
 export const FPJS_DASHBOARD_ENDPOINT = process.env.GATSBY_FPJS_DASHBOARD_ENDPOINT

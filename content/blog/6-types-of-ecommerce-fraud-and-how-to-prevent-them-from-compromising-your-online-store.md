@@ -132,4 +132,4 @@ Merchants transacting online should treat identity theft prevention as an integr
 
 Online shoppers inherently trust the merchants they purchase from; in return, businesses need to ensure customers that their data won’t fall into the hands of cyber criminals. To this end, [Fingerprint ](/ecommerce/)helps online merchants stay a step ahead of fraudsters with browser fingerprinting that’s 95.5% accurate.
 
-By uniquely identify malicious visitors and related patterns of fraudulent activity, ecommerce store owners can take proactive measures to reduce the risk of compromise. Give Fingerprint a [test drive today](https://dashboard.fingerprint.com/signup/), it’s free for 10 days with unlimited API calls.
+By uniquely identify malicious visitors and related patterns of fraudulent activity, ecommerce store owners can take proactive measures to reduce the risk of compromise. Give Fingerprint a [test drive today](https://dashboard.fingerprintjs.com/signup/), it’s free for 10 days with unlimited API calls.

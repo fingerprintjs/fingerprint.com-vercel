@@ -114,4 +114,4 @@ These days, online merchants have a wide range of solutions at their disposal fo
 
 ## Conclusion
 
-In short, without the proper merchant fraud protection measures in place, online businesses are highly vulnerable to the continuously evolving tactics of cyber criminals. To learn more about how Fingerprint can help you mitigate the risk of [ecommerce fraud](/ecommerce/) and [account takeovers](/account-takeover/), contact [one of our experts](/contact-sales/) or [test drive our solution](https://dashboard.fingerprint.com/signup) — it’s free for 10 days with unlimited API access.
+In short, without the proper merchant fraud protection measures in place, online businesses are highly vulnerable to the continuously evolving tactics of cyber criminals. To learn more about how Fingerprint can help you mitigate the risk of [ecommerce fraud](/ecommerce/) and [account takeovers](/account-takeover/), contact [one of our experts](/contact-sales/) or [test drive our solution](https://dashboard.fingerprintjs.com/signup) — it’s free for 10 days with unlimited API access.

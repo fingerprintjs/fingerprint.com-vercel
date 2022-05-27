@@ -57,6 +57,6 @@ With a low accuracy alternative, your fraud system could misidentify nearly 90% 
 
 Find out how much fraud Fingerprint Pro can prevent for your business by designing a trial with our expert team. [Contact us](/contact-sales/) and get hands-on guidance for how to incorporate Fingerprint Pro’s high accuracy identification into your fraud stack.
 
-<i><small>\[1] To learn more about the methodology used to define our 99.5% identification accuracy, read [our documentation](https://dev.fingerprint.com/docs/understanding-our-995-accuracy).</small></i>
+<i><small>\[1] To learn more about the methodology used to define our 99.5% identification accuracy, read [our documentation](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy).</small></i>
 
 <i><small>\[2] In a [fingerprinting study](https://hal.inria.fr/hal-01718234v2) from KTH Royal Institute of Technology, 33.6% of users were correctly identified. [Other studies](https://www.researchgate.net/publication/332873650_Browser_Fingerprinting_A_survey) from EFF and Inria found accuracy between 80-90%, but those studies predate current web privacy policies. For the purposes of this comparison, we assumed a 60% accuracy rate.</small></i>

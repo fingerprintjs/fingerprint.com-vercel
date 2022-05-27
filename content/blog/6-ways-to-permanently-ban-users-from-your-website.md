@@ -28,7 +28,7 @@ customCTA:
   title: Ready your ban hammer
   description: Create a free account and start protecting your site.
   ctaText: Start Now
-  ctaUrl: https://dashboard.fingerprint.com/signup
+  ctaUrl: https://dashboard.fingerprintjs.com/signup
   openCtaNewTab: false
   isPublished: true
 ---
@@ -141,9 +141,9 @@ Browser fingerprinting is a tracking method that uses JavaScript scripts to coll
 
 When you stitch all of these pieces together, you create a unique online “fingerprint” for a user that can trace them across different websites and browsing sessions.
 
-Fingerprinting is by far the most accurate user identification method (Fingerprint Pro has a [success rate of up to 99.5 percent](https://dev.fingerprint.com/docs/understanding-our-995-accuracy)). While a user can delete cookies, there’s no way to delete a browser fingerprint, and it works in incognito mode, behind a VPN or proxy server, and across multiple browsers.
+Fingerprinting is by far the most accurate user identification method (Fingerprint Pro has a [success rate of up to 99.5 percent](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy)). While a user can delete cookies, there’s no way to delete a browser fingerprint, and it works in incognito mode, behind a VPN or proxy server, and across multiple browsers.
 
-Like a number of JavaScript libraries, Fingerprint is easy to use and has extensive [documentation](https://dev.fingerprint.com/docs). To get started, either install via NPM, yarn, or use a CDN:
+Like a number of JavaScript libraries, Fingerprint is easy to use and has extensive [documentation](https://dev.fingerprintjs.com/docs). To get started, either install via NPM, yarn, or use a CDN:
 
 ```
 npm i @fingerprintjs/fingerprintjs

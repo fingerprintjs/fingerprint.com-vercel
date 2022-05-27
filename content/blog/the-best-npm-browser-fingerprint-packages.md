@@ -64,7 +64,7 @@ You can use Fingerprint’ open-source library by installing via the NPM package
 
 #### Pro version
 
-After you [create an account](https://dashboard.fingerprint.com/signup) and obtain a public API key, you can obtain a user’s unique fingerprint with a few lines of code:
+After you [create an account](https://dashboard.fingerprintjs.com/signup) and obtain a public API key, you can obtain a user’s unique fingerprint with a few lines of code:
 
 ```js
 const fpPromise = FingerprintJS.load({ apiKey: 'your-public-api-key' })
@@ -122,7 +122,7 @@ You can test the open-source library on their [live demo](https://fingerprintjs.
 
 #### Pro version
 
-Fingerprint Pro has an identification accuracy of 99.5% and provides documentation on [how this accuracy score is calculated](https://dev.fingerprint.com/docs/understanding-our-995-accuracy).  The Pro version also includes a confidence score, that it claims is [more accurate than for the open-source version](https://dev.fingerprint.com/docs/understanding-your-confidence-score#pro-vs-open-source) as it can take into account server-side signals as well as client-side.
+Fingerprint Pro has an identification accuracy of 99.5% and provides documentation on [how this accuracy score is calculated](https://dev.fingerprintjs.com/docs/understanding-our-995-accuracy).  The Pro version also includes a confidence score, that it claims is [more accurate than for the open-source version](https://dev.fingerprintjs.com/docs/understanding-your-confidence-score#pro-vs-open-source) as it can take into account server-side signals as well as client-side.
 
 You can test out the Pro version in an [interactive demo](/demo/) on Fingerprint’ website.
 
