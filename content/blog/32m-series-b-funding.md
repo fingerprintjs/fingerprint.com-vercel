@@ -32,7 +32,7 @@ On behalf of the whole team at Fingerprint, we are excited to announce that we h
 
 ## Now more than ever is the time to try Fingerprint Pro
 
-Over the past year we have made some [major updates to our product](/blog/product-update-11-2021/), improving the onboarding experience, building out dashboard insights, and increasing identifier accuracy.
+Over the past year we have made some [major updates to our product](/blog/product-update-11-2021/), improving the onboarding experience, building out dashboard insights, and increasing identifier accuracy. 
 
 We also have achieved some incredible milestones over the last year that have helped to make this recent round of funding possible, and cemented our ability to continue improving our offerings for years to come.
 
