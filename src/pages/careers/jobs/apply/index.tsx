@@ -33,7 +33,7 @@ export default function ApplyPage({ pageContext }: ApplyPageProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'FingerprintJS Careers - Join Our 100% Remote Team',
+    title: 'Fingerprint Careers - Join Our 100% Remote Team',
     description:
       "We're empowering developers to stop online fraud. Join us in building world-class APIs for identification and fraud detection.",
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,

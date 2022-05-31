@@ -1,7 +1,6 @@
 showNotBar: true
-barBody: Join us for our June 14th webinar “Why Accuracy is Everything in Device
-  Identification”
-arrowText: Register now
-url: https://us02web.zoom.us/webinar/register/7216523846855/WN_U6YpojzqR7Kugf5e-m5NiA
+barBody: 'ANNOUNCEMENT: We are now Fingerprint.'
+arrowText: Here's why
+url: /blog/name-change
 openUrlNewTab: false
-backgroundColor: "#20265a"
+backgroundColor: '#f04405'

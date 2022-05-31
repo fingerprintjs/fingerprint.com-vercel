@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: Our company name is now Fingerprint
-  url: https://fingerprintjs.com/blog/name-change
+  url: https://fingerprint.com/blog/name-change
   description: We have dropped the "JS" and are now known as Fingerprint. Read
     more about our decision and how this impacts our customers.
   image: /img/uploads/wearenow-blog.gif

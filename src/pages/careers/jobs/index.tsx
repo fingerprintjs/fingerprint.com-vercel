@@ -35,7 +35,7 @@ export default function JobsPage({ pageContext }: JobsPageProps) {
   let siteMetadata = useSiteMetadata()
   siteMetadata = {
     ...siteMetadata,
-    title: 'FingerprintJS Careers - Join Our 100% Remote Team',
+    title: 'Fingerprint Careers - Join Our 100% Remote Team',
     description:
       "We're empowering developers to stop online fraud. Join us in building world-class APIs for identification and fraud detection.",
     siteUrl: `${siteMetadata.siteUrl}${pathname}`,
@@ -108,7 +108,7 @@ export default function JobsPage({ pageContext }: JobsPageProps) {
           <h1 className={styles.title}>Come work with us</h1>
           <div className={styles.description}>
             <div>
-              <h3 className={styles.subTitle}>FingerprintJS empowers developers to stop online fraud at the source.</h3>
+              <h3 className={styles.subTitle}>Fingerprint empowers developers to stop online fraud at the source.</h3>
               <p className={styles.text}>
                 We work on turning radical new ideas in the fraud detection space into reality. Our products are
                 developer-focused and our clients range from solo developers to publicly traded companies. Some of our

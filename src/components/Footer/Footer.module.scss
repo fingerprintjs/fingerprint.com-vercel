@@ -66,13 +66,8 @@
         object-fit: contain;
         margin-bottom: rem(16px);
 
-        @include media('>phone') {
-          height: auto;
-          width: rem(200px);
-        }
-        @include media('<=phone') {
-          width: rem(140px);
-        }
+        height: auto;
+        width: rem(182px);
       }
     }
 
