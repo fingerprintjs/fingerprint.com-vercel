@@ -12,3 +12,8 @@ export function buildQueryString(values: Record<string, string>) {
   const queryString = new URLSearchParams(values).toString()
   return queryString.length > 0 ? `?${queryString}` : ''
 }
+
+export function getQueryStringParam(queryString: string, param: string) {
+  const params = new URLSearchParams(queryString)
+  return params.get(param)
+}

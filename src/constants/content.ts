@@ -19,6 +19,7 @@ export const PATH = {
   botD: '/products/bot-detection/',
   bnpl: '/buy-now-pay-later/',
   careers: '/careers/',
+  jobs: '/careers/jobs/',
 } as const
 
 export const URL = {
@@ -36,11 +37,13 @@ export const URL = {
   statusUrl: 'https://status.fingerprint.com',
   supportMail: 'support@fingerprint.com',
   salesMail: 'sales@fingerprintjs.com',
+  worKMail: 'work@fingerprintjs.com',
   discordServerURL: 'https://discord.gg/ad6R2ttHVX',
   contactSalesCalendar: 'https://try.fingerprintjs.com/meetings/chris-mcdonnell',
 } as const
 
 export const MAILTO = { mailToUrl: `mailto:${URL.supportMail}` } as const
+export const MAILTO_WORK = { mailToUrl: `mailto:${URL.worKMail}` } as const
 export const MAILTO_SALES = { mailToUrl: `mailto:${URL.salesMail}` } as const
 
 // links to readme should not have trailing slash to prevent forwarding

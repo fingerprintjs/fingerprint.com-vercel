@@ -84,6 +84,12 @@ export const FPJS_INGRESS_ENDPOINT =
     [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_FPJS_ENDPOINT,
   }) ?? 'https://g.fingerprintjs.com/'
 
+export const GREENHOUSE_COMPANY_ID =
+  getContextEnv<string>({
+    [NetlifyContext.Production]: process.env.GATSBY_GREENHOUSE_COMPANY_ID,
+    [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_GREENHOUSE_COMPANY_ID,
+  }) ?? 'fingerprinttest'
+
 export const FPJS_REGION = process.env.GATSBY_FPJS_REGION
 export const FPJS_DASHBOARD_ENDPOINT = process.env.GATSBY_FPJS_DASHBOARD_ENDPOINT
 export const GITHUB_API_TOKEN = process.env.GATSBY_GITHUB_API_TOKEN

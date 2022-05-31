@@ -14,7 +14,7 @@ import LifeAtFingerSection from '../../components/careers/LifeAtFingerSection/Li
 import OurInvestorsSection from '../../components/careers/OurInvestorsSection/OurInvestorsSection'
 import InTheMediaSection from '../../components/careers/InTheMediaSection/InTheMediaSection'
 
-import { URL } from '../../constants/content'
+import { PATH } from '../../constants/content'
 
 import { GeneratedPageContext } from '../../helpers/types'
 
@@ -55,7 +55,7 @@ export default function CareersPage({ pageContext }: CareersPageProps) {
         className={styles.heroSection}
         title='Work at Fingerprint'
         ctaText='Explore our jobs'
-        ctaHref={URL.careersUrl}
+        ctaHref={PATH.jobs}
         openNewTab
         variant='secondary'
       >
@@ -72,7 +72,7 @@ export default function CareersPage({ pageContext }: CareersPageProps) {
           className={styles.ctaSection}
           title='Work at Fingerprint'
           ctaText='Explore our jobs'
-          ctaHref={URL.careersUrl}
+          ctaHref={PATH.jobs}
           variant='white'
         >
           We&apos;re a 100% remote, global team on the cutting edge of online security. Join us!

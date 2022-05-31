@@ -1,0 +1,89 @@
+.section {
+  padding-top: rem(45px);
+
+  .titleCurrent,
+  .title {
+    padding-bottom: rem(40px);
+    @include sans($size: 44px, $weight: 700, $lh: 120%);
+    letter-spacing: -0.02em;
+
+    @include media('<=phoneLandscape') {
+      padding-bottom: rem(16px);
+
+      font-size: rem(26px);
+    }
+  }
+  .titleCurrent {
+    padding-top: rem(104px);
+  }
+  .description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    column-gap: rem(32px);
+
+    @include media('<=tablet') {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(16px);
+    }
+
+    .subTitle {
+      @include sans($size: 20px, $weight: 600, $lh: 150%);
+      letter-spacing: 0.01em;
+
+      @include media('<=phoneLandscape') {
+        padding-bottom: rem(8px);
+      }
+    }
+  }
+  .selectSection {
+    .selectLabel {
+      @include sans($size: 16px, $weight: 500, $lh: 150%);
+    }
+    .select {
+      padding-top: rem(8px);
+      max-width: rem(449px);
+    }
+  }
+  .jobsList {
+    padding-top: rem(40px);
+
+    .departmentTitle {
+      @include sans($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
+      text-transform: uppercase;
+    }
+    .job {
+      display: flex;
+      flex-direction: column;
+      .jobTitle {
+        padding-top: rem(16px);
+
+        @include sans($size: 20px, $weight: 600, $lh: 150%);
+        letter-spacing: 0.01em;
+
+        padding-bottom: rem(4px);
+      }
+      .jobLocation {
+        @include sans($size: 16px, $weight: 400, $lh: 150%);
+      }
+      .jobTitleLoading {
+        margin-top: rem(16px);
+        margin-bottom: rem(4px);
+      }
+    }
+  }
+}
+.text {
+  padding-top: rem(16px);
+
+  @include sans($size: 16px, $weight: 500, $lh: 150%);
+  a {
+    cursor: pointer;
+    color: v('brand-fire');
+
+    &:hover {
+      color: adjust-color(c('brand-fire'), $lightness: -20%);
+    }
+  }
+}

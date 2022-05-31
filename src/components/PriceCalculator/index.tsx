@@ -213,6 +213,9 @@ const operations: Feature[] = [
 
 const enterpriseFeatures: Feature[] = [
   {
+    description: 'SAML SSO',
+  },
+  {
     description: '99.9% SLA standard',
   },
   {

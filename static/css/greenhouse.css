@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Work Sans', 'sans-serif';
+}
+div#wrapper {
+  padding: 0px 20px !important;
+  max-width: unset;
+}
+div#application {
+  box-shadow: 0px 8px 32px rgba(13, 16, 43, 0.1);
+  border-radius: 16px;
+  background: #ffffff;
+}
+.logo-container {
+  height: 0 !important;
+}
+h2.heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+}
+div.field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0px;
+  gap: 8px;
+}
+label {
+  font-weight: 500 !important;
+  line-height: 150% !important;
+  font-size: 16px !important;
+  width: unset !important;
+  text-align: left !important;
+}
+input[type='text'],
+textarea {
+  border: 1px solid #e3e3ed !important;
+  border-radius: 8px !important;
+  width: 514px !important;
+
+  padding: 16px 0 16px 16px !important;
+  font-size: 16px !important;
+}
+input[type='button'] {
+  background: #f04405 !important;
+  border-radius: 6px !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+
+  text-shadow: unset !important;
+}
+
+.asterisk {
+  color: unset !important;
+  font-size: 16px !important;
+}
+
+a {
+  cursor: pointer;
+  color: #f04405;
+}
+a:hover {
+  color: #d63900;
+}
+
+div#submit_buttons {
+  text-align: left !important;
+}
+
+#main_fields div.field textarea.paste {
+  margin-left: 0;
+}

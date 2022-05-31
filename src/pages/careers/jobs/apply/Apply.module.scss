@@ -1,0 +1,84 @@
+.section {
+  padding-top: rem(46px);
+
+  .returnLink {
+    @include sans($size: 16px, $weight: 500, $lh: 150%);
+  }
+  .wrapper {
+    max-width: rem(768px);
+    padding-top: rem(40px);
+    padding-bottom: rem(52px);
+    .descriptionSkeleton,
+    .jobDescription {
+      margin: rem(40px) 0;
+    }
+    .locationSkeleton,
+    .jobLocation {
+      margin-top: rem(8px);
+    }
+    .questionsSkeleton,
+    .jobQuestions {
+      margin-top: rem(80px);
+    }
+    .jobTitle {
+      @include sans($size: 44px, $weight: 700, $lh: 120%);
+      letter-spacing: -0.02em;
+    }
+    .jobLocation {
+      @include sans($size: 16px, $weight: 500, $lh: 150%);
+    }
+    .jobDescription {
+      span,
+      p {
+        @include sans($size: 16px, $weight: 500, $lh: 150%);
+        font-weight: 500 !important;
+        padding-bottom: rem(16px);
+        a {
+          cursor: pointer;
+          color: v('brand-fire');
+
+          &:hover {
+            color: adjust-color(c('brand-fire'), $lightness: -20%);
+          }
+        }
+      }
+    }
+  }
+  .jobQuestions {
+    @include sans($size: 16px, $weight: 500, $lh: 150%);
+
+    span,
+    p {
+      @include sans($size: 16px, $weight: 500, $lh: 150%);
+      font-weight: 500 !important;
+      margin-top: rem(40px);
+      margin-bottom: rem(24px);
+    }
+    ul {
+      @include sans($size: 16px, $weight: 500, $lh: 150%);
+
+      margin-bottom: rem(24px);
+
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    .questionTag {
+      margin: rem(24px) 0;
+    }
+    .tagTitle {
+      @include sans($size: 14px, $weight: 600, $lh: 140%, $color: rgba(13, 16, 43, 0.48));
+      font-weight: 600 !important;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: rem(8px);
+    }
+  }
+}
+.formContainer {
+  @include media('<=phoneLandscape') {
+    padding: 0;
+  }
+  .form {
+    @include scrollSection;
+  }
+}

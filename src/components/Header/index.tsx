@@ -14,7 +14,7 @@ import classNames from 'classnames'
 import { URL, PATH } from '../../constants/content'
 import DropdownList from './DropdownList'
 import { ReactComponent as LogoSvg } from './fpjs.svg'
-import { scrollToElementById } from '../../helpers/scrollToElemenBytID'
+import { scrollToElementById } from '../../helpers/scrollToElementByID'
 import { useLocation } from '@reach/router'
 
 import styles from './Header.module.scss'
