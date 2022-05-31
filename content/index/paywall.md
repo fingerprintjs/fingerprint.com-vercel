@@ -21,7 +21,7 @@ hero:
     using a VPN, and more. Make leaky paywall solutions a thing of the past by
     eliminating even the trickiest paywall circumvention techniques.
   ctaText: Try our Live Paywall Demo
-  ctaHref: https://paywall-example.fingerprint.com/
+  ctaHref: https://paywall-example.fingerprintjs.com/
   openCtaNewTab: true
 cardSection:
   title: Fingerprint Pro's Paywall Services
@@ -70,7 +70,7 @@ blocks:
     image: /img/uploads/paywall-capture.png
     imageTitle: Paywall screenshot
     ctaText: Try our live paywall demo
-    ctaUrl: https://paywall-example.fingerprint.com/
+    ctaUrl: https://paywall-example.fingerprintjs.com/
   - content: Fingerprint Pro can be incorporated into off-the-shelf or
       custom built paywalls. Whether you use a hard, metered or freemium
       paywall, incorporate our highly accurate visitorIDs into your workflows
