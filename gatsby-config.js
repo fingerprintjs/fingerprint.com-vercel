@@ -247,11 +247,13 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify', // make sure to keep it last in the array
       options: {
         mergeSecurityHeaders: false,
+        mergeLinkHeaders: false, //remove after deploy new domain https://answers.netlify.com/t/password-makes-my-js-not-load-cached/1295/20
+        mergeCachingHeaders: false, // remove after deploy new domain
         headers: {
           '/*': [
             `X-Frame-Options: DENY`,
             `X-XSS-Protection: 1; mode=block`,
-            `X-Content-Type-Options: nosniff`,
+            //`X-Content-Type-Options: nosniff`,
             `Referrer-Policy: no-referrer-when-downgrade`,
             `Cache-Control: public, max-age=900, s-maxage=900`,
           ],
