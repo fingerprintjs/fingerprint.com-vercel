@@ -25,7 +25,7 @@ heroImage:
 customCTA:
   openCtaNewTab: false
 ---
-<i>Note: We have changed our company name, but we have not made any changes to our product names or Github libraries. Our very popular Github project is still called <a href="https://github.com/fingerprintjs/fingerprintjs">FingerprintJS</a>.</i>
+<i>Note: We have changed our company name, but we have not made any changes to our product names or Github libraries. Our very popular Github project is still called <a href="https://github.com/fingerprintjs/fingerprintjs" target= "_blank" rel="noopener noreferrer">FingerprintJS</a>.</i>
 
 In 2012, our CTO and cofounder Valentin created our JavaScript browser fingerprinting library, aptly named FingerprintJS. When the company was incorporated 8 years later, we decided to retain our brand recognition and keep the company name consistent.
 
@@ -41,6 +41,6 @@ Our name change will not affect service or implementation in any way - no action
 
 You will notice that our logo is slightly changed, and we have a new domain (fingerprint.com). Emails from our service will now be from the fingerprint.com domain as well. You may also have to re-enter your password to log in for the first time.
 
-While the name change is largely cosmetic, we have many exciting product updates on the horizon. If you'd like to view, vote or add ideas to our product roadmap, [click here](https://fingerprintjs.productboard.com/portal/1-fingerprintjs-product-roadmap/tabs/b93aa5ac-ddc7-4c59-84eb-f8c560a58068).
+While the name change is largely cosmetic, we have many exciting product updates on the horizon. If you'd like to view, vote or add ideas to our product roadmap, <a href="https://fingerprintjs.productboard.com/portal/1-fingerprintjs-product-roadmap/tabs/b93aa5ac-ddc7-4c59-84eb-f8c560a58068" target= "_blank" rel="noopener noreferrer">click here</a>.
 
 **If you have any questions, please email us at [support@fingerprint.com](mailto:support@fingerprintjs.com).**
