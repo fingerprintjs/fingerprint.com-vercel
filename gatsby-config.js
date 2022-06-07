@@ -171,6 +171,7 @@ module.exports = {
               linkImagesToOriginal: false,
               wrapperStyle: `max-height: 650px;`,
               disableBgImage: true,
+              withAvif: true,
             },
           },
           {
