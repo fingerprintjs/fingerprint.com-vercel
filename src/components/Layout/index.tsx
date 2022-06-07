@@ -11,7 +11,9 @@ import { BASE_URL, URL } from '../../constants/content'
 import { defaultDataLayer } from '../../constants/content'
 import { enableAnalytics } from '../../helpers/gtm'
 import { useUserLocation } from '../../hooks/useUserLocation'
+import { amplitudeLogEvent } from '../../helpers/amplitude'
 import { useStaticQuery, graphql } from 'gatsby'
+import { useLocation } from '@reach/router'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -54,12 +56,17 @@ export function LayoutTemplate({ children, siteMetadata, notificationBar }: Layo
   const { title, description, siteUrl, image } = siteMetadata
   const gtmToken = GTM_TOKEN
   const { isEuUser } = useUserLocation()
+  const { pathname } = useLocation()
 
   useEffect(() => {
     if (isEuUser === false) {
       enableAnalytics()
     }
   }, [isEuUser])
+
+  useEffect(() => {
+    amplitudeLogEvent('view marketing page', { route: pathname })
+  }, [pathname])
 
   useConsolePromotionMessage(`Like breaking things to see how they work? Join us: ${URL.careersConsoleLogUrl}`)
 

@@ -84,6 +84,18 @@ export const FPJS_INGRESS_ENDPOINT =
     [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_FPJS_ENDPOINT,
   }) ?? 'https://g.fingerprintjs.com/'
 
+export const AMPLITUDE_API_KEY =
+  getContextEnv<string>({
+    [NetlifyContext.Production]: process.env.GATSBY_AMPLITUDE_API_KEY,
+    [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_AMPLITUDE_API_KEY,
+  }) ?? ''
+
+export const AMPLITUDE_API_ENDPOINT =
+  getContextEnv<string>({
+    [NetlifyContext.Production]: process.env.GATSBY_AMPLITUDE_API_ENDPOINT,
+    [NetlifyContext.DeployPreview]: process.env.GATSBY_PREVIEW_AMPLITUDE_API_ENDPOINT,
+  }) ?? ''
+
 export const GREENHOUSE_COMPANY_ID =
   getContextEnv<string>({
     [NetlifyContext.Production]: process.env.GATSBY_GREENHOUSE_COMPANY_ID,

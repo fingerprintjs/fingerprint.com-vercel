@@ -4,7 +4,7 @@ import RangeSlider, { SliderValue } from '../common/RangeSlider'
 import classNames from 'classnames'
 import Button from '../common/Button'
 import styles from './PriceCalculator.module.scss'
-import { PATH, URL } from '../../constants/content'
+import { PATH, URL, DOC_URL } from '../../constants/content'
 import { ReactComponent as CheckSVG } from '../../img/CheckSVG.svg'
 import { ReactComponent as CloseSvg } from '../../img/close.svg'
 import { usePriceData } from '../../hooks/usePriceData'
@@ -139,6 +139,7 @@ function PricingCard({
 
 interface Feature {
   description: string
+  link?: string
   disabled?: boolean
 }
 interface FeatureListProps {
@@ -158,7 +159,13 @@ function FeatureList({ title, features }: FeatureListProps) {
             })}
           >
             {feature.disabled ? <CloseSvg className={styles.icon} /> : <CheckSVG className={styles.icon} />}
-            {feature.description}
+            {feature.link ? (
+              <a href={feature.link} target='_blank' rel='noreferrer' className={styles.featureLink}>
+                {feature.description}
+              </a>
+            ) : (
+              feature.description
+            )}
           </li>
         ))}
       </ul>
@@ -214,6 +221,10 @@ const operations: Feature[] = [
 const enterpriseFeatures: Feature[] = [
   {
     description: 'SAML SSO',
+  },
+  {
+    description: 'Zero trust mode',
+    link: DOC_URL.zeroTrustUrl,
   },
   {
     description: '99.9% SLA standard',

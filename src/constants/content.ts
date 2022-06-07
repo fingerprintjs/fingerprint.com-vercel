@@ -60,6 +60,7 @@ export const DOC_URL = {
   browserSupportUrl: 'https://dev.fingerprintjs.com/docs/browser-support',
   webhooksUrl: 'https://dev.fingerprintjs.com/docs/webhooks',
   botDUrl: 'https://github.com/fingerprintjs/BotD#botd-currently-in-beta',
+  zeroTrustUrl: 'https://dev.fingerprintjs.com/docs/zero-trust-mode',
 } as const
 
 export const useCaseLinks = [

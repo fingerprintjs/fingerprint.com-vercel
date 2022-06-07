@@ -270,7 +270,7 @@ function Jobs({ department, jobs, isLoading = false }: JobProps) {
         : jobs?.map((job, index) => {
             return (
               <div key={index} className={styles.job}>
-                <Link className={styles.jobTitle} to={`/careers/jobs/apply?gh_jid=${job.id}`}>
+                <Link className={styles.jobTitle} to={`/careers/jobs/apply/?gh_jid=${job.id}`}>
                   {job.title}
                 </Link>
                 <span className={styles.jobLocation}>{job.location}</span>

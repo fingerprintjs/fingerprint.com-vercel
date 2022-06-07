@@ -161,6 +161,15 @@
     @include media('<=phoneLandscape') {
       font-size: rem(14px);
     }
+
+    .featureLink {
+      text-decoration: underline;
+      @include transition((opacity));
+
+      &:hover {
+        opacity: v('faded');
+      }
+    }
   }
 
   .icon {
