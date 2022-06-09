@@ -2,7 +2,7 @@
 templateKey: long-form-content
 metadata:
   title: FingerprintJS is now Fingerprint
-  url: https://fingerprint.com/blog/name-change
+  url: https://fingerprint.com/blog/fingerprintjs-is-now-fingerprint
   description: We have dropped the "JS" and are now known as Fingerprint. Read
     more about our decision and how this impacts our customers.
   image: /img/uploads/wearenow-blog.gif
@@ -17,7 +17,7 @@ isHidden: false
 tags:
   - fingerprinting
 authors:
-  - Savannah Copland
+  - Dan Pinto
 heroImage:
   image: /img/uploads/wearenow-blog.gif
   imageAlt: We are now Fingerprint
@@ -41,6 +41,6 @@ Our name change will not affect service or implementation in any way - no action
 
 You will notice that our logo is slightly changed, and we have a new domain (fingerprint.com). Emails from our service will now be from the fingerprint.com domain as well. You may also have to re-enter your password to log in for the first time.
 
-While the name change is largely cosmetic, we have many exciting product updates on the horizon. If you'd like to view, vote or add ideas to our product roadmap, <a href="https://fingerprintjs.productboard.com/portal/1-fingerprintjs-product-roadmap/tabs/b93aa5ac-ddc7-4c59-84eb-f8c560a58068" target= "_blank" rel="noopener noreferrer">click here</a>.
+While the name change is largely cosmetic, we have many exciting product updates on the horizon. If you'd like to view, vote or add ideas to our product roadmap, [click here](https://portal.productboard.com/fingerprintjs/1-fingerprintjs-product-roadmap).
 
 **If you have any questions, please email us at [support@fingerprint.com](mailto:support@fingerprintjs.com).**
