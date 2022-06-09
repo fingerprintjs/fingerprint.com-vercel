@@ -34,7 +34,7 @@ export const URL = {
   linkedinUrl: 'https://www.linkedin.com/company/fingerprintjs/',
   twitterUrl: 'https://twitter.com/FingerprintJs/',
   signupUrl: 'https://dashboard.fingerprintjs.com/signup',
-  statusUrl: 'https://status.fingerprint.com',
+  statusUrl: 'https://status.fingerprintjs.com',
   supportMail: 'support@fingerprint.com',
   salesMail: 'sales@fingerprintjs.com',
   worKMail: 'work@fingerprintjs.com',
