@@ -107,7 +107,7 @@
 
   @include media('>phone') {
     height: auto;
-    width: rem(182px);
+    width: rem(172px);
   }
   @include media('<=phone') {
     width: rem(137px);
