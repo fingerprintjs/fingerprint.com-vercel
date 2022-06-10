@@ -1,6 +1,6 @@
 showNotBar: true
-barBody: 'ANNOUNCEMENT: We are now Fingerprint.'
+barBody: "ANNOUNCEMENT: We are now Fingerprint."
 arrowText: Here's why
-url: /blog/name-change
+url: /blog/fingerprintjs-is-now-fingerprint
 openUrlNewTab: false
-backgroundColor: '#f04405'
+backgroundColor: "#f04405"
