@@ -67,7 +67,11 @@
         margin-bottom: rem(16px);
 
         height: auto;
-        width: rem(182px);
+        width: rem(171px);
+
+        @include media('<=phoneLandscape') {
+          width: rem(137px);
+        }
       }
     }
 
