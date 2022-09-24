@@ -8,23 +8,13 @@ import { ReactComponent as AnonymousUserIdentificationSvg } from '../../img/anon
 import { ReactComponent as IncognitoDetectionSvg } from '../../img/incognito_detection.svg'
 import { ReactComponent as ApiWebhooksSvg } from '../../img/api_webhooks.svg'
 import { ReactComponent as IntegrationsSvg } from '../../img/integrations.svg'
-import { useMainBackgroundImage } from '../../hooks/useBackgroundImage'
 import Container from '../common/Container'
 import Section from '../common/Section'
 import styles from './ProTools.module.scss'
 
 export default function ProToolsSection() {
-  const { mainBackground } = useMainBackgroundImage()
-
   return (
-    <Section
-      className={styles.proTools}
-      backgroundImage={mainBackground}
-      cssBackgroundColor="v('off-white')"
-      cssBackgroundPosition='center center'
-      cssBackgroundRepeat='no-repeat'
-      cssBackgroundSize='1400px auto'
-    >
+    <Section className={styles.proTools}>
       <Container className={styles.container}>
         <header className={styles.header}>
           <h2 className={styles.sectionTitle}>

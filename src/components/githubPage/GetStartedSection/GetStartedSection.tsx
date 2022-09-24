@@ -2,23 +2,13 @@ import React from 'react'
 import Section from '../../common/Section'
 import Container from '../../common/Container'
 import ActionableCards, { Card } from '../../ActionableCards/ActionableCards'
-import { useMainBackgroundImage } from '../../../hooks/useBackgroundImage'
 import { URL } from '../../../constants/content'
 
 import styles from './GetStartedSection.module.scss'
 
 export default function GetStartedSection() {
-  const { mainBackground } = useMainBackgroundImage()
-
   return (
-    <Section
-      className={styles.root}
-      backgroundImage={mainBackground}
-      cssBackgroundColor="v('off-white')"
-      cssBackgroundPosition='center 65%'
-      cssBackgroundRepeat='no-repeat'
-      cssBackgroundSize='1150px auto'
-    >
+    <Section className={styles.root}>
       <Container size='large' className={styles.container}>
         <h1 className={styles.title}>Get Started With Fingerprint</h1>
         <ActionableCards cards={cards} className={styles.cards} />

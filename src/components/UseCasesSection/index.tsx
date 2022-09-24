@@ -8,25 +8,15 @@ import { ReactComponent as GamingSvg } from './gaming.svg'
 import { ReactComponent as PaywallSvg } from './paywall.svg'
 import Container from '../common/Container'
 import Section from '../common/Section'
-import { useMainBackgroundImage } from '../../hooks/useBackgroundImage'
 import { Link } from 'gatsby'
 import { PATH } from '../../constants/content'
 
 import styles from './UseCasesSection.module.scss'
 
 export default function UseCasesSection() {
-  const { mainBackground } = useMainBackgroundImage()
-
   return (
     <>
-      <Section
-        className={styles.section}
-        backgroundImage={mainBackground}
-        cssBackgroundColor="v('off-white')"
-        cssBackgroundPosition='center center'
-        cssBackgroundRepeat='no-repeat'
-        cssBackgroundSize='1400px auto'
-      >
+      <Section className={styles.section}>
         <Container>
           <header className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>
