@@ -6,7 +6,9 @@ import {
   FPJS_INGRESS_ENDPOINT,
 } from './src/constants/env'
 
-export const onRenderBody = ({ setHeadComponents }) => {
+export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
+  setHtmlAttributes({ lang: 'en' })
+
   setHeadComponents([
     <link rel='preconnect' key='dns-prefetch-google-analytics' href='https://www.google-analytics.com' />,
     <link rel='preconnect' key='google-tag-manager' href='https://www.googletagmanager.com' />,

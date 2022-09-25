@@ -99,15 +99,13 @@ export default memo(function CodeWindowWithSelector({
 export interface CodeTooltipProps {
   children: React.ReactNode
   className: string
-  key: string
   left?: number
 }
-export function CodeTooltip({ children, className, key, left }: CodeTooltipProps) {
+export function CodeTooltip({ children, className, left }: CodeTooltipProps) {
   return (
     <Tippy
       interactive
       appendTo={isBrowser() ? document.body : undefined} // to prevent the tooltip from taking space from the description
-      key={key}
       placement='right'
       theme='checkmark'
       maxWidth={460}

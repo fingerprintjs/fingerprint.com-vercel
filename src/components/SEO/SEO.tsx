@@ -25,7 +25,6 @@ export function SEO({ title, description, pathname, image, children }: SeoProps)
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
       />
 
-      <html lang='en' />
       <title>{seo.title}</title>
       <meta charSet='UTF-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
