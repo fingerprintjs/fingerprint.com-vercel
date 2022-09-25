@@ -23,14 +23,15 @@ describe('Contact Sales Form', () => {
   it('should show a success message if the form is submitted correctly', async () => {
     fetchMock.mockResponseOnce(JSON.stringify({ ok: true }), { status: 200 })
     renderWithProviders(<ContactSalesForm />)
+    const user = userEvent.setup()
 
-    userEvent.type(screen.getByLabelText('Your name'), 'John')
-    userEvent.type(screen.getByLabelText('Work email'), 'john@gmail.com')
-    userEvent.type(screen.getByLabelText('Company Website'), 'www.test.com')
-    userEvent.type(screen.getByPlaceholderText('1 (702) 123-4567'), '+1 2124567890')
-    userEvent.type(screen.getByLabelText('Tell us about your project'), 'test description')
+    await user.type(screen.getByLabelText('Your name'), 'John')
+    await user.type(screen.getByLabelText('Work email'), 'john@gmail.com')
+    await user.type(screen.getByLabelText('Company Website'), 'www.test.com')
+    await user.type(screen.getByPlaceholderText('1 (702) 123-4567'), '+1 2124567890')
+    await user.type(screen.getByLabelText('Tell us about your project'), 'test description')
 
-    userEvent.click(screen.getByText('Submit'))
+    await user.click(screen.getByText('Submit'))
 
     await screen.findByText("We'll reach out to you shortly")
 
@@ -39,14 +40,15 @@ describe('Contact Sales Form', () => {
   it('should show an error message if the API returns an error', async () => {
     fetchMock.mockReject(new Error('server error'))
     renderWithProviders(<ContactSalesForm />)
+    const user = userEvent.setup()
 
-    userEvent.type(screen.getByLabelText('Your name'), 'John')
-    userEvent.type(screen.getByLabelText('Work email'), 'john@gmail.com')
-    userEvent.type(screen.getByLabelText('Company Website'), 'www.test.com')
-    userEvent.type(screen.getByPlaceholderText('1 (702) 123-4567'), '+1 2124567890')
-    userEvent.type(screen.getByLabelText('Tell us about your project'), 'test description')
+    await user.type(screen.getByLabelText('Your name'), 'John')
+    await user.type(screen.getByLabelText('Work email'), 'john@gmail.com')
+    await user.type(screen.getByLabelText('Company Website'), 'www.test.com')
+    await user.type(screen.getByPlaceholderText('1 (702) 123-4567'), '+1 2124567890')
+    await user.type(screen.getByLabelText('Tell us about your project'), 'test description')
 
-    userEvent.click(screen.getByText('Submit'))
+    await user.click(screen.getByText('Submit'))
 
     await screen.findByText('An error occurred')
 
@@ -62,14 +64,15 @@ describe('Contact Sales Form', () => {
       { status: 200 }
     )
     renderWithProviders(<ContactSalesForm />)
+    const user = userEvent.setup()
 
-    userEvent.type(screen.getByLabelText('Your name'), 'John')
-    userEvent.type(screen.getByLabelText('Work email'), 'john@gmail.com')
-    userEvent.type(screen.getByLabelText('Company Website'), 'www.test.com')
-    userEvent.type(screen.getByPlaceholderText('1 (702) 123-4567'), '+1 2124567890')
-    userEvent.type(screen.getByLabelText('Tell us about your project'), 'test description')
+    await user.type(screen.getByLabelText('Your name'), 'John')
+    await user.type(screen.getByLabelText('Work email'), 'john@gmail.com')
+    await user.type(screen.getByLabelText('Company Website'), 'www.test.com')
+    await user.type(screen.getByPlaceholderText('1 (702) 123-4567'), '+1 2124567890')
+    await user.type(screen.getByLabelText('Tell us about your project'), 'test description')
 
-    userEvent.click(screen.getByText('Submit'))
+    await user.click(screen.getByText('Submit'))
 
     await screen.findByText('The answer to the challenge question was incorrect.', { exact: false })
 

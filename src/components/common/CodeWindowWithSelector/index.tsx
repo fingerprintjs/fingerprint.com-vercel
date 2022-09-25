@@ -68,7 +68,7 @@ export default memo(function CodeWindowWithSelector({
           </div>
         </div>
       )}
-      <AnimatePresence initial={false} exitBeforeEnter onExitComplete={() => setActiveTabHighlight(activeTab.type)}>
+      <AnimatePresence initial={false} mode='wait' onExitComplete={() => setActiveTabHighlight(activeTab.type)}>
         <motion.div
           key={activeTab.type}
           initial={{ opacity: 0 }}

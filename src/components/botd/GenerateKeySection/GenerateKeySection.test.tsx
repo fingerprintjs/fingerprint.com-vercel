@@ -28,6 +28,8 @@ describe('BotD - Generate Key Section', () => {
   }
 
   it('should show the generated keys if the form is submitted correctly', async () => {
+    const user = userEvent.setup()
+
     fetchMock.mockResponse(JSON.stringify(generatedKeys1set), {
       status: 200,
     })
@@ -41,14 +43,15 @@ describe('BotD - Generate Key Section', () => {
     await act(() => Promise.resolve())
 
     expect(screen.getByLabelText('Work email')).not.toBeDisabled()
-    userEvent.type(screen.getByLabelText('Work email'), 'john@gmail.com')
-    userEvent.click(screen.getByRole('button'))
+    await user.type(screen.getByLabelText('Work email'), 'john@gmail.com')
+    await user.click(screen.getByRole('button'))
 
     await screen.findByText('We will be in touch soon!')
 
     expect(fetchMock).toHaveBeenCalledTimes(1)
   })
   it('should not send the request again if the email is the same', async () => {
+    const user = userEvent.setup()
     fetchMock.mockResponseOnce(JSON.stringify(generatedKeys2set), {
       status: 200,
     })
@@ -62,8 +65,8 @@ describe('BotD - Generate Key Section', () => {
     await act(() => Promise.resolve())
 
     expect(screen.getByLabelText('Work email')).not.toBeDisabled()
-    userEvent.type(screen.getByLabelText('Work email'), 'john@gmail.com')
-    userEvent.click(screen.getByRole('button'))
+    await user.type(screen.getByLabelText('Work email'), 'john@gmail.com')
+    await user.click(screen.getByRole('button'))
 
     await screen.findByText('We will be in touch soon!')
 
@@ -71,6 +74,8 @@ describe('BotD - Generate Key Section', () => {
   })
 
   it('should show the same keys during the session', async () => {
+    const user = userEvent.setup()
+
     fetchMock.mockResponseOnce(JSON.stringify(generatedKeys1set), {
       status: 200,
     })
@@ -84,8 +89,8 @@ describe('BotD - Generate Key Section', () => {
     await act(() => Promise.resolve())
 
     expect(screen.getByLabelText('Work email')).not.toBeDisabled()
-    userEvent.type(screen.getByLabelText('Work email'), 'john3@gmail.com')
-    userEvent.click(screen.getByRole('button'))
+    await user.type(screen.getByLabelText('Work email'), 'john3@gmail.com')
+    await user.click(screen.getByRole('button'))
 
     await screen.findByText('We will be in touch soon!')
 
@@ -112,6 +117,8 @@ describe('BotD - Generate Key Section', () => {
   })
 
   it('should show an error message if the endpoint fails', async () => {
+    const user = userEvent.setup()
+
     fetchMock.mockReject(new Error('server error'))
 
     jest.spyOn(fpjsReact, 'useVisitorData').mockImplementation(() => ({
@@ -123,8 +130,8 @@ describe('BotD - Generate Key Section', () => {
     await act(() => Promise.resolve())
 
     expect(screen.getByLabelText('Work email')).not.toBeDisabled()
-    userEvent.type(screen.getByLabelText('Work email'), 'john2@gmail.com')
-    userEvent.click(screen.getByRole('button'))
+    await user.type(screen.getByLabelText('Work email'), 'john2@gmail.com')
+    await user.click(screen.getByRole('button'))
 
     await screen.findByText('Something went wrong')
 
@@ -132,6 +139,8 @@ describe('BotD - Generate Key Section', () => {
   })
 
   it('should show an error message if the answer to the challenge question was incorrect', async () => {
+    const user = userEvent.setup()
+
     fetchMock.mockResponseOnce(
       JSON.stringify({
         error: { param: 'Turing', message: 'turing challenge is not verified' },
@@ -148,8 +157,8 @@ describe('BotD - Generate Key Section', () => {
     await act(() => Promise.resolve())
 
     expect(screen.getByLabelText('Work email')).not.toBeDisabled()
-    userEvent.type(screen.getByLabelText('Work email'), 'john2@gmail.com')
-    userEvent.click(screen.getByRole('button'))
+    await user.type(screen.getByLabelText('Work email'), 'john2@gmail.com')
+    await user.click(screen.getByRole('button'))
 
     await screen.findByText('The answer to the challenge question was incorrect.', { exact: false })
 
