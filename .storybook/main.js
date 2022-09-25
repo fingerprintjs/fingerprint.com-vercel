@@ -56,6 +56,9 @@ module.exports = {
         staticQueryDir: 'page-data/sq/d',
       },
     ])
+    // Workaround until we can update to react 18
+    // https://github.com/gatsbyjs/gatsby/discussions/36293
+    config.externals = ['react-dom/client']
     return config
   },
 }
