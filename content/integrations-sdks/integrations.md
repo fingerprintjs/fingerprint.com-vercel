@@ -1,13 +1,13 @@
 ---
 title: integrations
 cards:
-  - cardImage: /static/img/uploads/integrationsCards/gtm.png
+  - cardImage: /img/uploads/integrationsCards/gtm.png
     title: Google Tag Manager
     description: Fingerprint Pro GTM is an open-source tag that can be imported to
       the GTM manually.
     githubLink: https://github.com/fingerprintjs/fingerprintjs-pro-gtm
     docsLink: https://dev.fingerprint.com/docs/fingerprintjs-pro-google-tag-manager
-  - cardImage: /static/img/uploads/integrationsCards/cloudflare.png
+  - cardImage: /img/uploads/integrationsCards/cloudflare.png
     title: Cloudflare
     description: Cloudflare Integration is responsible for delivering the latest
       fingerprinting client-side logic as well as proxying identification
