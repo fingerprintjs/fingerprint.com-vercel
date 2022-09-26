@@ -458,10 +458,11 @@ collections:
     create: false
     delete: false
     fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: Cards,
           name: cards,
-          widget: object,
+          widget: list,
           fields:
             [
               { label: Card image, name: cardImage, widget: image, media_folder: '/static/img/uploads/integrationsCards' },

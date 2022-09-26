@@ -1,4 +1,5 @@
 ---
+title: integrations
 cards:
   - cardImage: /img/uploads/integrationsCards/gtm.png
     title: Google Tag Manager
