@@ -1,0 +1,74 @@
+.root {
+  padding-top: rem(30px);
+  padding-bottom: rem(48px);
+
+  @include media('<=tabletWide') {
+    padding-top: 0;
+
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    column-gap: rem(22px);
+
+    @include media('<=tabletWide') {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .descriptionSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: rem(32px);
+
+      max-width: rem(608px);
+
+      @include media('<=tabletWide') {
+        row-gap: rem(16px);
+      }
+
+      .title {
+        @include sans($size: 56px, $weight: 700, $lh: 114%);
+        letter-spacing: -0.01em;
+
+        @include media('<=tabletWide') {
+          font-size: rem(32px);
+        }
+      }
+
+      .description {
+        @include sans($size: 20px, $weight: 400, $lh: 160%);
+
+        @include media('<=tabletWide') {
+          font-size: rem(16px);
+        }
+      }
+    }
+    .imageSection {
+      width: 100%;
+      max-width: rem(608px);
+
+      @include media('>tabletWide') {
+        min-width: rem(500px);
+      }
+      @include media('<=tabletWide') {
+        max-width: rem(600px);
+      }
+      .integrationsCards {
+        width: 100%;
+        @include media('<=tabletWide') {
+          display: none;
+        }
+      }
+
+      .integrationsCardsMobile {
+        width: 100%;
+        @include media('>tabletWide') {
+          display: none;
+        }
+      }
+    }
+  }
+}

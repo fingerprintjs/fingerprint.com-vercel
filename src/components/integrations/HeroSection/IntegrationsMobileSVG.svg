@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 315 218">
+    <g filter="url(#cloudflareCard)">
+        <rect width="90" height="90" x="30.58" y="42.9" fill="#fff" rx="16.93" transform="rotate(-13.43 30.58 42.9)" />
+        <path fill="#F38020"
+            d="M96.4 81.82c.06-1.17-.3-2.14-1-2.76a2.99 2.99 0 0 0-2.56-.57l-18.71 4.2a.35.35 0 0 1-.33-.07.43.43 0 0 1-.12-.33.53.53 0 0 1 .36-.43l18.76-4.74c2.2-.63 4.2-3.02 4.52-5.44l.4-3.05a.62.62 0 0 0-.06-.38 12.58 12.58 0 0 0-23.86 4.37 5.67 5.67 0 0 0-7.28 7.85 8.05 8.05 0 0 0-5.39 10.77c.07.18.26.28.44.23L96 83.25c.2-.04.36-.22.36-.43l.04-1Z" />
+        <path fill="#FAAE40"
+            d="m99.49 68.41-.52.14c-.12.03-.2.14-.22.28l-.12 2.7c-.06 1.17.3 2.14 1 2.76.66.56 1.57.75 2.57.57l4.02-.7c.13-.03.25 0 .33.08a.44.44 0 0 1 .12.32.53.53 0 0 1-.36.44l-4.08 1.23c-2.22.63-4.2 3.02-4.51 5.43l-.12.85c-.03.17.11.3.28.25l14.22-3.4c.16-.03.3-.16.3-.35a10.5 10.5 0 0 0-12.91-10.6" />
+        <rect width="89.47" height="89.47" x="30.9" y="43.09" stroke="#fff" stroke-width=".53" rx="16.67"
+            transform="rotate(-13.43 30.9 43.1)" />
+    </g>
+    <g filter="url(#gtmCard)">
+        <rect width="90" height="90" x="187.5" y="66.11" fill="#fff" rx="20.59" transform="rotate(8.88 187.5 66.11)" />
+        <g clip-path="url(#gtmCardClip)">
+            <path fill="#8AB4F8" d="m225.57 135.39-5.5-7.55 16.22-11.96 5.6 7.68-16.32 11.83Z" />
+            <path fill="#4285F4"
+                d="m230.01 107.28-5.6-7.68-16.28 11.88a4.75 4.75 0 0 0-1.04 6.64l11.88 16.28 7.54-5.53-8.95-12.5 12.45-9.1Z" />
+            <path fill="#8AB4F8"
+                d="m242.93 116.92-11.88-16.28a4.75 4.75 0 1 0-7.68 5.6l11.89 16.28a4.75 4.75 0 1 0 7.67-5.6Z" />
+            <path fill="#246FDB" d="M222.02 136.3a4.7 4.7 0 1 0 1.46-9.3 4.7 4.7 0 0 0-1.46 9.3Z" />
+        </g>
+        <rect width="89.36" height="89.36" x="187.77" y="66.48" stroke="#fff" stroke-width=".64" rx="20.26"
+            transform="rotate(8.88 187.77 66.48)" />
+    </g>
+    <defs>
+        <filter id="cloudflareCard" width="176.16" height="176.16" x="-3.28" y="-3.4" color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="8.47" />
+            <feGaussianBlur stdDeviation="16.93" />
+            <feColorMatrix values="0 0 0 0 0.0509804 0 0 0 0 0.0627451 0 0 0 0 0.168627 0 0 0 0.1 0" />
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_136_10580" />
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_136_10580" result="shape" />
+        </filter>
+        <filter id="gtmCard" width="185.16" height="185.16" x="132.43" y="35.24" color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="10.29" />
+            <feGaussianBlur stdDeviation="20.59" />
+            <feColorMatrix values="0 0 0 0 0.0509804 0 0 0 0 0.0627451 0 0 0 0 0.168627 0 0 0 0.1 0" />
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_136_10580" />
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_136_10580" result="shape" />
+        </filter>
+        <clipPath id="gtmCardClip">
+            <path fill="#fff" d="M0 0h38.01v38.02H0z" transform="rotate(8.88 -512.2 1394.46)" />
+        </clipPath>
+    </defs>
+</svg>
