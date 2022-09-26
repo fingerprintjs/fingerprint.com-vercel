@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: integrations/cards-section
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -452,3 +452,22 @@ collections:
         file: 'content/team-members/teamMembers.yml'
         fields:
           - { label: Total Members, name: totalMembers, widget: number, value_type: int }
+  - name: 'integrationsPages'
+    label: 'Integrations and SDKs pages'
+    folder: 'content/integrations-sdks'
+    create: false
+    delete: false
+    fields:
+      - {
+          label: Cards,
+          name: cards,
+          widget: object,
+          fields:
+            [
+              { label: Card image, name: cardImage, widget: image, media_folder: '/static/img/uploads/integrationsCards' },
+              { label: Title, name: title, widget: string },
+              { label: Description, name: description, widget: string },
+              { label: Github kink, name: githubLink, widget: string },
+              { label: Docs link, name: docsLink, widget: string },
+            ],
+        }
