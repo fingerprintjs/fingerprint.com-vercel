@@ -3,7 +3,7 @@
   padding-bottom: rem(48px);
 
   @include media('<=tabletWide') {
-    padding-top: 0;
+    padding-top: rem(5px);
 
     flex-direction: column-reverse;
     align-items: center;
@@ -13,6 +13,7 @@
     column-gap: rem(22px);
 
     @include media('<=tabletWide') {
+      text-align: center;
       flex-direction: column-reverse;
       align-items: center;
     }
