@@ -4,6 +4,7 @@
   text-align: center;
   @include media('<=phoneLandscape') {
     text-align: left;
+    padding: rem(64px) rem(20px);
   }
   .title {
     @include sans($size: 32px, $weight: v('bold'), $lh: 150%);
@@ -14,5 +15,9 @@
     @include sans($size: 20px, $weight: 400, $lh: 160%);
 
     padding-bottom: rem(40px);
+
+    @include media('<=phoneLandscape') {
+      font-size: rem(16px);
+    }
   }
 }
