@@ -29,8 +29,10 @@
   }
 
   .description {
-    @include sans($size: 16px, $weight: 500, $lh: 150%);
-
+    @include sans($size: 18px, $weight: 500, $lh: 150%);
+    @include media('<=phoneLandscape') {
+      font-size: rem(16px);
+    }
     padding-bottom: rem(40px);
   }
 
