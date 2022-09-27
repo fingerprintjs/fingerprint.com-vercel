@@ -134,6 +134,17 @@
   }
 }
 
+.blue {
+  background: linear-gradient(94.48deg, #0d102b 0%, #202659 100%);
+  color: c('off-white');
+  @include transition(opacity);
+
+  @include sans($size: 16px, $weight: 600, $lh: 150%);
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
 .desktopOnly {
   @include media('<=phoneLandscape') {
     display: none;

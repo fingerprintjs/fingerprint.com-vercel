@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { isLocalLink } from '../../../helpers/url'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'outline' | 'clear' | 'faded' | 'white'
+  variant?: 'primary' | 'outline' | 'clear' | 'faded' | 'white' | 'blue'
   size?: 'small' | 'medium' | 'big'
   href?: string
   mobileIcon?: React.ReactNode
@@ -37,6 +37,7 @@ export default memo(function Button({
     { [styles.clear]: variant === 'clear' },
     { [styles.faded]: variant === 'faded' },
     { [styles.white]: variant === 'white' },
+    { [styles.blue]: variant === 'blue' },
     { [styles.small]: size === 'small' },
     { [styles.medium]: size === 'medium' },
     { [styles.big]: size === 'big' },

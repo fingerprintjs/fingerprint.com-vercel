@@ -5,6 +5,8 @@ import { GeneratedPageContext } from '../../helpers/types'
 
 import HeroSection from '../../components/integrations/HeroSection/HeroSection'
 import CardsSection from '../../components/integrations/CardsSection/CardsSection'
+import IntegrationsBanner from '../../components/IntegrationsBanner/IntegrationsBanner'
+import { URL } from '../../constants/content'
 import { HeadProps } from 'gatsby'
 import { SEO } from '../../components/SEO/SEO'
 
@@ -19,6 +21,9 @@ export default function Integrations({ pageContext }: IntegrationsProps) {
       {breadcrumbs && <BreadcrumbsSEO breadcrumbs={breadcrumbs} />}
       <HeroSection />
       <CardsSection />
+      <IntegrationsBanner title='Don’t have an Account Yet?' ctaHref={URL.signupUrl} ctaText='Sign Up' openNewTab>
+        Developers can start building with Fingerprint for free forever - no credit card required.
+      </IntegrationsBanner>
     </LayoutTemplate>
   )
 }

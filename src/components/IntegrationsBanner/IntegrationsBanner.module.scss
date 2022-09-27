@@ -1,0 +1,18 @@
+.banner {
+  background: #f2f2f7;
+  padding: rem(96px) rem(20px);
+  text-align: center;
+  @include media('<=phoneLandscape') {
+    text-align: left;
+  }
+  .title {
+    @include sans($size: 32px, $weight: v('bold'), $lh: 150%);
+    letter-spacing: -0.01em;
+  }
+
+  .description {
+    @include sans($size: 20px, $weight: 400, $lh: 160%);
+
+    padding-bottom: rem(40px);
+  }
+}
