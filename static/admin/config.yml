@@ -459,13 +459,20 @@ collections:
     delete: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'integration-sdk' }
       - {
           label: Cards,
           name: cards,
           widget: list,
           fields:
             [
-              { label: Card image, name: cardImage, widget: image, media_folder: '/static/img/uploads/integrationsCards' },
+              {
+                label: Card image,
+                name: cardImage,
+                widget: image,
+                media_folder: '/static/img/uploads/integrationsCards',
+                public_folder: '/img/uploads/integrationsCards',
+              },
               { label: Title, name: title, widget: string },
               { label: Description, name: description, widget: string },
               { label: Github kink, name: githubLink, widget: string },

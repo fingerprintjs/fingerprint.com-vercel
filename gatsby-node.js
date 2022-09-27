@@ -392,6 +392,13 @@ exports.createSchemaCustomization = ({ actions }) => {
       invertContent: Boolean!
       relatedTitle: String!
       useCaseCode: UseCaseCode
+      cards: [Cards]
+    }
+    type Cards{
+      title: String
+      description: String
+      docsLink: String
+      githubLink: String
     }
     type UseCaseCode{
       iframeUrl: String

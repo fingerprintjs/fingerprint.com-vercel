@@ -1,0 +1,67 @@
+.integrationCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: rem(4px) rem(4px) rem(16px);
+
+  border: 1px solid #f2f2f7;
+  border-radius: rem(16px);
+  width: 100%;
+  .image {
+    border-radius: 16px;
+  }
+  .content {
+    padding: rem(16px) rem(16px) rem(32px);
+
+    .title {
+      @include sans($size: 20px, $weight: v('semi'), $lh: 150%);
+      letter-spacing: -0.01em;
+
+      margin-bottom: rem(8px);
+    }
+    .description {
+      @include sans($size: 14px, $weight: 400, $lh: 20px);
+    }
+  }
+  .cardFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 rem(16px);
+    gap: rem(8px);
+
+    .button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: rem(8px) rem(16px);
+      gap: rem(6px);
+      background: #f2f2f7;
+      border-radius: rem(6px);
+
+      @include sans($size: 14px, $weight: 500, $lh: 150%);
+
+      .icon {
+        height: rem(20px);
+        fill: c('brand-water');
+      }
+
+      @include transition((background-color));
+
+      &:hover {
+        background-color: adjust-color(c('off-white'), $lightness: -3%);
+      }
+    }
+    .docsLink {
+      padding: rem(8px) 0 rem(8px) rem(8px);
+      @include sans($size: 14px, $weight: 400, $lh: 20px, $color: c('brand-water'));
+
+      @include transition((color));
+
+      &:hover {
+        color: adjust-color(c('brand-water'), $lightness: -20%);
+      }
+    }
+  }
+}

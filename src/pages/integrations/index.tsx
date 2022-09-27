@@ -4,7 +4,7 @@ import BreadcrumbsSEO from '../../components/Breadcrumbs/BreadcrumbsSEO'
 import { GeneratedPageContext } from '../../helpers/types'
 
 import HeroSection from '../../components/integrations/HeroSection/HeroSection'
-
+import CardsSection from '../../components/integrations/CardsSection/CardsSection'
 import { HeadProps } from 'gatsby'
 import { SEO } from '../../components/SEO/SEO'
 
@@ -18,6 +18,7 @@ export default function Integrations({ pageContext }: IntegrationsProps) {
     <LayoutTemplate>
       {breadcrumbs && <BreadcrumbsSEO breadcrumbs={breadcrumbs} />}
       <HeroSection />
+      <CardsSection />
     </LayoutTemplate>
   )
 }
