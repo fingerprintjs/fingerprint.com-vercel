@@ -118,6 +118,11 @@ const footerLinks: FooterLinkSection[] = [
         url: `${PATH.faq}`,
         isLocal: true,
       },
+      {
+        title: 'Integrations',
+        url: `${PATH.integrations}`,
+        isLocal: true,
+      },
     ],
   },
 ]

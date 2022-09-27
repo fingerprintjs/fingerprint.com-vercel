@@ -24,6 +24,7 @@ export const PATH = {
   security: '/security/',
   useCases: '/use-cases/',
   faq: '/resources/frequently-asked-questions-faqs/',
+  integrations: '/integrations/',
 } as const
 
 export const URL = {
