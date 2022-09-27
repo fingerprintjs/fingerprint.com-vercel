@@ -22,13 +22,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      row-gap: rem(32px);
+      row-gap: rem(16px);
 
       max-width: rem(608px);
-
-      @include media('<=tabletWide') {
-        row-gap: rem(16px);
-      }
 
       .title {
         @include sans($size: 48px, $weight: 700, $lh: 114%);

@@ -7,7 +7,7 @@
     padding: rem(64px) rem(20px);
   }
   .title {
-    @include sans($size: 32px, $weight: v('bold'), $lh: 150%);
+    @include sans($size: 32px, $weight: v('bold'), $lh: 48px);
     letter-spacing: -0.01em;
 
     @include media('<=phoneLandscape') {
@@ -21,6 +21,8 @@
     padding-bottom: rem(40px);
 
     @include media('<=phoneLandscape') {
+      line-height: rem(24px);
+
       letter-spacing: 0.001em;
       font-size: rem(16px);
     }
