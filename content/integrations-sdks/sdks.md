@@ -16,4 +16,10 @@ cards:
     githubLink: https://github.com/fingerprintjs/fingerprintjs-pro-angular
     docsLink: https://dev.fingerprint.com/docs/angular
     category: Frontend
+  - cardImage: /img/uploads/integrationsCards/Flutter.png
+    description: "Fingerprint Pro Flutter is an official open-source library for the
+      Flutter ecosystem. "
+    title: Flutter
+    docsLink: https://dev.fingerprint.com/docs/flutter
+    githubLink: https://github.com/fingerprintjs/fingerprintjs-pro-flutter
 ---
