@@ -395,10 +395,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       cards: [Cards]
     }
     type Cards{
-      title: String
-      description: String
-      docsLink: String
-      githubLink: String
+      title: String!
+      description: String!
+      docsLink: String!
+      githubLink: String!
+      Category: String
     }
     type UseCaseCode{
       iframeUrl: String
