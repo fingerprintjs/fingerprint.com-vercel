@@ -1,0 +1,93 @@
+.root {
+  padding-top: rem(99px);
+  padding-bottom: rem(120px);
+
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+
+  @include media('<=phoneLandscape') {
+    padding-top: rem(56px);
+    padding-bottom: rem(56px);
+  }
+  .marquee {
+    display: flex;
+    animation: 120s linear infinite marquee;
+
+    .logos {
+      align-items: center;
+      min-width: max-content;
+      display: flex;
+      column-gap: rem(80px);
+      padding-left: rem(80px);
+
+      @include media('<=phoneLandscape') {
+        column-gap: rem(35px);
+        padding-left: rem(35px);
+      }
+      .logo {
+        max-width: 100%;
+        display: block;
+
+        fill: #89898a;
+        path {
+          fill: #89898a;
+        }
+      }
+      .coinbase {
+        width: rem(98px);
+        height: rem(23px);
+      }
+      .usBank {
+        width: rem(110px);
+        height: rem(29px);
+      }
+      .ameritrade {
+        width: rem(110px);
+        height: rem(22px);
+      }
+      .western {
+        width: rem(90px);
+        height: rem(27px);
+      }
+      .booking {
+        width: rem(111px);
+        height: rem(19px);
+      }
+      .agoda {
+        width: rem(82px);
+        height: rem(42px);
+      }
+      .homeCredit {
+        width: rem(69px);
+        height: rem(49px);
+      }
+      .rockstar {
+        width: rem(47px);
+        height: rem(43px);
+      }
+      .yahoo {
+        width: rem(90px);
+        height: rem(25px);
+      }
+      .target {
+        width: rem(37px);
+        height: rem(47px);
+      }
+      .upstar {
+        width: rem(119px);
+        height: rem(22px);
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateZ(0) translateX(0%);
+  }
+  100% {
+    transform: translateZ(0) translateX(-50%);
+  }
+}
