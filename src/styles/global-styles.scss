@@ -80,6 +80,9 @@ button {
 .swiper-pagination-bullet-active {
   background-color: v('brand-water');
 }
+.swiper-lazy:not(.swiper-lazy-loaded) {
+  display: none;
+}
 
 /*
 	Improved screen reader only CSS class

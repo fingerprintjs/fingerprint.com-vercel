@@ -289,6 +289,48 @@
   }
 }
 
+@mixin inter-h1($size: 64px, $mobileSize: 34px, $weight: 600, $lh: 130%, $lhMobile: 130%, $color: false) {
+  font-family: v(ff-inter);
+  font-size: rem($size);
+  font-weight: $weight;
+  line-height: $lh;
+  @if $color {
+    color: $color;
+  }
+  @include media('<=phoneLandscape') {
+    font-size: rem($mobileSize);
+    line-height: $lhMobile;
+  }
+}
+
+@mixin inter-h2($size: 48px, $mobileSize: 24px, $weight: 600, $lh: 130%, $lhMobile: 130%, $color: false) {
+  font-family: v(ff-inter);
+  font-size: rem($size);
+  font-weight: $weight;
+  line-height: $lh;
+  @if $color {
+    color: $color;
+  }
+  @include media('<=phoneLandscape') {
+    font-size: rem($mobileSize);
+    line-height: $lhMobile;
+  }
+}
+
+@mixin inter-h3($size: 28px, $mobileSize: 20px, $weight: 600, $lh: 130%, $lhMobile: 150%, $color: false) {
+  font-family: v(ff-inter);
+  font-size: rem($size);
+  font-weight: $weight;
+  line-height: $lh;
+  @if $color {
+    color: $color;
+  }
+  @include media('<=phoneLandscape') {
+    font-size: rem($mobileSize);
+    line-height: $lhMobile;
+  }
+}
+
 @mixin fade-in($waitTime, $translate: false) {
   animation: wait #{$waitTime}, fade-in 0.7s #{$waitTime};
 

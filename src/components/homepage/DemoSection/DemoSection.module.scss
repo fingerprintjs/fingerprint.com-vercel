@@ -1,0 +1,569 @@
+.container {
+  padding-top: rem(96px);
+  padding-bottom: rem(168px);
+  --contentWidth: 1078px;
+
+  @include media('<=desktop') {
+    padding: rem(64px) 0 rem(64px);
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(24px);
+    margin-bottom: rem(64px);
+
+    @include media('<=desktop') {
+      margin-bottom: rem(32px);
+    }
+    @include media('<=phoneLandscape') {
+      padding: 0 rem(20px);
+      row-gap: rem(16px);
+      align-items: flex-start;
+    }
+    .labelWrapper {
+      padding: 0 rem(8px);
+
+      background: linear-gradient(
+        94.48deg,
+        rgba(245, 97, 75, 0.2) 0%,
+        rgba(245, 97, 75, 0.2) 0.01%,
+        rgba(250, 117, 69, 0.2) 100%
+      );
+      border-radius: rem(4px);
+    }
+    .label {
+      text-transform: uppercase;
+      @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
+      letter-spacing: 0.04em;
+      background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, #fa7545 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      @include media('<=phoneLandscape') {
+        font-size: rem(12px);
+      }
+    }
+    .title {
+      @include inter-h2($lhMobile: 140%);
+
+      @include media('<=desktop') {
+        font-size: rem(28px);
+      }
+    }
+  }
+
+  .demoSection {
+    display: flex;
+    flex-direction: column;
+
+    @include media('>desktop') {
+      border: rem(1px) solid #e8e8e8;
+      box-shadow: 0px 4px 15px rgba(161, 161, 161, 0.15), 0px 0px 1px rgba(232, 232, 232, 0.35);
+      border-radius: rem(8px);
+    }
+
+    .title {
+      @include inter($size: 16px, $weight: 600, $lh: 100%);
+      letter-spacing: 0.01em;
+
+      text-transform: uppercase;
+      display: flex;
+      column-gap: rem(4px);
+
+      @include media('<=desktop') {
+        justify-content: center;
+      }
+
+      @include media('<=phoneLandscape') {
+        justify-content: flex-start;
+
+        font-size: rem(14px);
+        letter-spacing: 0.04em;
+        line-height: rem(16px);
+        svg {
+          display: none;
+        }
+      }
+
+      svg {
+        width: rem(16px);
+        margin-bottom: rem(2px);
+      }
+
+      @include media('<=340px') {
+        font-size: rem(12px);
+      }
+    }
+
+    .summary {
+      display: flex;
+
+      @include media('>desktop') {
+        padding: rem(50px) 0 rem(40px);
+        justify-content: space-around;
+        border-bottom: rem(1px) solid #e8e8e8;
+      }
+      @include media('<=desktop') {
+        flex-direction: column;
+        width: 100%;
+        padding-left: rem(70px);
+        padding-right: rem(70px);
+      }
+
+      @include media('<=phoneLandscape') {
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+      }
+
+      .visitorIdSection {
+        display: flex;
+        flex-direction: column;
+
+        @include media('>desktop') {
+          row-gap: rem(16px);
+        }
+
+        @include media('<=desktop') {
+          text-align: center;
+          row-gap: rem(8px);
+          padding-bottom: rem(24px);
+        }
+
+        @include media('<=phoneLandscape') {
+          text-align: left;
+        }
+        .visitorId {
+          @include jb-mono($size: 40px, $weight: 700, $lh: 100%, $color: v('github-orange-gradient'));
+
+          @include media('<=desktop') {
+            font-size: rem(32px);
+          }
+          @include media('<=phoneLandscape') {
+            font-size: rem(24px);
+            line-height: 130%;
+          }
+        }
+        .visitorIdSkeleton {
+          width: rem(480px);
+          height: rem(40px);
+          @include media('<=phoneLandscape') {
+            width: rem(288px);
+            height: rem(31px);
+          }
+        }
+      }
+    }
+    .visitSummarySection {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(18px);
+
+      @include media('<=desktop') {
+        padding: rem(24px) 0;
+        border-bottom: rem(1px) solid #e8e8e8;
+        border-top: rem(1px) solid #e8e8e8;
+      }
+
+      .visitedTimesSkeleton {
+        width: rem(144px);
+        height: rem(20px);
+        @include media('<=phoneLandscape') {
+          width: rem(143px);
+        }
+      }
+      .incognitoTimesSkeleton {
+        width: rem(70px);
+        height: rem(16px);
+        @include media('<=phoneLandscape') {
+          width: rem(61px);
+          height: rem(14px);
+        }
+      }
+      .ipTimesSkeleton {
+        width: rem(38px);
+        height: rem(16px);
+        @include media('<=phoneLandscape') {
+          width: rem(33px);
+          height: rem(14px);
+        }
+      }
+      .locationTimesSkeleton {
+        width: rem(83px);
+        height: rem(16px);
+        @include media('<=phoneLandscape') {
+          width: rem(73px);
+          height: rem(14px);
+        }
+      }
+      .visitSummaryTitle {
+        display: flex;
+        column-gap: rem(8px);
+        align-items: center;
+        .times {
+          @include inter($size: 14px, $weight: 500, $lh: 140%, $color: #5b5b5b);
+          letter-spacing: 0.04em;
+          @include media('<=phoneLandscape') {
+            font-weight: 400;
+          }
+          @include media('<=340px') {
+            font-size: rem(12px);
+          }
+        }
+        @include media('<=desktop') {
+          flex-direction: column;
+          row-gap: rem(4px);
+        }
+        @include media('<=phoneLandscape') {
+          align-items: flex-start;
+        }
+      }
+      .visitSummary {
+        display: flex;
+        column-gap: rem(32px);
+        justify-content: center;
+
+        @include media('<=phoneLandscape') {
+          column-gap: unset;
+          justify-content: space-between;
+        }
+        .summaryInfo {
+          display: flex;
+          flex-direction: column;
+          row-gap: rem(7.5px);
+          .value {
+            @include inter($size: 16px, $weight: 400, $lh: 100%, $color: #5b5b5b);
+            @include media('<=phoneLandscape') {
+              font-size: rem(14px);
+            }
+            @include media('<=340px') {
+              font-size: rem(12px);
+            }
+          }
+        }
+        .separator {
+          @include media('>phoneLandscape') {
+            display: none;
+          }
+          @include media('<=phoneLandscape') {
+            background: #e8e8e8;
+            width: rem(0.5px);
+          }
+        }
+      }
+    }
+    .visitHistory {
+      padding: rem(40px) 0 rem(48px);
+      .title {
+        text-align: center;
+        margin-bottom: rem(16px);
+
+        @include media('>desktop') {
+          justify-content: center;
+        }
+        @include media('<=phoneLandscape') {
+          text-align: left;
+          padding-left: rem(20px);
+        }
+      }
+      .swiperSlide {
+        width: rem(430px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(24px);
+        @include transition((opacity));
+        @include media('<=desktop') {
+          width: auto;
+        }
+        @include media('>phoneLandscape') {
+          opacity: 0.5;
+        }
+      }
+      .activeSlide {
+        opacity: 1;
+      }
+      .visit {
+        border: rem(1px) solid #e8e8e8;
+        filter: drop-shadow(0px 2px 4px rgba(208, 208, 208, 0.15));
+        border-radius: rem(8px);
+        display: flex;
+        column-gap: rem(16px);
+        width: 100%;
+        padding: rem(12px);
+
+        @include media('<=phoneLandscape') {
+          flex-direction: column;
+          padding: rem(8px) 0;
+        }
+        .leftColumn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          @include media('>desktop') {
+            min-width: rem(152px);
+          }
+          @include media('<=phoneLandscape') {
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-bottom: rem(12px);
+            border-bottom: rem(1px) solid #e8e8e8;
+          }
+
+          .separator {
+            background: #e8e8e8;
+            width: rem(1px);
+            @include media('>phoneLandscape') {
+              display: none;
+            }
+          }
+          .visitIp {
+            padding-bottom: rem(16px);
+            border-bottom: rem(1px) solid #e8e8e8;
+
+            @include media('<=phoneLandscape') {
+              padding-bottom: 0;
+              border-bottom: unset;
+            }
+          }
+          .visitIncognito {
+            padding-top: rem(16px);
+            @include media('<=phoneLandscape') {
+              padding-top: 0;
+            }
+          }
+          .visitIp,
+          .visitIncognito {
+            display: flex;
+            column-gap: rem(8px);
+            align-items: center;
+            @include media('<=phoneLandscape') {
+              padding: rem(11px) 0;
+            }
+          }
+        }
+        .visitLocation {
+          display: flex;
+          column-gap: rem(16px);
+          align-items: center;
+          justify-content: space-between;
+          padding-left: rem(16px);
+          border-left: rem(1px) solid #e8e8e8;
+          width: 100%;
+
+          @include media('<=phoneLandscape') {
+            border-left: unset;
+            padding: rem(12px) rem(12px) rem(8px);
+            justify-items: center;
+          }
+          .location {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(4px);
+            @include media('<=phoneLandscape') {
+              flex: 50%;
+            }
+          }
+          .mapWrapper,
+          .mapWrapperUnk {
+            position: relative;
+            @include media('<=phoneLandscape') {
+              max-width: rem(137px);
+            }
+          }
+          .mapWrapper {
+            &::after {
+              position: absolute;
+              content: '';
+              background: v('github-orange-gradient');
+              border-radius: 50%;
+              height: rem(13px);
+              width: rem(13px);
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%) scale(1);
+              animation: pulse 2s infinite;
+
+              @include media('<=phoneLandscape') {
+                height: rem(10px);
+                width: rem(10px);
+              }
+            }
+          }
+          .mapImage,
+          .mapSkeleton {
+            object-fit: none;
+            width: rem(112px);
+            height: rem(96px);
+            border-radius: rem(4px);
+
+            @include media('<=phoneLandscape') {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+        }
+        .field {
+          @include inter($size: 16px, $weight: 600, $lh: 140%, $color: #89898a);
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          @include media('<=phoneLandscape') {
+            font-size: rem(14px);
+          }
+        }
+        .value,
+        .valueLocation {
+          @include inter($size: 16px, $weight: 400, $lh: 100%);
+          @include media('<=phoneLandscape') {
+            line-height: 100%;
+            font-size: rem(14px);
+          }
+        }
+        .valueLocation {
+          line-height: 130%;
+        }
+      }
+      .incognito {
+        background: #202021;
+        border: 1px solid rgba(208, 208, 208, 0.3);
+        box-shadow: 0px 2px 4px rgba(208, 208, 208, 0.15);
+
+        .leftColumn {
+          .separator {
+            background: rgba(208, 208, 208, 0.1);
+          }
+          @include media('<=phoneLandscape') {
+            border-bottom-color: rgba(208, 208, 208, 0.1);
+          }
+        }
+        .leftColumn {
+          .visitIp {
+            border-bottom: rem(1px) solid rgba(208, 208, 208, 0.1);
+            @include media('<=phoneLandscape') {
+              border-bottom: unset;
+            }
+          }
+        }
+        .visitLocation {
+          border-left: rem(1px) solid rgba(208, 208, 208, 0.1);
+          @include media('<=phoneLandscape') {
+            border-bottom: unset;
+          }
+        }
+        .field {
+          color: #d0d0d0;
+        }
+        .value,
+        .valueLocation {
+          color: #fafafa;
+        }
+      }
+      .visitSkeleton {
+        width: rem(430px);
+        height: rem(122px);
+        @include media('<=desktop') {
+          width: rem(488px);
+        }
+        @include media('<=phoneLandscape') {
+          width: 100%;
+          height: rem(188px);
+        }
+      }
+      .swiperSlideSkeleton {
+        width: rem(430px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(24px);
+
+        @include media('<=desktop') {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.95);
+    box-shadow: 0 0 0 0 rgba(240, 68, 5, 0.7);
+  }
+
+  70% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 10px rgba(240, 68, 5, 0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.95);
+    box-shadow: 0 0 0 0 rgba(240, 68, 5, 0);
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  column-gap: rem(14px);
+  .buttonLeft,
+  .buttonRight {
+    width: rem(28px);
+    height: rem(28px);
+    @include media('<=phoneLandscape') {
+      display: none;
+    }
+    .arrow {
+      height: 100%;
+      cursor: pointer;
+
+      rect {
+        @include transition((fill-opacity));
+        &:hover {
+          fill-opacity: 1;
+        }
+      }
+    }
+    .firstArrow,
+    .lastArrow {
+      cursor: auto;
+      &:hover {
+        opacity: 1;
+      }
+      g {
+        opacity: 0.2;
+      }
+      rect {
+        fill-opacity: 1;
+      }
+    }
+  }
+  .navigationTitle {
+    @include inter($size: 12px, $weight: 600, $lh: 100%, $color: #5b5b5b);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+  .navigationSkeleton {
+    width: rem(93px);
+    height: rem(12px);
+  }
+}
+.skeletonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: rem(24px);
+  @include transition(opacity);
+
+  opacity: 1;
+
+  @include media('<=desktop') {
+    width: 100%;
+  }
+}
+.swiperNotActive {
+  opacity: 0;
+}

@@ -7,7 +7,8 @@ import {
 } from '../constants/env'
 
 export async function loadFpjsHistory(visitorId: string) {
-  const response = await fetch(`${FPJS_VISITORS_ENDPOINT}${visitorId}?token=${FPJS_SECRET_TOKEN}&limit=20`)
+  // 21 to show >20 on homepage
+  const response = await fetch(`${FPJS_VISITORS_ENDPOINT}${visitorId}?token=${FPJS_SECRET_TOKEN}&limit=21`)
   return await response.json()
 }
 
