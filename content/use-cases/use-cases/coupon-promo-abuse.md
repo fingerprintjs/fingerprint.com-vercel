@@ -45,7 +45,7 @@ Device identification services like Fingerprint Pro can accurately identify anon
 
 Here is boilerplate logic for protecting coupon codes, but additional checks may be necessary depending on your business needs.
 
-* Firstly, your store’s frontend will need the Fingerprint Pro JavaScript agent to collect browser signals and generate a unique identifier. Alternatively, if your frontend is built atop a framework like Next.js or Vue, you may streamline the development experience using one o [our open-source libraries](https://fingerprint.com/sdk-libraries).
+* Firstly, your store’s frontend will need the Fingerprint Pro JavaScript agent to collect browser signals and generate a unique identifier. Alternatively, if your frontend is built atop a framework like Next.js or Vue, you may streamline the development experience using one of [our open-source libraries](https://fingerprint.com/sdk-libraries).
 
 ```javascript
 // Initialize the agent

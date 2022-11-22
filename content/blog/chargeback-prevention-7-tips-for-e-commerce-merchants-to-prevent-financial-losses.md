@@ -70,7 +70,7 @@ First-rate customer support is crucial for fostering positive relationships with
 
 ### Implement fraud prevention and detection tools
 
-A wide range of techniques can be used to [identify and prevent fraudulent transactions](https://www.merchantfraudjournal.com/top-chargeback-protection-solutions/) that could result in chargebacks. At a minimum, alerts should be raised when anomalous purchases are detected (e.g., orders made from foreign countries or requiring shipping of the items abroad). Unusually large purchases, multiple orders, or failed attempts within a short period are also tell-tale signs of fraud.
+A wide range of techniques can be used to [identify and prevent fraudulent transactions](https://www.merchantfraudjournal.com/top-chargeback-protection-companies/) that could result in chargebacks. At a minimum, alerts should be raised when anomalous purchases are detected (e.g., orders made from foreign countries or requiring shipping of the items abroad). Unusually large purchases, multiple orders, or failed attempts within a short period are also tell-tale signs of fraud.
 
 Fingerprint’s [device fingerprinting technology](https://fingerprint.com/demo/) can help identify suspicious behavior patterns by flagging visitors with a history of fraudulent transactions — even if they are in incognito mode.
 

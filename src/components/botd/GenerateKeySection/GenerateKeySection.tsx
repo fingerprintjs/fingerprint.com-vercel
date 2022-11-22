@@ -15,6 +15,7 @@ import { PATH } from '../../../constants/content'
 import { ReactComponent as BotD } from '../../../img/BotdBowl.svg'
 import { ReactComponent as DevSVG } from './DevSVG.svg'
 import { useViewTracking } from '../../../context/HistoryListener'
+import { getConfig } from '../../../helpers/fpjs'
 
 import styles from './GenerateKeySection.module.scss'
 
@@ -22,7 +23,7 @@ export default function GenerateKeySection() {
   const [email, setEmail] = useState('')
   const { formState, updateFormState, errorMessage, updateErrorMessage } = useForm(Forms.BotdGenerateToken)
 
-  const { data } = useVisitorData()
+  const { data } = useVisitorData(getConfig)
   const { utmParams } = useViewTracking()
 
   const disableButton = !(data && formState !== FormState.Loading)

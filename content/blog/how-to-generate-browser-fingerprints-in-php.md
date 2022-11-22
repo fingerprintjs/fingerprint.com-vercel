@@ -49,7 +49,7 @@ Suppose you are running a streaming site that offers a 14-day free trial to new 
 
 Unfortunately, PHP is exclusively a server-side programming language, so you can’t implement browser fingerprinting in PHP alone. But, by implementing Fingerprint on your frontend, you can easily add fingerprinting to prevent the same user from registering in your application with multiple email addresses.
 
-In this tutorial, I’ll show you how to use [Fingerprint](https://fingerprint.com/) to generate browser fingerprints for your PHP application. I’llI’ll contrast fingerprinting with several traditional PHP-only ways to track users (session tracking, HTTP cookies, and IP address tracking) so you understand why fingerprinting is a more reliable solution in most cases.
+In this tutorial, I’ll show you how to use [Fingerprint](https://fingerprint.com/) to generate browser fingerprints for your PHP application. I’ll contrast fingerprinting with several traditional PHP-only ways to track users (session tracking, HTTP cookies, and IP address tracking) so you understand why fingerprinting is a more reliable solution in most cases.
 
 ### Project Setup
 

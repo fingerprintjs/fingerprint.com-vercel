@@ -30,6 +30,7 @@ export default function ContactSalesForm() {
   const [visibleName, setVisibleName] = useState(false)
   const [visibleMail, setVisibleMail] = useState(false)
   const [visibleWebsite, setVisibleWebsite] = useState(false)
+  const [description, setDescription] = useState('')
 
   const { formState, errorMessage, updateFormState, updateErrorMessage } = useForm(Forms.ContactSales)
   const { landingPage, previousPage, utmParams } = useViewTracking()
@@ -78,6 +79,7 @@ export default function ContactSalesForm() {
         email,
         url,
         jobTitle,
+        description,
         landingPage,
         previousPage,
         utmParams,
@@ -213,7 +215,7 @@ export default function ContactSalesForm() {
                   disabled={formState === FormState.Loading}
                 />
                 <label className={styles.label} htmlFor='url'>
-                  Company Website
+                  Company website
                 </label>
                 <Tippy
                   maxWidth={270}
@@ -238,6 +240,18 @@ export default function ContactSalesForm() {
                     required
                   />
                 </Tippy>
+                <label className={styles.label} htmlFor='description'>
+                  Tell us about your project
+                </label>
+                <textarea
+                  className={styles.textArea}
+                  name='description'
+                  id='description'
+                  rows={3}
+                  placeholder='Tell us about your project, needs, or any questions you may have'
+                  onChange={(e) => setDescription(e.target.value)}
+                  disabled={formState === FormState.Loading}
+                />
 
                 <Button
                   className={classNames(styles.button, { [styles.loadingButton]: formState === FormState.Loading })}
