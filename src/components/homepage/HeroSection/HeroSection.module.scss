@@ -1,0 +1,88 @@
+.container {
+  padding-top: rem(96px);
+  padding-bottom: rem(96px);
+  display: flex;
+  @include media('<=phoneLandscape') {
+    padding-top: rem(40px);
+  }
+
+  @include media('<=desktopHeader') {
+    flex-direction: column;
+    row-gap: rem(8px);
+    padding-bottom: 0;
+  }
+  .heroSection {
+    position: relative;
+    width: 100%;
+    .title {
+      @include inter($size: 64px, $weight: 600, $lh: 130%);
+      margin-bottom: rem(24px);
+
+      @include media('<=phoneLandscape') {
+        font-size: rem(34px);
+        margin-bottom: rem(16px);
+      }
+    }
+
+    .description {
+      @include inter($size: 20px, $weight: 400, $lh: 160%, $color: v('light-gray'));
+
+      margin-bottom: rem(56px);
+
+      @include media('>desktop') {
+        max-width: rem(690px);
+      }
+      @include media('<=phoneLandscape') {
+        font-size: rem(16px);
+        margin-bottom: rem(32px);
+      }
+    }
+    .buttons {
+      display: flex;
+      column-gap: rem(12px);
+
+      margin-bottom: rem(32px);
+
+      @include media('<=phoneLandscape') {
+        flex-direction: column;
+        row-gap: rem(12px);
+        margin-bottom: rem(24px);
+      }
+    }
+    .tips {
+      display: flex;
+      column-gap: rem(16px);
+
+      .bottomTip {
+        @include inter($size: 14px, $weight: 400, $lh: 160%, $color: v('light-gray'));
+        letter-spacing: 0.01em;
+
+        display: flex;
+        align-items: center;
+        column-gap: rem(8px);
+
+        @include media('<=phoneLandscape') {
+          flex-direction: column;
+          row-gap: rem(8px);
+          align-items: flex-start;
+        }
+      }
+    }
+    @include media('<=phoneLandscape') {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .videoSection {
+    width: rem(427px);
+
+    @include media('<=desktopHeader') {
+      align-self: center;
+    }
+
+    @include media('<=phoneLandscape') {
+      width: 100%;
+      padding: 0 rem(20px);
+    }
+  }
+}
