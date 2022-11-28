@@ -426,14 +426,16 @@
     .rightSection {
       top: 107px;
       left: 64%;
-      width: 100%;
 
       @include media('<=desktop') {
         top: 75px;
         left: 65%;
       }
+      @include media('<=tablet') {
+        width: 100%;
+      }
       .rightLine {
-        width: 38%;
+        width: 100%;
         height: rem(2px);
 
         @include transition((opacity, transform));
