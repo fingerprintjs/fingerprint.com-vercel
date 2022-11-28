@@ -1,0 +1,154 @@
+.container {
+  padding-top: rem(136px);
+  padding-bottom: rem(168px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include media('<=phoneLandscape') {
+    text-align: left;
+    align-items: flex-start;
+    padding-top: rem(64px);
+    padding-bottom: rem(64px);
+  }
+
+  .labelWrapper {
+    padding: 0 rem(8px);
+    margin-bottom: rem(64px);
+    background: linear-gradient(
+      94.48deg,
+      rgba(245, 97, 75, 0.2) 0%,
+      rgba(245, 97, 75, 0.2) 0.01%,
+      rgba(250, 117, 69, 0.2) 100%
+    );
+    border-radius: rem(4px);
+
+    @include media('<=phoneLandscape') {
+    }
+
+    .label {
+      text-transform: uppercase;
+      @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
+      letter-spacing: 0.04em;
+      background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, #fa7545 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    @include media('<=phoneLandscape') {
+      margin-bottom: rem(40px);
+    }
+  }
+  .logoSection {
+    padding: rem(70px) rem(40px);
+    border-radius: 8px;
+
+    margin-bottom: rem(56px);
+
+    @include media('>phoneLandscape') {
+      border: 1px solid #e8e8e8;
+      filter: drop-shadow(0px 2px 4px rgba(208, 208, 208, 0.15));
+    }
+    @include media('<=phoneLandscape') {
+      margin-bottom: 0;
+      padding: 0 rem(16px) rem(24px) rem(16px);
+    }
+    .logo {
+      width: rem(261px);
+      height: rem(34px);
+      path {
+        fill: #434344;
+      }
+      @include media('<=phoneLandscape') {
+        width: rem(128px);
+        height: rem(16px);
+      }
+    }
+
+    @include media('>phoneLandscape') {
+      @include transition(box-shadow);
+      @include transition-duration(0.4s);
+      @include transition-timing-function(ease-out);
+      &:hover {
+        box-shadow: 0px 3px 2px rgba(20, 20, 21, 0.02), 0px 0px 1px rgba(114, 114, 115, 0.15),
+          0px 7px 6px rgba(20, 20, 21, 0.04), 0px 12px 10px rgba(20, 20, 21, 0.03), 0px 22px 18px rgba(20, 20, 21, 0.03),
+          0px 42px 33px rgba(20, 20, 21, 0.02), 0px 100px 80px rgba(20, 20, 21, 0.02);
+      }
+    }
+  }
+  .quoteSection {
+    @include media('<=phoneLandscape') {
+      border-top: 1px solid #e8e8e8;
+      padding: rem(24px) rem(10px) 0 rem(16px);
+    }
+    .quote {
+      @include inter($size: 36px, $weight: 500, $lh: 140%, $color: #434344);
+      margin-bottom: rem(32px);
+      max-width: rem(1160px);
+
+      @include media('<=phoneLandscape') {
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: 150%;
+        margin-bottom: rem(16px);
+      }
+    }
+    .author {
+      @include inter($size: 24px, $weight: 600, $lh: 130%, $color: #434344);
+      margin-bottom: rem(8px);
+
+      @include media('<=phoneLandscape') {
+        font-size: rem(16px);
+      }
+    }
+    .position {
+      @include inter($size: 24px, $weight: 500, $lh: 130%, $color: #5b5b5b);
+
+      @include media('<=phoneLandscape') {
+        font-size: rem(14px);
+        line-height: 150%;
+      }
+    }
+  }
+  @include media('<=phoneLandscape') {
+    .labelWrapper,
+    .logoSection,
+    .quoteSection > .quote,
+    .quoteSection > .author,
+    .quoteSection > .position {
+      @include transition((opacity));
+      @include transition-duration(1s);
+      opacity: 0;
+    }
+    .labelWrapper {
+      transition-delay: 0.25s;
+    }
+    .logoSection {
+      transition-delay: 0.75s;
+    }
+    .quoteSection > .quote {
+      transition-delay: 1.25s;
+    }
+    .quoteSection > .author {
+      transition-delay: 1.75s;
+    }
+    .quoteSection > .position {
+      transition-delay: 1.75s;
+    }
+  }
+}
+
+.visible {
+  .labelWrapper,
+  .logoSection,
+  .quoteSection > .quote,
+  .quoteSection > .author,
+  .quoteSection > .position {
+    @include media('<=phoneLandscape') {
+      opacity: 1;
+    }
+  }
+}
