@@ -1,0 +1,165 @@
+.root {
+  background: linear-gradient(106.73deg, #202021 -8.11%, #19191a 21.02%, #141415 119.42%);
+  border: 1px solid rgba(232, 232, 232, 0.3);
+  box-shadow: 0px 3px 2px rgba(20, 20, 21, 0.02), 0px 0px 1px rgba(114, 114, 115, 0.15),
+    0px 7px 6px rgba(20, 20, 21, 0.04), 0px 12px 10px rgba(20, 20, 21, 0.03), 0px 22px 18px rgba(20, 20, 21, 0.03),
+    0px 42px 33px rgba(20, 20, 21, 0.02), 0px 100px 80px rgba(20, 20, 21, 0.02);
+  border-radius: rem(8px);
+  color: #fafafa;
+  padding: rem(40px) rem(46.5px) rem(90px);
+  @include media('<=phoneLandscape') {
+    padding-top: rem(64px);
+    padding-bottom: rem(96px);
+  }
+}
+.chart {
+  position: relative;
+  margin-right: 0;
+  margin-left: rem(60px);
+  @include media('<=desktop') {
+    display: none;
+  }
+  .chartY {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: rem(350px);
+    left: -60px;
+    top: -20px;
+    @include inter($size: 16px, $weight: 500, $lh: 120%);
+  }
+}
+.chartLine {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dataPointPro,
+.dataPointOss {
+  background-color: v('github-orange-gradient');
+  border: 5px solid #141415;
+  border-radius: 50%;
+  height: rem(22.5px);
+  width: rem(22.5px);
+
+  position: absolute;
+
+  bottom: calc(var(--yLine));
+  left: calc(var(--x) - 9.1px);
+  z-index: 1;
+  @include transition((border));
+}
+
+.dataPointOss {
+  background-color: #e8e8e8;
+}
+
+.lineSegmentPro,
+.lineSegmentOss {
+  background-color: v('github-orange-gradient');
+  bottom: calc(var(--y) + 10px);
+  height: rem(1.9px);
+  left: var(--xLine);
+  position: absolute;
+  transform: rotate(calc(var(--angle) * 1deg));
+  transform-origin: left bottom;
+  width: calc(var(--hypotenuse) * 1px);
+}
+
+.lineSegmentOss {
+  background-color: #e8e8e8;
+}
+
+.chartTitle {
+  @include inter($size: 16px, $weight: 500, $lh: 120%);
+
+  padding-bottom: rem(20px);
+
+  width: 100%;
+  max-width: rem(928px);
+  display: flex;
+  justify-content: space-between;
+
+  .chartLinesTitle {
+    display: flex;
+    column-gap: rem(16px);
+    .lineTitle {
+      display: flex;
+      column-gap: rem(13.5px);
+    }
+    .ossLine,
+    .proLine {
+      width: rem(40px);
+    }
+    .proLine {
+      path {
+        stroke: v('github-orange-gradient');
+        stroke-opacity: 1;
+        stroke-width: 1.9;
+      }
+    }
+  }
+}
+
+.xPoint {
+  position: absolute;
+  white-space: nowrap;
+  left: calc(var(--x) - 40px);
+  bottom: rem(-45px);
+
+  border-radius: rem(40px);
+  padding: rem(9px) rem(13px);
+  @include inter($size: 15px, $weight: 500, $lh: 120%, $color: v('github-white'));
+  @include transition(background);
+}
+
+.labelPro,
+.labelOss {
+  position: absolute;
+  white-space: nowrap;
+  left: calc(var(--x) - 30.9px);
+  bottom: calc(var(--yLine) - 37px);
+
+  border-radius: rem(40px);
+  padding: rem(6px) rem(8px);
+  @include inter($size: 15px, $weight: 500, $lh: 120%, $color: v('github-orange-gradient'));
+  background: #141415;
+  border: rem(1px) solid #141415;
+
+  border-radius: rem(6px);
+  z-index: 1;
+
+  @include transition((background, border));
+}
+
+.labelProStability {
+  background: #201918;
+}
+.labelOss {
+  color: #e8e8e8;
+  border: rem(1px) solid #141415;
+  background: #141415;
+}
+
+.labelOssStability {
+  background: #29292a;
+}
+.xLine {
+  border: rem(1.5px) dashed #636363;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  position: absolute;
+  width: rem(615px);
+  left: rem(46px);
+  transform: translateY(-10.4px);
+}
+
+.daysLabel {
+  @include inter($size: 15px, $weight: 500, $lh: 120%);
+
+  position: absolute;
+  bottom: rem(40px);
+  right: rem(35px);
+}

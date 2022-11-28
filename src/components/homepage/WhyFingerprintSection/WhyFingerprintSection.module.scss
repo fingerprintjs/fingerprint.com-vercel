@@ -1,0 +1,174 @@
+.container {
+  padding-top: 0;
+  padding-bottom: rem(168px);
+
+  @include media('<=phoneLandscape') {
+    padding: 0;
+  }
+  .section {
+    display: flex;
+    position: relative;
+
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fafafa;
+
+    @include media('>desktopHeader') {
+      margin-right: rem(192px);
+    }
+
+    @include media('>phoneLandscape') {
+      padding: rem(64px);
+
+      border: 1px solid rgba(208, 208, 208, 0.3);
+      box-shadow: 0px 2px 4px rgba(208, 208, 208, 0.15);
+      border-radius: rem(8px);
+    }
+    @include media('<=phoneLandscape') {
+      padding: rem(64px) rem(20px);
+      background: #e8e8e8;
+    }
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: rem(24px);
+    margin-bottom: rem(64px);
+
+    max-width: rem(586px);
+
+    @include media('<=desktopHeader') {
+      max-width: unset;
+      align-items: center;
+      text-align: center;
+      row-gap: rem(16px);
+    }
+
+    @include media('<=phoneLandscape') {
+      align-items: flex-start;
+      margin-bottom: rem(32px);
+      text-align: left;
+    }
+    .labelWrapper {
+      padding: 0 rem(8px);
+
+      background: linear-gradient(
+        94.48deg,
+        rgba(245, 97, 75, 0.2) 0%,
+        rgba(245, 97, 75, 0.2) 0.01%,
+        rgba(250, 117, 69, 0.2) 100%
+      );
+      border-radius: rem(4px);
+    }
+    .label {
+      text-transform: uppercase;
+      @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
+      letter-spacing: 0.04em;
+      background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, #fa7545 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      @include media('<=desktopHeader') {
+        font-size: rem(12px);
+      }
+    }
+    .title {
+      @include inter-h2($lhMobile: 140%);
+
+      @include media('<=desktopHeader') {
+        font-size: rem(28px);
+      }
+      @include media('<=phoneLandscape') {
+        font-size: rem(24px);
+      }
+    }
+    .description {
+      @include inter($size: 20px, $weight: 400, $lh: 160%, $color: #5b5b5b);
+
+      @include media('<=desktopHeader') {
+        letter-spacing: 0.01em;
+        font-size: rem(16px);
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    row-gap: rem(8px);
+    flex-direction: column;
+
+    @include media('<=desktopHeader') {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .card:nth-child(2) {
+        border-left: rem(0.6px) solid #d0d0d0;
+        border-right: rem(0.6px) solid #d0d0d0;
+      }
+    }
+    @include media('>desktopHeader') {
+      max-width: rem(347px);
+
+      .card:nth-child(2) {
+        border-top: rem(0.6px) solid #d0d0d0;
+        border-bottom: rem(0.6px) solid #d0d0d0;
+      }
+    }
+    @include media('<=phoneLandscape') {
+      display: flex;
+      flex-direction: column;
+
+      .card:nth-child(2) {
+        border-left: unset;
+        border-right: unset;
+      }
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(8px);
+
+      padding: rem(24px) 0;
+
+      @include media('<=desktopHeader') {
+        padding: 0 rem(16px);
+      }
+
+      @include media('<=phoneLandscape') {
+        padding: rem(16px);
+
+        background: rgba(250, 250, 250, 0.4);
+        border: 1px solid rgba(208, 208, 208, 0.2);
+        box-shadow: 0px 16px 16px rgba(208, 208, 208, 0.15);
+        border-radius: rem(6px);
+      }
+      .cardTitle {
+        @include inter($size: 20px, $weight: 600, $lh: 140%);
+
+        @include media('<=desktopHeader') {
+          line-height: 155%;
+          font-size: rem(16px);
+        }
+      }
+      .cardDescription {
+        @include inter($size: 16px, $weight: 400, $lh: 160%, $color: #5b5b5b);
+        letter-spacing: 0.01em;
+
+        @include media('<=desktopHeader') {
+          font-size: rem(14px);
+        }
+      }
+    }
+  }
+  .chartWrapper {
+    position: absolute;
+    top: rem(452px);
+    left: 45%;
+
+    @include media('<=desktopHeader') {
+      display: none;
+    }
+  }
+}
