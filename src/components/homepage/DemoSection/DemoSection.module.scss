@@ -4,7 +4,7 @@
   --contentWidth: 1078px;
 
   @include media('<=desktop') {
-    padding: rem(64px) 0 rem(64px);
+    padding: rem(64px) 0 rem(50px);
   }
 
   .header {
@@ -257,6 +257,13 @@
     }
     .visitHistory {
       padding: rem(40px) 0 rem(48px);
+
+      @include media('<=desktop') {
+        padding-bottom: 0;
+      }
+      @include media('<=phoneLandscape') {
+        text-align: left;
+      }
       .title {
         text-align: center;
         margin-bottom: rem(16px);
