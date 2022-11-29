@@ -7,6 +7,7 @@ import DemoSection from '../components/homepage/DemoSection/DemoSection'
 import PlatformSection from '../components/homepage/PlatformSection/PlatformSection'
 import CustomerStoriesSection from '../components/homepage/CustomerStoriesSection/CustomerStoriesSection'
 import WhyFingerprintSection from '../components/homepage/WhyFingerprintSection/WhyFingerprintSection'
+import SOCSection from '../components/homepage/SOCSection/SOCSection'
 
 import { SEO } from '../components/SEO/SEO'
 
@@ -19,6 +20,7 @@ export default function IndexPage() {
       <PlatformSection />
       <CustomerStoriesSection />
       <WhyFingerprintSection />
+      <SOCSection />
     </Layout>
   )
 }

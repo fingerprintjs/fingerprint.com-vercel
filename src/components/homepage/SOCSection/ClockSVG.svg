@@ -1,0 +1,17 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 97">
+    <rect x="-.001" y=".508" width="96.002" height="96.002" rx="14.77" fill="#D0D0D0" fill-opacity=".1" />
+    <path d="M63.187 66.064 46.963 54.876a3.62 3.62 0 1 1 5.035-5.036l11.189 16.224Z" fill="#fff" />
+    <circle cx="48.002" cy="19.492" r="1.847" fill="#fff" stroke="#fff" stroke-width=".923" />
+    <circle cx="79.385" cy="50.877" r="1.847" transform="rotate(90 79.385 50.877)" fill="#fff" stroke="#fff"
+        stroke-width=".923" />
+    <circle cx="16.614" cy="50.877" r="1.847" transform="rotate(90 16.614 50.877)" fill="#fff" stroke="#fff"
+        stroke-width=".923" />
+    <circle cx="70.192" cy="73.07" r="1.847" transform="rotate(135 70.192 73.07)" fill="#fff" stroke="#fff"
+        stroke-width=".923" />
+    <circle cx="25.807" cy="28.684" r="1.847" transform="rotate(135 25.807 28.684)" fill="#fff" stroke="#fff"
+        stroke-width=".923" />
+    <circle r="1.847" transform="scale(1 -1) rotate(-45 -75.3 -67.687)" fill="#fff" stroke="#fff" stroke-width=".923" />
+    <circle r="1.847" transform="scale(1 -1) rotate(-45 .473 -99.075)" fill="#fff" stroke="#fff" stroke-width=".923" />
+    <rect x=".46" y=".97" width="95.079" height="95.079" rx="14.308" stroke="#E8E8E8" stroke-opacity=".1"
+        stroke-width=".923" />
+</svg>
