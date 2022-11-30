@@ -5,6 +5,7 @@ import HeroSection from '../components/homepage/HeroSection/HeroSection'
 import ClientsSection from '../components/homepage/ClientsSection/ClientsSection'
 import DemoSection from '../components/homepage/DemoSection/DemoSection'
 import PlatformSection from '../components/homepage/PlatformSection/PlatformSection'
+import UseCasesSection from '../components/homepage/UseCasesSection/UseCasesSection'
 import CustomerStoriesSection from '../components/homepage/CustomerStoriesSection/CustomerStoriesSection'
 import WhyFingerprintSection from '../components/homepage/WhyFingerprintSection/WhyFingerprintSection'
 import SOCSection from '../components/homepage/SOCSection/SOCSection'
@@ -18,6 +19,7 @@ export default function IndexPage() {
       <ClientsSection />
       <DemoSection />
       <PlatformSection />
+      <UseCasesSection />
       <CustomerStoriesSection />
       <WhyFingerprintSection />
       <SOCSection />

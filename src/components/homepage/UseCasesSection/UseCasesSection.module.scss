@@ -1,0 +1,310 @@
+.root {
+  background: v('dark');
+  color: v('github-white');
+  padding-top: rem(168px);
+  padding-bottom: rem(168px);
+
+  @include media('<=phoneLandscape') {
+    padding-top: rem(64px);
+    padding-bottom: rem(64px);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include media('<=phoneLandscape') {
+      align-items: flex-start;
+    }
+    .labelWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: rem(4px) rem(8px);
+
+      background: linear-gradient(
+        94.48deg,
+        rgba(245, 97, 75, 0.2) 0%,
+        rgba(245, 97, 75, 0.2) 0.01%,
+        rgba(250, 117, 69, 0.2) 100%
+      );
+      border-radius: 4px;
+      .label {
+        text-transform: uppercase;
+        @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
+        letter-spacing: 0.04em;
+        background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, rgba(250, 117, 69, 0.99) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        @include media('<=phoneLandscape') {
+          font-size: rem(12px);
+        }
+      }
+    }
+
+    .title {
+      @include inter($size: 48px, $weight: 600, $lh: 130%);
+      letter-spacing: -0.01em;
+
+      padding-top: rem(24px);
+      max-width: rem(500px);
+      @include media('<=phoneLandscape') {
+        padding-top: rem(16px);
+
+        font-size: rem(24px);
+      }
+    }
+    .description {
+      @include inter($size: 20px, $weight: 400, $lh: 160%);
+      padding-top: rem(24px);
+      max-width: rem(630px);
+
+      @include media('<=phoneLandscape') {
+        padding-top: rem(16px);
+
+        font-size: rem(16px);
+      }
+    }
+  }
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: rem(20px);
+
+  padding-top: rem(64px);
+  @include media('<=desktop') {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16px);
+
+    width: 100%;
+  }
+
+  @include media('<=phoneLandscape') {
+    padding-top: rem(32px);
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: rem(32px);
+
+    background: #202021;
+    border-radius: rem(8px);
+
+    border: 1px solid rgba(208, 208, 208, 0.1);
+    border-radius: 8px;
+
+    @include media('<=phoneLandscape') {
+      padding: rem(24px) rem(16px);
+    }
+
+    .icon {
+      margin-bottom: rem(24px);
+
+      @include media('<=phoneLandscape') {
+        margin-bottom: rem(16px);
+      }
+    }
+    .cardTitle {
+      @include inter($size: 24px, $weight: 500, $lh: 130%);
+
+      padding-bottom: rem(8px);
+
+      @include media('<=phoneLandscape') {
+        font-size: rem(16px);
+      }
+    }
+    .cardDescription {
+      @include inter($size: 20px, $lh: 160%, $weight: 400);
+
+      @include media('<=phoneLandscape') {
+        font-size: rem(14px);
+        letter-spacing: 0.01em;
+      }
+    }
+  }
+}
+
+.preventFraud,
+.improveUser,
+.traffic {
+  position: relative;
+  .layer1,
+  .layer2,
+  .layer3 {
+    opacity: 0;
+    @include transition((opacity));
+    @include transition-duration(0.7s);
+    position: absolute;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+  .layer1 {
+    transition-delay: 0.5s;
+  }
+
+  .layer2 {
+    transition-delay: 1s;
+  }
+
+  .layer3 {
+    transition-delay: 1.5s;
+  }
+}
+
+.preventFraud {
+  width: 189.45px;
+  height: 135.78px;
+
+  @include media('<=phoneLandscape') {
+    width: 97.24px;
+    height: 73.53px;
+  }
+
+  .layer1 {
+    width: 175px;
+    height: 97px;
+    left: 8px;
+    top: 30px;
+
+    @include media('<=phoneLandscape') {
+      width: 97.5px;
+      height: 74.95px;
+      left: 0;
+      top: 7px;
+    }
+  }
+  .layer2 {
+    width: 249px;
+    height: 193px;
+    left: -27px;
+    top: -10px;
+
+    @include media('<=phoneLandscape') {
+      width: 134px;
+      height: 108px;
+      left: -18px;
+      top: -5px;
+    }
+  }
+  .layer3 {
+    width: 40px;
+    height: 54px;
+    left: 77.59px;
+    top: -4px;
+
+    @include media('<=phoneLandscape') {
+      width: 22px;
+      height: 31px;
+
+      left: 37.59px;
+      top: 0;
+    }
+  }
+}
+
+.improveUser {
+  width: 157.08px;
+  height: 136px;
+
+  @include media('<=phoneLandscape') {
+    width: 97.5px;
+    height: 74.95px;
+  }
+
+  .layer1 {
+    width: 231px;
+    height: 226px;
+    left: -30px;
+    top: -32px;
+
+    @include media('<=phoneLandscape') {
+      width: 126px;
+      height: 126px;
+      left: -18px;
+      top: -19px;
+    }
+  }
+  .layer2 {
+    width: 225px;
+    height: 160px;
+    left: -24px;
+    top: -32px;
+
+    @include media('<=phoneLandscape') {
+      width: 125px;
+      height: 89px;
+      left: -16px;
+      top: -18px;
+    }
+  }
+  .layer3 {
+    width: 99px;
+    height: 100px;
+    left: 39.59px;
+    top: 82px;
+
+    @include media('<=phoneLandscape') {
+      width: 55px;
+      height: 55px;
+      left: 24.59px;
+      top: 43px;
+    }
+  }
+}
+.traffic {
+  width: 176.55px;
+  height: 135px;
+
+  @include media('<=phoneLandscape') {
+    width: 96.98px;
+    height: 74.16px;
+  }
+  .layer1 {
+    width: 175px;
+    height: 131px;
+    left: 0px;
+    top: 0px;
+
+    @include media('<=phoneLandscape') {
+      width: 96px;
+      height: 72px;
+      left: 0;
+      top: 0;
+    }
+  }
+  .layer2 {
+    width: 139px;
+    height: 123px;
+    left: -4px;
+    top: 8px;
+
+    @include media('<=phoneLandscape') {
+      width: 77px;
+      height: 68px;
+      left: -1px;
+      top: 5px;
+    }
+  }
+  .layer3 {
+    width: 65px;
+    height: 68px;
+    left: 28px;
+    top: 39px;
+
+    @include media('<=phoneLandscape') {
+      width: 36px;
+      height: 38px;
+      left: 17px;
+      top: 22px;
+    }
+  }
+}
