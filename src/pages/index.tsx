@@ -8,6 +8,7 @@ import PlatformSection from '../components/homepage/PlatformSection/PlatformSect
 import UseCasesSection from '../components/homepage/UseCasesSection/UseCasesSection'
 import CustomerStoriesSection from '../components/homepage/CustomerStoriesSection/CustomerStoriesSection'
 import WhyFingerprintSection from '../components/homepage/WhyFingerprintSection/WhyFingerprintSection'
+import ForDevelopersSection from '../components/homepage/ForDevelopersSection/ForDevelopersSection'
 import SOCSection from '../components/homepage/SOCSection/SOCSection'
 
 import { SEO } from '../components/SEO/SEO'
@@ -22,6 +23,7 @@ export default function IndexPage() {
       <UseCasesSection />
       <CustomerStoriesSection />
       <WhyFingerprintSection />
+      <ForDevelopersSection />
       <SOCSection />
     </Layout>
   )

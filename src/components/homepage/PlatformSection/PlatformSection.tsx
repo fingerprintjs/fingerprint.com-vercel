@@ -9,6 +9,9 @@ import { ReactComponent as TopLayerSVG } from './TopLayerSVG.svg'
 import { ReactComponent as BottomLayerSVG } from './BottomLayerSVG.svg'
 import { ReactComponent as DotSVG } from './DotSVG.svg'
 
+import { ReactComponent as TopLayerMobileSVG } from './TopLayerMobileSVG.svg'
+import { ReactComponent as BottomLayerMobileSVG } from './BottomLayerMobileSVG.svg'
+
 import { ReactComponent as LeftLineSVG } from './LeftLineSVG.svg'
 import { ReactComponent as RightLineSVG } from './RightLineSVG.svg'
 
@@ -48,6 +51,8 @@ export default function PlatformSection() {
         <div className={styles.platformLogo}>
           <TopLayerSVG className={styles.topLayerLogo} />
           <BottomLayerSVG className={styles.bottomLayerLogo} />
+          <TopLayerMobileSVG className={styles.topLayerLogoMobile} />
+          <BottomLayerMobileSVG className={styles.bottomLayerLogoMobile} />
           <LinePointsSVG className={styles.linePoints} />
           <div className={styles.dots}>
             {repeatElement(13, (i: number) => (

@@ -421,3 +421,18 @@
     }
   }
 }
+
+/*======================================
+=               LABELS                 =
+=======================================*/
+
+@mixin labelOrange() {
+  background: linear-gradient(
+    94.48deg,
+    rgba(245, 97, 75, 0.2) 0%,
+    rgba(245, 97, 75, 0.2) 0.01%,
+    rgba(250, 117, 69, 0.2) 100%
+  );
+  border-radius: rem(4px);
+  text-transform: uppercase;
+}

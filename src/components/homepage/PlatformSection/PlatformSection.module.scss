@@ -14,24 +14,16 @@
     text-align: center;
     opacity: 0;
     @include transition((opacity));
-    @include transition-duration(0.75s);
+    @include transition-duration(0.5s);
 
     @include media('<=phoneLandscape') {
-      row-gap: rem(16px);
       margin-bottom: rem(32px);
       align-items: flex-start;
       text-align: left;
     }
     .labelWrapper {
+      @include labelOrange;
       padding: 0 rem(8px);
-
-      background: linear-gradient(
-        94.48deg,
-        rgba(245, 97, 75, 0.2) 0%,
-        rgba(245, 97, 75, 0.2) 0.01%,
-        rgba(250, 117, 69, 0.2) 100%
-      );
-      border-radius: rem(4px);
       margin-bottom: rem(24px);
 
       @include media('<=desktop') {
@@ -39,7 +31,6 @@
       }
     }
     .label {
-      text-transform: uppercase;
       @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
       letter-spacing: 0.04em;
       background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, #fa7545 100%);
@@ -98,6 +89,7 @@
 
       opacity: 0;
       @include transition((opacity));
+      transition-delay: 0.25s;
 
       padding-bottom: rem(10px);
 
@@ -108,7 +100,7 @@
         letter-spacing: 0.04em;
       }
 
-      @include media('<=tablet') {
+      @include media('<=phoneLandscape') {
         @include jb-mono($size: 14px, $weight: 500, $lh: 130%);
       }
     }
@@ -123,11 +115,12 @@
         width: rem(240px);
       }
 
-      @include media('<=tablet') {
+      @include media('<=phoneLandscape') {
         width: rem(270px);
       }
 
       .bottomLayerLogo,
+      .bottomLayerLogoMobile,
       .linePoints,
       .yourTrafficLabel,
       .dot,
@@ -136,20 +129,30 @@
       }
       .linePoints,
       .yourTrafficLabel {
-        @include media('<=tablet') {
+        @include media('<=phoneLandscape') {
           display: none;
         }
       }
-      .topLayerLogo {
+      .topLayerLogo,
+      .topLayerLogoMobile {
         width: 100%;
         z-index: 2;
         @include transition((opacity, transform));
         @include transition-duration(1.5s);
-        transition-delay: 6s;
+        transition-delay: 5.25s;
         opacity: 0;
         transform: translateY(-90px);
 
-        @include media('<=tablet') {
+        @include media('<=phoneLandscape') {
+          display: none;
+          transition-delay: 2.25s;
+        }
+      }
+      .topLayerLogoMobile {
+        display: none;
+
+        @include media('<=phoneLandscape') {
+          display: block;
           transition-delay: 2.25s;
         }
       }
@@ -167,8 +170,25 @@
           width: rem(245px);
         }
 
-        @include media('<=tablet') {
-          width: rem(280px);
+        @include media('<=phoneLandscape') {
+          display: none;
+        }
+      }
+      .bottomLayerLogoMobile {
+        display: none;
+
+        @include media('<=phoneLandscape') {
+          display: block;
+          top: rem(11px);
+          width: rem(294px);
+          left: rem(-10px);
+          z-index: 1;
+
+          @include transition((opacity, transform));
+          @include transition-duration(0.75s);
+          transition-delay: 0.75s;
+          opacity: 0;
+          transform: translateY(-90px);
         }
       }
       .linePoints {
@@ -179,7 +199,7 @@
 
         opacity: 0;
         @include transition((opacity));
-        @include transition-duration(1s);
+        @include transition-duration(0.5s);
 
         transition-delay: 1.25s;
 
@@ -189,7 +209,7 @@
         }
       }
       .dots {
-        @include media('<=tablet') {
+        @include media('<=phoneLandscape') {
           display: none;
         }
         .dotLineIcon {
@@ -202,7 +222,7 @@
           opacity: 0;
           transform: translateY(90px);
           @include transition((opacity, transform));
-          @include transition-duration(2.5s);
+          @include transition-duration(2s);
 
           rect {
             fill: #858585;
@@ -239,9 +259,9 @@
         letter-spacing: 0.01em;
 
         opacity: 0;
-        transition-delay: 3.85s;
+        transition-delay: 3.75s;
         @include transition((opacity));
-        @include transition-duration(1.75s);
+        @include transition-duration(1s);
 
         top: rem(246px);
         left: rem(172px);
@@ -286,16 +306,16 @@
       .webDot {
         opacity: 0;
         @include transition((opacity));
-        @include transition-duration(1.25s);
+        @include transition-duration(1s);
 
-        @include media('<=tablet') {
+        @include media('<=phoneLandscape') {
           display: none;
         }
       }
       .integrationsDot {
         left: rem(39px);
         top: rem(310px);
-        transition-delay: 3.25s;
+        transition-delay: 3s;
 
         @include media('<=desktop') {
           left: rem(81px);
@@ -305,7 +325,7 @@
       .mobileDot {
         left: rem(79px);
         top: rem(390px);
-        transition-delay: 3.5s;
+        transition-delay: 3.25s;
 
         @include media('<=desktop') {
           left: rem(103.5px);
@@ -315,7 +335,7 @@
       .webDot {
         left: rem(96px);
         top: rem(470px);
-        transition-delay: 3.75s;
+        transition-delay: 3.5s;
 
         @include media('<=desktop') {
           left: rem(112.5px);
@@ -328,11 +348,11 @@
       display: flex;
       flex-direction: column;
 
-      @include media('>tablet') {
+      @include media('>phoneLandscape') {
         position: absolute;
       }
 
-      @include media('<=tablet') {
+      @include media('<=phoneLandscape') {
         padding: rem(16px) rem(16px) 0 rem(16px);
         border: 1px solid #e8e8e8;
         box-shadow: 0px 4px 15px rgba(161, 161, 161, 0.15), 0px 0px 1px rgba(232, 232, 232, 0.35);
@@ -350,6 +370,10 @@
           font-size: rem(16px);
           line-height: 155%;
         }
+        @include media('<=phoneLandscape') {
+          font-size: rem(20px);
+          line-height: 150%;
+        }
       }
       .sideDescription {
         @include inter($size: 20px, $weight: 400, $lh: 140%, $color: #5b5b5b);
@@ -363,6 +387,13 @@
           max-width: rem(200px);
           padding-bottom: 0;
         }
+        @include media('<=phoneLandscape') {
+          max-width: unset;
+          font-size: rem(14px);
+          line-height: 160%;
+          letter-spacing: -0.01em;
+          font-weight: 500;
+        }
       }
     }
     .leftSection {
@@ -374,7 +405,7 @@
         left: rem(55px);
       }
 
-      @include media('<=tablet') {
+      @include media('<=phoneLandscape') {
         margin-top: rem(32px);
         margin-bottom: rem(16px);
       }
@@ -383,15 +414,15 @@
         height: rem(2px);
 
         opacity: 0;
-        transition-delay: 4.5s;
+        transition-delay: 3.75s;
         transform: translateX(-15px);
         @include transition((opacity, transform));
-        @include transition-duration(1.75s);
+        @include transition-duration(1.25s);
 
         @include media('<=desktop') {
           width: 32%;
         }
-        @include media('<=tablet') {
+        @include media('<=phoneLandscape') {
           display: none;
         }
       }
@@ -400,7 +431,7 @@
         left: rem(110px);
         top: rem(32px);
 
-        @include media('>tablet') {
+        @include media('>phoneLandscape') {
           position: absolute;
         }
         @include media('<=1100px') {
@@ -414,9 +445,9 @@
         .sideTitle,
         .sideDescription {
           @include transition-duration(1s);
-          transition-delay: 4.75s;
+          transition-delay: 4.25s;
 
-          @include media('<=tablet') {
+          @include media('<=phoneLandscape') {
             transition-delay: 1s;
           }
         }
@@ -431,7 +462,7 @@
         top: 75px;
         left: 65%;
       }
-      @include media('<=tablet') {
+      @include media('<=phoneLandscape') {
         width: 100%;
       }
       .rightLine {
@@ -440,14 +471,14 @@
 
         @include transition((opacity, transform));
         @include transition-duration(1.5s);
-        transition-delay: 6s;
+        transition-delay: 5.25s;
         opacity: 0;
         transform: translateY(-90px);
 
         @include media('<=desktop') {
           width: 30;
         }
-        @include media('<=tablet') {
+        @include media('<=phoneLandscape') {
           display: none;
         }
       }
@@ -456,7 +487,7 @@
         left: rem(52px);
         top: rem(32px);
 
-        @include media('>tablet') {
+        @include media('>phoneLandscape') {
           position: absolute;
         }
 
@@ -469,12 +500,12 @@
       .sideTitle,
       .sideDescription {
         @include transition((opacity, transform));
-        @include transition-duration(1.5s);
-        transition-delay: 6s;
+        @include transition-duration(1.25s);
+        transition-delay: 5.25s;
         opacity: 0;
         transform: translateY(-90px);
 
-        @include media('<=tablet') {
+        @include media('<=phoneLandscape') {
           transition-delay: 2s;
         }
       }
@@ -502,6 +533,9 @@
           font-size: rem(14px);
           line-height: 155%;
         }
+        @include media('<=phoneLandscape') {
+          font-size: rem(16px);
+        }
       }
       .points {
         padding-top: rem(8px);
@@ -520,6 +554,9 @@
             font-size: rem(12px);
             color: #434344;
           }
+          @include media('<=phoneLandscape') {
+            font-size: rem(14px);
+          }
           .disc {
             width: rem(4px);
             margin-bottom: rem(1px);
@@ -532,26 +569,26 @@
     }
 
     .feature1 {
-      transition-delay: 5.5s;
-      @include media('<=tablet') {
+      transition-delay: 4.5s;
+      @include media('<=phoneLandscape') {
         transition-delay: 1.25s;
       }
     }
     .feature2 {
-      transition-delay: 5.75s;
-      @include media('<=tablet') {
+      transition-delay: 4.75s;
+      @include media('<=phoneLandscape') {
         transition-delay: 1.5s;
       }
     }
     .feature3 {
-      transition-delay: 6.75s;
-      @include media('<=tablet') {
+      transition-delay: 6s;
+      @include media('<=phoneLandscape') {
         transition-delay: 2.25s;
       }
     }
     .feature4 {
-      transition-delay: 7s;
-      @include media('<=tablet') {
+      transition-delay: 6.25s;
+      @include media('<=phoneLandscape') {
         transition-delay: 2.75s;
       }
     }
@@ -560,9 +597,14 @@
 
 .container {
   .platformVisible {
+    .platformTitle {
+      opacity: 1;
+    }
     .platformLogo {
       .bottomLayerLogo,
-      .topLayerLogo {
+      .topLayerLogo,
+      .topLayerLogoMobile,
+      .bottomLayerLogoMobile {
         opacity: 1;
         transform: translateY(0);
       }
