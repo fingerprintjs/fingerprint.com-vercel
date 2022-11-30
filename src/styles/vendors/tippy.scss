@@ -109,3 +109,16 @@
     linear-gradient(181.6deg, #d0d0d0 50.63%, rgba(232, 232, 232, 0) 97.06%) border-box;
   border: 0.05px solid transparent;
 }
+
+// Grey tooltip style
+.tippy-box[data-theme~='grey'] .tippy-content {
+  @include inter($size: 16px, $weight: 400, $lh: 160%, $color: v('light-gray'));
+  padding: rem(8px) rem(10px);
+  background: #e8e8e8;
+  border-radius: rem(4px);
+  box-shadow: unset;
+}
+.tippy-box[data-theme~='grey'] .tippy-arrow {
+  color: #e8e8e8;
+  box-shadow: unset;
+}

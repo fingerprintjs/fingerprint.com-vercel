@@ -23,12 +23,14 @@ import classNames from 'classnames'
 
 import { ReactComponent as ChevronRightSvg } from './ChevronRightSVG.svg'
 import { ReactComponent as ChevronLeftSvg } from './ChevronLeftSVG.svg'
+import { ReactComponent as WarningSVG } from './WarningSVG.svg'
 
 import styles from './DemoSection.module.scss'
 
 export default function DemoSection() {
-  const { getData } = useVisitorData(getConfig, { immediate: false })
-
+  const { getData, error: identificationError } = useVisitorData(getConfig, { immediate: false })
+  const [historyLoadError, setHistoryLoadError] = useState(false)
+  const hasError = identificationError != null || historyLoadError
   const [visitorId, setVisitorId] = useState<string>()
   const [visits, setVisits] = useState<VisitorResponse[]>()
   const [visitedTimes, setVisitedTimes] = useState<number>()
@@ -74,6 +76,7 @@ export default function DemoSection() {
           swiperRef.current?.lazy.load()
         }
       } catch (e) {
+        setHistoryLoadError(true)
         rollbar.error('Unable to load visits', getErrorMessage(e))
       }
     }
@@ -92,7 +95,19 @@ export default function DemoSection() {
         </div>
         <h2 className={styles.title}>See Fingerprint in Action</h2>
       </header>
+
       <section className={styles.demoSection}>
+        {hasError && (
+          <div className={styles.errorMessage}>
+            <WarningSVG className={styles.warningIcon} />
+            <h2 className={styles.tryMessage}>An error occurred.</h2>
+            <h2 className={styles.tryMessage}>Please refresh the page or try in incognito mode.</h2>
+          </div>
+        )}
+        <noscript className={styles.errorMessage}>
+          <WarningSVG className={styles.warningIcon} />
+          <h1 className={styles.tryMessage}>Enable JS to run the demo</h1>
+        </noscript>
         <div className={styles.summary}>
           <div className={styles.visitorIdSection}>
             <span className={styles.title}>Your visitor id</span>
@@ -121,7 +136,7 @@ export default function DemoSection() {
                   <Tippy
                     maxWidth={270}
                     content={'Fingerprint Pro analyzes every page view and detects if it was made in incognito mode.'}
-                    theme='github'
+                    theme='grey'
                   >
                     <InfoSvg tabIndex={0} />
                   </Tippy>
@@ -145,7 +160,7 @@ export default function DemoSection() {
               <li className={styles.summaryInfo}>
                 <span className={styles.title}>
                   geolocation
-                  <Tippy maxWidth={270} content={'Based on the visit IP address.'} theme='github'>
+                  <Tippy maxWidth={270} content={'Based on the visit IP address.'} theme='grey'>
                     <InfoSvg tabIndex={0} />
                   </Tippy>
                 </span>
