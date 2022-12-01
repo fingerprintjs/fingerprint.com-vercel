@@ -13,7 +13,6 @@
   }
   .marquee {
     display: flex;
-    animation: 120s linear infinite marquee;
 
     .logos {
       align-items: center;
@@ -21,6 +20,7 @@
       display: flex;
       column-gap: rem(80px);
       padding-left: rem(80px);
+      animation: 120s linear infinite marquee;
 
       @include media('<=phoneLandscape') {
         column-gap: rem(35px);
@@ -89,9 +89,9 @@
 
 @keyframes marquee {
   0% {
-    transform: translateZ(0) translateX(0%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateZ(0) translateX(-50%);
+    transform: translateX(-2063px);
   }
 }
