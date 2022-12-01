@@ -473,8 +473,8 @@ export const faqs = [
         answer: (
           <>
             <p className={styles.faqContent}>
-              When you create your account, you can choose between Global/US data storage (Richmond, Virginia) and data
-              EU storage (Frankfurt, Germany).
+              When you create your account, you can choose between Global/US data storage (Richmond, Virginia), data EU
+              storage (Frankfurt, Germany) and Asia-Pacific storage (Mumbai).
             </p>
             <p className={styles.faqContent}>
               We can set up servers in additional locations for enterprise customers. To learn more, please{' '}

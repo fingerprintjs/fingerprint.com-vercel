@@ -147,4 +147,4 @@ For example, Firefox [released](https://www.makeuseof.com/latest-firefox-88-upd
 
 [Fingerprint](https://fingerprint.com/) provides developers with 99.5% accurate browser fingerprinting and offers a free, open-source library and paid services. [In addition, Fingerprint](https://fingerprint.com/) doesn’t rely on outdated third-party tracking mechanisms, and it helps you prevent account takeovers, password sharing, and fake accounts.
 
-Modern browsers improve privacy protections excellently, but this trend costs web application owners. Fortunately, fingerprinting is still an accurate and low-cost way to prevent fraud. Just don’t roll out your own.Just don't roll out your own.
+Modern browsers improve privacy protections excellently, but this trend costs web application owners. Fortunately, fingerprinting is still an accurate and low-cost way to prevent fraud. Just don’t roll out your own.

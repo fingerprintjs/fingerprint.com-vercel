@@ -293,6 +293,55 @@ You can test Fingerprint by registering a user and trying to register another us
 
 *You can find all the above code for using Fingerprint inside the `fingerprintjs` directory in [this GitHub repository](https://github.com/heraldofsolace/FingerprintJS-PHP).*
 
+### Additional Server Validations
+
+Before persisting the data in the storage layer, we recommend running some additional checks with our Server API. Once you obtain a `visitorId` on your backend, you can use our [HTTP Server API ](https://dev.fingerprint.com/docs/server-api)or [PHP Server API SDK](https://dev.fingerprint.com/docs/fingerprint-pro-server-api-php-sdk) to verify the identification request and to get additional contextual pieces of information.
+
+In the example below, we check if the identification request has been recently performed by the provided `requestId`. Additionally, we also check the [confidence score](https://dev.fingerprint.com/docs/understanding-your-confidence-score) that represents the system's degree of certainty that the visitor identifier is correct. 
+
+In the following snippet, we use these variables and constants:
+
+* `$fpjs_api_secret` is Fingerprint Pro Secret API Key,
+* `$request_body` is the content of the request’s body,
+* `$max_request_lifespan` represents a number of how long should a request be valid,
+* `$minimum_confidence_score` is a threshold for the confidence score.
+
+```php
+$config = Configuration::getDefaultConfiguration($fpjs_api_secret);
+$client = new FingerprintApi(
+    new Client(),
+    $config
+);
+
+// Get the identification data from the request
+$event = $client->getEvent($request_body['requestId']);
+$identification = $event->getProducts()->getIdentification()->getData();
+$confidence = $identification->getConfidence()->getScore();
+
+// Check the visitorId came from server api is not exact what user said to us
+if ($identification->getVisitorId() !== $request_body['visitorId']) {
+    throw new HttpBadRequestException("forged_visitor_id");
+}
+
+$now = time();
+$identified_at = $identification->getTimestamp() / 1000;
+$diff = $now - $identified_at;
+
+// Check the difference between the identification timestamp and the request timestamp
+if ($diff > $max_request_lifespan) {
+    throw new HttpBadRequestException("forged_request_id");
+}
+
+// Check if the confidence score according to to your internal policy
+if ($confidence <= $minimum_confidence_score) {
+    throw new HttpBadRequestException("not_confident");
+}
+
+// All checks passed, the request and the visitorId are trustworthy
+```
+
+You can learn more about Fingerprint Pro PHP Server API SDK in the [documentation](https://dev.fingerprint.com/docs/fingerprint-pro-server-api-php-sdk) or on [GitHub](https://github.com/fingerprintjs/fingerprint-pro-server-api-php-sdk).
+
 ## Advantages of Fingerprint
 
 Fingerprint Pro has many advantages over rolling out your fingerprinting solution. First, Fingerprint Pro is easy to use - you need to include a JavaScript snippet, and Fingerprint Pro handles the rest. This is much faster than writing your fingerprinting function in PHP.
@@ -334,5 +383,3 @@ Unfortunately, IP addresses are easily spoofed. Users can set them manually when
 In this tutorial, you learned how browser fingerprinting in PHP helps prevent duplicate registrations. While you can increase the accuracy of your tracking in PHP by combining sessions, cookies, and IP tracking, it’s still relatively easy for users to bypass these fraud detection measures.
 
 Using [Fingerprint](https://fingerprint.com/) to quickly and accurately generate a browser fingerprint in PHP will help you combat fraud and save time. With an accuracy of 99.5%, Fingerprint is an excellent solution for saving time, allowing you to focus on building a great web application and not learning every browser fingerprinting change.
-
-W﻿e also now have a PHP SDK for the Fingerprint Pro Server API, which you can access from [this GitHub Repository](https://github.com/fingerprintjs/fingerprint-pro-server-api-php-sdk).

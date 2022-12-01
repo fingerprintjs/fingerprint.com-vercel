@@ -25,7 +25,10 @@ heroImage:
   imageAlt: Cookieless Future Trash Can
   imageTitle: Cookieless Future Trash Can
 customCTA:
-  openCtaNewTab: false
+  openCtaNewTab: true
+  ctaUrl: https://fingerprint.com/contact-sales/?utm_campaign=Fingerprint%20Blog&utm_source=blog&utm_medium=website 
+  title: Learn More about Fingerprint Pro
+  ctaText: Contact Sales
 ---
 For decades, cookies have been an essential component of internet operations. These small packages of data, differentiating your computer from others, first appeared as part of the [Netscape Navigator](https://cookie-privacy.weebly.com/history-of-cookies.html) web browser in 1994. Since then, web developers have been using cookies for various purposes, perhaps most notably on e-commerce sites. A site stores its cookies in a user's web browser to track certain behaviors to facilitate marketing goals—whether the user has previously visited the site or the user's login information, for example.
 
