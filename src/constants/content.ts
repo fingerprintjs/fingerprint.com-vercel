@@ -1,4 +1,11 @@
-import { BRANCH, HOST, CONTACT_SALES_CALENDAR } from './env'
+import {
+  BRANCH,
+  HOST,
+  CONTACT_SALES_CALENDAR_AMER,
+  CONTACT_SALES_CALENDAR_APAC,
+  CONTACT_SALES_CALENDAR_EMEA,
+  CONTACT_SALES_CALENDAR_LATAM,
+} from './env'
 
 export const BASE_URL = HOST
 
@@ -52,10 +59,17 @@ export const URL = {
   salesMail: 'sales@fingerprint.com',
   worKMail: 'work@fingerprint.com',
   discordServerURL: 'https://discord.gg/ad6R2ttHVX',
-  contactSalesCalendar: CONTACT_SALES_CALENDAR,
+
   docsUrl: 'https://dev.fingerprint.com',
   promotionalVideo: 'https://www.youtube.com/embed/UEYBysyPTBs',
   g2ReviewUrl: 'https://www.g2.com/products/fingerprintjs-fingerprint/reviews',
+} as const
+
+export const URL_CALENDAR = {
+  contactSalesCalendarAmer: CONTACT_SALES_CALENDAR_AMER,
+  contactSalesCalendarApac: CONTACT_SALES_CALENDAR_APAC,
+  contactSalesCalendarEmea: CONTACT_SALES_CALENDAR_EMEA,
+  contactSalesCalendarLatam: CONTACT_SALES_CALENDAR_LATAM,
 } as const
 
 export const MAILTO = { mailToUrl: `mailto:${URL.supportMail}` } as const

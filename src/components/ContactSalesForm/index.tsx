@@ -12,12 +12,14 @@ import { ReactComponent as ConfirmSVG } from './confirmSVG.svg'
 import { ReactComponent as ErrorSVG } from './errorSVG.svg'
 import { ReactComponent as InfoSVG } from './info.svg'
 
-import { URL, PATH, MAILTO_SALES } from '../../constants/content'
+import { URL_CALENDAR, PATH, MAILTO_SALES } from '../../constants/content'
 import { useViewTracking } from '../../context/HistoryListener'
 import * as Turing from '@fpjs-incubator/turing'
 import { initTuring } from '../../helpers/turing'
 import { ReactComponent as BotD } from '../../img/BotdBowl.svg'
 import Tippy from '@tippyjs/react'
+import { useUserLocation } from '../../hooks/useUserLocation'
+import { Region } from '../../helpers/region'
 
 import styles from './ContactSalesForm.module.scss'
 import { BOTD_PUBLIC_KEY_TURING, TURING_DEFAULT_SESSION_ID } from '../../constants/env'
@@ -34,6 +36,7 @@ export default function ContactSalesForm() {
 
   const { formState, errorMessage, updateFormState, updateErrorMessage } = useForm(Forms.ContactSales)
   const { landingPage, previousPage, utmParams } = useViewTracking()
+  const { countryRegion } = useUserLocation()
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -93,8 +96,24 @@ export default function ContactSalesForm() {
       } else {
         updateFormState(FormState.Success)
         trackLeadSubmit()
+        let calendarUrl: string
+        switch (countryRegion) {
+          case Region.LATAM:
+            calendarUrl = URL_CALENDAR.contactSalesCalendarLatam
+            break
+          case Region.APAC:
+            calendarUrl = URL_CALENDAR.contactSalesCalendarApac
+            break
+          case Region.EMEA:
+            calendarUrl = URL_CALENDAR.contactSalesCalendarEmea
+            break
+          case Region.AMER:
+          default:
+            calendarUrl = URL_CALENDAR.contactSalesCalendarAmer
+        }
+
         setTimeout(() => {
-          window.location.replace(URL.contactSalesCalendar)
+          window.location.replace(calendarUrl)
         }, 500)
       }
     } catch (error) {

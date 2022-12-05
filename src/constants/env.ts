@@ -116,7 +116,14 @@ export const TURING_DEFAULT_SESSION_ID = getContextEnv<string | undefined>({
 export const APP_STORE_DEMO_URL = process.env.GATSBY_APP_STORE_DEMO_URL
 export const GOOGLE_PLAY_DEMO_URL = process.env.GATSBY_GOOGLE_PLAY_DEMO_URL
 
-export const CONTACT_SALES_CALENDAR = process.env.GATSBY_CONTACT_SALES_CALENDAR ?? 'https://calendly.com/fp-aurelijus'
+export const CONTACT_SALES_CALENDAR_AMER =
+  process.env.GATSBY_CONTACT_SALES_CALENDAR_AMER ?? 'https://calendly.com/fp-aurelijus'
+export const CONTACT_SALES_CALENDAR_LATAM =
+  process.env.GATSBY_CONTACT_SALES_CALENDAR_LATAM ?? 'https://calendly.com/fp-aurelijus'
+export const CONTACT_SALES_CALENDAR_EMEA =
+  process.env.GATSBY_CONTACT_SALES_CALENDAR_EMEA ?? 'https://calendly.com/fp-aurelijus'
+export const CONTACT_SALES_CALENDAR_APAC =
+  process.env.GATSBY_CONTACT_SALES_CALENDAR_APAC ?? 'https://calendly.com/fp-aurelijus'
 
 export const FPJS_REGION = process.env.GATSBY_FPJS_REGION
 export const FPJS_DASHBOARD_ENDPOINT = process.env.GATSBY_FPJS_DASHBOARD_ENDPOINT
