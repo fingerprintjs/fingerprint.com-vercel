@@ -1,0 +1,42 @@
+.root {
+  padding-top: 0;
+  padding-bottom: rem(200px);
+
+  @include media('<=phoneLandscape') {
+    padding-bottom: rem(80px);
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  .badgesContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: rem(600px);
+    @include media('<=phoneLandscape') {
+      min-width: rem(320px);
+    }
+    @include media('<=phone') {
+      min-width: 100%;
+    }
+    .fastestSVG,
+    .easiestSVG {
+      width: rem(121px);
+      height: rem(158px);
+      @include media('<=phoneLandscape') {
+        width: rem(64px);
+        height: rem(83px);
+      }
+    }
+    .highSVG {
+      width: rem(179px);
+      height: rem(233px);
+      @include media('<=phoneLandscape') {
+        width: rem(94px);
+        height: rem(122px);
+      }
+    }
+  }
+}

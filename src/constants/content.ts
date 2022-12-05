@@ -55,6 +55,7 @@ export const URL = {
   contactSalesCalendar: CONTACT_SALES_CALENDAR,
   docsUrl: 'https://dev.fingerprint.com',
   promotionalVideo: 'https://www.youtube.com/embed/UEYBysyPTBs',
+  g2ReviewUrl: 'https://www.g2.com/products/fingerprintjs-fingerprint/reviews',
 } as const
 
 export const MAILTO = { mailToUrl: `mailto:${URL.supportMail}` } as const

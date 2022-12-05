@@ -1,0 +1,30 @@
+.root {
+  padding-top: 0;
+  padding-bottom: rem(96px);
+
+  @include media('<=phoneLandscape') {
+    padding-bottom: rem(56px);
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    text-align: center;
+    @include inter-h2;
+    margin-bottom: rem(56px);
+    @include media('<=phoneLandscape') {
+      text-align: left;
+      margin-bottom: rem(32px);
+    }
+  }
+  .iframe {
+    width: 100%;
+    @include scrollSection;
+
+    aspect-ratio: 16 / 9;
+    border-radius: rem(8px);
+  }
+}
