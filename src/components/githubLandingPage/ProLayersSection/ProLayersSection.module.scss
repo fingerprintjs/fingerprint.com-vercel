@@ -40,18 +40,8 @@
       padding-bottom: rem(10px);
     }
 
-    .label {
+    .labelWrapper {
       @include labelOrange;
-      padding: rem(4px) rem(8px);
-
-      .labelText {
-        @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
-
-        background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, #fa7545 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
 
       @include media('<=phoneLandscape') {
         font-size: rem(12px);

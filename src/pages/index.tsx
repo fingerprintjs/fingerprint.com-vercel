@@ -10,6 +10,7 @@ import CustomerStoriesSection from '../components/homepage/CustomerStoriesSectio
 import WhyFingerprintSection from '../components/homepage/WhyFingerprintSection/WhyFingerprintSection'
 import ForDevelopersSection from '../components/homepage/ForDevelopersSection/ForDevelopersSection'
 import SOCSection from '../components/homepage/SOCSection/SOCSection'
+import PricingSection from '../components/homepage/PricingSection/PricingSection'
 import VideoSection from '../components/homepage/VideoSection/VideoSection'
 import BadgesSection from '../components/homepage/BadgesSection/BadgesSection'
 
@@ -27,6 +28,7 @@ export default function IndexPage() {
       <WhyFingerprintSection />
       <ForDevelopersSection />
       <SOCSection />
+      <PricingSection />
       <VideoSection />
       <BadgesSection />
     </Layout>

@@ -26,8 +26,8 @@ export default function ProLayersSection() {
     <Section className={styles.root}>
       <Container size='large' className={styles.container}>
         <div className={styles.cardContainer}>
-          <span className={styles.label}>
-            <span className={styles.labelText}>how it works</span>
+          <span className={styles.labelWrapper}>
+            <span className={styles.label}>how it works</span>
           </span>
           <h2 className={styles.title}>Pro is powered by Open Source</h2>
           <p className={styles.description}>

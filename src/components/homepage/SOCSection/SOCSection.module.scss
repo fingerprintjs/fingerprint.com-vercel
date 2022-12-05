@@ -6,7 +6,7 @@
 
   @include media('<=phoneLandscape') {
     padding-top: rem(64px);
-    padding-bottom: rem(64px);
+    padding-bottom: rem(101px);
   }
 }
 
@@ -24,32 +24,7 @@
   }
 
   .labelWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: rem(4px) rem(8px);
-
-    background: linear-gradient(
-      94.48deg,
-      rgba(245, 97, 75, 0.2) 0%,
-      rgba(245, 97, 75, 0.2) 0.01%,
-      rgba(250, 117, 69, 0.2) 100%
-    );
-    border-radius: 4px;
-    .label {
-      text-transform: uppercase;
-      @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
-      letter-spacing: 0.04em;
-      background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, rgba(250, 117, 69, 0.99) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-
-      @include media('<=phoneLandscape') {
-        font-size: rem(12px);
-      }
-    }
+    @include labelOrange;
   }
 
   .title {

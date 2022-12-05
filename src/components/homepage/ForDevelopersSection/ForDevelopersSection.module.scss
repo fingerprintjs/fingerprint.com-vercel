@@ -26,8 +26,6 @@
     }
     .labelWrapper {
       @include labelOrange;
-
-      padding: 0 rem(8px);
       margin-bottom: rem(24px);
 
       @include media('<=desktopHeader') {
@@ -35,14 +33,6 @@
       }
     }
     .label {
-      @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
-      letter-spacing: 0.04em;
-      background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, #fa7545 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-
       @include media('<=desktopHeader') {
         font-size: rem(12px);
       }
@@ -217,24 +207,12 @@
         @include media('<=phoneLandscape') {
           font-size: rem(12px);
         }
-        svg {
-          width: rem(11px);
-          @include media('<=desktopHeader') {
-            width: rem(9.5px);
-          }
-        }
-        @include transition((color));
+        .arrow {
+          margin-top: rem(3px);
+          @include media('<=phoneLandscape') {
+            margin-top: rem(2px);
 
-        &:hover {
-          color: adjust-color(c('github-orange-gradient'), $saturation: -19%, $lightness: -6%);
-          svg {
-            defs {
-              linearGradient {
-                stop {
-                  stop-color: adjust-color(c('github-orange-gradient'), $saturation: -19%, $lightness: -6%);
-                }
-              }
-            }
+            width: rem(10px);
           }
         }
       }

@@ -54,7 +54,7 @@
     }
     @include media('<=phoneLandscape') {
       margin-bottom: 0;
-      padding: 0 rem(16px) rem(24px) rem(16px);
+      padding: 0 rem(16px) rem(24px) 0;
     }
     .logo {
       width: rem(261px);
@@ -82,7 +82,7 @@
   .quoteSection {
     @include media('<=phoneLandscape') {
       border-top: 1px solid #e8e8e8;
-      padding: rem(24px) rem(10px) 0 rem(16px);
+      padding: rem(24px) rem(10px) 0 0;
     }
     .quote {
       @include inter($size: 36px, $weight: 500, $lh: 140%, $color: #434344);

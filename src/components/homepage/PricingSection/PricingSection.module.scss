@@ -1,0 +1,245 @@
+.root {
+  padding-top: 0;
+  padding-bottom: rem(145px);
+
+  @include media('<=phoneLandscape') {
+    padding-bottom: rem(71px);
+  }
+
+  .sections {
+    background: #ffffff;
+    border: rem(1px) solid #e8e8e8;
+    box-shadow: 0px 4px 15px rgba(161, 161, 161, 0.15), 0px 0px 1px rgba(232, 232, 232, 0.35);
+    border-radius: rem(8px);
+    padding: rem(96px) rem(56px) rem(110px);
+    display: flex;
+    justify-content: space-between;
+
+    @include media('<=desktop') {
+      flex-direction: column;
+      padding: rem(64px) rem(70px) rem(24px) rem(70px);
+      row-gap: rem(64px);
+    }
+
+    @include media('<=phoneLandscape') {
+      padding: rem(64px) rem(16px);
+      row-gap: rem(32px);
+    }
+    .descriptionSection {
+      max-width: rem(463px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include media('<=desktop') {
+        max-width: unset;
+      }
+
+      .labelWrapper {
+        @include labelOrange;
+
+        margin-bottom: rem(24px);
+
+        @include media('<=phoneLandscape') {
+          margin-bottom: rem(16px);
+        }
+        .label {
+          @include media('<=desktop') {
+            font-size: rem(12px);
+          }
+        }
+      }
+      .title {
+        @include inter-h2($color: v('gray'));
+        margin-bottom: rem(16px);
+
+        @include media('<=desktop') {
+          font-size: rem(28px);
+        }
+
+        @include media('<=phoneLandscape') {
+          color: #141415;
+        }
+      }
+
+      .description {
+        @include inter($size: 20px, $weight: 400, $lh: 160%, $color: v('light-gray'));
+        margin-bottom: rem(32px);
+
+        @include media('<=desktop') {
+          font-size: rem(16px);
+        }
+        @include media('<=phoneLandscape') {
+          margin-bottom: rem(24px);
+
+          font-size: rem(16px);
+        }
+      }
+      .link {
+        display: flex;
+        column-gap: rem(5px);
+        @include jb-mono($size: 16px, $weight: 500, $lh: 100%, $color: v('github-orange-gradient'));
+        letter-spacing: -0.01em;
+        text-align: left;
+
+        @include media('<=phoneLandscape') {
+          font-size: rem(14px);
+        }
+        .arrow {
+          margin-top: rem(3px);
+          @include media('<=phoneLandscape') {
+            margin-top: rem(2px);
+
+            width: rem(10px);
+          }
+        }
+      }
+    }
+
+    .pricingSection {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: rem(530px);
+      @include media('<=desktop') {
+        min-width: unset;
+      }
+      .idsPerMonth {
+        padding: rem(40px) rem(32px);
+        width: 100%;
+
+        @include media('<=desktop') {
+          padding: 0 rem(30px) rem(40px) 0;
+        }
+        @include media('<=phoneLandscape') {
+          border-top: rem(1px) solid #e8e8e8;
+
+          padding: rem(32px) 0 rem(16px);
+        }
+        .title {
+          @include inter($size: 20px, $weight: 600, $lh: 140%, $color: v('gray'));
+          .orange {
+            color: #ff5d22;
+          }
+          @include media('<=phoneLandscape') {
+            font-size: rem(16px);
+          }
+        }
+      }
+      .slider {
+        width: 100%;
+        padding: rem(40px) rem(32px);
+        border-bottom: rem(1px) solid #e8e8e8;
+        border-top: rem(1px) solid #e8e8e8;
+
+        @include media('<=desktop') {
+          padding: rem(40px) rem(30px) rem(40px) 0;
+        }
+        @include media('<=phoneLandscape') {
+          border-top: unset;
+
+          padding: rem(8px) 0 rem(32px);
+        }
+      }
+      .payment {
+        padding: rem(40px) rem(32px);
+        width: 100%;
+
+        @include media('<=desktop') {
+          padding: rem(40px) rem(30px) rem(40px) 0;
+        }
+        @include media('<=phoneLandscape') {
+          padding: rem(40px) 0 0;
+        }
+        .pricingCard {
+          display: flex;
+          flex-direction: column;
+          color: v('gray');
+          row-gap: rem(4px);
+          .starting {
+            @include inter($size: 20px, $weight: 600, $lh: 140%);
+            @include media('<=phoneLandscape') {
+              font-size: rem(16px);
+            }
+          }
+          .priceCard {
+            display: flex;
+            column-gap: rem(9px);
+            align-items: center;
+            .price {
+              @include jb-mono($size: 40px, $weight: 500, $lh: 140%);
+              @include media('<=phoneLandscape') {
+                font-size: rem(24px);
+              }
+            }
+            .period {
+              @include inter($size: 16px, $weight: 500, $lh: 130%);
+            }
+          }
+        }
+        .contactSalesCard {
+          padding-bottom: rem(32px);
+          @include media('<=phoneLandscape') {
+            padding-bottom: rem(4px);
+          }
+          .contactSalesButton {
+            @include media('<=phoneLandscape') {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.backgroundLayer {
+  z-index: -1;
+  position: absolute;
+  background-color: #202021;
+  width: 100%;
+  height: rem(65px);
+
+  @include media('<=phoneLandscape') {
+    height: rem(27px);
+  }
+}
+
+@include media('<=phoneLandscape') {
+  .labelWrapper,
+  .descriptionSection,
+  .pricingSection > .idsPerMonth,
+  .pricingSection > .slider,
+  .pricingSection > .payment {
+    @include transition((opacity));
+    @include transition-duration(1s);
+    opacity: 0;
+  }
+  .labelWrapper {
+    transition-delay: 0.25s;
+  }
+  .descriptionSection {
+    transition-delay: 0.75s;
+  }
+  .pricingSection > .idsPerMonth {
+    transition-delay: 1.25s;
+  }
+  .pricingSection > .slider {
+    transition-delay: 1.75s;
+  }
+  .pricingSection > .payment {
+    transition-delay: 2.25s;
+  }
+}
+
+.root {
+  .visible {
+    .labelWrapper,
+    .descriptionSection,
+    .pricingSection > .idsPerMonth,
+    .pricingSection > .slider,
+    .pricingSection > .payment {
+      opacity: 1;
+    }
+  }
+}

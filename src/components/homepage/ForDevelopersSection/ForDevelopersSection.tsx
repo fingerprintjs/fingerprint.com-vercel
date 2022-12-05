@@ -190,12 +190,12 @@ function Card({
         {openNewTab ? (
           <a className={styles.link} target='_blank' rel='noreferrer' href={link}>
             {linkText}
-            <ArrowSVG />
+            <ArrowSVG className={styles.arrow} />
           </a>
         ) : (
           <Link className={styles.link} to={link}>
             {linkText}
-            <ArrowSVG />
+            <ArrowSVG className={styles.arrow} />
           </Link>
         )}
       </div>

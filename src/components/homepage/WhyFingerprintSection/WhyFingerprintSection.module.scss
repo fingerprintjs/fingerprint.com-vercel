@@ -60,19 +60,9 @@
       text-align: left;
     }
     .labelWrapper {
-      padding: 0 rem(8px);
-
       @include labelOrange;
     }
     .label {
-      @include jb-mono($size: 14px, $weight: 700, $lh: 16px);
-      letter-spacing: 0.04em;
-      background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, #fa7545 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-
       @include media('<=desktopHeader') {
         font-size: rem(12px);
       }

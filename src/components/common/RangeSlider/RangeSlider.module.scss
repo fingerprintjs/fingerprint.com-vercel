@@ -6,26 +6,6 @@
     padding-top: 3rem;
   }
 
-  .output {
-    position: absolute;
-    top: 0;
-    left: v('left');
-    height: 3rem;
-    width: auto;
-    text-align: center;
-    transform: translateX(-20px) translateY(-4px);
-    font-weight: v(semi);
-    width: 36px;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include media('>phoneLandscape') {
-      display: none;
-    }
-  }
-
   .label,
   .labelBelow {
     display: flex;
@@ -34,8 +14,10 @@
     position: relative;
     height: 24px;
     margin-bottom: 1rem;
-    font-size: 1.75rem;
 
+    .text {
+      @include jb-mono($size: 14px, $weight: v(bold), $lh: 21px);
+    }
     .text,
     .labelBelowText {
       flex: 1;
@@ -72,12 +54,6 @@
     }
   }
 
-  .label {
-    @include media('<=phoneLandscape') {
-      display: none;
-    }
-  }
-
   .inputContainer {
     background-color: v('off-white');
     border-radius: 2rem;
@@ -106,7 +82,7 @@
       all: unset;
       background-image: linear-gradient(
         to right,
-        v('brand-fire') var(--left),
+        v('github-orange-gradient') var(--left),
         v('transparent') var(--left),
         v('transparent')
       );
@@ -133,7 +109,7 @@
       all: unset;
       background-image: linear-gradient(
         to right,
-        v('brand-fire') var(--left),
+        v('github-orange-gradient') var(--left),
         v('transparent') var(--left),
         v('transparent')
       );

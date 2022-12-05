@@ -61,7 +61,6 @@ export default function RangeSlider({
     >
       {!labelsBelow && (
         <>
-          <span className={styles.output}>{values[Math.round(currentValue)].label}</span>
           <label htmlFor='billingSlider' className={styles.label}>
             {values.map((value, index) => {
               return (

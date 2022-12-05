@@ -13,6 +13,7 @@ import { ReactComponent as YahooSVG } from '../../../../static/img/company-logos
 import { ReactComponent as TargetSVG } from '../../../../static/img/company-logos/target.svg'
 import { ReactComponent as Upstar } from '../../../../static/img/company-logos/upstar.svg'
 import { ReactComponent as CheckoutSVG } from '../../../../static/img/company-logos/checkout.svg'
+import { ReactComponent as TripleWhaleSVG } from '../../../../static/img/company-logos/triple-whale.svg'
 
 import styles from './ClientsSection.module.scss'
 import { repeatElement } from '../../../helpers/repeatElement'
@@ -37,18 +38,19 @@ function LogosRow({ keyString }: LogosRowProps) {
     <div className={styles.logos}>
       {repeatElement(2, (i: number) => (
         <React.Fragment key={`${keyString}-${i}`}>
-          <CoinBaseSVG className={classNames(styles.logo, styles.coinbase)} />
           <UsBankSVG className={classNames(styles.logo, styles.usBank)} />
           <AmeritradeSVG className={classNames(styles.logo, styles.ameritrade)} />
           <WesternUnionSVG className={classNames(styles.logo, styles.western)} />
           <BookingSVG className={classNames(styles.logo, styles.booking)} />
           <AgodaSVG className={classNames(styles.logo, styles.agoda)} />
+          <CoinBaseSVG className={classNames(styles.logo, styles.coinbase)} />
           <HomeCreditSVG className={classNames(styles.logo, styles.homeCredit)} />
           <RockstarSVG className={classNames(styles.logo, styles.rockstar)} />
           <YahooSVG className={classNames(styles.logo, styles.yahoo)} />
           <TargetSVG className={classNames(styles.logo, styles.target)} />
           <Upstar className={classNames(styles.logo, styles.upstar)} />
           <CheckoutSVG className={classNames(styles.logo, styles.checkout)} />
+          <TripleWhaleSVG className={classNames(styles.logo, styles.tripleWhale)} />
         </React.Fragment>
       ))}
     </div>
