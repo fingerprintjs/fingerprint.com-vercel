@@ -174,7 +174,6 @@
         @include inter($size: 14px, $weight: 400, $lh: 140%);
 
         .mailto {
-          padding-top: rem(8px);
           @include transition((opacity));
 
           &:hover {

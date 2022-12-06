@@ -143,19 +143,12 @@ export const solutions = [
 export const developers = [
   { title: 'Documentation', url: URL.docsUrl, isLocal: false },
   { title: 'Technical Tutorials', url: PATH.useCases, isLocal: true },
-  { title: 'API Status', url: URL.statusUrl, isLocal: true },
+  { title: 'API Status', url: URL.statusUrl, isLocal: false },
   { title: 'SDKs and Libraries', url: PATH.sdks, isLocal: true },
   { title: 'Discord Channel', url: URL.discordServerURL, isLocal: false },
   { title: 'GitHub', url: URL.githubCommunityRepoUrl, isLocal: false },
 ]
-export const resources = [
-  { title: 'Documentation', url: URL.docsUrl, isLocal: false },
-  { title: 'Technical Tutorials', url: PATH.accountTakeover, isLocal: true },
-  { title: 'API Status', url: URL.statusUrl, isLocal: true },
-  { title: 'SDKs and Libraries', url: PATH.sdks, isLocal: true },
-  { title: 'Discord Channel', url: URL.discordServerURL, isLocal: false },
-  { title: 'GitHub', url: URL.githubCommunityRepoUrl, isLocal: false },
-]
+
 export const defaultDataLayer = [{ branch: BRANCH }]
 
 // When changing this, some markdown files need to be changed as well.
