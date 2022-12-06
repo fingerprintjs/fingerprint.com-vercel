@@ -1,29 +1,36 @@
 import React from 'react'
 import { Layout } from '../../components/Layout'
-import ClientsSection from '../../components/ClientsSection'
-import AccuracySection from '../../components/AccuracySection/AccuracySection'
-import LiveDemoSection from '../../components/LiveDemoSection'
-import UseCasesSection from '../../components/UseCasesSection'
-import Billing from '../../components/Billing'
-import SOCSection from '../../components/SOCSection/SOCSection'
+
+import HeroSection from '../../components/homepage/HeroSection/HeroSection'
+import ClientsSection from '../../components/homepage/ClientsSection/ClientsSection'
+import DemoSection from '../../components/homepage/DemoSection/DemoSection'
+import PlatformSection from '../../components/homepage/PlatformSection/PlatformSection'
+import UseCasesSection from '../../components/homepage/UseCasesSection/UseCasesSection'
+import CustomerStoriesSection from '../../components/homepage/CustomerStoriesSection/CustomerStoriesSection'
+import WhyFingerprintSection from '../../components/homepage/WhyFingerprintSection/WhyFingerprintSection'
+import ForDevelopersSection from '../../components/homepage/ForDevelopersSection/ForDevelopersSection'
+import SOCSection from '../../components/homepage/SOCSection/SOCSection'
+import PricingSection from '../../components/homepage/PricingSection/PricingSection'
+import VideoSection from '../../components/homepage/VideoSection/VideoSection'
+import BadgesSection from '../../components/homepage/BadgesSection/BadgesSection'
+
 import { SEO } from '../../components/SEO/SEO'
-import { withPrefix } from 'gatsby'
-import VideoSection from '../../components/VideoSection/VideoSection'
-import ProToolsSection from '../../components/ProToolsSection'
-import StayProtectedSection from '../../components/StayProtectedSection'
 
 export default function IndexPage() {
   return (
     <Layout>
-      <LiveDemoSection advertisingVariant />
+      <HeroSection advertisingVariant />
       <ClientsSection />
-      <AccuracySection />
+      <DemoSection />
+      <PlatformSection />
       <UseCasesSection />
-      <Billing />
-      <SOCSection advertisingVariant />
-      <ProToolsSection />
+      <CustomerStoriesSection />
+      <WhyFingerprintSection />
+      <ForDevelopersSection />
+      <SOCSection />
+      <PricingSection />
       <VideoSection />
-      <StayProtectedSection advertisingVariant />
+      <BadgesSection />
     </Layout>
   )
 }
@@ -31,8 +38,6 @@ export default function IndexPage() {
 export function Head() {
   return (
     <SEO>
-      <link rel='preload' as='image' href={withPrefix('/img/diagram-section/background.svg')} />
-      <link rel='preload' as='image' href={withPrefix('/img/diagram-section/backgroundAfter.svg')} />
       <meta name='robots' content='noindex' />
     </SEO>
   )

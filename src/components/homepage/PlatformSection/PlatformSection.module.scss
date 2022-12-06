@@ -130,7 +130,7 @@
         z-index: 2;
         @include transition((opacity, transform));
         @include transition-duration(1.5s);
-        transition-delay: 5.25s;
+        transition-delay: 4.25s;
         opacity: 0;
         transform: translateY(-90px);
 
@@ -190,7 +190,7 @@
 
         opacity: 0;
         @include transition((opacity));
-        @include transition-duration(0.5s);
+        @include transition-duration(0.25s);
 
         transition-delay: 1.25s;
 
@@ -213,7 +213,7 @@
           opacity: 0;
           transform: translateY(90px);
           @include transition((opacity, transform));
-          @include transition-duration(2s);
+          @include transition-duration(1.25s);
 
           rect {
             fill: #858585;
@@ -306,7 +306,7 @@
       .integrationsDot {
         left: rem(39px);
         top: rem(310px);
-        transition-delay: 3s;
+        transition-delay: 2.25s;
 
         @include media('<=desktop') {
           left: rem(81px);
@@ -316,7 +316,7 @@
       .mobileDot {
         left: rem(79px);
         top: rem(390px);
-        transition-delay: 3.25s;
+        transition-delay: 2.5s;
 
         @include media('<=desktop') {
           left: rem(103.5px);
@@ -326,7 +326,7 @@
       .webDot {
         left: rem(96px);
         top: rem(470px);
-        transition-delay: 3.5s;
+        transition-delay: 2.75s;
 
         @include media('<=desktop') {
           left: rem(112.5px);
@@ -405,7 +405,7 @@
         height: rem(2px);
 
         opacity: 0;
-        transition-delay: 3.75s;
+        transition-delay: 2.75s;
         transform: translateX(-15px);
         @include transition((opacity, transform));
         @include transition-duration(1.25s);
@@ -436,7 +436,7 @@
         .sideTitle,
         .sideDescription {
           @include transition-duration(1s);
-          transition-delay: 4.25s;
+          transition-delay: 3.25s;
 
           @include media('<=phoneLandscape') {
             transition-delay: 1s;
@@ -462,7 +462,7 @@
 
         @include transition((opacity, transform));
         @include transition-duration(1.5s);
-        transition-delay: 5.25s;
+        transition-delay: 4.25s;
         opacity: 0;
         transform: translateY(-90px);
 
@@ -492,7 +492,7 @@
       .sideDescription {
         @include transition((opacity, transform));
         @include transition-duration(1.25s);
-        transition-delay: 5.25s;
+        transition-delay: 4.25s;
         opacity: 0;
         transform: translateY(-90px);
 
@@ -560,25 +560,25 @@
     }
 
     .feature1 {
-      transition-delay: 4.5s;
+      transition-delay: 3.5s;
       @include media('<=phoneLandscape') {
         transition-delay: 1.25s;
       }
     }
     .feature2 {
-      transition-delay: 4.75s;
+      transition-delay: 3.75s;
       @include media('<=phoneLandscape') {
         transition-delay: 1.5s;
       }
     }
     .feature3 {
-      transition-delay: 6s;
+      transition-delay: 5s;
       @include media('<=phoneLandscape') {
         transition-delay: 2.25s;
       }
     }
     .feature4 {
-      transition-delay: 6.25s;
+      transition-delay: 5.25s;
       @include media('<=phoneLandscape') {
         transition-delay: 2.75s;
       }

@@ -113,42 +113,4 @@
       }
     }
   }
-  @include media('<=phoneLandscape') {
-    .labelWrapper,
-    .logoSection,
-    .quoteSection > .quote,
-    .quoteSection > .author,
-    .quoteSection > .position {
-      @include transition((opacity));
-      @include transition-duration(1s);
-      opacity: 0;
-    }
-    .labelWrapper {
-      transition-delay: 0.25s;
-    }
-    .logoSection {
-      transition-delay: 0.75s;
-    }
-    .quoteSection > .quote {
-      transition-delay: 1.25s;
-    }
-    .quoteSection > .author {
-      transition-delay: 1.75s;
-    }
-    .quoteSection > .position {
-      transition-delay: 1.75s;
-    }
-  }
-}
-
-.visible {
-  .labelWrapper,
-  .logoSection,
-  .quoteSection > .quote,
-  .quoteSection > .author,
-  .quoteSection > .position {
-    @include media('<=phoneLandscape') {
-      opacity: 1;
-    }
-  }
 }

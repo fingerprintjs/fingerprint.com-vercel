@@ -18,8 +18,6 @@
   padding-bottom: rem(48px);
 
   @include media('<=phoneLandscape') {
-    align-items: flex-start;
-    text-align: left;
     padding-bottom: rem(32px);
   }
 
@@ -64,8 +62,7 @@
 
   @include media('<=phoneLandscape') {
     grid-template-columns: 1fr;
-    justify-items: start;
-    row-gap: rem(32px);
+    row-gap: rem(40px);
   }
 
   .card {
@@ -74,8 +71,7 @@
     flex-direction: column;
 
     @include media('<=phoneLandscape') {
-      flex-direction: row;
-      column-gap: rem(16px);
+      row-gap: rem(16px);
     }
     .iconWrapper {
       display: flex;
@@ -99,10 +95,9 @@
       @include inter($size: 20px, $weight: 600, $lh: 130%);
 
       @include media('<=phoneLandscape') {
-        text-align: left;
         font-size: rem(16px);
-        line-height: 155%;
-        max-width: rem(125px);
+        width: 500;
+        max-width: rem(126px);
       }
     }
   }

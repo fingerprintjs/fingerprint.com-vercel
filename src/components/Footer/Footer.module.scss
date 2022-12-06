@@ -87,7 +87,7 @@
 
           .title {
             @include inter($size: 16px, $weight: 600, $lh: 150%);
-            padding-bottom: rem(16px);
+            padding-bottom: rem(8px);
           }
 
           .description {

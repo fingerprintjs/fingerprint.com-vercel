@@ -112,7 +112,7 @@
       }
     }
     .cardTitle {
-      @include inter($size: 24px, $weight: 500, $lh: 130%);
+      @include inter($size: 24px, $weight: 600, $lh: 130%);
 
       padding-bottom: rem(8px);
 

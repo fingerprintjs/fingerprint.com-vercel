@@ -1,23 +1,13 @@
-import React, { useRef } from 'react'
+import React from 'react'
 
 import Container from '../../common/Container'
 
 import styles from './CustomerStoriesSection.module.scss'
 import { ReactComponent as CheckoutSVG } from '../../../../static/img/company-logos/checkout.svg'
 
-import { useInView } from 'framer-motion'
-import classNames from 'classnames'
-
 export default function CustomerStoriesSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
   return (
-    <Container
-      size='large'
-      className={classNames(styles.container, {
-        [styles.visible]: isInView,
-      })}
-    >
+    <Container size='large' className={styles.container}>
       <div className={styles.labelWrapper}>
         <span className={styles.label}>Customer Stories</span>
       </div>
@@ -25,7 +15,7 @@ export default function CustomerStoriesSection() {
         <CheckoutSVG className={styles.logo} />
       </div>
       <div className={styles.quoteSection}>
-        <p className={styles.quote} ref={ref}>
+        <p className={styles.quote}>
           “With Fingerprint, we&apos;re able to identify fraudulent payment attempts with higher accuracy. The developer
           experience was outstanding - we got all the way to production in less than a week.”
         </p>

@@ -55,9 +55,6 @@
 
         @include media('<=desktop') {
           font-size: rem(28px);
-        }
-
-        @include media('<=phoneLandscape') {
           color: #141415;
         }
       }

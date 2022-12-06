@@ -14,7 +14,10 @@ import { getConfig } from '../../../helpers/fpjs'
 import styles from './HeroSection.module.scss'
 import classNames from 'classnames'
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  advertisingVariant?: boolean
+}
+export default function HeroSection({ advertisingVariant = false }: HeroSectionProps) {
   const ref = useRef<HTMLVideoElement>(null)
   const isInView = useInView(ref, { once: true })
 
@@ -52,18 +55,32 @@ export default function HeroSection() {
           improve user experiences, and better understand their traffic.
         </p>
         <div className={styles.buttons}>
-          <Button href={URL.signupUrl} variant='orangeGradient' className={styles.button}>
-            Create Free Account
-          </Button>
+          {advertisingVariant ? (
+            <Button href={PATH.contactSales} variant='orangeGradient' className={styles.button}>
+              Contact Sales
+            </Button>
+          ) : (
+            <Button href={URL.signupUrl} variant='orangeGradient' className={styles.button} openNewTab>
+              Create Free Account
+            </Button>
+          )}
+
           <Button href={PATH.demoUrl} variant='orangeGradientOutline'>
             View Live Demo
           </Button>
         </div>
-        <div className={styles.tips}>
-          <BottomTip>Free for developers</BottomTip>
-          <BottomTip>GDRP/CCPA Compliant</BottomTip>
-          <BottomTip>Get Started in 10 minutes</BottomTip>
-        </div>
+        {advertisingVariant ? (
+          <div className={styles.tips}>
+            <BottomTip>GDRP/CCPA Compliant</BottomTip>
+            <BottomTip>Get Started in 10 minutes</BottomTip>
+          </div>
+        ) : (
+          <div className={styles.tips}>
+            <BottomTip>Free for developers</BottomTip>
+            <BottomTip>GDRP/CCPA Compliant</BottomTip>
+            <BottomTip>Get Started in 10 minutes</BottomTip>
+          </div>
+        )}
       </section>
       <div className={styles.videoWrapper}>
         <div
