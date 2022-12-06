@@ -1,4 +1,4 @@
-showNotBar: true
+showNotBar: false
 barBody: "ANNOUNCEMENT: We're now SOC 2 Type II certified."
 arrowText: Read more
 url: /blog/soc-2-type-2/
