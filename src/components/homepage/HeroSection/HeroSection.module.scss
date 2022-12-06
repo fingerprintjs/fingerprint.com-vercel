@@ -127,7 +127,7 @@
       }
       &.startVisitorId {
         transition-delay: 4.75s;
-        animation: jump 0.25s ease 6.4s 1;
+        animation: jump 0.25s ease 6.41s 1;
 
         .animationLabel {
           width: 100%;
@@ -145,7 +145,7 @@
         @keyframes jump {
           0% {
           }
-          50% {
+          33% {
             top: 41%;
           }
           100% {

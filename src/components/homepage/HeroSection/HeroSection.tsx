@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState, useCallback } from 'react'
 import Container from '../../common/Container'
 import Button from '../../common/Button'
 import { PATH, URL } from '../../../constants/content'
@@ -18,21 +18,13 @@ interface HeroSectionProps {
   advertisingVariant?: boolean
 }
 export default function HeroSection({ advertisingVariant = false }: HeroSectionProps) {
-  const ref = useRef<HTMLVideoElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true })
 
   const { data } = useVisitorData(getConfig)
   const [startedPlaying, setStartedPlaying] = useState(false)
 
   const [visitorId, setVisitorId] = useState('hZ4W5oQ7pJVIHbW2fBXA')
-
-  useEffect(() => {
-    if (isInView && ref.current) {
-      setStartedPlaying(false)
-      ref.current.play()
-      setStartedPlaying(true)
-    }
-  }, [isInView])
 
   useEffect(() => {
     if (data) {
@@ -45,6 +37,22 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
       setVisitorId(randomVisitorId)
     }
   }, [data, visitorId])
+
+  const onRefChange = useCallback(
+    (element: HTMLVideoElement | null) => {
+      if (!element) {
+        return
+      }
+      if (isInView && element.readyState >= element.HAVE_FUTURE_DATA) {
+        element.play()
+      }
+
+      if (element.readyState >= element.HAVE_FUTURE_DATA && element.paused === false) {
+        setStartedPlaying(true)
+      }
+    },
+    [isInView]
+  )
 
   return (
     <Container className={styles.container} size='large'>
@@ -82,7 +90,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           </div>
         )}
       </section>
-      <div className={styles.videoWrapper}>
+      <div ref={ref} className={styles.videoWrapper}>
         <div
           className={classNames(styles.animationText, {
             [styles.startVisitorId]: startedPlaying,
@@ -91,7 +99,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           <p className={styles.animationLabel}>Your visitor ID_</p>
           <p className={styles.animationVisitorId}>{visitorId}</p>
         </div>
-        <video onPlaying={() => setStartedPlaying(true)} muted playsInline ref={ref} className={styles.videoSection}>
+        <video muted playsInline className={styles.videoSection} ref={(node) => onRefChange(node)}>
           <source src={heroWebm} type='video/webm' />
           <source src={heroMp4} type='video/mp4' />
         </video>
