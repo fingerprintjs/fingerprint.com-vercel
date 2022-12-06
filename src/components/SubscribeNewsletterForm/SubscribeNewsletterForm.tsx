@@ -8,12 +8,21 @@ import { useViewTracking } from '../../context/HistoryListener'
 
 import styles from './SubscribeNewsletterForm.module.scss'
 
+import { ReactComponent as ArrowSVG } from './ArrowSVG.svg'
+import { ReactComponent as TickSVG } from './TickSVG.svg'
+import { ReactComponent as ErrorSVG } from './ErrorSVG.svg'
+
 interface SubscribeNewsletterFormProps {
-  variant?: 'primary' | 'white'
+  variant?: 'primary' | 'white' | 'dark'
+  size?: 'small' | 'big'
   origin: Forms
 }
 
-export default function SubscribeNewsletterForm({ variant = 'primary', origin }: SubscribeNewsletterFormProps) {
+export default function SubscribeNewsletterForm({
+  variant = 'primary',
+  origin,
+  size = 'small',
+}: SubscribeNewsletterFormProps) {
   const [email, setEmail] = useState('')
   const { formState, errorMessage, updateFormState, updateErrorMessage } = useForm(origin)
   const { utmParams } = useViewTracking()
@@ -53,7 +62,7 @@ export default function SubscribeNewsletterForm({ variant = 'primary', origin }:
     }
   }
 
-  return (
+  return size === 'small' ? (
     <div
       className={classNames(
         styles.wrapper,
@@ -79,7 +88,7 @@ export default function SubscribeNewsletterForm({ variant = 'primary', origin }:
           size={variant === 'primary' ? 'big' : 'medium'}
           className={classNames(styles.button, { [styles.loadingButton]: formState === FormState.Loading })}
           disabled={formState === FormState.Loading}
-          variant={variant}
+          variant={variant === 'primary' ? 'primary' : 'white'}
         >
           Subscribe
         </Button>
@@ -89,6 +98,47 @@ export default function SubscribeNewsletterForm({ variant = 'primary', origin }:
         <span className={styles.message}>You have been successfully subscribed!</span>
       )}
       {formState === FormState.Failed && <span className={styles.failedMessage}>{errorMessage}</span>}
+    </div>
+  ) : (
+    <div
+      className={classNames(
+        styles.widgetBig,
+        { [styles.white]: variant === 'white' },
+        { [styles.dark]: variant === 'dark' }
+      )}
+    >
+      {formState === FormState.Default && (
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <input
+            className={styles.input}
+            id='email'
+            maxLength={64}
+            name='email'
+            size={20}
+            type='email'
+            placeholder='Email address*'
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <button className={styles.arrowButton}>
+            <ArrowSVG className={styles.arrow} />
+          </button>
+        </form>
+      )}
+
+      {formState === FormState.Loading && <span className={styles.message}>Please wait...</span>}
+      {formState === FormState.Success && (
+        <span className={styles.message}>
+          You are now subscribed
+          <TickSVG />
+        </span>
+      )}
+      {formState === FormState.Failed && (
+        <span className={styles.failedMessage}>
+          <ErrorSVG />
+          Something went wrong
+        </span>
+      )}
     </div>
   )
 }

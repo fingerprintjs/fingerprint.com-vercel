@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Footer from '../Footer'
+import Footer from '../Footer/Footer'
 import Header from '../Header'
 import HeaderDark from '../Header/HeaderDark'
 
@@ -84,7 +84,7 @@ export function LayoutTemplate({ children, notificationBar, darkVariant }: Layou
       {darkVariant ? <HeaderDark /> : <Header notificationBar={notificationBar} />}
 
       {children}
-      <Footer darkVariant={darkVariant} />
+      <Footer />
     </>
   )
 }

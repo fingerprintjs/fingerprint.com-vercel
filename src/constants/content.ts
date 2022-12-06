@@ -127,17 +127,35 @@ export const useCaseLinks = [
   { title: 'Buy Now Pay Later', url: PATH.bnpl, isLocal: true },
 ]
 
-export const products = [
-  { title: 'Device Identification', url: PATH.whyFpjs, isLocal: true },
+export const platform = [
+  { title: 'Pro - Visitor Identification', url: PATH.whyFpjs, isLocal: true },
+  { title: 'BotD - Bot Detection', url: PATH.botD, isLocal: true },
+  { title: 'Integrations', url: PATH.integrations, isLocal: true },
+  { title: 'Security & Privacy', url: PATH.security, isLocal: true },
+]
+
+export const solutions = [
+  { title: 'Payment Fraud', url: PATH.paymentFraud, isLocal: true },
+  { title: 'Account Takeover', url: PATH.accountTakeover, isLocal: true },
   { title: 'Account Sharing Prevention', url: PATH.accountSharing, isLocal: true },
-  { title: 'Bot Detection', url: PATH.botD, isLocal: true },
+  { title: 'Paywall Enforcement', url: PATH.paywall, isLocal: true },
 ]
-
-export const company = [
-  { title: 'Blog', url: PATH.blog, isLocal: true },
-  { title: 'Careers', url: PATH.careers, isLocal: true },
+export const developers = [
+  { title: 'Documentation', url: URL.docsUrl, isLocal: false },
+  { title: 'Technical Tutorials', url: PATH.accountTakeover, isLocal: true },
+  { title: 'API Status', url: URL.statusUrl, isLocal: true },
+  { title: 'SDKs and Libraries', url: PATH.sdks, isLocal: true },
+  { title: 'Discord Channel', url: URL.discordServerURL, isLocal: false },
+  { title: 'GitHub', url: URL.githubCommunityRepoUrl, isLocal: false },
 ]
-
+export const resources = [
+  { title: 'Documentation', url: URL.docsUrl, isLocal: false },
+  { title: 'Technical Tutorials', url: PATH.accountTakeover, isLocal: true },
+  { title: 'API Status', url: URL.statusUrl, isLocal: true },
+  { title: 'SDKs and Libraries', url: PATH.sdks, isLocal: true },
+  { title: 'Discord Channel', url: URL.discordServerURL, isLocal: false },
+  { title: 'GitHub', url: URL.githubCommunityRepoUrl, isLocal: false },
+]
 export const defaultDataLayer = [{ branch: BRANCH }]
 
 // When changing this, some markdown files need to be changed as well.
@@ -218,10 +236,10 @@ export const platformDropdown = {
 }
 
 export const resourcesDropdown = [
-  { title: 'Blog', url: PATH.blog },
-  { title: 'FAQ', url: PATH.faq },
-  { title: 'Webinars', url: `${PATH.blog}tag/webinar/` },
-  { title: 'Case Studies', url: PATH.caseStudies },
+  { title: 'Blog', url: PATH.blog, isLocal: true },
+  { title: 'FAQ', url: PATH.faq, isLocal: true },
+  { title: 'Webinars', url: `${PATH.blog}tag/webinar/`, isLocal: true },
+  { title: 'Case Studies', url: PATH.caseStudies, isLocal: true },
 ]
 // We need to reset the chatbot widget on the following pages
 export const PAGES_RELOAD_CHATBOT = [

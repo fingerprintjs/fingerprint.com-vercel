@@ -1,102 +1,177 @@
 .footer {
-  background-color: v('brand-water');
-  color: v('white');
-  padding: rem(64px) 0 rem(24px) 0;
+  background-color: v('white');
+  color: v('gray');
+  padding: rem(64px) 0 rem(40px) 0;
+  border-top: rem(1px) solid #e8e8e8;
 
-  .copyrights {
-    margin-top: rem(24px);
-
-    @include sans($size: 14px, $weight: 400, $lh: 150%);
+  @include media('<=desktop') {
+    padding: rem(56px) 0 rem(56px) 0;
   }
-
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    row-gap: rem(96px);
-
-    @include media('<=desktop') {
-      display: flex;
-      row-gap: rem(64px);
+  @include media('<=phoneLandscape') {
+    padding: rem(56px) 0 rem(32px) 0;
+  }
+  .navContainer,
+  .contactContainer {
+    @include media('<=desktopHeader') {
+      padding-right: rem(70px);
+      padding-left: rem(70px);
     }
-
-    .wrapper {
+    @include media('<=phoneLandscape') {
+      padding-right: rem(20px);
+      padding-left: rem(20px);
+    }
+  }
+  .navContainer {
+    .nav {
       display: flex;
-      column-gap: rem(42px);
+      justify-content: space-between;
+      column-gap: rem(52px);
+      padding-bottom: rem(56px);
+      border-bottom: rem(1px) solid #e8e8e8;
 
-      @include media('<=desktop') {
-        justify-content: space-between;
-      }
-
-      @include media('<=phoneLandscape') {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: rem(20px);
+      @include media('<=desktopHeader') {
+        flex-direction: column;
         row-gap: rem(40px);
       }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        column-gap: rem(16px);
+        @include media('<=desktopHeader') {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          row-gap: rem(24px);
+          border-bottom: rem(1px) solid #e8e8e8;
+          padding-bottom: rem(40px);
+        }
+        @include media('<=phoneLandscape') {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: rem(20px);
+          row-gap: rem(32px);
+        }
+      }
+
+      .logos {
+        max-width: rem(297px);
+        @include media('<=desktop') {
+          display: flex;
+          max-width: unset;
+          justify-content: space-between;
+          align-items: center;
+          column-gap: rem(56px);
+        }
+        @include media('<=phoneLandscape') {
+          flex-direction: column;
+          row-gap: rem(32px);
+          align-items: flex-start;
+        }
+
+        .soc2Logo {
+          display: flex;
+          column-gap: rem(8px);
+
+          svg {
+            width: rem(72px);
+            height: rem(72px);
+          }
+          @include media('>desktop') {
+            padding-top: rem(56px);
+          }
+        }
+
+        .newsLetter {
+          text-align: left;
+
+          .title {
+            @include inter($size: 16px, $weight: 600, $lh: 150%);
+            padding-bottom: rem(16px);
+          }
+
+          .description {
+            @include inter($size: 14px, $weight: 500, $lh: 150%);
+            padding-bottom: rem(24px);
+          }
+        }
+      }
+
+      .contact,
+      .menu {
+        font-size: rem(14px);
+
+        .title {
+          @include inter($size: 12px, $weight: 600, $lh: 130%, $color: #b9b9b9);
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          margin-bottom: rem(12px);
+        }
+
+        .link,
+        .address {
+          @include inter($size: 14px, $weight: 400, $lh: 150%);
+        }
+        .labelWrapper {
+          display: flex;
+          align-items: center;
+
+          margin-left: rem(8px);
+          @include labelOrange;
+          .label {
+            font-size: rem(10px);
+            white-space: nowrap;
+          }
+        }
+      }
+
+      .menu {
+        .link {
+          display: flex;
+          padding: 0.5rem 0;
+          @include transition((opacity));
+
+          &:hover {
+            opacity: v('extra-faded');
+          }
+
+          + .link {
+            margin-top: 0.5rem;
+          }
+        }
+      }
     }
+  }
+  .contactContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(40px);
 
-    .contact,
-    .menu {
-      font-size: rem(14px);
-
-      .title {
-        @include sans($size: 16px, $weight: 600, $lh: 150%);
-        margin-bottom: rem(12px);
-      }
-
-      .link,
-      .address {
-        font-style: normal;
-        @include sans($size: 14px, $weight: 400, $lh: 150%);
-      }
-
-      .hiring {
-        @include sans($size: 10px, $weight: 600, $lh: 140%, $color: c('brand-fire'));
-        text-transform: uppercase;
-        padding: rem(4px) rem(6px);
-        background: rgba(240, 68, 5, 0.1);
-        border-radius: 4px;
-        white-space: nowrap;
-        margin-left: rem(4px);
-      }
+    @include media('<=phoneLandscape') {
+      flex-direction: column;
+      row-gap: rem(32px);
+    }
+    .contact {
+      display: flex;
+      align-items: center;
+      column-gap: rem(43px);
 
       .fpjsLogo {
         object-fit: contain;
-        margin-bottom: rem(16px);
 
         height: auto;
-        width: rem(171px);
+        width: rem(176px);
 
-        @include media('<=phoneLandscape') {
-          width: rem(137px);
+        @include media('<=desktop') {
+          width: rem(200px);
         }
       }
-    }
-
-    .menu {
-      .link {
-        display: flex;
-        padding: 0.5rem 0;
-        @include transition((opacity));
-
-        &:hover {
-          opacity: v('extra-faded');
-        }
-
-        + .link {
-          margin-top: 0.5rem;
-        }
-      }
-    }
-
-    .contact {
       .address {
         display: flex;
         flex-direction: column;
-        @include sans($size: 14px, $weight: 400, $lh: 150%);
-        margin-bottom: rem(24.5px);
+        row-gap: rem(8px);
+        font-style: normal;
+        @include inter($size: 14px, $weight: 400, $lh: 140%);
 
         .mailto {
           padding-top: rem(8px);
@@ -107,70 +182,55 @@
           }
         }
       }
-
-      .social {
-        display: flex;
-        align-items: flex-end;
-
-        .links {
-          display: flex;
-          align-items: center;
-          column-gap: rem(24px);
-
-          .link {
-            a {
-              display: inline-block;
-            }
-
-            &:hover {
-              svg {
-                opacity: v('extra-faded');
-              }
-            }
-          }
-
-          svg {
-            fill: v('white');
-            @include transition((opacity));
-          }
-        }
-      }
-
-      .newsLetter {
-        max-width: rem(400px);
-        text-align: left;
-        padding-top: rem(64px);
-
-        .title {
-          @include sans($size: 16px, $weight: 600, $lh: 150%);
-          padding-bottom: rem(8px);
-        }
-
-        .description {
-          @include sans($size: 14px, $weight: 400, $lh: 140%);
-          padding-bottom: rem(40px);
-        }
-
-        @media screen and (max-width: 1240px) {
-          max-width: rem(320px);
-        }
+      @include media('<=desktop') {
+        flex-direction: column;
+        row-gap: rem(20px);
+        align-items: flex-start;
       }
     }
-  }
-}
+    .social {
+      display: flex;
+      column-gap: rem(24px);
+      align-items: center;
+      align-self: flex-end;
+      .copyrights {
+        @include inter($size: 14px, $weight: 400, $lh: 160%);
+        letter-spacing: 0.01em;
+      }
 
-.logos {
-  @include media('<=desktop') {
-    justify-self: flex-end;
-  }
+      .links {
+        display: flex;
+        align-items: center;
+        column-gap: rem(24px);
+        margin-bottom: rem(3px);
+        .link {
+          svg {
+            height: rem(20px);
+          }
 
-  .soc2Logo {
-    display: flex;
-    column-gap: rem(8px);
+          &:hover {
+            svg {
+              opacity: v('extra-faded');
+            }
+          }
+        }
 
-    svg {
-      width: rem(66px);
-      height: rem(66px);
+        svg {
+          fill: v('white');
+          @include transition((opacity));
+        }
+      }
+      @include media('<=desktop') {
+        flex-direction: column;
+        row-gap: rem(8px);
+        align-items: flex-end;
+      }
+      @include media('<=phoneLandscape') {
+        width: 100%;
+        flex-direction: row;
+        align-self: flex-start;
+        justify-content: space-between;
+      }
     }
   }
 }
