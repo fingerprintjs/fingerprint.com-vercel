@@ -72,8 +72,7 @@
   padding: 1rem 2rem;
   z-index: 1;
   border-radius: 1rem;
-  font-family: v('ff-sans');
-  font-weight: v('normal');
+  @include inter($weight: v('normal'));
   box-shadow: 0 10px 20px 0 adjust-color(c('brand-water'), $alpha: -0.8);
 }
 

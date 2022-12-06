@@ -26,7 +26,7 @@
       text-align: center;
 
       .title {
-        @include sans($size: 32px, $weight: 700, $lh: 150%);
+        @include inter($size: 32px, $weight: 700, $lh: 150%);
         letter-spacing: -0.01em;
 
         @include media('<=phoneLandscape') {
@@ -35,7 +35,7 @@
       }
 
       .description {
-        @include sans($size: 16px, $weight: 400, $lh: 150%);
+        @include inter($size: 16px, $weight: 400, $lh: 150%);
       }
     }
     .imageSection {
@@ -58,7 +58,7 @@
           width: rem(80px);
         }
         .logoTitle {
-          @include sans($size: 16px, $weight: 600, $lh: 150%);
+          @include inter($size: 16px, $weight: 600, $lh: 150%);
         }
       }
     }

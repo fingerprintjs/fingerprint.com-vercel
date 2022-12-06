@@ -10,7 +10,7 @@
 
     .header {
       .title {
-        @include sans($size: 44px, $weight: 700, $lh: 120%);
+        @include inter($size: 44px, $weight: 700, $lh: 120%);
         letter-spacing: -0.02em;
         text-align: left;
 
@@ -34,7 +34,7 @@
     text-align: left;
 
     .itemLink {
-      @include sans($size: 20px, $weight: 400, $lh: 32px, $color: v('brand-fire'));
+      @include inter($size: 20px, $weight: 400, $lh: 32px, $color: v('brand-fire'));
       text-decoration: underline;
       cursor: pointer;
 
@@ -71,7 +71,7 @@
       @include scrollSection;
 
       text-align: left;
-      @include sans($size: 24px, $weight: 700, $lh: 36px);
+      @include inter($size: 24px, $weight: 700, $lh: 36px);
       letter-spacing: -0.01em;
       padding-bottom: rem(32px);
 

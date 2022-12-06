@@ -27,7 +27,7 @@
       max-width: rem(608px);
 
       .title {
-        @include sans($size: 48px, $weight: 700, $lh: 114%);
+        @include inter($size: 48px, $weight: 700, $lh: 114%);
         letter-spacing: -0.01em;
 
         @include media('<=tabletWide') {
@@ -36,7 +36,7 @@
       }
 
       .description {
-        @include sans($size: 18px, $weight: 400, $lh: 160%);
+        @include inter($size: 18px, $weight: 400, $lh: 160%);
 
         @include media('<=tabletWide') {
           font-size: rem(16px);

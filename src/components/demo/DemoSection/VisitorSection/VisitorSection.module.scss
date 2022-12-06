@@ -39,10 +39,8 @@
 
   .description,
   .link {
-    font-family: v(ff-sans);
-    font-size: rem(16px);
-    color: adjust-color(c('brand-water'), $alpha: -0.3);
-    line-height: 150%;
+    @include inter($size: 16px, $lh: 150%, $color: adjust-color(c('brand-water'), $alpha: -0.3));
+
     padding-bottom: rem(24px);
   }
 
@@ -85,12 +83,9 @@
   }
 
   .label {
-    font-family: v(ff-sans);
-    font-size: rem(14px);
-    color: adjust-color(c('brand-water'), $alpha: -0.5);
-    line-height: 140%;
+    @include inter($size: 14px, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5), $weight: 500);
+
     letter-spacing: 0.04em;
-    font-weight: 500;
     text-transform: uppercase;
   }
 
@@ -98,7 +93,7 @@
     margin-bottom: rem(32px);
 
     .idValue {
-      font-family: v(ff-mono);
+      font-family: v(jb-mono);
       font-size: rem(36px);
       color: c('brand-fire');
       line-height: 130%;
@@ -130,10 +125,7 @@
     }
 
     .infoValue {
-      font-family: v(ff-sans);
-      font-weight: v('semi');
-      font-size: rem(20px);
-      line-height: 130%;
+      @include inter($size: 20px, $lh: 130%, $weight: v('semi'));
       letter-spacing: 0.01em;
 
       @include media('<=phoneLandscape') {
@@ -146,7 +138,7 @@
 .footer {
   @include fade-in($waitTime: 0s, $translate: 15px);
 
-  @include sans($size: 14px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
+  @include inter($size: 14px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
 
   padding-top: rem(16px);
 }
@@ -173,7 +165,7 @@
   align-items: flex-start;
 }
 .mobileTitle {
-  @include sans($size: 14px, $weight: 400, $lh: 150%, $color: adjust-color(c('brand-water'), $alpha: -0.3));
+  @include inter($size: 14px, $weight: 400, $lh: 150%, $color: adjust-color(c('brand-water'), $alpha: -0.3));
 }
 .mobileSection {
   padding-top: rem(8px);

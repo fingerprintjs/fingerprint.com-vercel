@@ -190,7 +190,7 @@
   color: c('off-white');
   @include transition(opacity);
 
-  @include sans($size: 16px, $weight: 600, $lh: 150%);
+  @include inter($size: 16px, $weight: 600, $lh: 150%);
 
   &:hover {
     opacity: 0.9;

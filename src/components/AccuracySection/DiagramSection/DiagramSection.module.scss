@@ -288,12 +288,12 @@ $mobileBreakpoint: 740px;
 .otherServices,
 .accuracyDescription,
 .incomingFlow {
-  @include sans($size: 14px, $weight: 500, $lh: 150%);
+  @include inter($size: 14px, $weight: 500, $lh: 150%);
 }
 
 .visitor,
 .visitorId,
 .trusted,
 .suspicious {
-  @include sans($size: 14px, $weight: 700, $lh: 150%);
+  @include inter($size: 14px, $weight: 700, $lh: 150%);
 }

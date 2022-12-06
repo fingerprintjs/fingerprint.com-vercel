@@ -17,7 +17,7 @@
 
     .contentSection {
       .caption {
-        @include sans($size: 14px, $weight: 600, $lh: 140%, $color: rgba(13, 16, 43, 0.48));
+        @include inter($size: 14px, $weight: 600, $lh: 140%, $color: rgba(13, 16, 43, 0.48));
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
@@ -46,7 +46,7 @@
       }
 
       .description {
-        @include sans($size: 20px, $weight: 400, $lh: 150%);
+        @include inter($size: 20px, $weight: 400, $lh: 150%);
 
         @include media('<=desktop') {
           font-size: rem(16px);

@@ -19,7 +19,7 @@
 
   .title,
   .titleMobile {
-    @include sans($size: 48px, $weight: 700, $lh: 64px);
+    @include inter($size: 48px, $weight: 700, $lh: 64px);
     letter-spacing: -0.01em;
 
     padding-bottom: rem(32px);
@@ -46,7 +46,7 @@
   z-index: unset;
 
   .benefits {
-    @include sans($size: 16px, $weight: 400, $lh: 24px);
+    @include inter($size: 16px, $weight: 400, $lh: 24px);
     padding-bottom: rem(36px);
 
     @include media('<=desktop') {
@@ -84,7 +84,7 @@
   .logosTitle {
     padding-bottom: rem(32px);
 
-    @include sans($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
+    @include inter($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
     letter-spacing: 0.05em;
     text-transform: uppercase;
     padding-top: rem(48px);

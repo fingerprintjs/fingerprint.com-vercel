@@ -17,9 +17,7 @@
   flex-direction: column;
   justify-content: space-around;
 
-  font-family: v('ff-sans');
-
-  font-size: 1.75rem;
+  @include inter($size: 14px);
 }
 
 .name {

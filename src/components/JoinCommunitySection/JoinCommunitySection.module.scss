@@ -29,7 +29,7 @@
     padding-bottom: rem(24px);
 
     text-transform: uppercase;
-    @include sans($size: 14px, $weight: 600, $lh: 140%);
+    @include inter($size: 14px, $weight: 600, $lh: 140%);
     letter-spacing: 0.04em;
   }
 
@@ -56,7 +56,7 @@
   }
 
   .description {
-    @include sans($size: 20px, $weight: 500, $lh: 150%);
+    @include inter($size: 20px, $weight: 500, $lh: 150%);
 
     margin-bottom: rem(56px);
 

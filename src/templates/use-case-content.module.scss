@@ -34,7 +34,7 @@ $layoutBreakpoint: '<=1250px';
 .backLink {
   grid-area: back;
 
-  @include sans($size: 14px, $weight: 400, $lh: 150%);
+  @include inter($size: 14px, $weight: 400, $lh: 150%);
   @include transition((opacity));
   opacity: 1;
 
@@ -61,7 +61,7 @@ $layoutBreakpoint: '<=1250px';
     }
 
     .tagLabel {
-      @include sans($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
+      @include inter($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
@@ -89,7 +89,7 @@ $layoutBreakpoint: '<=1250px';
     }
   }
   .description {
-    @include sans($size: 20px, $weight: 400, $lh: 150%);
+    @include inter($size: 20px, $weight: 400, $lh: 150%);
 
     @include media('<=phoneLandscape') {
       font-size: rem(16px);
@@ -102,7 +102,7 @@ $layoutBreakpoint: '<=1250px';
   padding-top: rem(80px);
 
   .label {
-    @include sans($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
+    @include inter($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
@@ -195,7 +195,7 @@ $layoutBreakpoint: '<=1250px';
   }
 
   a {
-    @include sans($size: 20px, $weight: 600, $lh: 150%, $color: v('brand-fire'));
+    @include inter($size: 20px, $weight: 600, $lh: 150%, $color: v('brand-fire'));
     @include transition((color));
     &:hover {
       color: adjust-color(c('brand-fire'), $lightness: -20%);

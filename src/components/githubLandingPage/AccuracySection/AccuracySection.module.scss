@@ -18,7 +18,7 @@
     }
 
     .title {
-      @include sans($size: 48px, $weight: 600, $lh: 120%);
+      @include inter($size: 48px, $weight: 600, $lh: 120%);
       text-align: center;
 
       padding-bottom: rem(40px);
@@ -98,7 +98,7 @@
       }
 
       .cardTitle {
-        @include sans($size: 24px, $weight: 600, $lh: 120%);
+        @include inter($size: 24px, $weight: 600, $lh: 120%);
         margin-top: rem(32px);
 
         margin-bottom: rem(8px);
@@ -112,7 +112,7 @@
         }
       }
       .cardDescription {
-        @include sans($size: 16px, $weight: 400, $lh: 150%, $color: #d0d0d0);
+        @include inter($size: 16px, $weight: 400, $lh: 150%, $color: #d0d0d0);
       }
     }
   }
@@ -134,7 +134,7 @@
     height: rem(430px);
     left: -52px;
     top: -20px;
-    @include sans($size: 16px, $weight: 500, $lh: 120%, $color: #d0d0d0);
+    @include inter($size: 16px, $weight: 500, $lh: 120%, $color: #d0d0d0);
   }
 }
 .chartLine {
@@ -185,7 +185,7 @@
 }
 
 .chartTitle {
-  @include sans($size: 16px, $weight: 500, $lh: 120%, $color: #d0d0d0);
+  @include inter($size: 16px, $weight: 500, $lh: 120%, $color: #d0d0d0);
 
   padding-top: rem(64px);
   padding-bottom: rem(20px);
@@ -233,7 +233,7 @@
 
   border-radius: rem(40px);
   padding: rem(9px) rem(13px);
-  @include sans($size: 15px, $weight: 500, $lh: 120%, $color: v('github-white'));
+  @include inter($size: 15px, $weight: 500, $lh: 120%, $color: v('github-white'));
   @include transition(background);
 }
 .xPointHover {
@@ -249,7 +249,7 @@
 
   border-radius: rem(40px);
   padding: rem(6px) rem(8px);
-  @include sans($size: 15px, $weight: 500, $lh: 120%, $color: v('github-orange-gradient'));
+  @include inter($size: 15px, $weight: 500, $lh: 120%, $color: v('github-orange-gradient'));
   background: #141415;
   border: rem(1px) solid #141415;
 

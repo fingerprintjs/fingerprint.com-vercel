@@ -17,7 +17,7 @@
   margin-top: rem(24px);
   margin-bottom: rem(4px);
 
-  @include sans($size: 16px, $weight: 600);
+  @include inter($size: 16px, $weight: 600);
 }
 
 .input,
@@ -29,7 +29,7 @@
 
   -webkit-appearance: none;
   background-color: c('white');
-  @include sans($size: 14px, $lh: 130%);
+  @include inter($size: 14px, $lh: 130%);
 
   line-height: rem(21px);
 
@@ -87,14 +87,14 @@ select:focus {
 }
 .formSection {
   .header {
-    @include sans($size: 32px, $weight: 700, $lh: 150%);
+    @include inter($size: 32px, $weight: 700, $lh: 150%);
     letter-spacing: -0.01em;
   }
   .subHeader {
     padding-top: rem(8px);
     padding-bottom: rem(8px);
 
-    @include sans($size: 16px, $weight: 400, $lh: 150%);
+    @include inter($size: 16px, $weight: 400, $lh: 150%);
   }
 
   @include media('<=tablet') {
@@ -115,7 +115,7 @@ select:focus {
   }
 
   .message {
-    @include sans($size: 20px, $weight: 600, $lh: 130%);
+    @include inter($size: 20px, $weight: 600, $lh: 130%);
 
     text-align: center;
   }

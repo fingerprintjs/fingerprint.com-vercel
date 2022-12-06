@@ -42,14 +42,11 @@
 }
 
 .publishDate {
-  font-family: v('ff-sans');
-  font-size: rem(14px);
+  @include inter($size: 14px);
 }
 
 .title {
-  font-family: v('ff-sans');
-  font-weight: v('semi');
-  font-size: rem(20px);
+  @include inter($size: 20px, $weight: v('semi'));
 
   transition-duration: 0.5s;
 }
@@ -57,6 +54,5 @@
 .description {
   padding-top: rem(8px);
 
-  font-family: v('ff-sans');
-  font-size: rem(14px);
+  @include inter($size: 14px);
 }

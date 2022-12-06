@@ -194,7 +194,7 @@ export default function JobsPage({ pageContext }: JobsPageProps) {
                     }),
                     singleValue: (base) => ({
                       ...base,
-                      fontFamily: 'Work Sans',
+                      fontFamily: 'Inter',
                       fontSize: '16px',
                       color: '#0D102B',
                       fontWeight: '500',

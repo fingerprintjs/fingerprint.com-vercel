@@ -74,10 +74,8 @@
   }
 
   .infoDescription {
-    font-family: v(ff-sans);
-    font-size: rem(14px);
-    line-height: 140%;
-    color: v('white');
+    @include inter($size: 14px, $color: v('white'), $lh: 140%);
+
     text-transform: uppercase;
     letter-spacing: 0.03em;
 
@@ -108,10 +106,7 @@
   }
 
   .description {
-    font-family: v(ff-sans);
-    font-size: rem(16px);
-    line-height: 150%;
-    color: adjust-color(c('brand-water'), $alpha: -0.3);
+    @include inter($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
 
     padding-bottom: rem(48px);
 
@@ -138,8 +133,6 @@
   }
 
   .tag {
-    font-family: v(ff-sans);
-    font-size: rem(20px);
-    font-weight: v('semi');
+    @include inter($size: 20px, $weight: v('semi'));
   }
 }

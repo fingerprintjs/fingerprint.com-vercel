@@ -2,7 +2,7 @@
   padding-top: rem(46px);
 
   .returnLink {
-    @include sans($size: 16px, $weight: 500, $lh: 150%);
+    @include inter($size: 16px, $weight: 500, $lh: 150%);
   }
   .wrapper {
     max-width: rem(768px);
@@ -21,16 +21,16 @@
       margin-top: rem(80px);
     }
     .jobTitle {
-      @include sans($size: 44px, $weight: 700, $lh: 120%);
+      @include inter($size: 44px, $weight: 700, $lh: 120%);
       letter-spacing: -0.02em;
     }
     .jobLocation {
-      @include sans($size: 16px, $weight: 500, $lh: 150%);
+      @include inter($size: 16px, $weight: 500, $lh: 150%);
     }
     .jobDescription {
       span,
       p {
-        @include sans($size: 16px, $weight: 500, $lh: 150%);
+        @include inter($size: 16px, $weight: 500, $lh: 150%);
         font-weight: 500 !important;
         padding-bottom: rem(16px);
         a {
@@ -45,17 +45,17 @@
     }
   }
   .jobQuestions {
-    @include sans($size: 16px, $weight: 500, $lh: 150%);
+    @include inter($size: 16px, $weight: 500, $lh: 150%);
 
     span,
     p {
-      @include sans($size: 16px, $weight: 500, $lh: 150%);
+      @include inter($size: 16px, $weight: 500, $lh: 150%);
       font-weight: 500 !important;
       margin-top: rem(40px);
       margin-bottom: rem(24px);
     }
     ul {
-      @include sans($size: 16px, $weight: 500, $lh: 150%);
+      @include inter($size: 16px, $weight: 500, $lh: 150%);
 
       margin-bottom: rem(24px);
 
@@ -74,7 +74,7 @@
       margin: rem(24px) 0;
     }
     .tagTitle {
-      @include sans($size: 14px, $weight: 600, $lh: 140%, $color: rgba(13, 16, 43, 0.48));
+      @include inter($size: 14px, $weight: 600, $lh: 140%, $color: rgba(13, 16, 43, 0.48));
       font-weight: 600 !important;
       letter-spacing: 0.04em;
       text-transform: uppercase;

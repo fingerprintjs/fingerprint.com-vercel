@@ -19,7 +19,7 @@
     max-width: rem(448px);
   }
   p {
-    @include sans($size: 18px, $weight: 500, $lh: 150%);
+    @include inter($size: 18px, $weight: 500, $lh: 150%);
 
     @include media('<phoneLandscape') {
       font-size: rem(16px);

@@ -17,14 +17,10 @@
   &:after {
     position: absolute;
     content: '“';
-    font-family: v('ff-sans');
-    color: c('brand-fire');
+    @include inter($size: 48px, $lh: 48px, $color: c('brand-fire'));
 
     top: 1.25rem;
     left: 2rem;
-
-    font-size: 6rem;
-    line-height: 6rem;
   }
 }
 

@@ -15,13 +15,13 @@
     padding: rem(16px) rem(16px) rem(32px);
 
     .title {
-      @include sans($size: 20px, $weight: v('semi'), $lh: 150%);
+      @include inter($size: 20px, $weight: v('semi'), $lh: 150%);
       letter-spacing: -0.01em;
 
       margin-bottom: rem(8px);
     }
     .description {
-      @include sans($size: 14px, $weight: 400, $lh: 20px);
+      @include inter($size: 14px, $weight: 400, $lh: 20px);
     }
   }
   .cardFooter {
@@ -42,7 +42,7 @@
       background: #f2f2f7;
       border-radius: rem(6px);
 
-      @include sans($size: 14px, $weight: 500, $lh: 150%);
+      @include inter($size: 14px, $weight: 500, $lh: 150%);
 
       .icon {
         height: rem(20px);
@@ -57,7 +57,7 @@
     }
     .docsLink {
       padding: rem(8px) 0 rem(8px) 0;
-      @include sans($size: 14px, $weight: 400, $lh: 20px, $color: c('brand-water'));
+      @include inter($size: 14px, $weight: 400, $lh: 20px, $color: c('brand-water'));
 
       @include transition((color));
 

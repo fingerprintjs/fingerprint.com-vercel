@@ -63,7 +63,7 @@ $desktop-breakpoint: 1240px;
     }
   }
   .description {
-    @include sans($size: 16px, $lh: 150%);
+    @include inter($size: 16px, $lh: 150%);
     max-width: rem(448px);
 
     @include media('<=phoneLandscape') {
@@ -80,7 +80,7 @@ $desktop-breakpoint: 1240px;
     }
 
     .label {
-      @include sans($size: 14px, $lh: 140%, $weight: 500);
+      @include inter($size: 14px, $lh: 140%, $weight: 500);
       letter-spacing: 0.04em;
       text-transform: uppercase;
 
@@ -97,7 +97,7 @@ $desktop-breakpoint: 1240px;
       }
 
       .link {
-        @include sans($size: 20px, $lh: 130%, $weight: 600);
+        @include inter($size: 20px, $lh: 130%, $weight: 600);
         letter-spacing: 0.01em;
 
         background: adjust-color(c('brand-water'), $saturation: -5%, $lightness: 13%);

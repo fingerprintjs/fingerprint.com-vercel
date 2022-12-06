@@ -18,7 +18,7 @@
       align-items: flex-start;
     }
     .title {
-      @include sans($size: 48px, $weight: 600, $lh: 64px);
+      @include inter($size: 48px, $weight: 600, $lh: 64px);
       letter-spacing: -0.01em;
       text-align: center;
 
@@ -31,7 +31,7 @@
     }
 
     .description {
-      @include sans($size: 18px, $weight: 400, $lh: 150%, $color: #d0d0d0);
+      @include inter($size: 18px, $weight: 400, $lh: 150%, $color: #d0d0d0);
       text-align: center;
 
       padding-top: rem(16px);

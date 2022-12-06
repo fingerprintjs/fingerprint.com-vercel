@@ -29,7 +29,7 @@
   }
 
   .description {
-    @include sans($size: 16px, $weight: 500, $lh: 150%);
+    @include inter($size: 16px, $weight: 500, $lh: 150%);
 
     padding-bottom: rem(40px);
   }

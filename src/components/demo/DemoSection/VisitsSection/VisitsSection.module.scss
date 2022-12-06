@@ -85,7 +85,7 @@
     }
 
     .cardDescription {
-      @include sans($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
+      @include inter($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
 
       @include media('>phoneLandscape') {
         max-width: rem(288px);
@@ -131,7 +131,7 @@
     transition-delay: 2s;
 
     .visitorId {
-      @include sans($size: 12px, $weight: 500, $lh: 140%);
+      @include inter($size: 12px, $weight: 500, $lh: 140%);
       letter-spacing: 0.04em;
       padding-bottom: rem(12px);
       margin-bottom: rem(12px);
@@ -191,7 +191,7 @@
     }
   }
   .isIncognito {
-    @include sans($size: 14px, $weight: 400, $lh: 150%, $color: adjust-color(c('brand-water'), $alpha: -0.3));
+    @include inter($size: 14px, $weight: 400, $lh: 150%, $color: adjust-color(c('brand-water'), $alpha: -0.3));
   }
 }
 

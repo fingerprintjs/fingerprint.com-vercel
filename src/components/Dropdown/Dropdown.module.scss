@@ -96,7 +96,7 @@
 
 .label,
 .rightSectionLabel {
-  @include sans($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
+  @include inter($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
   letter-spacing: 0.04em;
   text-transform: uppercase;
 

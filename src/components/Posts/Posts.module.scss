@@ -26,7 +26,7 @@
   letter-spacing: -0.01em;
 
   @include media('<=phoneLandscape') {
-    @include sans($size: 20px, $lh: 130%, $weight: 600);
+    @include inter($size: 20px, $lh: 130%, $weight: 600);
     letter-spacing: 0.01em;
   }
 }
@@ -77,7 +77,7 @@
 
     caption {
       margin-bottom: rem(14px);
-      @include sans($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.3));
+      @include inter($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.3));
       text-transform: uppercase;
       letter-spacing: 0.04em;
 
@@ -137,7 +137,7 @@
 }
 
 .nameThreePerRow {
-  @include sans($size: 20px, $weight: 600, $lh: 140%);
+  @include inter($size: 20px, $weight: 600, $lh: 140%);
   letter-spacing: 0.01em;
 
   margin-left: 0;

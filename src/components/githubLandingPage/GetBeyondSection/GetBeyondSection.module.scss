@@ -9,7 +9,7 @@
     position: relative;
 
     .title {
-      @include sans($size: 56px, $weight: 700, $lh: 64px);
+      @include inter($size: 56px, $weight: 700, $lh: 64px);
       letter-spacing: -0.01em;
       padding-top: rem(31px);
       text-align: center;
@@ -25,7 +25,7 @@
     }
 
     .description {
-      @include sans($size: 20px, $weight: 400, $lh: 32px, $color: #d0d0d0);
+      @include inter($size: 20px, $weight: 400, $lh: 32px, $color: #d0d0d0);
       letter-spacing: -0.01em;
       text-align: center;
 
@@ -53,7 +53,7 @@
       }
 
       .tab {
-        @include sans($size: 20px, $weight: 600, $lh: 28px);
+        @include inter($size: 20px, $weight: 600, $lh: 28px);
         letter-spacing: -0.01em;
         @include transition((color));
 
@@ -174,7 +174,7 @@
 }
 .tooltipTitle,
 .tooltipTitleOss {
-  @include sans($size: 12px, $weight: 600, $lh: 12px, $color: #727273);
+  @include inter($size: 12px, $weight: 600, $lh: 12px, $color: #727273);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -188,7 +188,7 @@
   color: v('github-orange');
 }
 .tooltipText {
-  @include sans($size: 14px, $weight: 400, $lh: 130%, $color: #434344);
+  @include inter($size: 14px, $weight: 400, $lh: 130%, $color: #434344);
   letter-spacing: 0.01em;
 
   @include media('<=phoneLandscape') {
@@ -242,7 +242,7 @@
   flex-direction: column;
   row-gap: rem(8px);
 
-  @include sans($size: 12px, $weight: 600, $lh: 16px);
+  @include inter($size: 12px, $weight: 600, $lh: 16px);
   letter-spacing: 0.04em;
 
   background: linear-gradient(#212122 0 0) padding-box,

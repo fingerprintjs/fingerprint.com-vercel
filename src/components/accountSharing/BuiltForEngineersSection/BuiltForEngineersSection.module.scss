@@ -44,10 +44,7 @@
   }
 
   .description {
-    font-family: v(ff-sans);
-    font-size: rem(16px);
-    color: adjust-color(c('brand-water'), $alpha: -0.3);
-    line-height: 150%;
+    @include inter($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
 
     max-width: rem(604px);
     margin: auto;

@@ -7,7 +7,7 @@
   }
 }
 .title {
-  @include sans($size: 48px, $weight: v('bold'), $lh: 130%);
+  @include inter($size: 48px, $weight: v('bold'), $lh: 130%);
 
   @include media('<=phoneLandscape') {
     font-size: rem(32px);
@@ -22,7 +22,7 @@
   }
 
   .tagCategory {
-    @include sans($size: 14px, $weight: 600, $lh: 140%, $color: rgba(13, 16, 43, 0.48));
+    @include inter($size: 14px, $weight: 600, $lh: 140%, $color: rgba(13, 16, 43, 0.48));
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
@@ -93,7 +93,7 @@
 
   .showingUseCases,
   .filter {
-    @include sans($size: 16px, $weight: v('semi'), $lh: 130%);
+    @include inter($size: 16px, $weight: v('semi'), $lh: 130%);
   }
 
   .filter {

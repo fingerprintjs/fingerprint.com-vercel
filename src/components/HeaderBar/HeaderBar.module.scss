@@ -39,9 +39,7 @@
 .arrow {
   font-size: rem(14px);
   letter-spacing: 0.04em;
-  font-family: v(ff-sans);
-  line-height: 150%;
-  font-weight: 500;
+  @include inter($lh: 150%, $weight: 500);
 
   justify-content: flex-start;
 

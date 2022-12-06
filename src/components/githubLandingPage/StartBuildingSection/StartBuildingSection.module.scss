@@ -52,7 +52,7 @@
         }
 
         .description {
-          @include sans($size: 16px, $lh: 24px, $weight: 400);
+          @include inter($size: 16px, $lh: 24px, $weight: 400);
           padding-top: rem(16px);
           padding-bottom: rem(32px);
 
@@ -73,14 +73,14 @@
           max-width: rem(223px);
           .button {
             padding: rem(16px) rem(32px);
-            @include sans($size: 16px, $lh: 150%, $weight: 600);
+            @include inter($size: 16px, $lh: 150%, $weight: 600);
 
             @include media('<=phoneLandscape') {
               padding: rem(16px) rem(13.5px);
             }
           }
           .noCreditCard {
-            @include sans($size: 12px, $weight: 400, $lh: 24px);
+            @include inter($size: 12px, $weight: 400, $lh: 24px);
             padding-top: rem(4px);
           }
           @include media('>phoneLandscape') {
@@ -136,7 +136,7 @@
           }
 
           .cardDescription {
-            @include sans($size: 16px, $lh: 32px, $weight: 500, $color: #d6d6e1);
+            @include inter($size: 16px, $lh: 32px, $weight: 500, $color: #d6d6e1);
             @include media('<=phoneLandscape') {
               font-size: rem(14px);
               line-height: rem(22px);

@@ -36,7 +36,7 @@
       content: 'FEATURED';
       position: relative;
       display: block;
-      @include sans($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
+      @include inter($size: 14px, $weight: 600, $lh: 140%, $color: adjust-color(c('brand-water'), $alpha: -0.5));
       letter-spacing: 0.04em;
     }
   }
@@ -125,16 +125,13 @@
 }
 
 .publishDate {
-  font-family: v('ff-sans');
-  font-size: rem(14px);
+  @include inter($size: 14px);
 }
 
 .title {
   padding-top: rem(16px);
 
-  font-family: v('ff-sans');
-  font-weight: v('semi');
-  font-size: rem(20px);
+  @include inter($size: 20px, $weight: v('semi'));
 
   transition-duration: 0.5s;
 }
@@ -150,8 +147,7 @@
 .description {
   padding-top: rem(8px);
 
-  font-family: v('ff-sans');
-  font-size: rem(14px);
+  @include inter($size: 14px);
 }
 
 .descriptionLimit {

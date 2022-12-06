@@ -18,7 +18,7 @@
       padding: 0 rem(4px) rem(12px);
       cursor: pointer;
 
-      @include sans($size: 20px, $weight: 400, $lh: 20px, $color: var(--brand-water));
+      @include inter($size: 20px, $weight: 400, $lh: 20px, $color: var(--brand-water));
 
       @include transition((opacity));
       opacity: 1;

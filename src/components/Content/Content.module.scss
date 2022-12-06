@@ -34,7 +34,7 @@ $bigMargin: 6rem;
 
   @for $index from 1 through 6 {
     h#{$index} {
-      font-family: v('ff-mono');
+      font-family: v('jb-mono');
       font-weight: v('bold');
 
       margin-bottom: $smallMargin;
@@ -65,7 +65,7 @@ $bigMargin: 6rem;
   }
 
   h3 {
-    @include sans($size: 24px, $weight: 600, $lh: 150%);
+    @include inter($size: 24px, $weight: 600, $lh: 150%);
     letter-spacing: 0.01em;
 
     @include media('<=phoneLandscape') {
@@ -75,12 +75,12 @@ $bigMargin: 6rem;
 
   @for $index from 4 through 6 {
     h#{$index} {
-      @include sans($size: 20px, $weight: 600, $lh: 150%);
+      @include inter($size: 20px, $weight: 600, $lh: 150%);
     }
   }
 
   p {
-    @include sans($size: 20px, $weight: 400, $lh: 150%);
+    @include inter($size: 20px, $weight: 400, $lh: 150%);
     overflow-wrap: break-word;
 
     @include media('<=phoneLandscape') {

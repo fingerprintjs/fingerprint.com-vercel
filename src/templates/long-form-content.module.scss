@@ -43,7 +43,7 @@
 
 .title {
   font-size: 4rem;
-  font-family: v('ff-mono');
+  font-family: v('jb-mono');
 
   margin-bottom: 2rem;
   padding-top: rem(32px);
@@ -124,7 +124,7 @@
 .footerTags {
   padding-bottom: rem(48px);
   .title {
-    @include sans($size: 20px, $weight: 600, $lh: 150%);
+    @include inter($size: 20px, $weight: 600, $lh: 150%);
     letter-spacing: 0.01em;
   }
 }

@@ -37,7 +37,7 @@ $background-color: #202021;
 }
 
 .title {
-  @include sans($size: 48px, $weight: 600, $lh: 120%);
+  @include inter($size: 48px, $weight: 600, $lh: 120%);
   letter-spacing: -0.01em;
 
   margin-bottom: rem(64px);
@@ -213,7 +213,7 @@ $background-color: #202021;
   }
 
   .featureTitleColumn {
-    @include sans($size: 24px, $weight: 700, $lh: 130%);
+    @include inter($size: 24px, $weight: 700, $lh: 130%);
     letter-spacing: -0.01em;
 
     @include media('<=phoneLandscape') {
@@ -223,7 +223,7 @@ $background-color: #202021;
   }
 
   .description {
-    @include sans($size: 14px, $weight: 400, $lh: 150%, $color: #d0d0d0);
+    @include inter($size: 14px, $weight: 400, $lh: 150%, $color: #d0d0d0);
     opacity: 0.9;
 
     .link {
@@ -235,7 +235,7 @@ $background-color: #202021;
     }
   }
   .featureTitle {
-    @include sans($size: 16px, $weight: 600, $lh: 22px, $color: #ffffff);
+    @include inter($size: 16px, $weight: 600, $lh: 22px, $color: #ffffff);
     letter-spacing: -0.005em;
 
     @include media('<=phoneLandscape') {
@@ -245,7 +245,7 @@ $background-color: #202021;
   .description,
   .featureColumn,
   .versionColumn {
-    @include sans($size: 16px, $weight: 400, $lh: 24px);
+    @include inter($size: 16px, $weight: 400, $lh: 24px);
 
     @include media('<=phoneLandscape') {
       font-size: rem(14px);
@@ -283,7 +283,7 @@ $background-color: #202021;
   }
 
   .version {
-    @include sans($size: 24px, $weight: 700, $lh: 36px);
+    @include inter($size: 24px, $weight: 700, $lh: 36px);
     letter-spacing: -0.01em;
     margin-top: rem(16px);
     padding-bottom: rem(8px);
@@ -316,7 +316,7 @@ $background-color: #202021;
   margin-top: rem(64px);
 
   .note {
-    @include sans($size: 14px, $weight: 400, $lh: 24px, $color: #d0d0d0);
+    @include inter($size: 14px, $weight: 400, $lh: 24px, $color: #d0d0d0);
     margin-bottom: rem(8px);
   }
 }

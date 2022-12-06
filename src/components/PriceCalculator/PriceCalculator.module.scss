@@ -14,7 +14,7 @@
   }
 
   .title {
-    @include sans($size: 16px, $weight: v('semi'), $lh: 130%);
+    @include inter($size: 16px, $weight: v('semi'), $lh: 130%);
     margin-bottom: rem(16px);
 
     text-align: center;
@@ -87,24 +87,24 @@
     padding-bottom: rem(8px);
   }
   .cardLabel {
-    @include sans($size: 16px, $weight: 600, $lh: 130%);
+    @include inter($size: 16px, $weight: 600, $lh: 130%);
 
     margin-bottom: rem(16px);
   }
 
   .price {
-    @include sans($size: 32px, $weight: v('semi'), $lh: 120%);
+    @include inter($size: 32px, $weight: v('semi'), $lh: 120%);
     letter-spacing: -0.01em;
   }
 
   .period {
-    @include sans($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
+    @include inter($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
 
     vertical-align: super;
   }
 
   .billed {
-    @include sans($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
+    @include inter($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $lh: 150%);
     min-height: rem(48px);
 
     margin-bottom: rem(40px);
@@ -144,7 +144,7 @@
   }
 
   .header {
-    @include sans($size: 14px, $weight: v('semi'), $lh: 140%);
+    @include inter($size: 14px, $weight: v('semi'), $lh: 140%);
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
@@ -154,7 +154,7 @@
   .feature {
     display: flex;
     flex-direction: row;
-    @include sans($size: 16px, $weight: v('normal'), $lh: 150%);
+    @include inter($size: 16px, $weight: v('normal'), $lh: 150%);
 
     margin-bottom: rem(16px);
 
@@ -187,5 +187,5 @@
 }
 
 .footNote {
-  @include sans($size: 14px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $weight: v('normal'), $lh: 150%);
+  @include inter($size: 14px, $color: adjust-color(c('brand-water'), $alpha: -0.3), $weight: v('normal'), $lh: 150%);
 }

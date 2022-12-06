@@ -21,7 +21,7 @@
   transform: rotate(15deg);
 
   .labelText {
-    font-family: v(ff-mono);
+    font-family: v(jb-mono);
 
     color: c('brand-fire');
     text-align: center;
@@ -37,7 +37,7 @@
   padding-top: rem(36px);
   padding-bottom: rem(8px);
 
-  @include sans($size: 32px, $weight: v('bold'), $lh: 130%);
+  @include inter($size: 32px, $weight: v('bold'), $lh: 130%);
   letter-spacing: -0.02em;
 
   @include media('<=phone') {
@@ -45,7 +45,7 @@
   }
 }
 .description {
-  @include sans($size: 16px, $weight: 500, $lh: 150%);
+  @include inter($size: 16px, $weight: 500, $lh: 150%);
   text-align: center;
   max-width: rem(608px);
 

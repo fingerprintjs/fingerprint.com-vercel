@@ -19,10 +19,7 @@
     text-align: center;
   }
   .title {
-    font-family: v(ff-sans);
-    font-size: rem(24px);
-    line-height: 150%;
-    font-weight: v('normal');
+    @include inter($size: 24px, $lh: 150%, $weight: v('normal'));
 
     padding-bottom: rem(48px);
     @include media('<=desktop') {

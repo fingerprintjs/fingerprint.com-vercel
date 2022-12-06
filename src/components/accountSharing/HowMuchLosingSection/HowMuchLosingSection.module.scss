@@ -49,9 +49,7 @@
   }
 
   .description {
-    font-family: v(ff-sans);
-    font-size: rem(16px);
-    color: adjust-color(c('brand-water'), $alpha: -0.3);
+    @include inter($size: 16px, $color: adjust-color(c('brand-water'), $alpha: -0.3));
 
     margin-bottom: 2rem;
 

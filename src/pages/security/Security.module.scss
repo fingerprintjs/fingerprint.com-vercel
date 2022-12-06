@@ -14,7 +14,7 @@
   }
 
   h1 {
-    @include sans($size: 32px, $weight: v('bold'), $lh: 130%);
+    @include inter($size: 32px, $weight: v('bold'), $lh: 130%);
   }
   p {
     max-width: rem(512px);

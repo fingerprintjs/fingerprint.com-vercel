@@ -2,15 +2,15 @@ const { registerFont, createCanvas, loadImage } = require('canvas')
 const { join } = require('path')
 
 exports.generateImage = async (title) => {
-  registerFont(join('src', 'node', 'social-card', 'assets', 'WorkSans-SemiBold.ttf'), {
-    family: 'Work Sans',
+  registerFont(join('src', 'node', 'social-card', 'assets', 'Inter-SemiBold.ttf'), {
+    family: 'Inter',
     weight: '600',
   })
   const canvas = createCanvas(1200, 600)
   const context = canvas.getContext('2d')
   context.fillStyle = '#0C102B'
   context.fillRect(0, 0, 1200, 600)
-  context.font = '63pt Work Sans'
+  context.font = '63pt Inter'
   context.textAlign = 'left'
   context.fillStyle = '#FFFFFF'
   showText(context, title, 63, 525, 1074, 92)

@@ -1,24 +1,9 @@
 $fontDir: '../fonts/';
-@include fontface('#{$fontDir}fira-mono', 'Fira Mono', '-v9-latin-regular', 400);
-@include fontface('#{$fontDir}fira-mono', 'Fira Mono', '-v9-latin-500', 500);
-@include fontface('#{$fontDir}fira-mono', 'Fira Mono', '-v9-latin-700', 700);
 
 @include fontface('#{$fontDir}JetBrainsMono', 'JetBrains Mono', '-Regular', 400);
 @include fontface('#{$fontDir}JetBrainsMono', 'JetBrains Mono', '-Medium', 500);
 @include fontface('#{$fontDir}JetBrainsMono', 'JetBrains Mono', '-Bold', 700);
 @include fontface('#{$fontDir}JetBrainsMono', 'JetBrains Mono', '-ExtraBold', 800);
-
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-200', 200);
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-regular', 400);
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-500', 500);
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-600', 600);
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-700', 700);
-
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-200italic', 200, italic);
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-italic', 400, italic);
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-500italic', 500, italic);
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-600italic', 600, italic);
-@include fontface('#{$fontDir}work-sans', 'Work Sans', '-v11-latin-700italic', 700, italic);
 
 @include fontface('#{$fontDir}inter', 'Inter', '-v12-latin-200', 200);
 @include fontface('#{$fontDir}inter', 'Inter', '-v12-latin-regular', 400);
@@ -39,7 +24,7 @@ em {
 @for $i from 1 to 6 {
   h#{$i},
   .h#{$i} {
-    font-family: v('ff-mono');
+    font-family: v('jb-mono');
     font-weight: v(bold);
     margin: 0;
   }
@@ -87,7 +72,7 @@ small {
 
 code,
 pre {
-  font-family: var(--ff-mono);
+  font-family: var(--jb-mono);
   font-size: 2rem;
   font-weight: 500;
 

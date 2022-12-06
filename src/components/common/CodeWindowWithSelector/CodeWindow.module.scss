@@ -73,7 +73,7 @@
     display: flex;
 
     .tab {
-      @include sans($size: 14px, $weight: 600, $lh: 140%, $color: v('white'));
+      @include inter($size: 14px, $weight: 600, $lh: 140%, $color: v('white'));
       letter-spacing: 0.04em;
       text-align: center;
 
@@ -87,7 +87,7 @@
     }
   }
   .copy {
-    @include sans($size: 14px, $weight: 600, $lh: 150%, $color: v('white'));
+    @include inter($size: 14px, $weight: 600, $lh: 150%, $color: v('white'));
     cursor: pointer;
 
     .icon {

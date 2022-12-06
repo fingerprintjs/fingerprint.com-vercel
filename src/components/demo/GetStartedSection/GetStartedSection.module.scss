@@ -21,7 +21,7 @@
     }
 
     .subTitle {
-      @include sans($size: 24px, $lh: 150%, $color: adjust-color(c('brand-water'), $alpha: -0.5), $weight: 500);
+      @include inter($size: 24px, $lh: 150%, $color: adjust-color(c('brand-water'), $alpha: -0.5), $weight: 500);
       letter-spacing: -0.1px;
       margin-bottom: rem(40px);
 

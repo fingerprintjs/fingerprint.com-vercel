@@ -20,9 +20,7 @@
   margin-top: rem(24px);
   margin-bottom: rem(4px);
 
-  font-family: v('ff-sans');
-  font-size: rem(16px);
-  font-weight: v('semi');
+  @include inter($size: 16px, $weight: v('semi'));
 }
 
 .input,
@@ -34,9 +32,7 @@
 
   -webkit-appearance: none;
   background-color: c('white');
-  font-family: v(ff-sans);
-  font-size: rem(14px);
-  line-height: rem(21px);
+  @include inter($size: 14px, $lh: 21px);
 
   width: 100%;
   height: rem(50px);
@@ -93,7 +89,7 @@ select:focus {
   border-radius: 16px;
 
   .header {
-    @include sans($size: 14px, $weight: 500, $lh: 150%);
+    @include inter($size: 14px, $weight: 500, $lh: 150%);
   }
 
   @include media('<=desktop') {
@@ -123,10 +119,7 @@ select:focus {
   }
 
   .message {
-    font-family: v(ff-sans);
-    font-size: rem(20px);
-    font-weight: v('semi');
-    line-height: 130%;
+    @include inter($size: 20px, $lh: 130%, $weight: v('semi'));
     text-align: center;
   }
 
@@ -161,7 +154,7 @@ select:focus {
 .text {
   min-height: rem(20px);
 
-  @include sans($size: 14px, $weight: 400, $lh: 125%);
+  @include inter($size: 14px, $weight: 400, $lh: 125%);
   letter-spacing: 0.004em;
 
   @include media('<=phoneLandscape') {

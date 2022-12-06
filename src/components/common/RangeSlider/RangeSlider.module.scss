@@ -41,7 +41,7 @@
     }
 
     .labelBelowText {
-      @include sans($size: 16px, $weight: v(semi), $lh: 130%);
+      @include inter($size: 16px, $weight: v(semi), $lh: 130%);
 
       margin-top: rem(28px);
 

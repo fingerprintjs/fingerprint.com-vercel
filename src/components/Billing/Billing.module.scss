@@ -83,9 +83,7 @@
     }
 
     .title {
-      font-family: v(ff-sans);
-      font-weight: v('semi');
-      font-size: 2rem;
+      @include inter($size: 16px, $weight: v('semi'));
     }
 
     .footnote {

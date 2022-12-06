@@ -23,7 +23,7 @@
 }
 
 .button {
-  @include sans($size: 16px, $weight: 600, $lh: 150%);
+  @include inter($size: 16px, $weight: 600, $lh: 150%);
 
   background-color: v('white');
   padding: rem(17px) rem(24px);
@@ -54,7 +54,7 @@
   }
 }
 .subTitle {
-  @include sans($size: 16px, $weight: 400, $lh: 150%, $color: v('white'));
+  @include inter($size: 16px, $weight: 400, $lh: 150%, $color: v('white'));
   margin-bottom: rem(40px);
 
   @include media('<=phoneLandscape') {

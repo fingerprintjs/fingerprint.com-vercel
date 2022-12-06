@@ -130,8 +130,7 @@
       -webkit-appearance: none;
       border: 0;
       background: none;
-      font-family: v(ff-sans);
-      font-size: 2rem;
+      @include inter($size: 16px);
       min-width: 100px;
 
       &.input {

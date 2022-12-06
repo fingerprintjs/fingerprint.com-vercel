@@ -12,7 +12,7 @@
   align-items: center;
 }
 .title {
-  @include sans($size: 32px, $weight: v('bold'), $lh: 130%);
+  @include inter($size: 32px, $weight: v('bold'), $lh: 130%);
   padding-bottom: rem(40px);
   letter-spacing: -0.02em;
 

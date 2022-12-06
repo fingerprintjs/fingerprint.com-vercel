@@ -60,7 +60,7 @@
     --bgColor: transparent;
     --color: c('off-white');
     --height: 42px;
-    @include sans($size: 14px, $weight: 600, $lh: 150%);
+    @include inter($size: 14px, $weight: 600, $lh: 150%);
     border: 1px solid v('white');
 
     &:focus,

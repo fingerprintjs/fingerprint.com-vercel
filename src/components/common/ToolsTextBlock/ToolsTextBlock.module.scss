@@ -15,7 +15,7 @@
   }
 
   .title {
-    @include sans($size: 24px, $weight: 700, $lh: 120%);
+    @include inter($size: 24px, $weight: 700, $lh: 120%);
     letter-spacing: -0.01em;
 
     margin-bottom: rem(8px);

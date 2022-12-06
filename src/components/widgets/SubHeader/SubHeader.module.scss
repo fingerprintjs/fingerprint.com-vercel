@@ -44,13 +44,13 @@
   }
 
   .subtitle {
-    font-family: v('ff-sans');
+    @include inter();
 
     margin: 2rem 0;
   }
 
   .label {
-    font-family: v('ff-sans');
+    @include inter();
 
     margin-bottom: 2rem;
   }

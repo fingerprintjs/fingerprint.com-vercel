@@ -13,7 +13,7 @@
   .title {
     padding-bottom: rem(8px);
 
-    @include sans($size: 32px, $weight: v('bold'), $lh: 48px);
+    @include inter($size: 32px, $weight: v('bold'), $lh: 48px);
     letter-spacing: -0.01em;
 
     @include media('<=phoneLandscape') {
@@ -23,7 +23,7 @@
   }
 
   .description {
-    @include sans($size: 18px, $weight: 400, $lh: 150%);
+    @include inter($size: 18px, $weight: 400, $lh: 150%);
 
     padding-bottom: rem(40px);
     max-width: rem(612px);

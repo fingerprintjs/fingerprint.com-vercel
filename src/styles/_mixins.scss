@@ -238,23 +238,6 @@
   }
 }
 
-@mixin sans($size: false, $color: false, $weight: false, $lh: false) {
-  font-family: v(ff-sans);
-
-  @if $size {
-    font-size: rem($size);
-  }
-  @if $color {
-    color: $color;
-  }
-  @if $weight {
-    font-weight: $weight;
-  }
-  @if $lh {
-    line-height: $lh;
-  }
-}
-
 @mixin jb-mono($size: false, $color: false, $weight: false, $lh: false) {
   font-family: v(jb-mono);
 

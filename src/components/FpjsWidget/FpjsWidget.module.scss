@@ -29,7 +29,7 @@
 
   .header {
     display: flex;
-    font-family: v(ff-mono);
+    font-family: v(jb-mono);
     font-weight: v(bold);
     align-items: center;
     padding: 0 2rem;
@@ -168,7 +168,7 @@
 
     .content {
       font-weight: v(bold);
-      font-family: v(ff-mono);
+      font-family: v(jb-mono);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: 'id id' 'bot location' 'ip location' 'incognito location' 'browser location';
@@ -181,8 +181,7 @@
 
       .info:not(.location) {
         .value {
-          font-weight: v('normal');
-          font-family: v(ff-sans);
+          @include inter($weight: v('normal'));
           opacity: v('faded');
         }
       }
@@ -248,7 +247,7 @@
         }
 
         .value {
-          font-family: v(ff-mono);
+          font-family: v(jb-mono);
           color: v('brand-fire');
           font-weight: v('bold');
           opacity: 1;

@@ -23,7 +23,7 @@
     max-width: rem(512px);
     text-align: center;
     .title {
-      @include sans($size: 44px, $weight: 700, $lh: 120%);
+      @include inter($size: 44px, $weight: 700, $lh: 120%);
       letter-spacing: -0.02em;
       padding-bottom: rem(8px);
 
@@ -33,7 +33,7 @@
     }
 
     .description {
-      @include sans($size: 16px, $weight: 500, $lh: 150%);
+      @include inter($size: 16px, $weight: 500, $lh: 150%);
     }
 
     .iconSection {

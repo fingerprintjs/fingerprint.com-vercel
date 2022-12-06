@@ -35,7 +35,7 @@
     }
 
     .title {
-      @include sans($size: 48px, $weight: 600, $lh: 64px);
+      @include inter($size: 48px, $weight: 600, $lh: 64px);
       letter-spacing: -0.01em;
 
       padding-top: rem(15px);
@@ -90,7 +90,7 @@
       }
     }
     .cardTitle {
-      @include sans($size: 24px, $weight: 600, $lh: 32px);
+      @include inter($size: 24px, $weight: 600, $lh: 32px);
       letter-spacing: -0.01em;
 
       padding-bottom: rem(8px);
@@ -101,7 +101,7 @@
       }
     }
     .cardDescription {
-      @include sans($size: 16px, $lh: 150%, $weight: 400);
+      @include inter($size: 16px, $lh: 150%, $weight: 400);
 
       @include media('<=phoneLandscape') {
         font-size: rem(16px);

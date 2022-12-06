@@ -4,7 +4,7 @@
 
   .message,
   .failedMessage {
-    @include sans($size: 14px, $weight: 400, $lh: 150%);
+    @include inter($size: 14px, $weight: 400, $lh: 150%);
     padding-top: rem(8px);
   }
   .failedMessage {
@@ -37,7 +37,7 @@
 
       -webkit-appearance: none;
       background-color: c('white');
-      @include sans($size: 16px, $lh: 150%);
+      @include inter($size: 16px, $lh: 150%);
 
       line-height: rem(21px);
 
@@ -83,7 +83,7 @@
         background: transparent;
 
         -webkit-appearance: none;
-        @include sans($size: 14px, $lh: 150%);
+        @include inter($size: 14px, $lh: 150%);
 
         line-height: rem(21px);
 

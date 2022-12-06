@@ -60,7 +60,7 @@
     }
 
     .cardTitle {
-      @include sans($size: 24px, $weight: 600, $lh: 150%);
+      @include inter($size: 24px, $weight: 600, $lh: 150%);
       letter-spacing: 0.01em;
 
       margin-bottom: rem(4px);
@@ -71,7 +71,7 @@
     }
 
     .cardDescription {
-      @include sans($size: 16px, $weight: 400, $lh: 150%);
+      @include inter($size: 16px, $weight: 400, $lh: 150%);
 
       @include media('<=phoneLandscape') {
         font-size: rem(14px);

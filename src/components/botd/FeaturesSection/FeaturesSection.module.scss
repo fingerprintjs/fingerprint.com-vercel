@@ -55,14 +55,14 @@
     }
 
     .cardTitle {
-      @include sans($size: 20px, $weight: 600, $lh: 150%);
+      @include inter($size: 20px, $weight: 600, $lh: 150%);
       letter-spacing: 0.01em;
 
       margin-bottom: rem(8px);
     }
 
     .cardDescription {
-      @include sans($size: 16px, $weight: 400, $lh: 150%);
+      @include inter($size: 16px, $weight: 400, $lh: 150%);
 
       @include media('<=phoneLandscape') {
         font-size: rem(14px);
