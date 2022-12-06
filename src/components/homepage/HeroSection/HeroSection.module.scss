@@ -73,16 +73,113 @@
       flex-direction: column;
     }
   }
-  .videoSection {
-    width: rem(427px);
-
+  .videoWrapper {
+    position: relative;
     @include media('<=desktopHeader') {
       align-self: center;
     }
+    .videoSection {
+      transform: translateZ(-100px);
+      width: rem(427px);
+      height: 100%;
+      @include media('<=phoneLandscape') {
+        width: 100%;
+        padding: 0 rem(20px);
+      }
+    }
+    .animationText {
+      position: absolute;
+      top: 40%;
+      left: 8%;
+      transform: rotateX(58deg) rotateY(-3deg) rotateZ(47deg);
+      z-index: 1;
+      width: rem(220px);
 
-    @include media('<=phoneLandscape') {
-      width: 100%;
-      padding: 0 rem(20px);
+      @include media('<=phoneLandscape') {
+        left: 11%;
+      }
+      @include media('<=525px') {
+        width: 42vw;
+      }
+      .animationLabel,
+      .animationVisitorId {
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 0;
+      }
+
+      .animationLabel {
+        text-transform: uppercase;
+        @include jb-mono($size: 14px, $weight: 400, $lh: 140%, $color: v('light-gray'));
+
+        white-space: nowrap;
+
+        @include media('<=525px') {
+          font-size: 2vw;
+        }
+      }
+      .animationVisitorId {
+        @include jb-mono($size: 18px, $weight: 600, $lh: 130%, $color: v('light-gray'));
+
+        @include media('<=525px') {
+          font-size: 3.25vw;
+        }
+      }
+      &.startVisitorId {
+        transition-delay: 4.75s;
+        animation: jump 0.25s ease 6.40s 1;
+
+        .animationLabel {
+          width: 100%;
+          animation: type 1s steps(40, end);
+          animation-delay: 5.5s;
+          animation-fill-mode: forwards;
+        }
+        .animationVisitorId {
+          width: 100%;
+          animation: typeBorder 1s steps(40, end);
+          animation-delay: 6.5s;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes jump {
+          0% {
+          }
+          50% {
+            top: 41%;
+          }
+          100% {
+          }
+        }
+        @keyframes type {
+          0% {
+            width: 0;
+          }
+          1% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 1;
+            border: none;
+          }
+        }
+
+        @keyframes typeBorder {
+          0% {
+            width: 0;
+          }
+          1% {
+            opacity: 1;
+          }
+          99.9% {
+            border-right: 0.15em solid orange;
+          }
+          100% {
+            opacity: 1;
+            border: none;
+          }
+        }
+      }
     }
   }
 }

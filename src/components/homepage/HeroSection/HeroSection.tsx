@@ -1,25 +1,47 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Container from '../../common/Container'
 import Button from '../../common/Button'
 import { PATH, URL } from '../../../constants/content'
-
+import _ from 'lodash'
 import { ReactComponent as TickSVG } from './TickSVG.svg'
 import heroWebm from '../../../assets/hero.webm'
 import heroMp4 from '../../../assets/hero.mp4'
 
 import { useInView } from 'framer-motion'
+import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
+import { getConfig } from '../../../helpers/fpjs'
 
 import styles from './HeroSection.module.scss'
+import classNames from 'classnames'
 
 export default function HeroSection() {
   const ref = useRef<HTMLVideoElement>(null)
   const isInView = useInView(ref, { once: true })
 
+  const { data } = useVisitorData(getConfig)
+  const [startedPlaying, setStartedPlaying] = useState(false)
+
+  const [visitorId, setVisitorId] = useState('hZ4W5oQ7pJVIHbW2fBXA')
+
   useEffect(() => {
     if (isInView && ref.current) {
+      setStartedPlaying(false)
       ref.current.play()
+      setStartedPlaying(true)
     }
   }, [isInView])
+
+  useEffect(() => {
+    if (data) {
+      setVisitorId(data.visitorId)
+    } else {
+      setTimeout(shuffle, 100)
+    }
+    function shuffle() {
+      const randomVisitorId = _.shuffle(visitorId).join('')
+      setVisitorId(randomVisitorId)
+    }
+  }, [data, visitorId])
 
   return (
     <Container className={styles.container} size='large'>
@@ -43,10 +65,20 @@ export default function HeroSection() {
           <BottomTip>Get Started in 10 minutes</BottomTip>
         </div>
       </section>
-      <video muted playsInline ref={ref} className={styles.videoSection}>
-        <source src={heroWebm} type='video/webm' />
-        <source src={heroMp4} type='video/mp4' />
-      </video>
+      <div className={styles.videoWrapper}>
+        <div
+          className={classNames(styles.animationText, {
+            [styles.startVisitorId]: startedPlaying,
+          })}
+        >
+          <p className={styles.animationLabel}>Your visitor ID_</p>
+          <p className={styles.animationVisitorId}>{visitorId}</p>
+        </div>
+        <video onPlaying={() => setStartedPlaying(true)} muted playsInline ref={ref} className={styles.videoSection}>
+          <source src={heroWebm} type='video/webm' />
+          <source src={heroMp4} type='video/mp4' />
+        </video>
+      </div>
     </Container>
   )
 }
