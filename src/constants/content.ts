@@ -142,7 +142,7 @@ export const solutions = [
 ]
 export const developers = [
   { title: 'Documentation', url: URL.docsUrl, isLocal: false },
-  { title: 'Technical Tutorials', url: PATH.accountTakeover, isLocal: true },
+  { title: 'Technical Tutorials', url: PATH.useCases, isLocal: true },
   { title: 'API Status', url: URL.statusUrl, isLocal: true },
   { title: 'SDKs and Libraries', url: PATH.sdks, isLocal: true },
   { title: 'Discord Channel', url: URL.discordServerURL, isLocal: false },
