@@ -45,6 +45,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
       return
     }
     if (isInView) {
+      videoRef.current.autoplay = true
       videoRef.current.play()
       setStartedPlaying(true)
     }
