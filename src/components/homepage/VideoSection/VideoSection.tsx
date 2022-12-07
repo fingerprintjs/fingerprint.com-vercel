@@ -5,6 +5,7 @@ import { URL } from '../../../constants/content'
 
 import styles from './VideoSection.module.scss'
 import useIntersectionObserver from '../../../hooks/useIntersectionObserver'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function VideoSection() {
   const ref = useRef<HTMLHeadingElement | null>(null)
@@ -16,18 +17,23 @@ export default function VideoSection() {
         <h2 ref={ref} className={styles.title}>
           See how Fingerprint works
         </h2>
-        {isVisible && (
-          <iframe
-            id='overview-video'
-            className={styles.iframe}
-            width='814'
-            src={URL.promotionalVideo}
-            title='YouTube video player'
-            frameBorder={0}
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowFullScreen
-          />
-        )}
+        <AnimatePresence>
+          {isVisible && (
+            <motion.iframe
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, delay: 0.5 }}
+              id='overview-video'
+              className={styles.iframe}
+              width='814'
+              src={URL.promotionalVideo}
+              title='YouTube video player'
+              frameBorder={0}
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            />
+          )}
+        </AnimatePresence>
       </Container>
     </Section>
   )

@@ -126,29 +126,29 @@
         }
       }
       &.startVisitorId {
-        transition-delay: 4.75s;
-        animation: jump 0.25s ease 6.4s 1;
+        animation: jump 0.22s ease 1.1s 1;
 
         .animationLabel {
           width: 100%;
-          animation: type 1s steps(40, end);
-          animation-delay: 5.5s;
+          animation: type 0.3s steps(40, end);
           animation-fill-mode: forwards;
         }
         .animationVisitorId {
           width: 100%;
-          animation: typeBorder 1s steps(40, end);
-          animation-delay: 6.5s;
+          animation: typeBorder 0.3s steps(40, end);
+          animation-delay: 0.3s;
           animation-fill-mode: forwards;
         }
 
         @keyframes jump {
           0% {
+            top: 40%;
           }
-          50% {
+          35% {
             top: 41%;
           }
           100% {
+            top: 40%;
           }
         }
         @keyframes type {

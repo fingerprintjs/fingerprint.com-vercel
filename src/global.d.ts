@@ -21,3 +21,7 @@ declare module '*.module.scss' {
 
 declare module '*.webm'
 declare module '*.mp4'
+declare module '*.mov' {
+  const src: string
+  export default src
+}

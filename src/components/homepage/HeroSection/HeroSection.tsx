@@ -5,7 +5,7 @@ import { PATH, URL } from '../../../constants/content'
 import _ from 'lodash'
 import { ReactComponent as TickSVG } from './TickSVG.svg'
 import heroWebm from '../../../assets/hero.webm'
-import heroMp4 from '../../../assets/hero.mp4'
+import heroMp4 from '../../../assets/hero.mov'
 
 import { useInView } from 'framer-motion'
 import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
@@ -28,11 +28,18 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
 
   useEffect(() => {
     if (isInView && ref.current) {
-      setStartedPlaying(false)
       ref.current.play()
-      setStartedPlaying(true)
     }
   }, [isInView])
+
+  const handleAnimationStart = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
+    const videoCurrentTime = e.currentTarget.currentTime
+    if (videoCurrentTime >= 5.15) {
+      setStartedPlaying(true)
+      return
+    }
+    setStartedPlaying(false)
+  }
 
   useEffect(() => {
     if (data) {
@@ -91,7 +98,13 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           <p className={styles.animationLabel}>Your visitor ID_</p>
           <p className={styles.animationVisitorId}>{visitorId}</p>
         </div>
-        <video onPlaying={() => setStartedPlaying(true)} muted playsInline ref={ref} className={styles.videoSection}>
+        <video
+          onTimeUpdate={(e) => handleAnimationStart(e)}
+          muted
+          playsInline
+          ref={ref}
+          className={styles.videoSection}
+        >
           <source src={heroWebm} type='video/webm' />
           <source src={heroMp4} type='video/mp4' />
         </video>

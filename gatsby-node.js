@@ -295,6 +295,19 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
   }
 
   actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.(mov)$/,
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].[ext]',
+            publicPath: './assets',
+            outputPath: './assets',
+          },
+        },
+      ],
+    },
     plugins: [
       new webpack.IgnorePlugin({
         resourceRegExp: /^netlify-identity-widget$/,
