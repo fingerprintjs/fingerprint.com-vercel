@@ -4,7 +4,7 @@ import Button from '../../common/Button'
 import { PATH, URL } from '../../../constants/content'
 import _ from 'lodash'
 import { ReactComponent as TickSVG } from './TickSVG.svg'
-import heroWebm from '../../../assets/hero.mp4'
+import heroWebm from '../../../assets/hero.webm'
 import heroMp4 from '../../../assets/hero.mov'
 
 import { useInView } from 'framer-motion'
