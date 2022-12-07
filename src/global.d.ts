@@ -19,5 +19,10 @@ declare module '*.module.scss' {
   export default classes
 }
 
+declare module '*.mov' {
+  const src: string;
+  export default src;
+}
+
 declare module '*.webm'
 declare module '*.mp4'

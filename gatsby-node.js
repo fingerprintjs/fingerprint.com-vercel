@@ -284,7 +284,7 @@ function configureMiniCssExtractPlugin(config) {
   }
 }
 
-exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig, loaders }) => {
   //To ignore the css order warnings in gatsby v3 in develop it is necessary to add stage === 'develop'
   if (stage === 'develop' || stage === 'build-javascript') {
     const config = getConfig()
@@ -295,6 +295,20 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
   }
 
   actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.(mov|mp4)$/,
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].[ext]',
+            publicPath: './assets',
+            outputPath: './assets',
+          },
+        },
+      ],
+    },
+
     plugins: [
       new webpack.IgnorePlugin({
         resourceRegExp: /^netlify-identity-widget$/,
