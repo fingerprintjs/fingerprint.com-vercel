@@ -77,13 +77,13 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
         </div>
         {advertisingVariant ? (
           <div className={styles.tips}>
-            <BottomTip>GDRP/CCPA Compliant</BottomTip>
+            <BottomTip>GDPR/CCPA Compliant</BottomTip>
             <BottomTip>Get Started in 10 minutes</BottomTip>
           </div>
         ) : (
           <div className={styles.tips}>
             <BottomTip>Free for developers</BottomTip>
-            <BottomTip>GDRP/CCPA Compliant</BottomTip>
+            <BottomTip>GDPR/CCPA Compliant</BottomTip>
             <BottomTip>Get Started in 10 minutes</BottomTip>
           </div>
         )}

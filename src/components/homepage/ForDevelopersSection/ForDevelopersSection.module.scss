@@ -181,7 +181,7 @@
           }
         }
         .cardDescription {
-          @include inter($size: 20px, $weight: 400, $lh: 160%, $color: #5b5b5b);
+          @include inter($size: 20px, $weight: 400, $lh: 160%, $color: v('light-gray'));
           @include media('<=desktopHeader') {
             font-size: rem(16px);
             padding-bottom: rem(24px);
@@ -266,7 +266,7 @@
           @include inter($size: 20px, $weight: 600, $lh: 150%);
         }
         .cardDescription {
-          @include inter($size: 14px, $weight: 400, $lh: 160%, $color: #5b5b5b);
+          @include inter($size: 14px, $weight: 400, $lh: 160%, $color: v('light-gray'));
         }
       }
       .link {

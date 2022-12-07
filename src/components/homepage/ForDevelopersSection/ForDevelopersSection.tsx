@@ -53,7 +53,7 @@ export default function ForDevelopersSection() {
       iconMobile: ApiMobileSVG,
     },
     cdn: {
-      title: 'CDN Integrations',
+      title: 'Integrations',
       description: 'Our Cloudflare integration makes it easy to use Fingerprint at scale.',
       link: PATH.integrations,
       linkText: 'Explore Integrations',

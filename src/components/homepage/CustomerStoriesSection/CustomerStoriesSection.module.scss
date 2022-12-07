@@ -85,7 +85,7 @@
       padding: rem(24px) rem(10px) 0 0;
     }
     .quote {
-      @include inter($size: 36px, $weight: 500, $lh: 140%, $color: #434344);
+      @include inter($size: 36px, $weight: 500, $lh: 140%, $color: v('light-gray'));
       margin-bottom: rem(32px);
       max-width: rem(1160px);
 
@@ -97,7 +97,7 @@
       }
     }
     .author {
-      @include inter($size: 24px, $weight: 600, $lh: 130%, $color: #434344);
+      @include inter($size: 24px, $weight: 600, $lh: 130%, $color: #202021);
       margin-bottom: rem(8px);
 
       @include media('<=phoneLandscape') {
@@ -105,7 +105,7 @@
       }
     }
     .position {
-      @include inter($size: 24px, $weight: 500, $lh: 130%, $color: #5b5b5b);
+      @include inter($size: 24px, $weight: 500, $lh: 130%, $color: v('light-gray'));
 
       @include media('<=phoneLandscape') {
         font-size: rem(14px);

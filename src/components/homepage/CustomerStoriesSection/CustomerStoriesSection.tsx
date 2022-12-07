@@ -11,9 +11,9 @@ export default function CustomerStoriesSection() {
       <div className={styles.labelWrapper}>
         <span className={styles.label}>Customer Stories</span>
       </div>
-      <div className={styles.logoSection}>
+      <a className={styles.logoSection} href='https://www.checkout.com/' target='_blank' rel='noreferrer'>
         <CheckoutSVG className={styles.logo} />
-      </div>
+      </a>
       <div className={styles.quoteSection}>
         <p className={styles.quote}>
           “With Fingerprint, we&apos;re able to identify fraudulent payment attempts with higher accuracy. The developer

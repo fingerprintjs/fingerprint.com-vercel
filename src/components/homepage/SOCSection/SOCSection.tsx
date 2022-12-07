@@ -16,7 +16,7 @@ export default function SOCSection() {
           <div className={styles.labelWrapper}>
             <span className={styles.label}>Security and privacy</span>
           </div>
-          <h1 className={styles.title}>Your compliance officer will love us too</h1>
+          <h1 className={styles.title}>Your compliance officer will love us, too</h1>
           <p className={styles.description}>We maintain the highest standards in privacy, security and performance.</p>
         </div>
         <div className={styles.cardsContainer}>

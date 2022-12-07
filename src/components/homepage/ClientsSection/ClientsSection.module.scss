@@ -30,9 +30,9 @@
         max-width: 100%;
         display: block;
 
-        fill: #89898a;
+        fill: #5b5b5b;
         path {
-          fill: #89898a;
+          fill: #5b5b5b;
         }
       }
       .coinbase {
@@ -87,6 +87,10 @@
         width: rem(150px);
         height: rem(21px);
       }
+      .realtor {
+        width: rem(108px);
+        height: rem(19px);
+      }
     }
   }
 }
@@ -96,6 +100,6 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-2293px);
+    transform: translateX(-2481px);
   }
 }

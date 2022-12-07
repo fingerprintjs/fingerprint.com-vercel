@@ -367,7 +367,7 @@
         }
       }
       .sideDescription {
-        @include inter($size: 20px, $weight: 400, $lh: 140%, $color: #5b5b5b);
+        @include inter($size: 20px, $weight: 400, $lh: 140%, $color: v('light-gray'));
         max-width: rem(300px);
         padding-bottom: rem(8px);
         opacity: 0;
@@ -537,7 +537,7 @@
         .point {
           display: flex;
           column-gap: rem(8px);
-          @include inter($size: 16px, $weight: 400, $lh: 160%, $color: #5b5b5b);
+          @include inter($size: 16px, $weight: 400, $lh: 160%, $color: v('light-gray'));
           letter-spacing: 0.01em;
 
           @include media('<=desktop') {

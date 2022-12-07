@@ -78,7 +78,7 @@
       }
     }
     .description {
-      @include inter($size: 20px, $weight: 400, $lh: 160%, $color: #5b5b5b);
+      @include inter($size: 20px, $weight: 400, $lh: 160%, $color: #202021);
 
       @include media('<=desktopHeader') {
         letter-spacing: 0.01em;
@@ -145,7 +145,7 @@
         }
       }
       .cardDescription {
-        @include inter($size: 16px, $weight: 400, $lh: 160%, $color: #5b5b5b);
+        @include inter($size: 16px, $weight: 400, $lh: 160%, $color: #202021);
         letter-spacing: 0.01em;
 
         @include media('<=desktopHeader') {

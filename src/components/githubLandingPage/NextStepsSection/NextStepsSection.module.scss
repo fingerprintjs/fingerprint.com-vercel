@@ -62,7 +62,7 @@
       border-radius: 8px;
       margin-bottom: rem(24px);
 
-      @include inter($size: 24px, $weight: 600, $lh: 24px, $color: #434344);
+      @include inter($size: 24px, $weight: 600, $lh: 24px, $color: v('light-gray'));
 
       @include media('<=phoneLandscape') {
         padding: rem(6px) rem(19px);
@@ -72,7 +72,7 @@
       }
     }
     .cardTitle {
-      @include inter($size: 20px, $weight: 600, $lh: 150%, $color: #434344);
+      @include inter($size: 20px, $weight: 600, $lh: 150%, $color: v('light-gray'));
       letter-spacing: 0.01em;
 
       padding-bottom: rem(16px);
@@ -84,7 +84,7 @@
       }
     }
     .cardDescription {
-      @include inter($size: 16px, $weight: 400, $lh: 150%, $color: #5b5b5b);
+      @include inter($size: 16px, $weight: 400, $lh: 150%, $color: v('light-gray'));
       padding-bottom: rem(16px);
 
       @include media('>tablet') {

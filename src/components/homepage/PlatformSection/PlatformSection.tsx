@@ -91,7 +91,7 @@ export default function PlatformSection() {
               points={['Browser and device fingerprinting', 'Incognito mode detection', 'Geolocation']}
               position={1}
             />
-            <Feature title='BotD - Bot Detection' points={['Search bots', 'Automation tooling']} position={2} />
+            <Feature title='Bot Detection' points={['Search bots', 'Automation tooling']} position={2} />
           </div>
         </div>
         <div className={styles.rightSection}>
@@ -102,7 +102,7 @@ export default function PlatformSection() {
               Out-of-the-box solutions to common use cases, build your own with our code tutorials.
             </p>
             <Feature title='Account Sharing Prevention' position={3} />
-            <Feature title='Account Takeover' position={4} />
+            <Feature title='Build your own custom solution' position={4} />
           </div>
         </div>
       </div>

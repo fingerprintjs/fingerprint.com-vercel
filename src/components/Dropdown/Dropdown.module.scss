@@ -266,13 +266,13 @@
   align-items: center;
   column-gap: rem(4px);
   width: 100%;
-  @include inter($size: 12px, $weight: 500, $lh: 100%, $color: #5b5b5b);
+  @include inter($size: 12px, $weight: 500, $lh: 100%, $color: v('light-gray'));
   padding-bottom: rem(16px);
   padding-left: rem(16px);
 
   .arrowBottomLink {
     @include transition(opacity);
-    fill: #5b5b5b;
+    fill: v('light-gray');
     opacity: 0;
     align-self: center;
     width: 8.5px;
