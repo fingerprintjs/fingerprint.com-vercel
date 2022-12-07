@@ -45,6 +45,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
       return
     }
     if (isInView) {
+      videoRef.current.autoplay = true
       videoRef.current.play()
       setStartedPlaying(true)
     }
@@ -54,16 +55,14 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
     if (!videoRef.current) {
       return
     }
-
-    if (videoRef.current.readyState >= 2) {
-      onReady()
-      return
-    }
-
     videoRef.current.addEventListener(
-      'loadeddata',
+      'loadedmetadata',
       () => {
         onReady()
+        //Video should now be loaded but we can add a second check
+        if (videoRef.current && videoRef.current.readyState >= 3) {
+          onReady()
+        }
       },
       { once: true }
     )
@@ -114,7 +113,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           <p className={styles.animationLabel}>Your visitor ID_</p>
           <p className={styles.animationVisitorId}>{visitorId}</p>
         </div>
-        <video muted playsInline className={styles.videoSection} ref={videoRef}>
+        <video preload='metadata' muted playsInline className={styles.videoSection} ref={videoRef}>
           <source src={heroWebm} type='video/webm' />
           <source src={heroMp4} type='video/mp4' />
         </video>
