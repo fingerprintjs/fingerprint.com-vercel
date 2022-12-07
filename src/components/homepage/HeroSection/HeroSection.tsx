@@ -48,13 +48,17 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
   }, [videoRef.current?.readyState])
 
   useEffect(() => {
-    if (videoState >= 3 && isInView && videoRef.current) {
+    if (videoState >= 3 && isInView && videoRef.current && startedPlaying === false) {
       videoRef.current.play().then(() => {
         setStartedPlaying(true)
+        return
       })
-    } else {
-      setStartedPlaying(false)
     }
+    //Safari iOS doesn't change state until load is executed
+    if (videoState === 1 && videoRef.current) {
+      videoRef.current.load()
+    }
+    setStartedPlaying(false)
   }, [isInView, videoState])
 
   return (

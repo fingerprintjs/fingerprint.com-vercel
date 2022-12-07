@@ -298,7 +298,7 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig, loaders }) => {
     module: {
       rules: [
         {
-          test: /\.(mov|mp4)$/,
+          test: /\.(mov)$/,
           loader: 'file-loader',
           options: {
             name: '[name].[hash].[ext]',
