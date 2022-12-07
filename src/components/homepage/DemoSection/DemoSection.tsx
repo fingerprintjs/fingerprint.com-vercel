@@ -110,7 +110,12 @@ export default function DemoSection() {
         </noscript>
         <div className={styles.summary}>
           <div className={styles.visitorIdSection}>
-            <span className={styles.title}>Your visitor id</span>
+            <span className={styles.title}>
+              Your visitor id
+              <Tippy maxWidth={270} content={'Your unique device identifier.'} theme='grey'>
+                <InfoSvg tabIndex={0} />
+              </Tippy>
+            </span>
 
             {visitorId ? (
               <span className={styles.visitorId}>{visitorId}</span>
@@ -123,7 +128,7 @@ export default function DemoSection() {
               <span className={styles.title}>your visit summary</span>
               {visitedTimes !== undefined ? (
                 <span className={styles.times}>
-                  You visited {visitedTimes > 20 ? '+20 times' : pluralize(visitedTimes, 'time')}
+                  You visited {visitedTimes > 20 ? '20+ times' : pluralize(visitedTimes, 'time')}
                 </span>
               ) : (
                 <Skeleton className={styles.visitedTimesSkeleton} />

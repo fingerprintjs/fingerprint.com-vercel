@@ -172,6 +172,7 @@
       display: flex;
       flex-direction: column;
       row-gap: rem(18px);
+      background-color: #ffffff;
 
       @include media('<=desktop') {
         padding: rem(24px) 0;

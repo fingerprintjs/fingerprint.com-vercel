@@ -70,13 +70,8 @@
 
     .platformTitle {
       text-transform: uppercase;
-      @include jb-mono($size: 14px, $weight: 500, $lh: 130%);
+      @include jb-mono($size: 14px, $weight: 500, $lh: 130%, $color: #ff5d22);
       letter-spacing: 0.01em;
-      background: linear-gradient(94.48deg, #f5614b 0%, #f5614b 0.01%, rgba(250, 117, 69, 0.99) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
 
       opacity: 0;
       @include transition((opacity));
