@@ -168,7 +168,7 @@
   --bgColor: var(--github-orange-gradient);
 
   &:hover {
-    background-color: adjust-color(c('github-orange-gradient'), $saturation: -19%, $lightness: -6%);
+    background-color: adjust-color(c('github-orange-gradient'), $saturation: -20%, $lightness: -6%);
   }
 }
 .orangeGradientOutlined {
