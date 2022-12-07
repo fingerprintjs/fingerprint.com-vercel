@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Container from '../../common/Container'
 import Button from '../../common/Button'
 import { PATH, URL } from '../../../constants/content'
@@ -18,10 +18,11 @@ interface HeroSectionProps {
   advertisingVariant?: boolean
 }
 export default function HeroSection({ advertisingVariant = false }: HeroSectionProps) {
-  const ref = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
 
-  const isInView = useInView(ref, { once: true })
+  const isInView = useInView(videoRef, { once: true })
+
+  const [duration, setDuration] = useState(0)
 
   const { data } = useVisitorData(getConfig)
   const [startedPlaying, setStartedPlaying] = useState(false)
@@ -40,35 +41,12 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
     }
   }, [data, visitorId])
 
-  const onReady = useCallback(() => {
-    if (!videoRef.current) {
-      return
-    }
-    if (isInView) {
-      videoRef.current.autoplay = true
+  useEffect(() => {
+    if (duration > 0 && isInView && videoRef.current) {
       videoRef.current.play()
       setStartedPlaying(true)
     }
-  }, [isInView, videoRef])
-
-  useEffect(() => {
-    if (!videoRef.current) {
-      return
-    }
-    videoRef.current.autoplay = true
-
-    if (videoRef.current && videoRef.current.readyState >= 3) {
-      onReady()
-    }
-    //Video should now be loaded but we can add a second check
-    videoRef.current.addEventListener(
-      'loadedmetadata',
-      () => {
-        onReady()
-      },
-      { once: true }
-    )
-  }, [onReady, videoRef])
+  }, [isInView, duration])
 
   return (
     <Container className={styles.container} size='large'>
@@ -106,7 +84,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           </div>
         )}
       </section>
-      <div ref={ref} className={styles.videoWrapper}>
+      <div className={styles.videoWrapper}>
         <div
           className={classNames(styles.animationText, {
             [styles.startVisitorId]: startedPlaying,
@@ -115,7 +93,13 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           <p className={styles.animationLabel}>Your visitor ID_</p>
           <p className={styles.animationVisitorId}>{visitorId}</p>
         </div>
-        <video preload='metadata' muted playsInline className={styles.videoSection} ref={videoRef}>
+        <video
+          onLoadedMetadata={(event) => setDuration((event.target as HTMLVideoElement).duration)}
+          muted
+          playsInline
+          className={styles.videoSection}
+          ref={videoRef}
+        >
           <source src={heroWebm} type='video/webm' />
           <source src={heroMp4} type='video/mp4' />
         </video>
