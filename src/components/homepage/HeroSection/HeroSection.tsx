@@ -45,7 +45,6 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
       return
     }
     if (isInView) {
-      videoRef.current.autoplay = true
       videoRef.current.play()
       setStartedPlaying(true)
     }
@@ -55,16 +54,15 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
     if (!videoRef.current) {
       return
     }
-    videoRef.current.autoplay = true
 
+    if (videoRef.current && videoRef.current.readyState >= 3) {
+      onReady()
+    }
+    //Video should now be loaded but we can add a second check
     videoRef.current.addEventListener(
       'loadeddata',
       () => {
         onReady()
-        //Video should now be loaded but we can add a second check
-        if (videoRef.current && videoRef.current.readyState >= 3) {
-          onReady()
-        }
       },
       { once: true }
     )
