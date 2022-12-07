@@ -11,7 +11,7 @@ export default function CustomerStoriesSection() {
       <div className={styles.labelWrapper}>
         <span className={styles.label}>Customer Stories</span>
       </div>
-      <a className={styles.logoSection} href='https://www.checkout.com/' target='_blank' rel='noreferrer'>
+      <a className={styles.logoSection} href='https://www.checkout.com/' target='_blank' rel='noreferrer' aria-label='Check Checkout website'>
         <CheckoutSVG className={styles.logo} />
       </a>
       <div className={styles.quoteSection}>

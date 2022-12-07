@@ -14,7 +14,13 @@ export default function BadgesSection() {
   return (
     <Section className={styles.root}>
       <Container className={styles.container}>
-        <a target='_blank' rel='noreferrer' href={URL.g2ReviewUrl} className={styles.badgesContainer}>
+        <a
+          target='_blank'
+          rel='noreferrer'
+          href={URL.g2ReviewUrl}
+          className={styles.badgesContainer}
+          aria-label='g2 review'
+        >
           <FastestSVG className={styles.fastestSVG} />
           <HighSVG className={styles.highSVG} />
           <EasiestSVG className={styles.easiestSVG} />

@@ -44,7 +44,7 @@ function LogosRow({ keyString }: LogosRowProps) {
           <WesternUnionSVG className={classNames(styles.logo, styles.western)} />
           <BookingSVG className={classNames(styles.logo, styles.booking)} />
           <AgodaSVG className={classNames(styles.logo, styles.agoda)} />
-          <a href='https://www.realtor.com/' target='_blank' rel='noreferrer'>
+          <a href='https://www.realtor.com/' target='_blank' rel='noreferrer' aria-label='Check Realtor website'>
             <RealtorSVG className={classNames(styles.logo, styles.realtor)} />
           </a>
           <CoinBaseSVG className={classNames(styles.logo, styles.coinbase)} />
