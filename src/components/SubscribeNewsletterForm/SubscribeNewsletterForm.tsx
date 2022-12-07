@@ -120,7 +120,7 @@ export default function SubscribeNewsletterForm({
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <button id='arrow' className={styles.arrowButton}>
+          <button id='arrow' aria-label='Subscribe to our newsletter button' className={styles.arrowButton}>
             <ArrowSVG className={styles.arrow} />
           </button>
         </form>
