@@ -4,8 +4,7 @@ import Button from '../../common/Button'
 import { PATH, URL } from '../../../constants/content'
 import _ from 'lodash'
 import { ReactComponent as TickSVG } from './TickSVG.svg'
-import heroWebm from '../../../assets/hero.webm'
-import heroMp4 from '../../../assets/hero.mov'
+import heroMp4 from '../../../assets/hero.mp4'
 
 import { useInView } from 'framer-motion'
 import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
@@ -95,17 +94,17 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
             [styles.startVisitorId]: startedPlaying,
           })}
         >
-          <p className={styles.animationLabel}>Your visitor ID_</p>
+          <p className={styles.animationLabel}>Your visitor ID:</p>
           <p className={styles.animationVisitorId}>{visitorId}</p>
         </div>
         <video
           onTimeUpdate={(e) => handleAnimationStart(e)}
           muted
           playsInline
+          autoPlay
           ref={ref}
           className={styles.videoSection}
         >
-          <source src={heroWebm} type='video/webm' />
           <source src={heroMp4} type='video/mp4' />
         </video>
       </div>
