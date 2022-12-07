@@ -22,7 +22,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
 
   const isInView = useInView(videoRef, { once: true })
 
-  const [duration, setDuration] = useState(0)
+  const [videoState, setVideoState] = useState(0)
 
   const { data } = useVisitorData(getConfig)
   const [startedPlaying, setStartedPlaying] = useState(false)
@@ -42,11 +42,20 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
   }, [data, visitorId])
 
   useEffect(() => {
-    if (duration > 0 && isInView && videoRef.current) {
-      videoRef.current.play()
-      setStartedPlaying(true)
+    if (videoRef.current) {
+      setVideoState(videoRef.current?.readyState)
     }
-  }, [isInView, duration])
+  }, [videoRef.current?.readyState])
+
+  useEffect(() => {
+    if (videoState >= 3 && isInView && videoRef.current) {
+      videoRef.current.play().then(() => {
+        setStartedPlaying(true)
+      })
+    } else {
+      setStartedPlaying(false)
+    }
+  }, [isInView, videoState])
 
   return (
     <Container className={styles.container} size='large'>
@@ -93,13 +102,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           <p className={styles.animationLabel}>Your visitor ID_</p>
           <p className={styles.animationVisitorId}>{visitorId}</p>
         </div>
-        <video
-          onLoadedMetadata={(event) => setDuration((event.target as HTMLVideoElement).duration)}
-          muted
-          playsInline
-          className={styles.videoSection}
-          ref={videoRef}
-        >
+        <video muted playsInline className={styles.videoSection} ref={videoRef}>
           <source src={heroWebm} type='video/webm' />
           <source src={heroMp4} type='video/mp4' />
         </video>

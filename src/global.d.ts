@@ -20,8 +20,8 @@ declare module '*.module.scss' {
 }
 
 declare module '*.mov' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }
 
 declare module '*.webm'
