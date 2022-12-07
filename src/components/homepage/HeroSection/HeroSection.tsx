@@ -55,8 +55,10 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
     if (!videoRef.current) {
       return
     }
+    videoRef.current.autoplay = true
+
     videoRef.current.addEventListener(
-      'loadedmetadata',
+      'loadeddata',
       () => {
         onReady()
         //Video should now be loaded but we can add a second check
@@ -113,7 +115,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           <p className={styles.animationLabel}>Your visitor ID_</p>
           <p className={styles.animationVisitorId}>{visitorId}</p>
         </div>
-        <video preload='metadata' muted playsInline className={styles.videoSection} ref={videoRef}>
+        <video muted playsInline className={styles.videoSection} ref={videoRef}>
           <source src={heroWebm} type='video/webm' />
           <source src={heroMp4} type='video/mp4' />
         </video>
