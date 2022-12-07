@@ -144,11 +144,13 @@
 
         @keyframes jump {
           0% {
+            top: 40%;
           }
-          33% {
+          50% {
             top: 41%;
           }
           100% {
+            top: 40%;
           }
         }
         @keyframes type {

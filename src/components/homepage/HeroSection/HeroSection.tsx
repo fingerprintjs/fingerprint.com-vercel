@@ -19,6 +19,8 @@ interface HeroSectionProps {
 }
 export default function HeroSection({ advertisingVariant = false }: HeroSectionProps) {
   const ref = useRef<HTMLDivElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
   const isInView = useInView(ref, { once: true })
 
   const { data } = useVisitorData(getConfig)
@@ -38,21 +40,34 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
     }
   }, [data, visitorId])
 
-  const onRefChange = useCallback(
-    (element: HTMLVideoElement | null) => {
-      if (!element) {
-        return
-      }
-      if (isInView && element.readyState >= element.HAVE_FUTURE_DATA) {
-        element.play()
-      }
+  const onReady = useCallback(() => {
+    if (!videoRef.current) {
+      return
+    }
+    if (isInView) {
+      videoRef.current.play()
+      setStartedPlaying(true)
+    }
+  }, [isInView, videoRef])
 
-      if (element.readyState >= element.HAVE_FUTURE_DATA && element.paused === false) {
-        setStartedPlaying(true)
-      }
-    },
-    [isInView]
-  )
+  useEffect(() => {
+    if (!videoRef.current) {
+      return
+    }
+
+    if (videoRef.current.readyState >= 2) {
+      onReady()
+      return
+    }
+
+    videoRef.current.addEventListener(
+      'loadeddata',
+      () => {
+        onReady()
+      },
+      { once: true }
+    )
+  }, [onReady, videoRef])
 
   return (
     <Container className={styles.container} size='large'>
@@ -99,7 +114,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
           <p className={styles.animationLabel}>Your visitor ID_</p>
           <p className={styles.animationVisitorId}>{visitorId}</p>
         </div>
-        <video muted playsInline className={styles.videoSection} ref={(node) => onRefChange(node)}>
+        <video muted playsInline className={styles.videoSection} ref={videoRef}>
           <source src={heroWebm} type='video/webm' />
           <source src={heroMp4} type='video/mp4' />
         </video>
