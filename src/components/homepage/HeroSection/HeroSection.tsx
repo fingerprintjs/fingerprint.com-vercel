@@ -7,7 +7,6 @@ import { ReactComponent as TickSVG } from './TickSVG.svg'
 import heroWebm from '../../../assets/hero.webm'
 import heroMp4 from '../../../assets/hero.mp4'
 
-import { useInView } from 'framer-motion'
 import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
 import { getConfig } from '../../../helpers/fpjs'
 
@@ -20,8 +19,6 @@ interface HeroSectionProps {
 export default function HeroSection({ advertisingVariant = false }: HeroSectionProps) {
   const ref = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
-
-  const isInView = useInView(ref, { once: true })
 
   const { data } = useVisitorData(getConfig)
   const [startedPlaying, setStartedPlaying] = useState(false)
@@ -44,11 +41,9 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
     if (!videoRef.current) {
       return
     }
-    if (isInView) {
-      videoRef.current.play()
-      setStartedPlaying(true)
-    }
-  }, [isInView, videoRef])
+    videoRef.current.play()
+    setStartedPlaying(true)
+  }, [videoRef])
 
   useEffect(() => {
     if (!videoRef.current) {
