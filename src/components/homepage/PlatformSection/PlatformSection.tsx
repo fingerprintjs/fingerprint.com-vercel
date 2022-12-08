@@ -91,7 +91,7 @@ export default function PlatformSection() {
               points={['Browser and device fingerprinting', 'Incognito mode detection', 'Geolocation']}
               position={1}
             />
-            <Feature title='Bot Detection' points={['Search bots', 'Automation tooling']} position={2} />
+            <Feature title='Bot Detection' points={['Friendly bots', 'Automation tooling']} position={2} />
           </div>
         </div>
         <div className={styles.rightSection}>
