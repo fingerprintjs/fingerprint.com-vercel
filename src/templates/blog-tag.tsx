@@ -21,6 +21,7 @@ export default function BlogTag({ data, pageContext }: BlogTagProps) {
   const { edges: posts } = data.allMarkdownRemark
   const { currentPage, numPages, tag } = pageContext
   const breadcrumbs = pageContext.breadcrumb.crumbs.filter(({ pathname }) => pathname !== '/blog/tag')
+
   return (
     <LayoutTemplate>
       {breadcrumbs && (
