@@ -295,6 +295,17 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
   }
 
   actions.setWebpackConfig({
+    resolve: {
+      fallback: {
+        assert: require.resolve('assert/'),
+        crypto: require.resolve('crypto-browserify'),
+        http: require.resolve('stream-http'),
+        https: require.resolve('https-browserify'),
+        os: require.resolve('os-browserify/browser'),
+        stream: require.resolve('stream-browserify'),
+        zlib: require.resolve('browserify-zlib'),
+      },
+    },
     module: {
       rules: [
         {
@@ -369,10 +380,7 @@ exports.sourceNodes = async ({ actions, getNodes, createContentDigest }) => {
     prepaidQuantity: Number(defaultPrepaidQuantity),
   }
 
-  const apiUrl =
-    process.env.CONTEXT === 'production'
-      ? process.env.GATSBY_FPJS_MGMT_API_HOST
-      : process.env.GATSBY_PREVIEW_FPJS_MGMT_API_HOST
+  const apiUrl = process.env.GATSBY_FPJS_MGMT_API_HOST
 
   if (apiUrl) {
     const result = await fetch(`${apiUrl}/prices?${new URLSearchParams({ 'product[]': 'api' })}`, {

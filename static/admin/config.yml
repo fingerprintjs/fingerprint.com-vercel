@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: natapg/fingerprintjs.com
   branch: master
+  base_url: 'https://fingerprintjs-com.vercel.app' # our site's base URL
+  auth_endpoint: 'api/auth' # used together with base_url for our custom endpoints (more on this later)
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'

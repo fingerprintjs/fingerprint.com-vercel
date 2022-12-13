@@ -1,6 +1,6 @@
 const path = require('path')
 
-const baseUrl = process.env.CONTEXT === 'deploy-preview' ? process.env.DEPLOY_PRIME_URL : 'https://fingerprint.com'
+const baseUrl = process.env.VERCEL_ENV === 'preview' ? process.env.VERCEL_URL : 'https://fingerprint.com'
 
 const resolvePath = (directoryName, pathName) => {
   const result = path.join(directoryName, pathName)
@@ -242,12 +242,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-typescript',
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
     'gatsby-plugin-catch-links',
     {
       resolve: `gatsby-plugin-feed`,

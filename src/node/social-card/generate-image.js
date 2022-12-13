@@ -1,11 +1,7 @@
-const { registerFont, createCanvas, loadImage } = require('canvas')
+const { createCanvas, loadImage } = require('canvas')
 const { join } = require('path')
 
 exports.generateImage = async (title) => {
-  registerFont(join('src', 'node', 'social-card', 'assets', 'Inter-SemiBold.ttf'), {
-    family: 'Inter',
-    weight: '600',
-  })
   const canvas = createCanvas(1200, 600)
   const context = canvas.getContext('2d')
   context.fillStyle = '#0C102B'
