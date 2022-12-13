@@ -21,7 +21,6 @@ export default function BlogTag({ data, pageContext }: BlogTagProps) {
   const { edges: posts } = data.allMarkdownRemark
   const { currentPage, numPages, tag } = pageContext
   const breadcrumbs = pageContext.breadcrumb.crumbs.filter(({ pathname }) => pathname !== '/blog/tag')
-
   return (
     <LayoutTemplate>
       {breadcrumbs && (
@@ -35,7 +34,11 @@ export default function BlogTag({ data, pageContext }: BlogTagProps) {
 
       <Section>
         <Container size='large'>
-          <h1 className={styles.title}>{`${kebabToTitle(tag)}`} Articles</h1>
+          {tag === 'webinar' ? (
+            <h1 className={styles.title}>Webinars</h1>
+          ) : (
+            <h1 className={styles.title}>{`${kebabToTitle(tag)}`} Articles</h1>
+          )}
 
           <Posts
             posts={posts
@@ -81,7 +84,11 @@ export function Head(props: HeadProps<Queries.BlogTagQuery, BlogTagContext>) {
   return (
     <SEO
       pathname={props.location.pathname}
-      title={`${kebabToTitle(props.pageContext.tag)} Articles - Fingerprint Blog | Fingerprint`}
+      title={
+        props.pageContext.tag === 'webinar'
+          ? `Webinars - Fingerprint Blog | Fingerprint`
+          : `${kebabToTitle(props.pageContext.tag)} Articles - Fingerprint Blog | Fingerprint`
+      }
       description={`We are an open source powered company working to prevent online fraud for websites of all sizes. Read our articles on ${kebabToTitle(
         props.pageContext.tag
       )} on our blog.`}
