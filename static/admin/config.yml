@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: natapg/fingerprintjs.com
+  repo: fingerprintjs/fingerprint.com-vercel
   branch: master
-  base_url: 'https://fingerprintjs-com.vercel.app' # our site's base URL
-  auth_endpoint: 'api/auth' # used together with base_url for our custom endpoints (more on this later)
+  base_url: 'https://fingerprint-com.vercel.app' # our site's base URL
+  auth_endpoint: 'api/auth'
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
