@@ -1,29 +1,10 @@
 {
   "redirects": [
     {
-      "source": "http://www.fingerprint.com",
-      "destination": "https://fingerprint.com/"
-    },
-    {
       "source": "/blog/wallpaper-id/",
       "destination": "/blog/how-android-wallpaper-images-threaten-privacy/"
     },
-    {
-      "source": "https://fpjs.io",
-      "destination": "https://fingerprint.com/"
-    },
-    {
-      "source": "https://fpjs.io",
-      "destination": "https://fingerprint.com/"
-    },
-    {
-      "source": "https://fingerprintjs.pro",
-      "destination": "https://fingerprint.com/"
-    },
-    {
-      "source": "https://fpjs.io",
-      "destination": "https://fingerprint.com/"
-    },
+
     {
       "source": "/open-source/",
       "destination": "/github/"
@@ -108,7 +89,7 @@
       ]
     },
     {
-      "source": "/(.*).(eot|otf|ttf|ttc|woff|woff2|font|css)",
+      "source": "(.*).(eot|otf|ttf|ttc|woff|woff2|font|css)",
       "headers": [
         {
           "key": "cache-control",
