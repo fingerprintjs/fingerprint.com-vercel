@@ -247,6 +247,8 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: false,
+        publicPath: `admin`,
+        htmlTitle: `Fingerprint Content Manager`,
       },
     },
     'gatsby-plugin-catch-links',
