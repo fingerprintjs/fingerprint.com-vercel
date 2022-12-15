@@ -2,9 +2,10 @@
 templateKey: long-form-content
 metadata:
   title: "How Card Cracking Works and 4 Ways Businesses Can Prevent Being Scammed "
-  description: Credit card cracking is one of the fastest-growing types of fraud
-    globally and accounts for around 16 percent of e-commerce fraud. Here are
-    four ways to prevent it from happening within your business.
+  description: Card cracking is when fraudsters test credit card details on
+    e-commerce businesses. They are either checking the details that they have
+    work or trying different combinations of partial information, hoping to find
+    out the information they don't already know.
   url: fingerprint.com/blog/what-is-card-cracking-and-prevention-tips
   image: /img/uploads/how-card-cracking-works-and-how-to-prevent.png
   imageAlt: illustrations of a credit card on a blue and grey background

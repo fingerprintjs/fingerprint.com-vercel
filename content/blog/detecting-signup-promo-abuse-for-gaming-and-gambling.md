@@ -3,10 +3,11 @@ templateKey: long-form-content
 metadata:
   title: Detecting Signup Promo Abuse for Gaming and Gambling
   url: fingerprint.com/blog/detecting-signup-promo-abuse-gaming-gambling
-  description: Promotional cash-back incentives are a valuable marketing tool for
-    gaming and gambling websites to gain and retain users; however, these cash
-    offers open these companies to promo abuse. Learn the five versions of promo
-    abuse and what you can do to detect and prevent fraudulent activity.
+  description: "Signup promo abuse is a type of fraud that occurs when players use
+    signup bonuses or promotional offers from online casinos or gaming sites
+    with an ulterior motive. For example, some gamers may create multiple
+    accounts to take advantage of multiple signup bonuses or promotions that are
+    offered by casinos. "
   socialImage: /img/uploads/gambling.jpg
   imageTitle: Gaming Controllers and Poker Cards
   imageAlt: Gaming Controllers and Poker Cards
@@ -31,6 +32,14 @@ customCTA:
 ---
 Many gaming and gambling websites attract new customers and retain their current user base by promoting cash offers. A few ways to do this are using promotional codes, affiliate marketing, and reload incentives to add a balance to a customer account or provide them with bonus money to attract new customers to their platform. Promotional cash-back incentives are a valuable marketing tool. Still, it’s also an excellent way for malicious users to steal money or get products for free by fraudulently signing up with multiple accounts. 
 
+
+
+## What is Signup Promo Abuse?
+
+Signup promo abuse is a type of fraud that occurs when players use signup bonuses or promotional offers from online casinos or gaming sites with an ulterior motive. For example, some gamers may create multiple accounts to take advantage of multiple signup bonuses or promotions that are offered by casinos.
+
+
+
 ## How Does Promo Abuse Work?
 
 Promo abuse comes in several forms, depending on your services. The attacker’s goal is to obtain money or steal free products, but here are a few versions of the scam:
@@ -52,8 +61,6 @@ With email accounts in hand, attackers use a virtual private network (VPN) to si
 For online merchants, many fraudulent accounts use stolen credit card numbers. These accounts can be used to purchase products for rebates before the valid credit card owner files a chargeback. When the customer files a chargeback, the attacker cashes out with promotional rebates. 
 
 Gaming and gambling fraud may seem minor, but recent [studies](https://www.gamblinginsider.com/news/16766/study-71-rise-in-bonus-abuse-reported-by-online-gambling-firms) show it’s an increasing problem for gaming platforms. The study indicates that gambling and gaming firms saw a 71% increase in bonus abuse. In the same survey, online merchants saw a 67% increase in payment details taken from hacked user accounts. The results force businesses to increase budgets for fraud detection and prevention infrastructure.
-
-
 
 ## How to Combat Promo Abuse
 

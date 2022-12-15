@@ -8,9 +8,10 @@ metadata:
   imageTitle: Synthetic ID Image
   image: /img/uploads/synthetic-id-fraud.jpg
   url: fingerprint.com/blog/synthetic-identity-fraud
-  description: "Attackers are using Synthetic Identities to scam and steal from
-    businesses and consumers. Learn about Synthetic Identity Fraud and how you
-    can prevent it. "
+  description: Synthetic identity fraud occurs when the perpetrator creates a
+    completely fictitious identity with fake information. They may use stolen
+    Social Security numbers or other personally identifiable information (PII)
+    to create a unique profile that looks like an actual person.
 featured: true
 publishDate: 2022-11-02T13:47:49.984Z
 title: Synthetic Identity Fraud Threatens to Steal Millions from Businesses and
@@ -34,18 +35,22 @@ After a consumer becomes a victim of identity theft and fraud, it takes years to
 
 
 
-## How Does Synthetic Identity Fraud Work? 
+## What is Synthetic Identity Fraud?
+
+Synthetic identity fraud occurs when the perpetrator creates a completely fictitious identity with fake information. They may use stolen Social Security numbers or other personally identifiable information (PII) to create a unique profile that looks like an actual person.
+
+
+
+## How Does Synthetic Identity Fraud Work?
 
 When you apply for a loan or credit card, you give a lender your name, social security number (SSN), and address. It does not take a lot of personal information to apply for basic loans such as credit cards or financing home repairs. You can apply for government benefits with your SSN (social security number) and name. This little data and validation lead to many fraudsters being undetected. 
 
 With synthetic identity fraud, an attacker has access to an SSN or other Personally Identifiable Information (PII) and uses that information to build new identities. The SSN is valid, but the name is slightly different from the valid name matching the SSN. The address could be a co-conspirator from a hapless victim the cyber-criminal uses to take delivery of credit cards and reship products to the fraudster. The fraudster can convince the victim that they are performing a legitimate job of delivering products. In actuality, the victim is sending goods to the attacker - who could be located in another country. 
 
-###### Synthetic identity works in two ways: manipulated and manufactured. 
+###### Synthetic identity works in two ways: manipulated and manufactured.
 
 * **Manipulated identity fraud:** This type of fraud is based on existing identities. So, fraudsters may change one number of an existing SSN or slightly change the data to match a legitimate number, leading to a real consumer’s identity. 
 * **Manufactured identity fraud:** This type of fraud is also based on real identities, but they are a mix of several real identities to make a fraudulent one. In the first type, the identity closely resembles a real consumer, but the latter type is a brand new identity used with random SSNs generated within a legitimate range. Manufactured identities are the most difficult to detect because they are completely new identities used to defraud businesses. With a new identity, the fraudster then applies for credit cards and loans to take off with several thousands of dollars. The business is left losing money, and it can be a costly mistake. 
-
-
 
 ## Synthetic Identity Fraud vs. Identity Fraud
 
@@ -54,8 +59,6 @@ Most people are aware of identity theft, where the victim is the consumer. With 
 In a manipulated identity scam, most businesses detect that the fraudulent account has mismatched information. Still, manufactured identity is much more complex and often leads to tremendous monetary loss for a targeted business. In a manufactured identity fraud attack, most victims are banks and lenders. An attacker in synthetic identity fraud aims to steal large amounts of money from banks and lenders rather than targeting small amounts by stealing identities from individuals with the potential of having poor credit scores. 
 
 Most synthetic identities use a real SSN so that consumers can be affected. Children or people who rarely apply for loans are targets. These people would not be alerted to problems with their credit until it’s too late. Consumers also suffer from credit report issues for years, and businesses lose billions,  so developers must build web applications that stop attackers from account takeover and automated authentication.
-
-
 
 ## How Businesses Can Protect Consumer Data and Prevent Synthetic Identity Fraud
 

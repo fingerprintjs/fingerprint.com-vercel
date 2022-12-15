@@ -2,11 +2,11 @@
 templateKey: long-form-content
 metadata:
   title: The Basics of Loan Fraud and How To Prevent It
-  description: "In 2021, the National Mortgage Application Fraud Risk Index
-    increased by 15% between the 2021 first quarter and the first quarter of
-    2022. Credit card fraud also skyrocketed by the last quarter of 2021. Fraud
-    affects everyone, from consumers to the banks that approve applications.
-    Let's discuss what loan fraud is and how to prevent it. "
+  description: There are several different types of loan fraud. One of the most
+    common forms of loan fraud is application fraud, which involves falsely
+    applying for a loan by providing inaccurate or incomplete information on an
+    application form. This could include providing false employment history or
+    exaggerating your income level in order to obtain a larger loan.
   url: https://www.fingerprint.com/blog/what-is-loan-fraud
   image: /img/uploads/what-is-loan-protection-and-loan-protection-fraud_.png
   imageAlt: application illustration
@@ -32,6 +32,14 @@ customCTA:
 The balance between consumer convenience and security is a delicate process, especially in a competitive, high-value market. For example, when banks and credit card companies provide online loan applications, they make it convenient for potential customers to get a loan. Still, they also make it convenient for identity thieves and hackers. 
 
 In 2021, the National Mortgage Application Fraud Risk Index [increased](https://magazine.realtor/daily-news/2022/05/17/where-mortgage-fraud-is-highest) by 15% between the 2021 first quarter and the first quarter of 2022. Credit card fraud also [skyrocketed](https://www.experianplc.com/media/latest-news/2022/affluent-households-targeted-by-credit-card-fraudsters/) by the last quarter of 2021. Fraud affects everyone, from consumers to the banks that approve applications. The amount of money lost may vary, but it raises costs to consumers and leads to hefty monetary losses for financial institutions. The [biggest channel](https://risk.lexisnexis.com/about-us/press-room/press-release/20220106-annual-true-cost-of-fraud-study#:~:text=The%20cost%20of%20fraud%20for,2019%20and%20%243.64%20in%202020.) for fraudsters is the mobile market as more financial institutions continue to provide services using apps.
+
+
+
+## What is Loan Fraud?
+
+There are several different types of loan fraud. One of the most common forms of loan fraud is application fraud, which involves falsely applying for a loan by providing inaccurate or incomplete information on an application form. This could include providing false employment history or exaggerating your income level in order to obtain a larger loan. 
+
+
 
 ## How Does Loan Fraud Work?
 

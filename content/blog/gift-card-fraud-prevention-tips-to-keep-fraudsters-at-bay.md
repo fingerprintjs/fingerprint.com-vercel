@@ -4,14 +4,18 @@ metadata:
   title: "Gift card fraud prevention: Tips to keep fraudsters at bay"
   url: https://fingerprint.com/blog/gift-card-fraud-prevention
   image: /img/uploads/gift-card-fraud-prevention_.png
-  description: Ecommerce sites are often plagued with gift card fraud. Learn how
-    to identify this common form of payment fraud and prevent scammers from
-    taking advantage.
+  description: Gift card fraud involves using stolen credit card details to
+    purchase gift cards. Part of the reason gift card fraud is popular among
+    scammers is its anonymity. By using credit card information to purchase a
+    gift card, a fraudster essentially keeps stolen cash without having spent
+    it.
   imageAlt: Gift card fraud prevention
   imageTitle: Gift card fraud prevention
 featured: false
 publishDate: 2021-07-26T20:19:47.832Z
 title: "Gift card fraud prevention: Tips to keep fraudsters at bay"
+isPublished: true
+isHidden: false
 tags:
   - ecommerce fraud
   - payment fraud
@@ -21,8 +25,6 @@ heroImage:
   image: /img/uploads/gift-card-fraud-prevention_.png
   imageAlt: Gift card fraud prevention
   imageTitle: Gift card fraud prevention
-isPublished: true
-isHidden: false
 ---
 Gift cards are an easy, flexible option for gift-givers all over the world, but what makes them so useful also makes them easily exploited by scammers. 
 

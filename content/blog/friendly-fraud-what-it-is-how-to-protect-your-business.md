@@ -3,11 +3,11 @@ templateKey: long-form-content
 metadata:
   title: "Friendly Fraud: What It Is & How to Protect Your Business"
   url: https://fingerprint.com/blog/what-is-friendly-fraud-prevention-tips
-  description: Friendly fraud occurs when a customer makes a purchase online for a
-    product or service, then turns around and contacts their card issuer to
-    dispute the charge resulting in a chargeback. Let’s learn more about
-    friendly fraud, how common it is, and how to protect your eCommerce business
-    against friendly fraud and chargeback abuse.
+  description: Friendly fraud is a common credit card fraud that impacts eCommerce
+    businesses. It occurs when a customer files a chargeback with their credit
+    card company on a legitimate transaction rather than first trying to obtain
+    a refund from the merchant. It’s also commonly known as a form of chargeback
+    abuse, chargeback fraud, or cyber shoplifting.
   image: /img/uploads/what-is-friendly-fraud_.png
   imageAlt: credit card chargeback
   imageTitle: credit card chargeback

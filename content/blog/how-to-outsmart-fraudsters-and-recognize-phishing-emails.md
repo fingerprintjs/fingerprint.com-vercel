@@ -6,9 +6,11 @@ metadata:
   url: https://fingerprint.com/blog/how-to-recognize-phishing-emails/
   imageAlt: Phishing Email
   imageTitle: Phishing Email
-  description: Phishing emails targeting businesses are increasingly difficult to
-    detect. Learn how to train your employees to spot common signs of a phishing
-    attack.
+  description: Phishing is the process of sending fraudulent emails designed to
+    steal personal information or gain access to online accounts. These emails
+    often appear to come from legitimate sources, such as banks or other
+    financial institutions, but they are actually sent by hackers attempting to
+    gain access to your confidential information.
 featured: true
 publishDate: 2021-09-30T23:18:30.228Z
 title: How to Outsmart Fraudsters and Recognize Phishing Emails
@@ -33,6 +35,14 @@ Phishing emails have become increasingly common and difficult to detect in recen
 By masquerading as a known authority figure, service provider, or other valid email source (e.g., the victim’s bank or employer), fraudsters can manipulate users to do their bidding: reveal username/passwords, share credit card information, or disclose other pieces of critical data. Some are easier to recognize than others, but in general phishing emails are continuing to evolve in sophistication as average internet users become savvier to common online threats.
 
 For this reason, implementing effective [account takeover prevention measures](/account-takeover/) is crucial for mitigating the risk of phishing attacks and improving overall awareness around how to spot them.
+
+
+
+## What is Phishing?
+
+Phishing is the process of sending fraudulent emails designed to steal personal information or gain access to online accounts. These emails often appear to come from legitimate sources, such as banks or other financial institutions, but they are actually sent by hackers attempting to gain access to your confidential information.
+
+
 
 ## What is the goal of phishing attacks against businesses?
 

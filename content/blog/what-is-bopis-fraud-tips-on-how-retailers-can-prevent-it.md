@@ -6,9 +6,10 @@ metadata:
   imageAlt: BOPIS Fraud Image
   imageTitle: BOPIS Fraud Image
   socialImage: /img/uploads/bopis.jpg
-  description: BOPIS is on the rise. BOPIS, which stands for buy online, pick-up
-    in store, is also vulnerable to fraudulent purchases. Learn how attackers
-    are taking advantage of this new trend in our new report.
+  description: "BOPIS stands for “buy online, pick up in-store.” Also known as
+    click-and-collect fraud or curbside pickup fraud, BOPIS fraud includes any
+    fraudulent activity when someone orders merchandise from a store’s website
+    and then picks it up at the store location. "
   url: fingerprint.com/blog/BOPIS-Fraud
 featured: true
 publishDate: 2022-11-11T16:49:10.094Z

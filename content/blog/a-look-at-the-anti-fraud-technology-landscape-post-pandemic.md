@@ -39,7 +39,7 @@ Just as fraudsters adapt to new situations, so do fraud detection and prevention
 
 ## How has online fraud changed due to the pandemic?
 
-The onset of COVID-19 has been called a [tremendous boom](https://www.protiviti.com/US-en/insights/pov-post-pandemic-fraud-landscape) for online criminals. But, of course, cybercrime was already trending up, so it’s difficult to isolate the exact effects of the pandemic. Still, there are notable examples of the situation that has fueled the fire.
+The onset of COVID-19 has been called a [tremendous boom](https://www.protiviti.com/us-en/whitepaper/preparing-dynamic-post-pandemic-fraud-landscape-top-mind-compliance-issues-2021) for online criminals. But, of course, cybercrime was already trending up, so it’s difficult to isolate the exact effects of the pandemic. Still, there are notable examples of the situation that has fueled the fire.
 
 [Analysis](https://www.ft.com/content/30553ae9-cdfd-483c-a1ef-c04e3135f9da) shows spam messages rose by an astonishing 220 percent between February and March 2020, as the pandemic took hold. The number of malicious URLs nearly tripled in that time too. 
 

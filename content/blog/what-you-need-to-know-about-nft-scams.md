@@ -7,9 +7,11 @@ metadata:
   socialImage: /img/uploads/what-you-need-to-know-about-nft-scams.png
   imageAlt: pixel art of nft scams
   imageTitle: pixel art of nft scams
-  description: "In this article, we discuss NFT (non-fungible tokens) basics, the
-    most common types of NFT scams, how consumers can protect themselves, and
-    how business can defend their sites against fraud. "
+  description: An NFT, or non-fungible token, is a blockchain-minted digital asset
+    class unique enough to be considered a genuinely individual item in all but
+    the physical capacity. Common types of NFT Scams are spear-phishing
+    marketplaces, spear-phishing specific owners/users, and counterfeit &
+    non-existent NFTs.
 featured: true
 publishDate: 2022-07-14T18:30:56.991Z
 title: What You Need to Know About NFT Scams

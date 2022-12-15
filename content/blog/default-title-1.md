@@ -2,9 +2,9 @@
 templateKey: long-form-content
 metadata:
   title: "Refund Fraud: How to Identify Chargeback Fraud"
-  description: Refund fraud is one of the most common fraud types for ecommerce
-    business. Learn how to identify and stop chargebacks caused by professional
-    refunders.
+  description: Refund fraud is a scam where a person attempts to get money
+    refunded from merchants by falsely claiming the product they received was
+    not up to par.
   url: https://fingerprint.com/blog/refund-fraud-prevention-chargebacks
   socialImage: /img/uploads/refund-fraud_-how-to-identify-chargeback-fraud.png
   imageAlt: Review fraud prevention

@@ -2,8 +2,11 @@
 templateKey: long-form-content
 metadata:
   title: How to Prevent Referral Fraud in Your Business
-  description: Let's learn what referral fraud is and how it works so you can
-    recognize it and prevent it from occurring in the first place.
+  description: Referral fraud occurs when a user exploits your referral program to
+    gain unearned rewards. These rewards include providing referrals that are
+    not genuine, creating fake accounts to game the system, giving
+    self-referrals, dispersing a referral code through channels that are not
+    approved by the business, and more.
   url: fingerprint.com/blog/what-is-referral-fraud-prevention-tips
   image: /img/uploads/what-is-referral-fraud_.png
   imageAlt: referral fraud image

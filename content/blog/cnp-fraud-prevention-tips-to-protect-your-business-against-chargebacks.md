@@ -4,14 +4,19 @@ metadata:
   title: "CNP fraud prevention: Tips to protect your business against chargebacks"
   url: https://fingerprint.com/blog/cnp-fraud-prevention-to-protect-chargebacks
   image: /img/uploads/cnp-fraud-prevention_.png
-  description: Credit card fraud is a multi-billion dollar problem, and can be
-    incredibly hard to stop. Learn about how to prevent CNP fraud and
-    chargebacks on your website.
+  description: CNP, or card not present, is a type of credit card fraud that
+    literally means the card is not physically presented to the merchant at the
+    time of its use. It generally occurs when scammers obtain credit card
+    details illegally and use them to make purchases online or over the phone,
+    and is precisely why credit card holders keep their card information to
+    themselves.
   imageAlt: CNP fraud prevention
   imageTitle: CNP fraud prevention
 featured: false
 publishDate: 2021-07-27T04:53:32.707Z
 title: "CNP fraud prevention: Tips to protect your business against chargebacks"
+isPublished: true
+isHidden: false
 tags:
   - payment fraud
   - ecommerce fraud
@@ -21,8 +26,6 @@ heroImage:
   image: /img/uploads/cnp-fraud-prevention_.png
   imageAlt: CNP fraud prevention
   imageTitle: CNP fraud prevention
-isPublished: true
-isHidden: false
 ---
 The continuing rise of online shopping brings a whole new level of convenience to people’s lives, but it has a down side. Credit card fraud is a multi-billion dollar problem, and can be incredibly hard for online businesses to detect in real time.
 

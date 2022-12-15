@@ -56,7 +56,6 @@ If you run a dynamic user personalized site, you’re most likely already using 
 
 To ban specific users from your site using cookies, you can either set a flag identifier cookie or add the unique cookie ID of offending users to a list. Then, on page requests, check if the cookie in the request header sent by the browser is flagged or on the banned list. You can then deny access appropriately.
 
-
 Suppose you’re dealing with a Node.js-based app. You’d do something like:
 
 ```
@@ -105,7 +104,7 @@ A disposable or temporary email domain is a service that allows users to receive
 
 If WordPress hosts your site, [follow this process to block disposable email addresses](https://www.wpbeginner.com/plugins/how-to-block-disposable-email-addresses-in-wordpress/). For others, you can include this as an email validation check for your sign-up and login forms. 
 
-Here’s a [list of disposable email domains](https://gist.github.com/michenriksen/8710649) you can start with:
+Here’s a [list of disposable email domains](https://github.com/disposable-email-domains/disposable-email-domains) you can start with:
 
 ![How to ban email domains using the Ban Hammer plugin- Image via wpbeginner.com](/img/uploads/qzpuflm.png "How to ban email domains using the Ban Hammer plugin")
 
