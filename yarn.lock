@@ -10683,10 +10683,10 @@ gatsby-plugin-image@^2.23.1:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
-gatsby-plugin-netlify-cms@^7.3.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-7.3.0.tgz#f2ef26744ee1d06a59c6db6bd884caa4db953c3b"
-  integrity sha512-IriNWp3+LJ0mPgsTAf6txPBKHcXB5ReTqSTUfoDilSQu8AVMJ9tec3NppILZ0wFvhsHjnYkOJMudrFtxBXx9Ww==
+gatsby-plugin-netlify-cms@^6.23.0:
+  version "6.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-6.25.0.tgz#938bb8252c4b45740b94c166e41194d2163beb30"
+  integrity sha512-wBgEVrtdGFDo7hst+y7RcYodckWy6JXDauM8BLtXQ2CVOG1T4ircsyXEjifWCDKyI4TlaPpg5x7no/SCpAHIMw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@soda/friendly-errors-webpack-plugin" "1.8.1"
