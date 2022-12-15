@@ -1,8 +1,6 @@
 const path = require('path')
-console.log('vercel env ' + process.env.VERCEL_ENV)
-console.log('vercel url ' + process.env.VERCEL_URL)
 
-const baseUrl = process.env.VERCEL_ENV === 'preview' ? process.env.VERCEL_URL : 'https://fingerprint.com'
+const baseUrl = process.env.VERCEL_ENV === 'preview' ? `https://${process.env.VERCEL_URL}/` : 'https://fingerprint.com'
 
 const resolvePath = (directoryName, pathName) => {
   const result = path.join(directoryName, pathName)
