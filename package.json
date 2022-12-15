@@ -36,7 +36,9 @@
     "@fingerprintjs/fingerprintjs-pro-react": "^1.3.1",
     "@fpjs-incubator/turing": "^0.0.7",
     "@loadable/component": "^5.15.2",
+    "@now/node": "^1.4.1",
     "@tippyjs/react": "^4.2.0",
+    "@types/simple-oauth2": "^2.5.2",
     "amplitude-js": "^8.21.1",
     "canvas": "^2.10.2",
     "classnames": "^2.3.2",
@@ -79,7 +81,7 @@
     "remark": "^13.0.0",
     "remark-html": "^13.0.2",
     "rollbar": "^2.19.4",
-    "simple-oauth2": "^4.2.0",
+    "simple-oauth2": "^2.5.2",
     "swiper": "^8.3.2"
   },
   "devDependencies": {
