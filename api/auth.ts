@@ -9,12 +9,15 @@ export default (req: NowRequest, res: NowResponse) => {
 
   const oauth2 = create()
 
+  // simple-oauth will use our config files to generate a client we can use to request access
+
   const url = oauth2.authorizationCode.authorizeURL({
     redirect_uri: `https://${host}/api/callback`,
     scope: `repo,user`,
     state: randomString(),
   })
 
+  // Get redirected to Github for authorization
   res.writeHead(301, { Location: url })
   res.end()
 }

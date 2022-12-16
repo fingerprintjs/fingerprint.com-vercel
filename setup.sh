@@ -1,3 +1,4 @@
+# https://github.com/Automattic/node-canvas/issues/1779
 yum install wget
 
 wget https://github.com/NixOS/patchelf/archive/refs/tags/0.17.0.tar.gz
@@ -20,5 +21,6 @@ cd ..
 patchelf --replace-needed /lib64/libz.so.1 libz.so.X ./node_modules/canvas/build/Release/libpng16.so.16
 patchelf --replace-needed libz.so.1 libz.so.X ./node_modules/canvas/build/Release/libpng16.so.16
 
+# there is a problem with the registerFonts command, so we install the font on the system
 mkdir ~/.local/share/fonts
 mv Inter-SemiBold.ttf ~/.local/share/fonts/Inter-SemiBold.ttf

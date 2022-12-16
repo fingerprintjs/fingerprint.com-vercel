@@ -8,10 +8,12 @@ export default async (req: NowRequest, res: NowResponse) => {
   const oauth2 = create()
 
   try {
+    // we recreate the client we used to make the request
     const accessToken = await oauth2.authorizationCode.getToken({
       code,
       redirect_uri: `https://${host}/api/callback`,
     })
+    // create our token object
     const { token } = oauth2.accessToken.create(accessToken)
 
     res.status(200).send(
