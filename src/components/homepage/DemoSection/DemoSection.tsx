@@ -88,7 +88,7 @@ export default function DemoSection() {
   return (
     <Container className={styles.container}>
       <header className={styles.header}>
-        <div className={styles.labelWrapper}>
+        <div id='demo-section' className={styles.labelWrapper}>
           <span className={styles.label}>Live demo</span>
         </div>
         <h2 className={styles.title}>See Fingerprint in Action</h2>

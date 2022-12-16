@@ -13,6 +13,8 @@ import { getConfig } from '../../../helpers/fpjs'
 import styles from './HeroSection.module.scss'
 import classNames from 'classnames'
 
+import { scrollToElementById } from '../../../helpers/scrollToElementByID'
+
 interface HeroSectionProps {
   advertisingVariant?: boolean
 }
@@ -76,10 +78,7 @@ export default function HeroSection({ advertisingVariant = false }: HeroSectionP
             </Button>
           )}
 
-          <Button
-            href={`${PATH.demoUrl}?&utm_source=homepage&utm_medium=website&utm_campaign=demo`}
-            variant='orangeGradientOutline'
-          >
+          <Button onClick={() => scrollToElementById('demo-section')} variant='orangeGradientOutline'>
             View Live Demo
           </Button>
         </div>

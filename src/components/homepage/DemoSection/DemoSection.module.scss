@@ -28,6 +28,7 @@
     }
     .labelWrapper {
       @include labelOrange;
+      @include scrollSection;
     }
 
     .title {
